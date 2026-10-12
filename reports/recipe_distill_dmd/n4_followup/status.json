@@ -1,0 +1,9 @@
+{
+  "phase": "waiting_for_existing_queue",
+  "existing_queue": "/root/Diffusion/recipe_distill_dmd/experiments/recipe/status.json",
+  "queued": [
+    "n4_lr2e4",
+    "n4_lr5e5",
+    "n4_direct32_lr5e5"
+  ]
+}

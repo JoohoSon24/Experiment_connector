@@ -1,0 +1,56 @@
+[
+  {
+    "latest": "/root/Diffusion/workspace_distillation/experiments/teacher_variant_sequence/preflight/attention32_batch64_preflight/latest.pt",
+    "final": "/root/Diffusion/workspace_distillation/experiments/teacher_variant_sequence/preflight/attention32_batch64_preflight/final.pt",
+    "verified": "every ZIP member payload byte-identical",
+    "bytes_reclaimed": 993175310
+  },
+  {
+    "latest": "/root/Diffusion/workspace_distillation/experiments/teacher_variant_sequence/attention32/attention32_100k/latest.pt",
+    "final": "/root/Diffusion/workspace_distillation/experiments/teacher_variant_sequence/attention32/attention32_100k/final.pt",
+    "verified": "every ZIP member payload byte-identical",
+    "bytes_reclaimed": 993175310
+  },
+  {
+    "latest": "/root/Diffusion/workspace_distillation/experiments/teacher_variant_sequence/attention4/attention4_100k/latest.pt",
+    "final": "/root/Diffusion/workspace_distillation/experiments/teacher_variant_sequence/attention4/attention4_100k/final.pt",
+    "verified": "every ZIP member payload byte-identical",
+    "bytes_reclaimed": 978259086
+  },
+  {
+    "latest": "/root/Diffusion/workspace_distillation/experiments/teacher_variant_sequence/attention4/attention4_200k/latest.pt",
+    "final": "/root/Diffusion/workspace_distillation/experiments/teacher_variant_sequence/attention4/attention4_200k/final.pt",
+    "verified": "every ZIP member payload byte-identical",
+    "bytes_reclaimed": 978259086
+  },
+  {
+    "latest": "/root/Diffusion/workspace_distillation/experiments/teacher_variant_sequence/attention4/attention4_150k/latest.pt",
+    "final": "/root/Diffusion/workspace_distillation/experiments/teacher_variant_sequence/attention4/attention4_150k/final.pt",
+    "verified": "every ZIP member payload byte-identical",
+    "bytes_reclaimed": 978259086
+  },
+  {
+    "latest": "/root/Diffusion/workspace_distillation/experiments/teacher_variant_sequence/dropout005/dropout005_210k/latest.pt",
+    "final": "/root/Diffusion/workspace_distillation/experiments/teacher_variant_sequence/dropout005/dropout005_210k/final.pt",
+    "verified": "every ZIP member payload byte-identical",
+    "bytes_reclaimed": 978259086
+  },
+  {
+    "latest": "/root/Diffusion/workspace_distillation/experiments/teacher_budget_noaug_fresh_200k/teacher_b64_noaug_fresh_150k/latest.pt",
+    "final": "/root/Diffusion/workspace_distillation/experiments/teacher_budget_noaug_fresh_200k/teacher_b64_noaug_fresh_150k/final.pt",
+    "verified": "every ZIP member payload byte-identical",
+    "bytes_reclaimed": 978259086
+  },
+  {
+    "latest": "/root/Diffusion/workspace_distillation/experiments/teacher_budget_noaug_fresh_200k/teacher_b64_noaug_fresh_100k/latest.pt",
+    "final": "/root/Diffusion/workspace_distillation/experiments/teacher_budget_noaug_fresh_200k/teacher_b64_noaug_fresh_100k/final.pt",
+    "verified": "every ZIP member payload byte-identical",
+    "bytes_reclaimed": 978259086
+  },
+  {
+    "latest": "/root/Diffusion/workspace_distillation/experiments/teacher_budget_noaug_fresh_200k/teacher_b64_noaug_fresh_200k/latest.pt",
+    "final": "/root/Diffusion/workspace_distillation/experiments/teacher_budget_noaug_fresh_200k/teacher_b64_noaug_fresh_200k/final.pt",
+    "verified": "every ZIP member payload byte-identical",
+    "bytes_reclaimed": 978259086
+  }
+]

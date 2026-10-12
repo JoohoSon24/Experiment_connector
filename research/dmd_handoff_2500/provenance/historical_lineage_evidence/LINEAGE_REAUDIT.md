@@ -1,0 +1,23 @@
+
+<!-- lineage-reaudit -->
+## User-requested lineage re-audit
+
+Audit timestamp: 2026-10-06T22:49:22Z. PASS.
+
+- `checkpoints/one_nfe.ckpt` and `checkpoints/few_nfe.ckpt` were used only by the initial provenance/parameter/NFE smoke audit. They have never been used for development FID baseline, selection comparisons, teacher/student/candidate initialization, distillation teachers, or continuation. Their original hashes remain unchanged. New experiment launcher additionally denies every checkpoint outside experiments/night_run/.
+- Root ancestor: `teacher_preflight` was created from random seed42 initialization with no --resume, trained for2 updates only on `data/development/seed42_holdout5/train.txt` (16,324 images). Its saved training-path digest equals the current train manifest. The preflight optimizer/EMA/RNG state is part of this fresh lineage.
+- Active `fresh_teacher` resumes exclusively from `experiments/night_run/teacher_preflight/final.pt`. Its saved latest checkpoint independently matches that same training manifest and path digest. This continuation is from our fresh2-step teacher, never from either supplied export. Teacher was at 71096 updates at this re-audit; peak allocated VRAM below20GB.
+- Baseline and all three candidates have NOT started at this audit. Their only scheduled teacher/initialization source is the eventual `experiments/night_run/fresh_teacher/final.pt`, independently checked for the training-path digest. Each uses a separate output directory and initializes from this fresh teacher EMA with its output head zeroed. Target/EMA models are copies of that student; continuation reloads only the same new run's state. Their checkpoint lineage will be validated again before each development evaluation.
+- Training DataLoader paths come exclusively from train.txt. holdout.txt is never supplied to a training DataLoader; constructing its metadata adapter for overlap verification does not iterate images. Holdout images are used only for reference preparation/evaluation/model selection. The private data root contains exactly the development train+holdout union and ZERO official validation images.
+- Official validation images, features, statistics and FID are never used in this entire development experiment. Only the split text was read to prove disjointness. All evaluator commands explicitly specify development references; official evaluator CLI is denied by the experiment launcher.
+
+Evidence: lineage_reaudit.json, fresh_teacher/config.json and metrics.json, teacher_preflight/config.json and metrics.json, source snapshots, active process arguments, and checkpoint_usage.jsonl for subsequent guarded loads. Existing plan continues unchanged.
+
+<!-- quality-diagnosis -->
+## Generation quality failure diagnosis
+
+The consistency student is NOT a successful reproduction of the team's progressive-distillation baseline. Despite numerical FID improvement relative to its own very weak2.5K baseline, the5K EMA candidate is collapsed: inspected generated PNGs are nearly uniform gray and lack Pokemon structure. This is a quality failure, not a usable improvement. Fresh teacher CFG2 development FID43.5721 produces structured Pokemon images on the same private reference/evaluator, so the500+ score is not explained by an entirely different FID scale or failed teacher training.
+
+The existing delivered low-NFE checkpoints use progressive velocity distillation. This run instead selected the newly added VP consistency implementation, documented as previously unvalidated on real GPU data; its nominal100K configuration was screened at2.5K–10K. Choosing this as the primary improvement baseline before reproducing the established progressive method was a methodological mistake. The exact training/implementation cause has not been proven. Plausible causes include insufficient propagation of the low-noise boundary constraint across128 adjacent nodes and nearly constant outputs achieving small self-consistency loss. Low loss is not evidence of generation quality.
+
+Evidence: quality_diagnostic_grid.png and quality_diagnostic_stats.json. Over151 diagnostic PNGs, mean within-image RGB spatial standard deviation is0.0135 for the5K student vs0.2411 for the fresh teacher; standard deviation across image means is0.0024 vs0.2391. These are descriptive diagnostics, not model-selection metrics, and no official images or legacy model weights were used. A selected minimum-FID checkpoint from this sweep must be labeled the best among failed consistency runs, not competitive with the team's30–50 results. Reproducing the existing progressive pipeline using only the audited fresh teacher is the appropriate recovery baseline.

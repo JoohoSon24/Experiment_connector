@@ -1,0 +1,13 @@
+{
+  "phase": "distillation_training",
+  "stage": "n2",
+  "step": 16720,
+  "target": 25000,
+  "wandb": "https://wandb.ai/fv2z6n929c-kaist-digital-humanities-and-social-sciences-/pokemon-diffusion/runs/9c1e5086",
+  "dmd_queued": [
+    "A_reg01_lr2e5",
+    "B_reg00_lr2e5",
+    "C_reg03_lr2e5",
+    "D_reg01_lr1e5"
+  ]
+}

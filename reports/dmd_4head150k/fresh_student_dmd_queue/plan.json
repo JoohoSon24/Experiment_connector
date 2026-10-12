@@ -1,0 +1,38 @@
+{
+  "teacher": "/root/Diffusion/workspace_distillation/experiments/teacher_variant_sequence/attention4/attention4_150k/final.pt",
+  "teacher_sha256": "499f268c8ece91fa3e82eca3d2613675b192092ee3a40f2f698dd079e32ea66b",
+  "student_initialization": "common fresh bootstrap EMA, no legacy models",
+  "queue": {
+    "A_reg01_lr2e5": [
+      0.1,
+      2e-05
+    ],
+    "B_reg00_lr2e5": [
+      0.0,
+      2e-05
+    ],
+    "C_reg03_lr2e5": [
+      0.3,
+      2e-05
+    ],
+    "D_reg01_lr1e5": [
+      0.1,
+      1e-05
+    ]
+  },
+  "steps_per_arm": 2500,
+  "evaluate_at": [
+    250,
+    500,
+    1000,
+    2500
+  ],
+  "fake_lr": 0.0002,
+  "fake_warmup": 200,
+  "G_EMA": 0.999,
+  "batch": 64,
+  "microbatch": 16,
+  "seed": 42,
+  "endpoint": "same selected teacher synthetic pairs",
+  "retention": "Only best inference checkpoint per arm; all metrics/PNG preserved; no full optimizer resume"
+}

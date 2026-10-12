@@ -1,0 +1,2217 @@
+{
+  "status": "PASS",
+  "symlinks": [],
+  "broken_authored_doc_links": [],
+  "checkpoint_files": [
+    "checkpoints/dmd_step_002500.ckpt"
+  ],
+  "inference_test_working_directory": "/tmp/dmd_handoff_build_ZXz9pEZX",
+  "inference_imports_only_packaged_model_code": true,
+  "inference_opens_only_selected_checkpoint": true,
+  "unintended_absolute_runtime_dependency_in_supported_inference_entrypoint": false,
+  "historical_absolute_references_retained": [
+    {
+      "file": "PROVENANCE.md",
+      "classification": "documented provenance, explicit external input, safety guard, or verification path",
+      "hits": [
+        {
+          "line": 3,
+          "text": "This handoff captures the reproduced run in `/root/DMD`, separate from the earlier successful run in `/root/AIC313-Project-FastGen`. The user approved creation at `/root/dmd_handoff_2500`; `teacher_handoff_200k` was not searched for during this build and is not a server dependency."
+        },
+        {
+          "line": 7,
+          "text": "Upstream is `https://github.com/KAIST-Visual-AI-Group/AIC313-Project-FastGen`, commit `e3f5120000cd91037017d86f23993492195101a5`. The pre-existing DMD directory was backed up as `/root/DMD_preexisting_20261007_161552`, a fresh official clone was made, and the team overlay from `/root/team_fastgen_handoff_new/fastgen/fastgen_code_overlay/` was inspected and applied with rsync. The two supplied chec"
+        },
+        {
+          "line": 66,
+          "text": "| `/root/DMD/.gitignore` | `source_overlay/.gitignore` | 195 | `304a29f5452da2fb2dd95359f364b4934bd4043f6402080a2d0d80e1cad9442e` |"
+        },
+        {
+          "line": 67,
+          "text": "| `/root/DMD/CODEX.md` | `source_overlay/CODEX.md` | 15255 | `d79ff2468748557885995b5ec6c9b4c3e91383c743275157cb0054abaef9073b` |"
+        },
+        {
+          "line": 68,
+          "text": "| `/root/DMD/PROJECT_SPEC.md` | `source_overlay/PROJECT_SPEC.md` | 12142 | `8ffda390fc55d062c9a2e2d00e60a3a565051e5cd12cc525684a4346fedcb27b` |"
+        },
+        {
+          "line": 69,
+          "text": "| `/root/DMD/TEAM_HANDOFF.md` | `source_overlay/TEAM_HANDOFF.md` | 5599 | `4cccbe29306c3a39d4adc6edd48b544cbd5dc2462366e83c163aef181eb0a6c9` |"
+        },
+        {
+          "line": 70,
+          "text": "| `/root/DMD/configs/consistency/fixed_cfg2.json` | `source_overlay/configs/consistency/fixed_cfg2.json` | 543 | `2c2f343d8589e80fc6f4399a17429599158516c3e42d1a280c0affece41f2e8c` |"
+        },
+        {
+          "line": 71,
+          "text": "| `/root/DMD/configs/consistency/no_extra_guidance.json` | `source_overlay/configs/consistency/no_extra_guidance.json` | 559 | `49647dc9653ce443d56716d3b46e869d1928a3a9ab268b90e1dab5f2d3c7c128` |"
+        },
+        {
+          "line": 72,
+          "text": "| `/root/DMD/configs/distillation/fixed_cfg2_progressive.json` | `source_overlay/configs/distillation/fixed_cfg2_progressive.json` | 789 | `88ebb482e45771bc971d4da10464d3122c0d478e5994b176d3998ea18433d65b` |"
+        },
+        {
+          "line": 73,
+          "text": "| `/root/DMD/configs/distillation/low_nfe_budget_100k.json` | `source_overlay/configs/distillation/low_nfe_budget_100k.json` | 846 | `43438567cabeaebf2e762b3bea1e86bf6ff4a074ce94bd20f124dad08da82c40` |"
+        },
+        {
+          "line": 74,
+          "text": "| `/root/DMD/configs/teacher/debug.json` | `source_overlay/configs/teacher/debug.json` | 886 | `f8fa271cdf583301367a718f9697c36427be805324301ffb82080723581a7c4e` |"
+        },
+        {
+          "line": 75,
+          "text": "| `/root/DMD/configs/teacher/debug_fresh_five.json` | `source_overlay/configs/teacher/debug_fresh_five.json` | 897 | `4891f8d56af12b246e52d955ea636044d94efb5246c0bc7bcaabfa4c0c692f92` |"
+        },
+        {
+          "line": 76,
+          "text": "| `/root/DMD/configs/teacher/debug_resume.json` | `source_overlay/configs/teacher/debug_resume.json` | 893 | `57c33c5e178e759330b8cb94b28c4f7eaeed19177546481a6af6799601d9e7de` |"
+        },
+        {
+          "line": 77,
+          "text": "| `/root/DMD/configs/teacher/initial.json` | `source_overlay/configs/teacher/initial.json` | 925 | `962798bdb25672c7adc6c387c58dc9b24644cbe62415e76f69a96fb588e673e6` |"
+        },
+        {
+          "line": 78,
+          "text": "| `/root/DMD/configs/teacher/initial_probe.json` | `source_overlay/configs/teacher/initial_probe.json` | 918 | `dd5edb299a17616dcdc969ba9efbf459b674adf7fc7093185851ede7cb9b7b78` |"
+        },
+        {
+          "line": 79,
+          "text": "| `/root/DMD/configs/teacher/teacher_b128_100k.json` | `source_overlay/configs/teacher/teacher_b128_100k.json` | 1496 | `57e291d0898886fe6ca0bc42a998773802d9d0de9200dd51271a929b403beb93` |"
+        },
+        {
+          "line": 80,
+          "text": "| `/root/DMD/configs/teacher/teacher_b64_100k.json` | `source_overlay/configs/teacher/teacher_b64_100k.json` | 1484 | `8a2d7e96effd8c235bbdc5290113f1e9fa7e2f98b61449ffcbfbb13ff6db792e` |"
+        },
+        {
+          "line": 81,
+          "text": "| `/root/DMD/configs/teacher/teacher_b64_constant_100k.json` | `source_overlay/configs/teacher/teacher_b64_constant_100k.json` | 1495 | `85c3a78d032ec94c7d6da7b5e33adb019f265b42d8e24b22e06736a4ea71e3c6` |"
+        },
+        {
+          "line": 82,
+          "text": "| `/root/DMD/configs/teacher/teacher_b64_fliponly_constant_100k.json` | `source_overlay/configs/teacher/teacher_b64_fliponly_constant_100k.json` | 1502 | `8ae21975a13ba7427a73ffc42e33e81b954d9d6230a5dd8b209e7af2a1cc60bf` |"
+        },
+        {
+          "line": 83,
+          "text": "| `/root/DMD/configs/teacher/teacher_b64_noaug_constant_100k.json` | `source_overlay/configs/teacher/teacher_b64_noaug_constant_100k.json` | 1499 | `c5f960f142a7df88b7830d69f2968884d9e5ad776cdcb0b8a57af6ef2f9577ce` |"
+        },
+        {
+          "line": 84,
+          "text": "| `/root/DMD/configs/teacher/teacher_ddpm_cfg_v1.json` | `source_overlay/configs/teacher/teacher_ddpm_cfg_v1.json` | 924 | `46715255adfdb53e471f9824f010f1111282608aa43437a1a22b739626ab5cf0` |"
+        },
+        {
+          "line": 85,
+          "text": "| `/root/DMD/configs/teacher/teacher_ddpm_cfg_v1_probe.json` | `source_overlay/configs/teacher/teacher_ddpm_cfg_v1_probe.json` | 919 | `87eb3144b7d9c7bd29896d1dba8b0d44dce2421cf5183d99d66335cd5e88715b` |"
+        },
+        {
+          "line": 86,
+          "text": "| `/root/DMD/configs/teacher/teacher_lr2e4_linear_aug_50k.json` | `source_overlay/configs/teacher/teacher_lr2e4_linear_aug_50k.json` | 1109 | `3de1cff71241d960ef8823047f23c20e97f935ea86a86ffe7b6743fad00044fa` |"
+        },
+        {
+          "line": 87,
+          "text": "| `/root/DMD/configs/teacher/teacher_lr5e5_aug_50k.json` | `source_overlay/configs/teacher/teacher_lr5e5_aug_50k.json` | 1063 | `a9cd6a6a554a2c147186e87c30c0b89989d02280765fac4b92aee564ea17758f` |"
+        },
+        {
+          "line": 88,
+          "text": "| `/root/DMD/configs/teacher/teacher_lr5e5_aug_probe.json` | `source_overlay/configs/teacher/teacher_lr5e5_aug_probe.json` | 1054 | `98ce4d5de200beb72f2addf56ae72c0a9b73a2ae02ffd7ead3bd273e8dacbcb7` |"
+        },
+        {
+          "line": 89,
+          "text": "| `/root/DMD/configs/teacher/teacher_memorization64_constant.json` | `source_overlay/configs/teacher/teacher_memorization64_constant.json` | 1484 | `74f8bbe8f711364101a958ae00339fa8f731c14e64da2e20660b301191483bae` |"
+        },
+        {
+          "line": 90,
+          "text": "| `/root/DMD/consistency/__init__.py` | `source_overlay/consistency/__init__.py` | 80 | `bb8c4edcab0e7c95e553c828c89b50de4273cb93640312511d2256cd5e44bed0` |"
+        },
+        {
+          "line": 91,
+          "text": "| `/root/DMD/consistency/check_submission.py` | `source_overlay/consistency/check_submission.py` | 1600 | `a177c595cd94e2cce430afc8627b1776e212e195cc2f42251bcd4f9e648b6bf5` |"
+        },
+        {
+          "line": 92,
+          "text": "| `/root/DMD/consistency/config.py` | `source_overlay/consistency/config.py` | 2459 | `06661a9d36dfe5ae138cf08221d0f2d4fba6f00d4a913580c058d8016f4549af` |"
+        },
+        {
+          "line": 93,
+          "text": "| `/root/DMD/consistency/core.py` | `source_overlay/consistency/core.py` | 5734 | `34828a734f0410e3c13b08ab266b5155dc710cff6c6bbbf5192506aff0b70732` |"
+        },
+        {
+          "line": 94,
+          "text": "| `/root/DMD/consistency/evaluate.py` | `source_overlay/consistency/evaluate.py` | 6903 | `e896a0e0e59e182651f957cf81c7fe3b32ff61084dfab604ba8bab18dd001ca6` |"
+        },
+        {
+          "line": 95,
+          "text": "| `/root/DMD/consistency/export.py` | `source_overlay/consistency/export.py` | 2799 | `7ffc1724d4cf8db6fd24ff96e6dda10baf3d4d8d5e468d18e117d8c965d90af9` |"
+        },
+        {
+          "line": 96,
+          "text": "| `/root/DMD/consistency/submission.py` | `source_overlay/consistency/submission.py` | 558 | `47e0aa7b76118b691cbe8b6547bb9a83507190e68ee7b2d41487edcccb819fd2` |"
+        },
+        {
+          "line": 97,
+          "text": "| `/root/DMD/consistency/tests.py` | `source_overlay/consistency/tests.py` | 7481 | `59c91a869e223b6e5fb3e98eb7312a77523dd060596baec52bd5613bcaaff271` |"
+        },
+        {
+          "line": 98,
+          "text": "| `/root/DMD/consistency/train.py` | `source_overlay/consistency/train.py` | 16043 | `0e630de9e13f8f2afc657931fac8837d6eae70f5d15443d65851bacbb2e64260` |"
+        },
+        {
+          "line": 99,
+          "text": "| `/root/DMD/constraints/evaluation.txt` | `source_overlay/constraints/evaluation.txt` | 113 | `ac76ddbce734dca5e70abb89090255c880e15ecf6ae24ca422625f15257130e9` |"
+        },
+        {
+          "line": 100,
+          "text": "| `/root/DMD/data/development/seed42_holdout5/holdout.txt` | `source_overlay/data/development/seed42_holdout5/holdout.txt` | 31510 | `a9b672630e28c4dea5fd922a22a1e11dc78155e4c96e88d4bca90bb3ce920a09` |"
+        },
+        {
+          "line": 101,
+          "text": "| `/root/DMD/data/development/seed42_holdout5/metadata.json` | `source_overlay/data/development/seed42_holdout5/metadata.json` | 349 | `78f5c8bba3f23fa4adc81afc278069b546cec9044a7df9a5dbbf1769d5ea4b4b` |"
+        },
+        {
+          "line": 102,
+          "text": "| `/root/DMD/data/development/seed42_holdout5/train.txt` | `source_overlay/data/development/seed42_holdout5/train.txt` | 671861 | `99e2aef7b68f4792ce1440c1196dd948310fdd7fc6479068595c96a30558b24e` |"
+        },
+        {
+          "line": 103,
+          "text": "| `/root/DMD/distillation/__init__.py` | `source_overlay/distillation/__init__.py` | 78 | `05b480c34971f4411ba7e0292a184d2ac4ef89a595cc7b3008f4d7ee0e9936fc` |"
+        },
+        {
+          "line": 104,
+          "text": "| `/root/DMD/distillation/core.py` | `source_overlay/distillation/core.py` | 2646 | `45c4cff601e442f01a42b7af5b19fd52474901c720c9cc76e60957d55441357b` |"
+        },
+        {
+          "line": 105,
+          "text": "| `/root/DMD/distillation/evaluate.py` | `source_overlay/distillation/evaluate.py` | 4591 | `76ccdb7d8f486d969872d9a50ab6935e4737615ddf3fb21e0e57930386a72a70` |"
+        },
+        {
+          "line": 106,
+          "text": "| `/root/DMD/distillation/export.py` | `source_overlay/distillation/export.py` | 2014 | `58d5b04bc1427ce690009049de4dea48ef8d1d242d7c142b9466353fa2cbfb68` |"
+        },
+        {
+          "line": 107,
+          "text": "| `/root/DMD/distillation/pipeline.py` | `source_overlay/distillation/pipeline.py` | 6860 | `bbc2ed349d97263d29439e325e846cddd2e5e11bfb22351c2eb8414bcb26c3d7` |"
+        },
+        {
+          "line": 108,
+          "text": "| `/root/DMD/distillation/smoke.py` | `source_overlay/distillation/smoke.py` | 4291 | `54255dba5e4d84b4123eabf70202bc569ae7836bffa16e7256f893a9a8b09ba0` |"
+        },
+        {
+          "line": 109,
+          "text": "| `/root/DMD/distillation/submission.py` | `source_overlay/distillation/submission.py` | 2068 | `112e835982873923c34fecd0dbb37ef58941c9cc3de6905021225e795c153498` |"
+        },
+        {
+          "line": 110,
+          "text": "| `/root/DMD/distillation/train.py` | `source_overlay/distillation/train.py` | 12048 | `cfcc9f5b926a0ddce5b1760a9c31eeca80bede987d065ed1bc676c8b0169d8d1` |"
+        },
+        {
+          "line": 111,
+          "text": "| `/root/DMD/docs/consistency_distillation.md` | `source_overlay/docs/consistency_distillation.md` | 12456 | `d9d08dca61df40681571b36ee2554965b993b2f353d952d311f9dc70041bec73` |"
+        },
+        {
+          "line": 112,
+          "text": "| `/root/DMD/docs/distillation_baseline.md` | `source_overlay/docs/distillation_baseline.md` | 10286 | `e4b6b98322bf2e4673719ea343b683ebd52bded00b8ba0f2712cd82ebf7b5069` |"
+        },
+        {
+          "line": 113,
+          "text": "| `/root/DMD/docs/distillation_results_review.md` | `source_overlay/docs/distillation_results_review.md` | 8350 | `3086f195a86c9e8528b40a57cf12be8fb39f441f56a24dbecb9a44b7a5699ccb` |"
+        },
+        {
+          "line": 114,
+          "text": "| `/root/DMD/docs/experiment_cleanup.md` | `source_overlay/docs/experiment_cleanup.md` | 4947 | `98a0f926751846c8722fb973ed5aac4eff85bc97ebb71427438027fb389cd1f7` |"
+        },
+        {
+          "line": 115,
+          "text": "| `/root/DMD/docs/low_nfe_budget_experiment.md` | `source_overlay/docs/low_nfe_budget_experiment.md` | 5666 | `30d21d93e3bbdf724dabfe3087f9ccecbc0ce1fd576de748b4a5a4deec95e4ca` |"
+        },
+        {
+          "line": 116,
+          "text": "| `/root/DMD/docs/model_architecture.md` | `source_overlay/docs/model_architecture.md` | 10937 | `6cedc83f0d8c93d75fada0038ba0007793abe371b3b742f8c20e8963b0a55e3f` |"
+        },
+        {
+          "line": 117,
+          "text": "| `/root/DMD/docs/repository_analysis.md` | `source_overlay/docs/repository_analysis.md` | 9020 | `f65b3625497115a781cacb578e453f19f8e199cfdeb88ae7c5ca9d40428a632f` |"
+        },
+        {
+          "line": 118,
+          "text": "| `/root/DMD/docs/sampling_defaults_and_ddim_cfg.md` | `source_overlay/docs/sampling_defaults_and_ddim_cfg.md` | 2981 | `c990c19dfcdec093bae82f5acb9f8ba95d341006b93744afb5b30c851dd5bfaf` |"
+        },
+        {
+          "line": 119,
+          "text": "| `/root/DMD/docs/sampling_steps_seeds_analysis.md` | `source_overlay/docs/sampling_steps_seeds_analysis.md` | 4915 | `a0f8c422f7ad062915756fbcc237966f020efeda504e451ee9f95ec3a9a0ab39` |"
+        },
+        {
+          "line": 120,
+          "text": "| `/root/DMD/docs/teacher_b64_100k.md` | `source_overlay/docs/teacher_b64_100k.md` | 6386 | `bd9aae3f33c46dbd42e8d1552dfe5402ba2ccca5d3112ebff105d28dd6c5e4da` |"
+        },
+        {
+          "line": 121,
+          "text": "| `/root/DMD/docs/teacher_b64_results_and_next.md` | `source_overlay/docs/teacher_b64_results_and_next.md` | 6522 | `9c141447da78665092d27bc6f55125c4bf1645a3a46f3c3fc215d05c8f56f901` |"
+        },
+        {
+          "line": 122,
+          "text": "| `/root/DMD/docs/teacher_baseline.md` | `source_overlay/docs/teacher_baseline.md` | 10621 | `e2625536323532778199de4c1e0f9d8c46b3a4ed29cf98ff7a37921a7c1e0c31` |"
+        },
+        {
+          "line": 123,
+          "text": "| `/root/DMD/docs/teacher_constant_results_and_fliponly.md` | `source_overlay/docs/teacher_constant_results_and_fliponly.md` | 7648 | `3cb1a66c2cc0afb4671ae9ff4f82df20ca00c053b78c6faf5b35825fff40647a` |"
+        },
+        {
+          "line": 124,
+          "text": "| `/root/DMD/docs/teacher_diagnosis.md` | `source_overlay/docs/teacher_diagnosis.md` | 5569 | `b6b136518daa3f80b863ac4cdded94ac896f335e1e773a393878bcace3477052` |"
+        },
+        {
+          "line": 125,
+          "text": "| `/root/DMD/docs/teacher_fliponly_preflight.json` | `source_overlay/docs/teacher_fliponly_preflight.json` | 521 | `3461585d5953850135462ab84dc69e932199d63c53d4133633b869b49d72e091` |"
+        },
+        {
+          "line": 126,
+          "text": "| `/root/DMD/docs/teacher_lr2e4_linear_aug_run.md` | `source_overlay/docs/teacher_lr2e4_linear_aug_run.md` | 2980 | `e12909404958c2976cb70f6715e69fc3919441692aefabc0c515675aaf20a90f` |"
+        },
+        {
+          "line": 127,
+          "text": "| `/root/DMD/docs/teacher_lr5e5_aug_run.md` | `source_overlay/docs/teacher_lr5e5_aug_run.md` | 3374 | `692e346ff883bc715375f85a966fde5436727b5f3fe1aa565b2090657a8cf8f9` |"
+        },
+        {
+          "line": 128,
+          "text": "| `/root/DMD/docs/teacher_remaining_experiments.md` | `source_overlay/docs/teacher_remaining_experiments.md` | 5020 | `77d4aeec3db03e84fae5bb34aae03340432a77f3b65ce007b97fbe9332f529df` |"
+        },
+        {
+          "line": 129,
+          "text": "| `/root/DMD/docs/teacher_review_50k.md` | `source_overlay/docs/teacher_review_50k.md` | 12246 | `d0f7bda1cd274152c8f97361933610c3516b7c9b40f260ccfa4586d3999ad9de` |"
+        },
+        {
+          "line": 130,
+          "text": "| `/root/DMD/docs/teacher_training_run.md` | `source_overlay/docs/teacher_training_run.md` | 5013 | `c38350b28cf8a1400aec6d9a9e7dc090ebfc35f091bb168e092a3abe14f52401` |"
+        },
+        {
+          "line": 131,
+          "text": "| `/root/DMD/model.py` | `source_overlay/model.py` | 3742 | `7f78c718bdbee8a00c783ed5d8be98f144edff405544b0ed0120050d256899e2` |"
+        },
+        {
+          "line": 132,
+          "text": "| `/root/DMD/scripts/audit_teacher.py` | `source_overlay/scripts/audit_teacher.py` | 8545 | `81794f20b575c6e61c2e8b7f0bf202984c747e9c63dbc29c2519f029d394a5c1` |"
+        },
+        {
+          "line": 133,
+          "text": "| `/root/DMD/scripts/benchmark_teacher.py` | `source_overlay/scripts/benchmark_teacher.py` | 3714 | `3ebfd7c2e5010cc0e99d9fec80bf4c9c70404e8d2f6403aa32ba9482045fbdf2` |"
+        },
+        {
+          "line": 134,
+          "text": "| `/root/DMD/scripts/compare_teacher_steps_seeds.py` | `source_overlay/scripts/compare_teacher_steps_seeds.py` | 2385 | `cb514daae05f96ee71813b1cbcb9c1f8876c1cdcb553e9e130e8acdb6b1f160d` |"
+        },
+        {
+          "line": 135,
+          "text": "| `/root/DMD/scripts/create_handoff.py` | `source_overlay/scripts/create_handoff.py` | 3686 | `c27cbdfa37dc059039983702153e6917319793cfc868ffea8ef3dd29c1db728e` |"
+        },
+        {
+          "line": 136,
+          "text": "| `/root/DMD/scripts/diagnose_teacher.py` | `source_overlay/scripts/diagnose_teacher.py` | 3283 | `4f75b45fc44c14136d06060733386784bf3cba4e6fe2bc00834d25ccd8f90673` |"
+        },
+        {
+          "line": 137,
+          "text": "| `/root/DMD/scripts/make_student_class_grids.py` | `source_overlay/scripts/make_student_class_grids.py` | 3570 | `afafa9a0fc3f252c92f45527df010142da46e21c11a325561091e79490af188c` |"
+        },
+        {
+          "line": 138,
+          "text": "| `/root/DMD/scripts/report_teacher_official.py` | `source_overlay/scripts/report_teacher_official.py` | 2842 | `be8a6c40b0a01a6c541fcb9f12a061a9abb18bdf24d67b5f800bc5d52f0b4c81` |"
+        },
+        {
+          "line": 139,
+          "text": "| `/root/DMD/scripts/review_ddim_cfg.sh` | `source_overlay/scripts/review_ddim_cfg.sh` | 395 | `c41bacc5233b17348f9526e4885b157df45722ed23f0433f215a805966819271` |"
+        },
+        {
+          "line": 140,
+          "text": "| `/root/DMD/scripts/review_teacher_run.py` | `source_overlay/scripts/review_teacher_run.py` | 2868 | `df8986e5034ef85ade20d6293c750649e31deefacedbffa14eb5c4d9a4a84b59` |"
+        },
+        {
+          "line": 141,
+          "text": "| `/root/DMD/scripts/run_consistency.sh` | `source_overlay/scripts/run_consistency.sh` | 1109 | `d0239d1f2b391c670a0a9bfd11c563fc62123c2542789eba9cf9e9af58c5c7f7` |"
+        },
+        {
+          "line": 142,
+          "text": "| `/root/DMD/scripts/run_fixed_guidance_distillation.sh` | `source_overlay/scripts/run_fixed_guidance_distillation.sh` | 670 | `642dfb2d457cd4c682390ee04bc768cb5437c847602013ca39dfc6bce9c7ba4c` |"
+        },
+        {
+          "line": 143,
+          "text": "| `/root/DMD/scripts/run_low_nfe_budget.py` | `source_overlay/scripts/run_low_nfe_budget.py` | 7016 | `8ee102272e32a951b595be159412c87076da5494b6f7bfcc62385468d9eb84b2` |"
+        },
+        {
+          "line": 144,
+          "text": "| `/root/DMD/scripts/run_low_nfe_budget.sh` | `source_overlay/scripts/run_low_nfe_budget.sh` | 380 | `fae62768ff5881bed10e38850a62bb4e3228465c0049b440d3a34817c01d8545` |"
+        },
+        {
+          "line": 145,
+          "text": "| `/root/DMD/scripts/run_teacher_next_experiments.sh` | `source_overlay/scripts/run_teacher_next_experiments.sh` | 464 | `d4d3b3c683c74d979783cbbeb893a2e9ff5fe36b67e7516c73668fb95fb72b40` |"
+        },
+        {
+          "line": 146,
+          "text": "| `/root/DMD/scripts/run_teacher_to_students.sh` | `source_overlay/scripts/run_teacher_to_students.sh` | 693 | `74d449cf6a2b0c003faa6fe988a4ccd608d27db84b1f0f78df7a935b66926765` |"
+        },
+        {
+          "line": 147,
+          "text": "| `/root/DMD/scripts/supplement_ddim_diagnostics.py` | `source_overlay/scripts/supplement_ddim_diagnostics.py` | 2531 | `a84cd44e7744daa65f986fe254638610dc0be3bc0c140345b0f919ebecc38dd5` |"
+        },
+        {
+          "line": 148,
+          "text": "| `/root/DMD/scripts/train_teacher_b128.sh` | `source_overlay/scripts/train_teacher_b128.sh` | 1104 | `cb6fb155c159a0a8f41a00bb718f8d9723d75fec1516fa43c54b272a07a7dbdd` |"
+        },
+        {
+          "line": 149,
+          "text": "| `/root/DMD/scripts/train_teacher_b64.sh` | `source_overlay/scripts/train_teacher_b64.sh` | 1102 | `c34d60e150c333506eaf68a4530b4ac3f0432f023280e1eed927438dd36abef3` |"
+        },
+        {
+          "line": 150,
+          "text": "| `/root/DMD/scripts/train_teacher_b64_constant.sh` | `source_overlay/scripts/train_teacher_b64_constant.sh` | 1120 | `c1a0e1f7f2c02fb1b9f02354ca42f2cbe299ab622d504841e7a2e7d3dadee3ce` |"
+        },
+        {
+          "line": 151,
+          "text": "| `/root/DMD/scripts/train_teacher_b64_fliponly_constant.sh` | `source_overlay/scripts/train_teacher_b64_fliponly_constant.sh` | 1138 | `74ec4f69606433b6ef31821abb275d5c35227eb86d20efa36dcc8b7a0936e341` |"
+        },
+        {
+          "line": 152,
+          "text": "| `/root/DMD/scripts/train_teacher_b64_noaug_constant.sh` | `source_overlay/scripts/train_teacher_b64_noaug_constant.sh` | 1132 | `e0040de77808e194d35961eefa4be4f3604d6c9e7f2bd20399d9ce37e0e6c582` |"
+        },
+        {
+          "line": 153,
+          "text": "| `/root/DMD/scripts/train_teacher_lr2e4_linear_aug.sh` | `source_overlay/scripts/train_teacher_lr2e4_linear_aug.sh` | 797 | `eaa8c5f1d88fa33f18d6f9dd9daf9ad0ad07027b1cfdd9a49323fd61658ea96a` |"
+        },
+        {
+          "line": 154,
+          "text": "| `/root/DMD/scripts/train_teacher_lr5e5_aug.sh` | `source_overlay/scripts/train_teacher_lr5e5_aug.sh` | 783 | `4d171b1ccfbeea0f4fa4095aee551bff5196a818aa86cc7558d656561457dcd4` |"
+        },
+        {
+          "line": 155,
+          "text": "| `/root/DMD/scripts/train_teacher_memorization64.sh` | `source_overlay/scripts/train_teacher_memorization64.sh` | 1152 | `b468b9743b49966a5a369e2ce737ab3a215987e0f98f715d7b54f52d93062fbc` |"
+        },
+        {
+          "line": 156,
+          "text": "| `/root/DMD/scripts/train_teacher_v1.sh` | `source_overlay/scripts/train_teacher_v1.sh` | 784 | `79f886a3f58d40a39114c0bc03c3809cfbffed4591a0a9883117da4b53bbdff3` |"
+        },
+        {
+          "line": 157,
+          "text": "| `/root/DMD/teacher/__init__.py` | `source_overlay/teacher/__init__.py` | 52 | `b5a93aff89ca44a04577ba300e7b1e3ec405f18678045b892d2d8e512d687227` |"
+        },
+        {
+          "line": 158,
+          "text": "| `/root/DMD/teacher/cfg.py` | `source_overlay/teacher/cfg.py` | 509 | `74ef535faba677a09f6fce384a4f02d7c3ad3ae4cb85362d4edfc7354c019f30` |"
+        },
+        {
+          "line": 159,
+          "text": "| `/root/DMD/teacher/config.py` | `source_overlay/teacher/config.py` | 3907 | `7cb5df078b38aeb8a6fdb78c232167fa5c2dee982a1718deb1926c93f576cf31` |"
+        },
+        {
+          "line": 160,
+          "text": "| `/root/DMD/teacher/data.py` | `source_overlay/teacher/data.py` | 3009 | `39140525868a7aa6e4cc48ea4e253dd4f68c545d41a317650ca36bc582e07ea1` |"
+        },
+        {
+          "line": 161,
+          "text": "| `/root/DMD/teacher/diffusion.py` | `source_overlay/teacher/diffusion.py` | 3941 | `022413888e08ca0c5a1c954f8eee38455cccf237c78c3250c2f5367ec32fead4` |"
+        },
+        {
+          "line": 162,
+          "text": "| `/root/DMD/teacher/evaluate.py` | `source_overlay/teacher/evaluate.py` | 8679 | `5ae76f9d3910500336450fe41ab10d2759370714a74863a4bcb4b4c0d45b80c7` |"
+        },
+        {
+          "line": 163,
+          "text": "| `/root/DMD/teacher/model.py` | `source_overlay/teacher/model.py` | 7323 | `6180f84fceccabf9164dda8a71cf5db29794ac700cf0e6b3e064131364adb9de` |"
+        },
+        {
+          "line": 164,
+          "text": "| `/root/DMD/teacher/sample.py` | `source_overlay/teacher/sample.py` | 2594 | `43f2e25af503a2fb5bffa52269db68422357328805f5ad2a3d782e0e51f8735f` |"
+        },
+        {
+          "line": 165,
+          "text": "| `/root/DMD/teacher/smoke.py` | `source_overlay/teacher/smoke.py` | 5668 | `c2ac1858d3ad7460e8fb8c805139c27e2ba7873ea779369c856d0636c9cdf281` |"
+        },
+        {
+          "line": 166,
+          "text": "| `/root/DMD/teacher/splits.py` | `source_overlay/teacher/splits.py` | 2393 | `f8c2b7a77545e784b71dbffa4d29ed45fd4f948dcff92ab46946784e73e3f5a1` |"
+        },
+        {
+          "line": 167,
+          "text": "| `/root/DMD/teacher/train.py` | `source_overlay/teacher/train.py` | 16107 | `9c76cd0946689d03b93c4abb9570e964c6b86fc16a96293ea5d01b11a98b23d8` |"
+        },
+        {
+          "line": 168,
+          "text": "| `/root/DMD/teacher/utils.py` | `source_overlay/teacher/utils.py` | 2526 | `4854bf81955d0b76c6022f7cba21b0425bd12da171878d6eab6fa2c6fb3948fc` |"
+        },
+        {
+          "line": 169,
+          "text": "| `/root/DMD/OVERLAY_MANIFEST.json` | `source_overlay/OVERLAY_MANIFEST.json` | 15646 | `04a741993d4e5c0d34ede8b7a2c5b96f87ba9d5a3b2b7cfac4abffbc1ee7707f` |"
+        },
+        {
+          "line": 170,
+          "text": "| `/root/DMD/README.md` | `source_overlay/README.md` | 19357 | `03e47b87bb042bb133300395a9d40857958daa9b7127114c64ebdc10f86b1af0` |"
+        },
+        {
+          "line": 171,
+          "text": "| `/root/DMD/requirements.txt` | `source_overlay/requirements.txt` | 50 | `e30940e3e890e6e5463f617475b97d7415e73f349fbf4070936aa284f0573eb2` |"
+        },
+        {
+          "line": 172,
+          "text": "| `/root/DMD/evaluate.py` | `source_overlay/evaluate.py` | 5578 | `f201320f3505ad478096313eedf657388a0c6aca4af456095509e13807228adb` |"
+        },
+        {
+          "line": 173,
+          "text": "| `/root/DMD/dataset.py` | `source_overlay/dataset.py` | 5923 | `47aea2b4ae6833198cbfa0801e0cc63fd5425dbe72bb77aec7f19a97ad90d063` |"
+        },
+        {
+          "line": 174,
+          "text": "| `/root/DMD/download_dataset.py` | `source_overlay/download_dataset.py` | 3553 | `e8e882dec2a83dcf5bdbfc1eb592df50948966a66d2a147ea87332652a8190a0` |"
+        },
+        {
+          "line": 175,
+          "text": "| `/root/DMD/src/__init__.py` | `source_overlay/src/__init__.py` | 0 | `e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855` |"
+        },
+        {
+          "line": 176,
+          "text": "| `/root/DMD/src/utils.py` | `source_overlay/src/utils.py` | 1027 | `f5a02c07d8ad190969468b5ef947f0037a6943deb98e7903cd193361f742988f` |"
+        },
+        {
+          "line": 177,
+          "text": "| `/root/DMD/data/pokemon-generation-one-22k/train_split.txt` | `source_overlay/data/pokemon-generation-one-22k/train_split.txt` | 703371 | `c4068bdec8c5994fa14887d3335e762dd6a4da1bc6394a6df7fae96d293138c0` |"
+        },
+        {
+          "line": 178,
+          "text": "| `/root/DMD/data/pokemon-generation-one-22k/val_split.txt` | `source_overlay/data/pokemon-generation-one-22k/val_split.txt` | 153787 | `6dfba46a82c1bb329287d6da0f87be1b3b71d26c217150bf681f37cce4264df0` |"
+        },
+        {
+          "line": 179,
+          "text": "| `/root/DMD/data/pokemon-generation-one-22k/category_to_id.json` | `source_overlay/data/pokemon-generation-one-22k/category_to_id.json` | 2656 | `7c27ec2a15fa4f70b5729319d596d3a80bc528cdeeb02f36b88877a6545b77e8` |"
+        },
+        {
+          "line": 180,
+          "text": "| `/root/DMD/checkpoints/one_nfe.ckpt` | `EXCLUDED` | 195649098 | `8173c059ca3dda5d63c2c3a9d463b100218867c5fc08b995f5c93162844f7266` |"
+        },
+        {
+          "line": 181,
+          "text": "| `/root/DMD/checkpoints/few_nfe.ckpt` | `EXCLUDED` | 195646254 | `d3c6d0cccc1b81d1709ed090abd68961197ef7417a7c6ae67724835bf7bfa596` |"
+        },
+        {
+          "line": 182,
+          "text": "| `/root/DMD/experiments/night_run/fresh_teacher/final.pt` | `EXCLUDED` | 978259214 | `b5c09c58954352f71291a2c4421c5f542ac6abb392acda4074c1f118ab9c3a27` |"
+        },
+        {
+          "line": 183,
+          "text": "| `/root/DMD/experiments/night_run/dmd_preserve_team/dmd_step_002500.ckpt` | `checkpoints/dmd_step_002500.ckpt` | 195653282 | `acc99889d73d905c1c31da57e1f2434b396a6640dd854a96cfdf1b9cc07d708c` |"
+        },
+        {
+          "line": 184,
+          "text": "| `/root/DMD/experiments/night_run/dmd_preserve_team/dmd_step_005000.ckpt` | `EXCLUDED` | 195653282 | `0043973b738684c2e703d7c0e303fafcba5815048179aa42ff3d141edd48ed44` |"
+        },
+        {
+          "line": 185,
+          "text": "| `/root/DMD/experiments/night_run/dmd_preserve_team/dmd_step_010000.ckpt` | `EXCLUDED` | 195653282 | `b0eb8d869dd63ab526f7f957aed10ec96743d199807c742ea7dedd84e377d328` |"
+        },
+        {
+          "line": 186,
+          "text": "| `/root/DMD/experiments/night_run/dmd_preserve_team/selected_one_nfe.ckpt` | `EXCLUDED` | 195653282 | `acc99889d73d905c1c31da57e1f2434b396a6640dd854a96cfdf1b9cc07d708c` |"
+        },
+        {
+          "line": 187,
+          "text": "| `/root/DMD/experiments/night_run/dmd_preserve_team/latest.pt` | `EXCLUDED` | 1369590460 | `a568884c06e0c0aa1bda6952c7b683fb6e06fd88d974b208416c474185cf51e4` |"
+        },
+        {
+          "line": 188,
+          "text": "| `/root/DMD/experiments/night_run/dmd_reproduce.py` | `scripts/dmd_reproduce.py` | 15509 | `27f44ddccb02cbd9ebca69bfbe94863908efebc8b2ac6348968edb4246248769` |"
+        },
+        {
+          "line": 189,
+          "text": "| `/root/DMD/experiments/night_run/dmd_preserve_team.py` | `scripts/dmd_preserve_team.py` | 15695 | `32cd2510ef82e2512ce57fd1370d52f6e27d4df6974e5c0249fc6f80f8a355d5` |"
+        },
+        {
+          "line": 190,
+          "text": "| `/root/DMD/experiments/night_run/dmd_preserve_team/config.json` | `configs/dmd_config.json` | 1410 | `c5e418711f104f28b8b936e495606b4ef5ce4991fb2345527c856287c44d3ce9` |"
+        },
+        {
+          "line": 191,
+          "text": "| `/root/DMD/experiments/night_run/dmd_preserve_team/REPORT.md` | `reports/REPORT.md` | 4435 | `403bf6bbe92298670693b34cd1c1285b08b7a9202235dbc1ad9ce6000461658c` |"
+        },
+        {
+          "line": 192,
+          "text": "| `/root/DMD/experiments/night_run/dmd_preserve_team/results.json` | `reports/results.json` | 1732 | `cf9824e6f614f80d98f79a23ca14b445d14269c81acc406dc8f323164bf60554` |"
+        },
+        {
+          "line": 193,
+          "text": "| `/root/DMD/experiments/night_run/dmd_preserve_team/selected_model.json` | `reports/selected_model.json` | 701 | `f994052bd8ebafc665f50e656a3c4cac71206555c45f8f43045c214ac35275e2` |"
+        },
+        {
+          "line": 194,
+          "text": "| `/root/DMD/experiments/night_run/dmd_preserve_team/fake_score_warmup.json` | `reports/fake_score_warmup.json` | 197 | `1ba353b5f9c5fb6f376be6eb86e69d77d54fef49d3c10f90fe64638241dbf048` |"
+        },
+        {
+          "line": 195,
+          "text": "| `/root/DMD/experiments/night_run/dmd_preserve_team/input_checkpoint_hashes.json` | `reports/input_checkpoint_hashes.json` | 165 | `6085e2ef7aec757dd9ba5c5a9dfe12e749e0a45026633129474ce42bd41b6634` |"
+        },
+        {
+          "line": 196,
+          "text": "| `/root/DMD/experiments/night_run/dmd_preserve_team/train.log` | `reports/train.log` | 2564836 | `c1ec92d0aa28e913b040669c86842881ab8c827db8c29301b50b02b624a37711` |"
+        },
+        {
+          "line": 197,
+          "text": "| `/root/DMD/experiments/night_run/dmd_reproduce_console.log` | `reports/dmd_reproduce_console.log` | 181976 | `e6278628e5ea9a8de44e863cb4203f7be18572a5835c58539be6803d7de3d112` |"
+        },
+        {
+          "line": 198,
+          "text": "| `/root/DMD/experiments/night_run/dmd_preserve_team/supplied_baseline/metrics.json` | `reports/metrics/supplied_baseline.json` | 383 | `14d28f0bab26196affdb0f257b546eaf1bca08a56612c89f673fd441871c6701` |"
+        },
+        {
+          "line": 199,
+          "text": "| `/root/DMD/experiments/night_run/dmd_preserve_team/dmd_002500/metrics.json` | `reports/metrics/dmd_002500.json` | 404 | `fe4de23b37eea58655dafd5d7f03ad2b10e2370bcce9db43d6f8730d5a49176d` |"
+        },
+        {
+          "line": 200,
+          "text": "| `/root/DMD/experiments/night_run/dmd_preserve_team/dmd_005000/metrics.json` | `reports/metrics/dmd_005000.json` | 404 | `776fe34a608fb9f08447841f1c722fe0a044e4446a60b4bda33102b5ee17e0ca` |"
+        },
+        {
+          "line": 201,
+          "text": "| `/root/DMD/experiments/night_run/dmd_preserve_team/dmd_010000/metrics.json` | `reports/metrics/dmd_010000.json` | 406 | `2647c02a0c4b3b1a2441c2c3fc38881d385711834874b45ef373b296f3b2537a` |"
+        },
+        {
+          "line": 202,
+          "text": "| `/root/DMD/experiments/night_run/audit_results.json` | `provenance/audit_results.json` | 1230 | `1e7442a02be3ac081f4c0f461d55362518744a766c7d73ce9ea8548a3750bc0d` |"
+        },
+        {
+          "line": 203,
+          "text": "| `/root/DMD/experiments/night_run/reference_manifest.json` | `provenance/reference_manifest.json` | 141955 | `a833ea989bab29e1751805f23d8b855c03add77ceb5d99f8eaf4250cb7b16e65` |"
+        },
+        {
+          "line": 204,
+          "text": "| `/root/AIC313-Project-FastGen/experiments/night_run/fresh_teacher/config.json` | `provenance/historical_lineage_evidence/fresh_teacher_config.json` | 1640 | `2a35da044d68976d00eea01a9c17ef8631cf837863f4a829fbe35a013021e440` |"
+        },
+        {
+          "line": 205,
+          "text": "| `/root/AIC313-Project-FastGen/experiments/night_run/fresh_teacher/metrics.json` | `provenance/historical_lineage_evidence/fresh_teacher_metrics.json` | 3464 | `a9a543f9a5250488cc4b19305d8ae8dc531926479fe18a6abdeb157f053f90d9` |"
+        },
+        {
+          "line": 206,
+          "text": "| `/root/AIC313-Project-FastGen/experiments/night_run/teacher_preflight/metrics.json` | `provenance/historical_lineage_evidence/teacher_preflight_metrics.json` | 3333 | `9e02b189d68a10125b20ce827ec6f19a4f17e34a252e57d046c6d6f9b43c6af8` |"
+        },
+        {
+          "line": 207,
+          "text": "| `/root/AIC313-Project-FastGen/experiments/night_run/teacher_preflight/config.json` | `provenance/historical_lineage_evidence/teacher_preflight_config.json` | 1638 | `90b70b513dff1af7d899431ac9568dffd8dac73d509fc3734fdfda0648ec32e6` |"
+        },
+        {
+          "line": 208,
+          "text": "| `/root/AIC313-Project-FastGen/experiments/night_run/USER_CHECKPOINT_ATTESTATION.json` | `provenance/historical_lineage_evidence/USER_CHECKPOINT_ATTESTATION.json` | 915 | `7ea35c0144f0960da6581595af800fa27e87fbcfc45ec53d273be76fc1ba17c8` |"
+        },
+        {
+          "line": 209,
+          "text": "| `/root/AIC313-Project-FastGen/experiments/night_run/COURSE_RULES_OVERRIDE.md` | `provenance/historical_lineage_evidence/COURSE_RULES_OVERRIDE.md` | 1920 | `584e915604c900cd1c6f26b309edbfbf1e174205fa0dcd67400860aaa04c4665` |"
+        },
+        {
+          "line": 210,
+          "text": "| `/root/AIC313-Project-FastGen/experiments/night_run/LINEAGE_REAUDIT.md` | `provenance/historical_lineage_evidence/LINEAGE_REAUDIT.md` | 4679 | `2cf85840830a446d6dec8a983835eaa2214860568abe3e6b08cf1591007c892d` |"
+        },
+        {
+          "line": 211,
+          "text": "| `/root/AIC313-Project-FastGen/experiments/night_run/lineage_reaudit.json` | `provenance/historical_lineage_evidence/lineage_reaudit.json` | 1946 | `7678a75ed8e3ea760b63adb8552df5c141555807fa5aa0f569f19edd73e4270d` |"
+        },
+        {
+          "line": 212,
+          "text": "| `/root/AIC313-Project-FastGen/experiments/night_run/overnight.py` | `provenance/historical_lineage_evidence/overnight.py` | 13151 | `3653154364bbff2afbf05f32f41e61b8934857b6fd4c6332ab65b6575a91a3cf` |"
+        },
+        {
+          "line": 213,
+          "text": "| `/root/AIC313-Project-FastGen/experiments/night_run/dmd_preserve_team/reproduction/MANIFEST.json` | `provenance/historical_lineage_evidence/previous_run_reproduction_manifest.json` | 3121 | `f98cf81467f4ec3ad2484f7f83d77667c3968b6641a53896b6af8c665cb7b6be` |"
+        },
+        {
+          "line": 214,
+          "text": "| `/root/AIC313-Project-FastGen/experiments/night_run/three_frozen_models_official_comparison/team_one_nfe/metrics.json` | `provenance/historical_lineage_evidence/official_baseline_metrics.json` | 772 | `6343eb1c250ab424ea01dbe19cd4c496e297d7a1aaf6b582e4e4afd3c26597de` |"
+        },
+        {
+          "line": 215,
+          "text": "| `/root/AIC313-Project-FastGen/experiments/night_run/three_frozen_models_official_comparison/dmd_one_nfe/metrics.json` | `provenance/historical_lineage_evidence/official_older_different_dmd_metrics.json` | 813 | `f9890e6be557bd7a2d7106e86882856e40269346e6261fed9d0c5b7aea7dd3af` |"
+        },
+        {
+          "line": 216,
+          "text": "| `/root/AIC313-Project-FastGen/experiments/night_run/fresh_teacher/config.json` | `configs/fresh_teacher_config.json` | 1640 | `2a35da044d68976d00eea01a9c17ef8631cf837863f4a829fbe35a013021e440` |"
+        }
+      ]
+    },
+    {
+      "file": "INPUTS.md",
+      "classification": "documented provenance, explicit external input, safety guard, or verification path",
+      "hits": [
+        {
+          "line": 13,
+          "text": "| Team 1-NFE | `/root/DMD/checkpoints/one_nfe.ckpt` | 195649098 | Yes |"
+        },
+        {
+          "line": 14,
+          "text": "| Team 4-NFE | `/root/DMD/checkpoints/few_nfe.ckpt` | 195646254 | Yes |"
+        },
+        {
+          "line": 15,
+          "text": "| Fresh diffusion | `/root/DMD/experiments/night_run/fresh_teacher/final.pt` | 978259214 | Yes |"
+        },
+        {
+          "line": 27,
+          "text": "The original `/root/DMD/experiments/night_run/dmd_preserve_team/latest.pt` is 1369590460 bytes, SHA256 `a568884c06e0c0aa1bda6952c7b683fb6e06fd88d974b208416c474185cf51e4`. It is excluded. It contains **10000-step**, not 2500-step, optimizer/fake-score/RNG state. It is not required for a fresh rerun; using it for continuation requires a separately reviewed resume implementation. The archived script "
+        }
+      ]
+    },
+    {
+      "file": "reproduction/prepare_development_reference.py",
+      "classification": "documented provenance, explicit external input, safety guard, or verification path",
+      "hits": [
+        {
+          "line": 20,
+          "text": "        assert workspace != Path('/root/DMD'), 'Refusing to write the inspected source workspace'"
+        }
+      ]
+    },
+    {
+      "file": "reproduction/RETRAIN_GUIDE.md",
+      "classification": "documented provenance, explicit external input, safety guard, or verification path",
+      "hits": [
+        {
+          "line": 5,
+          "text": "The archived script creates files at import and has no CLI/config reader or resume mode. **Never run it in `/root/DMD` or directly from this package's `scripts/` directory.** Use a fresh checkout, restore its original relative location, and retain the package as an archive. Do not resolve an existing-output failure by deleting an old experiment."
+        },
+        {
+          "line": 73,
+          "text": "cp -n /root/DMD/checkpoints/one_nfe.ckpt checkpoints/one_nfe.ckpt"
+        },
+        {
+          "line": 74,
+          "text": "cp -n /root/DMD/checkpoints/few_nfe.ckpt checkpoints/few_nfe.ckpt"
+        },
+        {
+          "line": 75,
+          "text": "cp -n /root/DMD/experiments/night_run/fresh_teacher/final.pt experiments/night_run/fresh_teacher/final.pt"
+        },
+        {
+          "line": 93,
+          "text": "The original working directory was `/root/DMD`; for your rerun remain in the new checkout. This is the exact recovered command, executable path included:"
+        },
+        {
+          "line": 99,
+          "text": "/root/miniconda3/envs/fastgen/bin/python \\"
+        }
+      ]
+    },
+    {
+      "file": "configs/fresh_teacher_config.json",
+      "classification": "documented provenance, explicit external input, safety guard, or verification path",
+      "hits": [
+        {
+          "line": 3,
+          "text": "  \"data_root\": \"/root/AIC313-Project-FastGen/experiments/night_run/development_images\","
+        },
+        {
+          "line": 4,
+          "text": "  \"split_dir\": \"/root/AIC313-Project-FastGen/data/pokemon-generation-one-22k\","
+        },
+        {
+          "line": 42,
+          "text": "  \"output_dir\": \"/root/AIC313-Project-FastGen/experiments/night_run\","
+        },
+        {
+          "line": 51,
+          "text": "  \"train_manifest\": \"/root/AIC313-Project-FastGen/data/development/seed42_holdout5/train.txt\","
+        },
+        {
+          "line": 52,
+          "text": "  \"development_reference_manifest\": \"/root/AIC313-Project-FastGen/data/development/seed42_holdout5/holdout.txt\","
+        }
+      ]
+    },
+    {
+      "file": "verification/preflight_summary.md",
+      "classification": "documented provenance, explicit external input, safety guard, or verification path",
+      "hits": [
+        {
+          "line": 5,
+          "text": "The selected generator is verified from packaged code and a single checkpoint in a process whose working directory is outside /root/DMD. Final-location verification is in nfe_check.json. Original input model counts, endpoint NFE and state-schema equality are recorded separately. Training memory comes from historical logs, not a new training run. No official FID is recomputed. The source hash tree "
+        }
+      ]
+    },
+    {
+      "file": "verification/split_reference_check.json",
+      "classification": "documented provenance, explicit external input, safety guard, or verification path",
+      "hits": [
+        {
+          "line": 24,
+          "text": "    \"output\": \"/root/DMD/experiments/night_run/reference_development\","
+        }
+      ]
+    },
+    {
+      "file": "verification/nfe_check.json",
+      "classification": "documented provenance, explicit external input, safety guard, or verification path",
+      "hits": [
+        {
+          "line": 3,
+          "text": "  \"checkpoint\": \"/root/dmd_handoff_2500/checkpoints/dmd_step_002500.ckpt\","
+        },
+        {
+          "line": 56,
+          "text": "    \"/root/dmd_handoff_2500/checkpoints/dmd_step_002500.ckpt\""
+        },
+        {
+          "line": 58,
+          "text": "  \"module_path\": \"/root/dmd_handoff_2500/source_overlay/model.py\","
+        }
+      ]
+    },
+    {
+      "file": "verification/staging_nfe_check.json",
+      "classification": "documented provenance, explicit external input, safety guard, or verification path",
+      "hits": [
+        {
+          "line": 3,
+          "text": "  \"checkpoint\": \"/tmp/dmd_handoff_build_ZXz9pEZX/package/checkpoints/dmd_step_002500.ckpt\","
+        },
+        {
+          "line": 56,
+          "text": "    \"/tmp/dmd_handoff_build_ZXz9pEZX/package/checkpoints/dmd_step_002500.ckpt\""
+        },
+        {
+          "line": 58,
+          "text": "  \"module_path\": \"/tmp/dmd_handoff_build_ZXz9pEZX/package/source_overlay/model.py\","
+        }
+      ]
+    },
+    {
+      "file": "verification/source_execution_view_differences.json",
+      "classification": "documented provenance, explicit external input, safety guard, or verification path",
+      "hits": [
+        {
+          "line": 5,
+          "text": "    \"source_root\": \"/root/DMD\","
+        },
+        {
+          "line": 34,
+          "text": "    \"source_root\": \"/root/DMD\","
+        }
+      ]
+    },
+    {
+      "file": "verification/source_hashes.json",
+      "classification": "documented provenance, explicit external input, safety guard, or verification path",
+      "hits": [
+        {
+          "line": 2,
+          "text": "  \"source_root\": \"/root/DMD\","
+        }
+      ]
+    },
+    {
+      "file": "verification/preflight_current.json",
+      "classification": "documented provenance, explicit external input, safety guard, or verification path",
+      "hits": [
+        {
+          "line": 3,
+          "text": "  \"workspace\": \"/root/DMD\","
+        }
+      ]
+    },
+    {
+      "file": "verification/source_unchanged.json",
+      "classification": "documented provenance, explicit external input, safety guard, or verification path",
+      "hits": [
+        {
+          "line": 3,
+          "text": "  \"source_root\": \"/root/DMD\","
+        }
+      ]
+    },
+    {
+      "file": "verification/environment.txt",
+      "classification": "documented provenance, explicit external input, safety guard, or verification path",
+      "hits": [
+        {
+          "line": 4,
+          "text": "  \"python_executable\": \"/root/miniconda3/envs/fastgen/bin/python\","
+        }
+      ]
+    },
+    {
+      "file": "source_overlay/docs/teacher_lr2e4_linear_aug_run.md",
+      "classification": "historical source or metadata; archival",
+      "hits": [
+        {
+          "line": 6,
+          "text": "[teacher_review_50k.md](/root/workspace_distillation/docs/teacher_review_50k.md) for"
+        },
+        {
+          "line": 37,
+          "text": "cd /root/workspace_distillation"
+        }
+      ]
+    },
+    {
+      "file": "source_overlay/docs/teacher_constant_results_and_fliponly.md",
+      "classification": "historical source or metadata; archival",
+      "hits": [
+        {
+          "line": 128,
+          "text": "cd /root/workspace_distillation"
+        }
+      ]
+    },
+    {
+      "file": "source_overlay/docs/teacher_b64_100k.md",
+      "classification": "historical source or metadata; archival",
+      "hits": [
+        {
+          "line": 6,
+          "text": "experiments are in [teacher_b64_results_and_next.md](/root/workspace_distillation/docs/teacher_b64_results_and_next.md)."
+        },
+        {
+          "line": 78,
+          "text": "cd /root/workspace_distillation"
+        }
+      ]
+    },
+    {
+      "file": "source_overlay/docs/teacher_training_run.md",
+      "classification": "historical source or metadata; archival",
+      "hits": [
+        {
+          "line": 3,
+          "text": "Completed: 100,000 optimizer steps, 22,842.83 seconds, final checkpoint written on 2026-09-27 around 21:58 UTC. The tmux training session ended normally. Quality remains insufficient; see [teacher_diagnosis.md](/root/workspace_distillation/docs/teacher_diagnosis.md) for controlled sample comparisons and FID reporting."
+        },
+        {
+          "line": 26,
+          "text": "The run uses [teacher_ddpm_cfg_v1.json](/root/workspace_distillation/configs/teacher/teacher_ddpm_cfg_v1.json) and [train_teacher_v1.sh](/root/workspace_distillation/scripts/train_teacher_v1.sh). It was launched inside tmux as session `fastgen_teacher_v1` at 2026-09-27 15:37:18 UTC. The script appends all stdout/stderr to `experiments/teacher_ddpm_cfg_v1/console.log` and writes an exit code when t"
+        }
+      ]
+    },
+    {
+      "file": "source_overlay/docs/distillation_baseline.md",
+      "classification": "historical source or metadata; archival",
+      "hits": [
+        {
+          "line": 172,
+          "text": "cd /root/workspace_distillation"
+        }
+      ]
+    },
+    {
+      "file": "source_overlay/docs/teacher_b64_results_and_next.md",
+      "classification": "historical source or metadata; archival",
+      "hits": [
+        {
+          "line": 101,
+          "text": "cd /root/workspace_distillation"
+        }
+      ]
+    },
+    {
+      "file": "source_overlay/docs/teacher_baseline.md",
+      "classification": "historical source or metadata; archival",
+      "hits": [
+        {
+          "line": 19,
+          "text": "[teacher_b64_results_and_next.md](/root/workspace_distillation/docs/teacher_b64_results_and_next.md)."
+        },
+        {
+          "line": 21,
+          "text": "Active fresh baseline: [batch 64 / 100,000 updates and ordered development comparisons](/root/workspace_distillation/docs/teacher_b64_100k.md)."
+        },
+        {
+          "line": 29,
+          "text": "VRAM/throughput are recorded in [teacher_review_50k.md](/root/workspace_distillation/docs/teacher_review_50k.md)."
+        },
+        {
+          "line": 34,
+          "text": "Current run: [LR 2e-4 with linear decay, augmentation, fresh 50,000 updates](/root/workspace_distillation/docs/teacher_lr2e4_linear_aug_run.md)."
+        },
+        {
+          "line": 39,
+          "text": "Settings and logging are documented in [teacher_lr5e5_aug_run.md](/root/workspace_distillation/docs/teacher_lr5e5_aug_run.md)."
+        },
+        {
+          "line": 41,
+          "text": "Status: implementation and real-data smoke checks complete. A sustained 100,000-step teacher run has finished, but sample quality remains insufficient. Current diagnosis and FID reporting are documented in [teacher_diagnosis.md](/root/workspace_distillation/docs/teacher_diagnosis.md)."
+        },
+        {
+          "line": 61,
+          "text": "The initial config uses batch size 8, gradient accumulation 2, AdamW at `2e-4`, 2,000-step warmup, gradient clip 1, EMA decay `0.9999`, bf16 autocast on A100, 200,000 target optimizer steps, and seed 42. The first sustained training run instead uses the literature-informed [teacher_ddpm_cfg_v1.json](/root/workspace_distillation/configs/teacher/teacher_ddpm_cfg_v1.json), with its exact choices and "
+        }
+      ]
+    },
+    {
+      "file": "source_overlay/docs/teacher_lr5e5_aug_run.md",
+      "classification": "historical source or metadata; archival",
+      "hits": [
+        {
+          "line": 38,
+          "text": "cd /root/workspace_distillation"
+        }
+      ]
+    },
+    {
+      "file": "source_overlay/docs/low_nfe_budget_experiment.md",
+      "classification": "historical source or metadata; archival",
+      "hits": [
+        {
+          "line": 53,
+          "text": "cd /root/workspace_distillation"
+        }
+      ]
+    },
+    {
+      "file": "source_overlay/docs/model_architecture.md",
+      "classification": "historical source or metadata; archival",
+      "hits": [
+        {
+          "line": 4,
+          "text": "실제 [config](/root/workspace_distillation/configs/teacher/teacher_b64_100k.json)와"
+        },
+        {
+          "line": 5,
+          "text": "[모델 구현](/root/workspace_distillation/teacher/model.py)을 기준으로 작성했다."
+        },
+        {
+          "line": 169,
+          "text": "CFG 정의는 [teacher/cfg.py](/root/workspace_distillation/teacher/cfg.py)에 한 번만 존재한다."
+        },
+        {
+          "line": 232,
+          "text": "| [teacher/model.py](/root/workspace_distillation/teacher/model.py) | U-Net, residual/attention block, time/class embedding |"
+        },
+        {
+          "line": 233,
+          "text": "| [teacher/diffusion.py](/root/workspace_distillation/teacher/diffusion.py) | Noise schedule, epsilon MSE, DDPM/DDIM sampling |"
+        },
+        {
+          "line": 234,
+          "text": "| [teacher/cfg.py](/root/workspace_distillation/teacher/cfg.py) | 공통 CFG 식 |"
+        },
+        {
+          "line": 235,
+          "text": "| [teacher/train.py](/root/workspace_distillation/teacher/train.py) | AdamW, EMA, AMP, logging, checkpoint/resume |"
+        },
+        {
+          "line": 236,
+          "text": "| [teacher_b64_100k.json](/root/workspace_distillation/configs/teacher/teacher_b64_100k.json) | 현재 실험의 hyperparameters |"
+        },
+        {
+          "line": 237,
+          "text": "| [teacher_b64_100k.md](/root/workspace_distillation/docs/teacher_b64_100k.md) | 실행 명령, 내부 holdout, 실험 진행 순서 |"
+        }
+      ]
+    },
+    {
+      "file": "provenance/evidence_extraction.json",
+      "classification": "documented provenance, explicit external input, safety guard, or verification path",
+      "hits": [
+        {
+          "line": 5,
+          "text": "    \"original_path\": \"/root/.bash_history\","
+        }
+      ]
+    },
+    {
+      "file": "provenance/artifacts.json",
+      "classification": "documented provenance, explicit external input, safety guard, or verification path",
+      "hits": [
+        {
+          "line": 5,
+          "text": "    \"original_absolute_path\": \"/root/DMD/.gitignore\","
+        },
+        {
+          "line": 18,
+          "text": "    \"original_absolute_path\": \"/root/DMD/CODEX.md\","
+        },
+        {
+          "line": 31,
+          "text": "    \"original_absolute_path\": \"/root/DMD/PROJECT_SPEC.md\","
+        },
+        {
+          "line": 44,
+          "text": "    \"original_absolute_path\": \"/root/DMD/TEAM_HANDOFF.md\","
+        },
+        {
+          "line": 57,
+          "text": "    \"original_absolute_path\": \"/root/DMD/configs/consistency/fixed_cfg2.json\","
+        },
+        {
+          "line": 70,
+          "text": "    \"original_absolute_path\": \"/root/DMD/configs/consistency/no_extra_guidance.json\","
+        },
+        {
+          "line": 83,
+          "text": "    \"original_absolute_path\": \"/root/DMD/configs/distillation/fixed_cfg2_progressive.json\","
+        },
+        {
+          "line": 96,
+          "text": "    \"original_absolute_path\": \"/root/DMD/configs/distillation/low_nfe_budget_100k.json\","
+        },
+        {
+          "line": 109,
+          "text": "    \"original_absolute_path\": \"/root/DMD/configs/teacher/debug.json\","
+        },
+        {
+          "line": 122,
+          "text": "    \"original_absolute_path\": \"/root/DMD/configs/teacher/debug_fresh_five.json\","
+        },
+        {
+          "line": 135,
+          "text": "    \"original_absolute_path\": \"/root/DMD/configs/teacher/debug_resume.json\","
+        },
+        {
+          "line": 148,
+          "text": "    \"original_absolute_path\": \"/root/DMD/configs/teacher/initial.json\","
+        },
+        {
+          "line": 161,
+          "text": "    \"original_absolute_path\": \"/root/DMD/configs/teacher/initial_probe.json\","
+        },
+        {
+          "line": 174,
+          "text": "    \"original_absolute_path\": \"/root/DMD/configs/teacher/teacher_b128_100k.json\","
+        },
+        {
+          "line": 187,
+          "text": "    \"original_absolute_path\": \"/root/DMD/configs/teacher/teacher_b64_100k.json\","
+        },
+        {
+          "line": 200,
+          "text": "    \"original_absolute_path\": \"/root/DMD/configs/teacher/teacher_b64_constant_100k.json\","
+        },
+        {
+          "line": 213,
+          "text": "    \"original_absolute_path\": \"/root/DMD/configs/teacher/teacher_b64_fliponly_constant_100k.json\","
+        },
+        {
+          "line": 226,
+          "text": "    \"original_absolute_path\": \"/root/DMD/configs/teacher/teacher_b64_noaug_constant_100k.json\","
+        },
+        {
+          "line": 239,
+          "text": "    \"original_absolute_path\": \"/root/DMD/configs/teacher/teacher_ddpm_cfg_v1.json\","
+        },
+        {
+          "line": 252,
+          "text": "    \"original_absolute_path\": \"/root/DMD/configs/teacher/teacher_ddpm_cfg_v1_probe.json\","
+        },
+        {
+          "line": 265,
+          "text": "    \"original_absolute_path\": \"/root/DMD/configs/teacher/teacher_lr2e4_linear_aug_50k.json\","
+        },
+        {
+          "line": 278,
+          "text": "    \"original_absolute_path\": \"/root/DMD/configs/teacher/teacher_lr5e5_aug_50k.json\","
+        },
+        {
+          "line": 291,
+          "text": "    \"original_absolute_path\": \"/root/DMD/configs/teacher/teacher_lr5e5_aug_probe.json\","
+        },
+        {
+          "line": 304,
+          "text": "    \"original_absolute_path\": \"/root/DMD/configs/teacher/teacher_memorization64_constant.json\","
+        },
+        {
+          "line": 317,
+          "text": "    \"original_absolute_path\": \"/root/DMD/consistency/__init__.py\","
+        },
+        {
+          "line": 330,
+          "text": "    \"original_absolute_path\": \"/root/DMD/consistency/check_submission.py\","
+        },
+        {
+          "line": 343,
+          "text": "    \"original_absolute_path\": \"/root/DMD/consistency/config.py\","
+        },
+        {
+          "line": 356,
+          "text": "    \"original_absolute_path\": \"/root/DMD/consistency/core.py\","
+        },
+        {
+          "line": 369,
+          "text": "    \"original_absolute_path\": \"/root/DMD/consistency/evaluate.py\","
+        },
+        {
+          "line": 382,
+          "text": "    \"original_absolute_path\": \"/root/DMD/consistency/export.py\","
+        },
+        {
+          "line": 395,
+          "text": "    \"original_absolute_path\": \"/root/DMD/consistency/submission.py\","
+        },
+        {
+          "line": 408,
+          "text": "    \"original_absolute_path\": \"/root/DMD/consistency/tests.py\","
+        },
+        {
+          "line": 421,
+          "text": "    \"original_absolute_path\": \"/root/DMD/consistency/train.py\","
+        },
+        {
+          "line": 434,
+          "text": "    \"original_absolute_path\": \"/root/DMD/constraints/evaluation.txt\","
+        },
+        {
+          "line": 447,
+          "text": "    \"original_absolute_path\": \"/root/DMD/data/development/seed42_holdout5/holdout.txt\","
+        },
+        {
+          "line": 460,
+          "text": "    \"original_absolute_path\": \"/root/DMD/data/development/seed42_holdout5/metadata.json\","
+        },
+        {
+          "line": 473,
+          "text": "    \"original_absolute_path\": \"/root/DMD/data/development/seed42_holdout5/train.txt\","
+        },
+        {
+          "line": 486,
+          "text": "    \"original_absolute_path\": \"/root/DMD/distillation/__init__.py\","
+        },
+        {
+          "line": 499,
+          "text": "    \"original_absolute_path\": \"/root/DMD/distillation/core.py\","
+        },
+        {
+          "line": 512,
+          "text": "    \"original_absolute_path\": \"/root/DMD/distillation/evaluate.py\","
+        },
+        {
+          "line": 525,
+          "text": "    \"original_absolute_path\": \"/root/DMD/distillation/export.py\","
+        },
+        {
+          "line": 538,
+          "text": "    \"original_absolute_path\": \"/root/DMD/distillation/pipeline.py\","
+        },
+        {
+          "line": 551,
+          "text": "    \"original_absolute_path\": \"/root/DMD/distillation/smoke.py\","
+        },
+        {
+          "line": 564,
+          "text": "    \"original_absolute_path\": \"/root/DMD/distillation/submission.py\","
+        },
+        {
+          "line": 577,
+          "text": "    \"original_absolute_path\": \"/root/DMD/distillation/train.py\","
+        },
+        {
+          "line": 590,
+          "text": "    \"original_absolute_path\": \"/root/DMD/docs/consistency_distillation.md\","
+        },
+        {
+          "line": 603,
+          "text": "    \"original_absolute_path\": \"/root/DMD/docs/distillation_baseline.md\","
+        },
+        {
+          "line": 616,
+          "text": "    \"original_absolute_path\": \"/root/DMD/docs/distillation_results_review.md\","
+        },
+        {
+          "line": 629,
+          "text": "    \"original_absolute_path\": \"/root/DMD/docs/experiment_cleanup.md\","
+        },
+        {
+          "line": 642,
+          "text": "    \"original_absolute_path\": \"/root/DMD/docs/low_nfe_budget_experiment.md\","
+        },
+        {
+          "line": 655,
+          "text": "    \"original_absolute_path\": \"/root/DMD/docs/model_architecture.md\","
+        },
+        {
+          "line": 668,
+          "text": "    \"original_absolute_path\": \"/root/DMD/docs/repository_analysis.md\","
+        },
+        {
+          "line": 681,
+          "text": "    \"original_absolute_path\": \"/root/DMD/docs/sampling_defaults_and_ddim_cfg.md\","
+        },
+        {
+          "line": 694,
+          "text": "    \"original_absolute_path\": \"/root/DMD/docs/sampling_steps_seeds_analysis.md\","
+        },
+        {
+          "line": 707,
+          "text": "    \"original_absolute_path\": \"/root/DMD/docs/teacher_b64_100k.md\","
+        },
+        {
+          "line": 720,
+          "text": "    \"original_absolute_path\": \"/root/DMD/docs/teacher_b64_results_and_next.md\","
+        },
+        {
+          "line": 733,
+          "text": "    \"original_absolute_path\": \"/root/DMD/docs/teacher_baseline.md\","
+        },
+        {
+          "line": 746,
+          "text": "    \"original_absolute_path\": \"/root/DMD/docs/teacher_constant_results_and_fliponly.md\","
+        },
+        {
+          "line": 759,
+          "text": "    \"original_absolute_path\": \"/root/DMD/docs/teacher_diagnosis.md\","
+        },
+        {
+          "line": 772,
+          "text": "    \"original_absolute_path\": \"/root/DMD/docs/teacher_fliponly_preflight.json\","
+        },
+        {
+          "line": 785,
+          "text": "    \"original_absolute_path\": \"/root/DMD/docs/teacher_lr2e4_linear_aug_run.md\","
+        },
+        {
+          "line": 798,
+          "text": "    \"original_absolute_path\": \"/root/DMD/docs/teacher_lr5e5_aug_run.md\","
+        },
+        {
+          "line": 811,
+          "text": "    \"original_absolute_path\": \"/root/DMD/docs/teacher_remaining_experiments.md\","
+        },
+        {
+          "line": 824,
+          "text": "    \"original_absolute_path\": \"/root/DMD/docs/teacher_review_50k.md\","
+        },
+        {
+          "line": 837,
+          "text": "    \"original_absolute_path\": \"/root/DMD/docs/teacher_training_run.md\","
+        },
+        {
+          "line": 850,
+          "text": "    \"original_absolute_path\": \"/root/DMD/model.py\","
+        },
+        {
+          "line": 863,
+          "text": "    \"original_absolute_path\": \"/root/DMD/scripts/audit_teacher.py\","
+        },
+        {
+          "line": 876,
+          "text": "    \"original_absolute_path\": \"/root/DMD/scripts/benchmark_teacher.py\","
+        },
+        {
+          "line": 889,
+          "text": "    \"original_absolute_path\": \"/root/DMD/scripts/compare_teacher_steps_seeds.py\","
+        },
+        {
+          "line": 902,
+          "text": "    \"original_absolute_path\": \"/root/DMD/scripts/create_handoff.py\","
+        },
+        {
+          "line": 915,
+          "text": "    \"original_absolute_path\": \"/root/DMD/scripts/diagnose_teacher.py\","
+        },
+        {
+          "line": 928,
+          "text": "    \"original_absolute_path\": \"/root/DMD/scripts/make_student_class_grids.py\","
+        },
+        {
+          "line": 941,
+          "text": "    \"original_absolute_path\": \"/root/DMD/scripts/report_teacher_official.py\","
+        },
+        {
+          "line": 954,
+          "text": "    \"original_absolute_path\": \"/root/DMD/scripts/review_ddim_cfg.sh\","
+        },
+        {
+          "line": 967,
+          "text": "    \"original_absolute_path\": \"/root/DMD/scripts/review_teacher_run.py\","
+        },
+        {
+          "line": 980,
+          "text": "    \"original_absolute_path\": \"/root/DMD/scripts/run_consistency.sh\","
+        },
+        {
+          "line": 993,
+          "text": "    \"original_absolute_path\": \"/root/DMD/scripts/run_fixed_guidance_distillation.sh\","
+        },
+        {
+          "line": 1006,
+          "text": "    \"original_absolute_path\": \"/root/DMD/scripts/run_low_nfe_budget.py\","
+        },
+        {
+          "line": 1019,
+          "text": "    \"original_absolute_path\": \"/root/DMD/scripts/run_low_nfe_budget.sh\","
+        },
+        {
+          "line": 1032,
+          "text": "    \"original_absolute_path\": \"/root/DMD/scripts/run_teacher_next_experiments.sh\","
+        },
+        {
+          "line": 1045,
+          "text": "    \"original_absolute_path\": \"/root/DMD/scripts/run_teacher_to_students.sh\","
+        },
+        {
+          "line": 1058,
+          "text": "    \"original_absolute_path\": \"/root/DMD/scripts/supplement_ddim_diagnostics.py\","
+        },
+        {
+          "line": 1071,
+          "text": "    \"original_absolute_path\": \"/root/DMD/scripts/train_teacher_b128.sh\","
+        },
+        {
+          "line": 1084,
+          "text": "    \"original_absolute_path\": \"/root/DMD/scripts/train_teacher_b64.sh\","
+        },
+        {
+          "line": 1097,
+          "text": "    \"original_absolute_path\": \"/root/DMD/scripts/train_teacher_b64_constant.sh\","
+        },
+        {
+          "line": 1110,
+          "text": "    \"original_absolute_path\": \"/root/DMD/scripts/train_teacher_b64_fliponly_constant.sh\","
+        },
+        {
+          "line": 1123,
+          "text": "    \"original_absolute_path\": \"/root/DMD/scripts/train_teacher_b64_noaug_constant.sh\","
+        },
+        {
+          "line": 1136,
+          "text": "    \"original_absolute_path\": \"/root/DMD/scripts/train_teacher_lr2e4_linear_aug.sh\","
+        },
+        {
+          "line": 1149,
+          "text": "    \"original_absolute_path\": \"/root/DMD/scripts/train_teacher_lr5e5_aug.sh\","
+        },
+        {
+          "line": 1162,
+          "text": "    \"original_absolute_path\": \"/root/DMD/scripts/train_teacher_memorization64.sh\","
+        },
+        {
+          "line": 1175,
+          "text": "    \"original_absolute_path\": \"/root/DMD/scripts/train_teacher_v1.sh\","
+        },
+        {
+          "line": 1188,
+          "text": "    \"original_absolute_path\": \"/root/DMD/teacher/__init__.py\","
+        },
+        {
+          "line": 1201,
+          "text": "    \"original_absolute_path\": \"/root/DMD/teacher/cfg.py\","
+        },
+        {
+          "line": 1214,
+          "text": "    \"original_absolute_path\": \"/root/DMD/teacher/config.py\","
+        },
+        {
+          "line": 1227,
+          "text": "    \"original_absolute_path\": \"/root/DMD/teacher/data.py\","
+        },
+        {
+          "line": 1240,
+          "text": "    \"original_absolute_path\": \"/root/DMD/teacher/diffusion.py\","
+        },
+        {
+          "line": 1253,
+          "text": "    \"original_absolute_path\": \"/root/DMD/teacher/evaluate.py\","
+        },
+        {
+          "line": 1266,
+          "text": "    \"original_absolute_path\": \"/root/DMD/teacher/model.py\","
+        },
+        {
+          "line": 1279,
+          "text": "    \"original_absolute_path\": \"/root/DMD/teacher/sample.py\","
+        },
+        {
+          "line": 1292,
+          "text": "    \"original_absolute_path\": \"/root/DMD/teacher/smoke.py\","
+        },
+        {
+          "line": 1305,
+          "text": "    \"original_absolute_path\": \"/root/DMD/teacher/splits.py\","
+        },
+        {
+          "line": 1318,
+          "text": "    \"original_absolute_path\": \"/root/DMD/teacher/train.py\","
+        },
+        {
+          "line": 1331,
+          "text": "    \"original_absolute_path\": \"/root/DMD/teacher/utils.py\","
+        },
+        {
+          "line": 1344,
+          "text": "    \"original_absolute_path\": \"/root/DMD/OVERLAY_MANIFEST.json\","
+        },
+        {
+          "line": 1357,
+          "text": "    \"original_absolute_path\": \"/root/DMD/README.md\","
+        },
+        {
+          "line": 1370,
+          "text": "    \"original_absolute_path\": \"/root/DMD/requirements.txt\","
+        },
+        {
+          "line": 1383,
+          "text": "    \"original_absolute_path\": \"/root/DMD/evaluate.py\","
+        },
+        {
+          "line": 1396,
+          "text": "    \"original_absolute_path\": \"/root/DMD/dataset.py\","
+        },
+        {
+          "line": 1409,
+          "text": "    \"original_absolute_path\": \"/root/DMD/download_dataset.py\","
+        },
+        {
+          "line": 1422,
+          "text": "    \"original_absolute_path\": \"/root/DMD/src/__init__.py\","
+        },
+        {
+          "line": 1435,
+          "text": "    \"original_absolute_path\": \"/root/DMD/src/utils.py\","
+        },
+        {
+          "line": 1448,
+          "text": "    \"original_absolute_path\": \"/root/DMD/data/pokemon-generation-one-22k/train_split.txt\","
+        },
+        {
+          "line": 1461,
+          "text": "    \"original_absolute_path\": \"/root/DMD/data/pokemon-generation-one-22k/val_split.txt\","
+        },
+        {
+          "line": 1474,
+          "text": "    \"original_absolute_path\": \"/root/DMD/data/pokemon-generation-one-22k/category_to_id.json\","
+        },
+        {
+          "line": 1487,
+          "text": "    \"original_absolute_path\": \"/root/DMD/checkpoints/one_nfe.ckpt\","
+        },
+        {
+          "line": 1501,
+          "text": "    \"original_absolute_path\": \"/root/DMD/checkpoints/few_nfe.ckpt\","
+        },
+        {
+          "line": 1515,
+          "text": "    \"original_absolute_path\": \"/root/DMD/experiments/night_run/fresh_teacher/final.pt\","
+        },
+        {
+          "line": 1529,
+          "text": "    \"original_absolute_path\": \"/root/DMD/experiments/night_run/dmd_preserve_team/dmd_step_002500.ckpt\","
+        },
+        {
+          "line": 1543,
+          "text": "    \"original_absolute_path\": \"/root/DMD/experiments/night_run/dmd_preserve_team/dmd_step_005000.ckpt\","
+        },
+        {
+          "line": 1557,
+          "text": "    \"original_absolute_path\": \"/root/DMD/experiments/night_run/dmd_preserve_team/dmd_step_010000.ckpt\","
+        },
+        {
+          "line": 1571,
+          "text": "    \"original_absolute_path\": \"/root/DMD/experiments/night_run/dmd_preserve_team/selected_one_nfe.ckpt\","
+        },
+        {
+          "line": 1585,
+          "text": "    \"original_absolute_path\": \"/root/DMD/experiments/night_run/dmd_preserve_team/latest.pt\","
+        },
+        {
+          "line": 1599,
+          "text": "    \"original_absolute_path\": \"/root/DMD/experiments/night_run/dmd_reproduce.py\","
+        },
+        {
+          "line": 1612,
+          "text": "    \"original_absolute_path\": \"/root/DMD/experiments/night_run/dmd_preserve_team.py\","
+        },
+        {
+          "line": 1625,
+          "text": "    \"original_absolute_path\": \"/root/DMD/experiments/night_run/dmd_preserve_team/config.json\","
+        },
+        {
+          "line": 1638,
+          "text": "    \"original_absolute_path\": \"/root/DMD/experiments/night_run/dmd_preserve_team/REPORT.md\","
+        },
+        {
+          "line": 1651,
+          "text": "    \"original_absolute_path\": \"/root/DMD/experiments/night_run/dmd_preserve_team/results.json\","
+        },
+        {
+          "line": 1664,
+          "text": "    \"original_absolute_path\": \"/root/DMD/experiments/night_run/dmd_preserve_team/selected_model.json\","
+        },
+        {
+          "line": 1677,
+          "text": "    \"original_absolute_path\": \"/root/DMD/experiments/night_run/dmd_preserve_team/fake_score_warmup.json\","
+        },
+        {
+          "line": 1690,
+          "text": "    \"original_absolute_path\": \"/root/DMD/experiments/night_run/dmd_preserve_team/input_checkpoint_hashes.json\","
+        },
+        {
+          "line": 1703,
+          "text": "    \"original_absolute_path\": \"/root/DMD/experiments/night_run/dmd_preserve_team/train.log\","
+        },
+        {
+          "line": 1716,
+          "text": "    \"original_absolute_path\": \"/root/DMD/experiments/night_run/dmd_reproduce_console.log\","
+        },
+        {
+          "line": 1729,
+          "text": "    \"original_absolute_path\": \"/root/DMD/experiments/night_run/dmd_preserve_team/supplied_baseline/metrics.json\","
+        },
+        {
+          "line": 1742,
+          "text": "    \"original_absolute_path\": \"/root/DMD/experiments/night_run/dmd_preserve_team/dmd_002500/metrics.json\","
+        },
+        {
+          "line": 1755,
+          "text": "    \"original_absolute_path\": \"/root/DMD/experiments/night_run/dmd_preserve_team/dmd_005000/metrics.json\","
+        },
+        {
+          "line": 1768,
+          "text": "    \"original_absolute_path\": \"/root/DMD/experiments/night_run/dmd_preserve_team/dmd_010000/metrics.json\","
+        },
+        {
+          "line": 1781,
+          "text": "    \"original_absolute_path\": \"/root/DMD/experiments/night_run/audit_results.json\","
+        },
+        {
+          "line": 1794,
+          "text": "    \"original_absolute_path\": \"/root/DMD/experiments/night_run/reference_manifest.json\","
+        },
+        {
+          "line": 1807,
+          "text": "    \"original_absolute_path\": \"/root/AIC313-Project-FastGen/experiments/night_run/fresh_teacher/config.json\","
+        },
+        {
+          "line": 1820,
+          "text": "    \"original_absolute_path\": \"/root/AIC313-Project-FastGen/experiments/night_run/fresh_teacher/metrics.json\","
+        },
+        {
+          "line": 1833,
+          "text": "    \"original_absolute_path\": \"/root/AIC313-Project-FastGen/experiments/night_run/teacher_preflight/metrics.json\","
+        },
+        {
+          "line": 1846,
+          "text": "    \"original_absolute_path\": \"/root/AIC313-Project-FastGen/experiments/night_run/teacher_preflight/config.json\","
+        },
+        {
+          "line": 1859,
+          "text": "    \"original_absolute_path\": \"/root/AIC313-Project-FastGen/experiments/night_run/USER_CHECKPOINT_ATTESTATION.json\","
+        },
+        {
+          "line": 1872,
+          "text": "    \"original_absolute_path\": \"/root/AIC313-Project-FastGen/experiments/night_run/COURSE_RULES_OVERRIDE.md\","
+        },
+        {
+          "line": 1885,
+          "text": "    \"original_absolute_path\": \"/root/AIC313-Project-FastGen/experiments/night_run/LINEAGE_REAUDIT.md\","
+        },
+        {
+          "line": 1898,
+          "text": "    \"original_absolute_path\": \"/root/AIC313-Project-FastGen/experiments/night_run/lineage_reaudit.json\","
+        },
+        {
+          "line": 1911,
+          "text": "    \"original_absolute_path\": \"/root/AIC313-Project-FastGen/experiments/night_run/overnight.py\","
+        },
+        {
+          "line": 1924,
+          "text": "    \"original_absolute_path\": \"/root/AIC313-Project-FastGen/experiments/night_run/dmd_preserve_team/reproduction/MANIFEST.json\","
+        },
+        {
+          "line": 1937,
+          "text": "    \"original_absolute_path\": \"/root/AIC313-Project-FastGen/experiments/night_run/three_frozen_models_official_comparison/team_one_nfe/metrics.json\","
+        },
+        {
+          "line": 1950,
+          "text": "    \"original_absolute_path\": \"/root/AIC313-Project-FastGen/experiments/night_run/three_frozen_models_official_comparison/dmd_one_nfe/metrics.json\","
+        },
+        {
+          "line": 1963,
+          "text": "    \"original_absolute_path\": \"/root/AIC313-Project-FastGen/experiments/night_run/fresh_teacher/config.json\","
+        }
+      ]
+    },
+    {
+      "file": "provenance/tmux_preflight_launch_excerpt.txt",
+      "classification": "documented provenance, explicit external input, safety guard, or verification path",
+      "hits": [
+        {
+          "line": 1,
+          "text": "(base) root@cs30708a-25:~/DMD# cd /root/DMD"
+        },
+        {
+          "line": 2,
+          "text": "(base) root@cs30708a-25:~/DMD# cd /root/DMD"
+        },
+        {
+          "line": 4,
+          "text": "/root/miniconda3/envs/fastgen/bin/python - <<'PY'"
+        },
+        {
+          "line": 8,
+          "text": "ROOT = Path(\"/root/DMD\")"
+        },
+        {
+          "line": 83,
+          "text": "/root/miniconda3/envs/fastgen/bin/python \\"
+        }
+      ]
+    },
+    {
+      "file": "provenance/reference_manifest.json",
+      "classification": "documented provenance, explicit external input, safety guard, or verification path",
+      "hits": [
+        {
+          "line": 2,
+          "text": "  \"source_manifest\": \"/root/AIC313-Project-FastGen/data/development/seed42_holdout5/holdout.txt\","
+        }
+      ]
+    },
+    {
+      "file": "provenance/input_checkpoint_metadata.json",
+      "classification": "documented provenance, explicit external input, safety guard, or verification path",
+      "hits": [
+        {
+          "line": 22,
+          "text": "      \"data_root\": \"/root/AIC313-Project-FastGen/experiments/night_run/development_images\","
+        },
+        {
+          "line": 23,
+          "text": "      \"split_dir\": \"/root/AIC313-Project-FastGen/data/pokemon-generation-one-22k\","
+        },
+        {
+          "line": 61,
+          "text": "      \"output_dir\": \"/root/AIC313-Project-FastGen/experiments/night_run\","
+        },
+        {
+          "line": 70,
+          "text": "      \"train_manifest\": \"/root/AIC313-Project-FastGen/data/development/seed42_holdout5/train.txt\","
+        },
+        {
+          "line": 71,
+          "text": "      \"development_reference_manifest\": \"/root/AIC313-Project-FastGen/data/development/seed42_holdout5/holdout.txt\","
+        }
+      ]
+    },
+    {
+      "file": "provenance/fresh_teacher_metadata.json",
+      "classification": "documented provenance, explicit external input, safety guard, or verification path",
+      "hits": [
+        {
+          "line": 9,
+          "text": "    \"data_root\": \"/root/AIC313-Project-FastGen/experiments/night_run/development_images\","
+        },
+        {
+          "line": 10,
+          "text": "    \"split_dir\": \"/root/AIC313-Project-FastGen/data/pokemon-generation-one-22k\","
+        },
+        {
+          "line": 48,
+          "text": "    \"output_dir\": \"/root/AIC313-Project-FastGen/experiments/night_run\","
+        },
+        {
+          "line": 57,
+          "text": "    \"train_manifest\": \"/root/AIC313-Project-FastGen/data/development/seed42_holdout5/train.txt\","
+        },
+        {
+          "line": 58,
+          "text": "    \"development_reference_manifest\": \"/root/AIC313-Project-FastGen/data/development/seed42_holdout5/holdout.txt\","
+        }
+      ]
+    },
+    {
+      "file": "provenance/audit_results.json",
+      "classification": "documented provenance, explicit external input, safety guard, or verification path",
+      "hits": [
+        {
+          "line": 29,
+          "text": "  \"note\": \"Recreated locally in /root/DMD; split-text audit only. No images or model weights modified.\""
+        }
+      ]
+    },
+    {
+      "file": "provenance/shell_history_excerpt.txt",
+      "classification": "documented provenance, explicit external input, safety guard, or verification path",
+      "hits": [
+        {
+          "line": 1,
+          "text": "Read-only excerpt from /root/.bash_history; line ordering is not reliable chronology."
+        },
+        {
+          "line": 3,
+          "text": "139: ls -ld /root/AIC313-Project-FastGen /root/DMD 2>&1"
+        },
+        {
+          "line": 6,
+          "text": "142: git -C /root/AIC313-Project-FastGen rev-parse HEAD"
+        },
+        {
+          "line": 7,
+          "text": "143: git -C /root/AIC313-Project-FastGen status --short"
+        },
+        {
+          "line": 10,
+          "text": "146: if [ -d /root/DMD/.git ]; then     git -C /root/DMD rev-parse HEAD;     git -C /root/DMD status --short; else     echo \"/root/DMD is not currently a git repository\"; fi"
+        },
+        {
+          "line": 13,
+          "text": "149: find /root/DMD -maxdepth 2 -mindepth 1 -printf '%y %p\\n' 2>/dev/null | sort | head -200"
+        },
+        {
+          "line": 16,
+          "text": "152: if [ -f /root/DMD/audit/TRANSFER_MANIFEST.json ]; then     cat /root/DMD/audit/TRANSFER_MANIFEST.json; else     echo \"TRANSFER_MANIFEST.json not found\"; fi"
+        },
+        {
+          "line": 18,
+          "text": "154: backup=\"/root/DMD_preexisting_$(date +%Y%m%d_%H%M%S)\""
+        },
+        {
+          "line": 19,
+          "text": "155: mv /root/DMD \"$backup\""
+        },
+        {
+          "line": 26,
+          "text": "162: echo \"새 /root/DMD가 비어 있는지 확인:\""
+        },
+        {
+          "line": 27,
+          "text": "163: if [ ! -e /root/DMD ]; then     echo \"OK: /root/DMD does not exist\"; else     echo \"ERROR: /root/DMD still exists\"; fi"
+        },
+        {
+          "line": 30,
+          "text": "166: cd /root/DMD"
+        },
+        {
+          "line": 39,
+          "text": "175: cd /root/DMD"
+        },
+        {
+          "line": 41,
+          "text": "188: cd /root/DMD"
+        },
+        {
+          "line": 42,
+          "text": "189: /root/miniconda3/envs/fastgen/bin/python - <<'PY'"
+        },
+        {
+          "line": 100,
+          "text": "247: cd /root/DMD"
+        },
+        {
+          "line": 101,
+          "text": "248: /root/miniconda3/envs/fastgen/bin/python - <<'PY'"
+        },
+        {
+          "line": 129,
+          "text": "381: cd /root/DMD"
+        },
+        {
+          "line": 130,
+          "text": "382: OVERLAY=/root/team_fastgen_handoff_new/fastgen/fastgen_code_overlay"
+        },
+        {
+          "line": 132,
+          "text": "384: find \"$OVERLAY\" -type f   ! -path '*/__pycache__/*'   -printf '%P\\n' | while read -r rel; do     if [ -e \"/root/DMD/$rel\" ]; then         if cmp -s \"$OVERLAY/$rel\" \"/root/DMD/$rel\"; then             echo \"SAME       $rel\";         else             echo \"WOULD MODIFY  $rel\";         fi;     fi; done"
+        },
+        {
+          "line": 136,
+          "text": "388: cd /root/team_fastgen_handoff_new/fastgen"
+        },
+        {
+          "line": 138,
+          "text": "419: rsync -avnc   --exclude='__pycache__/'   /root/team_fastgen_handoff_new/fastgen/fastgen_code_overlay/   /root/DMD/"
+        },
+        {
+          "line": 139,
+          "text": "420: rsync -av   --exclude='__pycache__/'   /root/team_fastgen_handoff_new/fastgen/fastgen_code_overlay/   /root/DMD/"
+        },
+        {
+          "line": 140,
+          "text": "421: cd /root/DMD"
+        },
+        {
+          "line": 149,
+          "text": "430: stat -c '%U:%G  uid=%u gid=%g  %n'   /root/DMD   /root/DMD/.git   /root/DMD/model.py"
+        },
+        {
+          "line": 150,
+          "text": "431: chown -R root:root /root/DMD"
+        },
+        {
+          "line": 151,
+          "text": "432: stat -c '%U:%G  uid=%u gid=%g  %n'   /root/DMD   /root/DMD/.git   /root/DMD/model.py"
+        },
+        {
+          "line": 152,
+          "text": "433: cd /root/DMD"
+        },
+        {
+          "line": 161,
+          "text": "442: cd /root/DMD"
+        },
+        {
+          "line": 164,
+          "text": "445: cd /root/DMD"
+        },
+        {
+          "line": 166,
+          "text": "447: cp /root/team_fastgen_handoff_new/fastgen/checkpoints/one_nfe.ckpt checkpoints/"
+        },
+        {
+          "line": 167,
+          "text": "448: cp /root/team_fastgen_handoff_new/fastgen/checkpoints/few_nfe.ckpt checkpoints/"
+        },
+        {
+          "line": 171,
+          "text": "452: cd /root/DMD"
+        },
+        {
+          "line": 172,
+          "text": "453: SNAP=/root/AIC313-Project-FastGen/experiments/night_run/dmd_preserve_team/reproduction/source_snapshot"
+        },
+        {
+          "line": 174,
+          "text": "455: while IFS= read -r rel; do     if [ ! -e \"/root/DMD/$rel\" ]; then         echo \"MISSING    $rel\";     elif cmp -s \"$SNAP/$rel\" \"/root/DMD/$rel\"; then         echo \"SAME       $rel\";     else         echo \"DIFFERENT  $rel\";     fi; done < <(find \"$SNAP\" -type f -printf '%P\\n' | sort)"
+        },
+        {
+          "line": 175,
+          "text": "456: ls -lah /root/AIC313-Project-FastGen/experiments/night_run/fresh_teacher"
+        },
+        {
+          "line": 176,
+          "text": "457: cat /root/AIC313-Project-FastGen/experiments/night_run/fresh_teacher/config.json"
+        },
+        {
+          "line": 177,
+          "text": "458: cd /root/DMD"
+        },
+        {
+          "line": 183,
+          "text": "464: cd /root/DMD"
+        },
+        {
+          "line": 184,
+          "text": "465: OLD=/root/AIC313-Project-FastGen/experiments/night_run/fresh_teacher/source_snapshot/teacher"
+        },
+        {
+          "line": 186,
+          "text": "467: for f in config.py data.py diffusion.py model.py train.py utils.py cfg.py; do     if cmp -s \"$OLD/$f\" \"/root/DMD/teacher/$f\"; then         echo \"SAME       $f\";     else         echo \"DIFFERENT  $f\";     fi; done"
+        },
+        {
+          "line": 194,
+          "text": "475:     \"/root/DMD/configs/teacher/teacher_b64_noaug_constant_100k.json\""
+        },
+        {
+          "line": 198,
+          "text": "479:     \"/root/AIC313-Project-FastGen/experiments/night_run/fresh_teacher/config.json\""
+        },
+        {
+          "line": 210,
+          "text": "491: sha256sum /root/AIC313-Project-FastGen/experiments/night_run/fresh_teacher/final.pt"
+        },
+        {
+          "line": 211,
+          "text": "492: cd /root/DMD"
+        },
+        {
+          "line": 213,
+          "text": "494: cp -n   /root/AIC313-Project-FastGen/experiments/night_run/fresh_teacher/final.pt   experiments/night_run/fresh_teacher/final.pt"
+        },
+        {
+          "line": 215,
+          "text": "496: cd /root/DMD"
+        },
+        {
+          "line": 217,
+          "text": "498: cp --update=none   /root/AIC313-Project-FastGen/experiments/night_run/dmd_preserve_team.py   experiments/night_run/dmd_preserve_team.py"
+        },
+        {
+          "line": 219,
+          "text": "500: cmp -s   /root/AIC313-Project-FastGen/experiments/night_run/dmd_preserve_team/reproduction/source_snapshot/experiments/night_run/dmd_preserve_team.py   experiments/night_run/dmd_preserve_team.py   && echo SAME || echo DIFFERENT"
+        },
+        {
+          "line": 222,
+          "text": "503: grep -n '/root/AIC313-Project-FastGen\\|workspace_distillation'   experiments/night_run/dmd_preserve_team.py || true"
+        },
+        {
+          "line": 225,
+          "text": "506: /root/miniconda3/envs/fastgen/bin/python -m py_compile   experiments/night_run/dmd_preserve_team.py"
+        },
+        {
+          "line": 227,
+          "text": "508: cd /root/DMD"
+        },
+        {
+          "line": 229,
+          "text": "510: cd /root/DMD"
+        },
+        {
+          "line": 231,
+          "text": "516: cd /root/DMD"
+        },
+        {
+          "line": 247,
+          "text": "532: cd /root/DMD"
+        },
+        {
+          "line": 248,
+          "text": "533: /root/miniconda3/envs/fastgen/bin/python download_dataset.py"
+        },
+        {
+          "line": 249,
+          "text": "534: cd /root/DMD"
+        },
+        {
+          "line": 263,
+          "text": "548: cd /root/DMD"
+        },
+        {
+          "line": 268,
+          "text": "553: old = Path(\"/root/AIC313-Project-FastGen/experiments/night_run\")"
+        },
+        {
+          "line": 283,
+          "text": "568: cd /root/DMD"
+        },
+        {
+          "line": 289,
+          "text": "574: new_root = Path(\"/root/DMD/data/pokemon-generation-one-22k\")"
+        },
+        {
+          "line": 290,
+          "text": "575: old_root = Path(\"/root/AIC313-Project-FastGen/data/pokemon-generation-one-22k\")"
+        },
+        {
+          "line": 291,
+          "text": "576: old_night = Path(\"/root/AIC313-Project-FastGen/experiments/night_run\")"
+        },
+        {
+          "line": 294,
+          "text": "579:     \"/root/DMD/data/development/seed42_holdout5/holdout.txt\""
+        },
+        {
+          "line": 341,
+          "text": "626: cd /root/DMD"
+        },
+        {
+          "line": 342,
+          "text": "627: /root/miniconda3/envs/fastgen/bin/python - <<'PY'"
+        },
+        {
+          "line": 352,
+          "text": "637: ROOT = Path(\"/root/DMD\")"
+        },
+        {
+          "line": 353,
+          "text": "638: OLD = Path(\"/root/AIC313-Project-FastGen/experiments/night_run\")"
+        },
+        {
+          "line": 407,
+          "text": "692: cd /root/DMD"
+        },
+        {
+          "line": 408,
+          "text": "693: cp -a   /root/AIC313-Project-FastGen/experiments/night_run/reference_development   experiments/night_run/reference_development"
+        },
+        {
+          "line": 409,
+          "text": "694: cp --update=none   /root/AIC313-Project-FastGen/experiments/night_run/reference_manifest.json   experiments/night_run/reference_manifest.json"
+        },
+        {
+          "line": 430,
+          "text": "715: cd /root/DMD"
+        },
+        {
+          "line": 431,
+          "text": "716: /root/miniconda3/envs/fastgen/bin/python - <<'PY'"
+        },
+        {
+          "line": 436,
+          "text": "721: ROOT = Path(\"/root/DMD\")"
+        },
+        {
+          "line": 507,
+          "text": "792:     \"note\": \"Recreated locally in /root/DMD; split-text audit only. No images or model weights modified.\","
+        },
+        {
+          "line": 531,
+          "text": "817: cd /root/DMD"
+        },
+        {
+          "line": 532,
+          "text": "818: /root/miniconda3/envs/fastgen/bin/python - <<'PY'"
+        },
+        {
+          "line": 565,
+          "text": "851: cd /root/DMD"
+        },
+        {
+          "line": 567,
+          "text": "853: /root/miniconda3/envs/fastgen/bin/python - <<'PY'"
+        },
+        {
+          "line": 588,
+          "text": "874: grep -n '/root/AIC313-Project-FastGen\\|workspace_distillation'   experiments/night_run/dmd_reproduce.py || true"
+        },
+        {
+          "line": 591,
+          "text": "877: /root/miniconda3/envs/fastgen/bin/python -m py_compile   experiments/night_run/dmd_reproduce.py"
+        },
+        {
+          "line": 596,
+          "text": "882: cd /root/DMD"
+        },
+        {
+          "line": 597,
+          "text": "883: /root/miniconda3/envs/fastgen/bin/python - <<'PY'"
+        },
+        {
+          "line": 622,
+          "text": "908: /root/miniconda3/envs/fastgen/bin/python -m py_compile   experiments/night_run/dmd_reproduce.py"
+        },
+        {
+          "line": 624,
+          "text": "910: cd /root/DMD"
+        },
+        {
+          "line": 625,
+          "text": "911: /root/miniconda3/envs/fastgen/bin/python - <<'PY'"
+        },
+        {
+          "line": 645,
+          "text": "931: /root/miniconda3/envs/fastgen/bin/python -m py_compile   experiments/night_run/dmd_reproduce.py"
+        }
+      ]
+    },
+    {
+      "file": "provenance/official_validation_records.md",
+      "classification": "documented provenance, explicit external input, safety guard, or verification path",
+      "hits": [
+        {
+          "line": 12,
+          "text": "The baseline artifact is copied to `historical_lineage_evidence/official_baseline_metrics.json`. Its original absolute path is `/root/AIC313-Project-FastGen/experiments/night_run/three_frozen_models_official_comparison/team_one_nfe/metrics.json`. It records 3020 reference/generated images, batch 16, seed 42+batch index, and `used_for_selection:false`."
+        }
+      ]
+    },
+    {
+      "file": "provenance/historical_lineage_evidence/teacher_preflight_config.json",
+      "classification": "historical source or metadata; archival",
+      "hits": [
+        {
+          "line": 3,
+          "text": "  \"data_root\": \"/root/AIC313-Project-FastGen/experiments/night_run/development_images\","
+        },
+        {
+          "line": 4,
+          "text": "  \"split_dir\": \"/root/AIC313-Project-FastGen/data/pokemon-generation-one-22k\","
+        },
+        {
+          "line": 42,
+          "text": "  \"output_dir\": \"/root/AIC313-Project-FastGen/experiments/night_run\","
+        },
+        {
+          "line": 51,
+          "text": "  \"train_manifest\": \"/root/AIC313-Project-FastGen/data/development/seed42_holdout5/train.txt\","
+        },
+        {
+          "line": 52,
+          "text": "  \"development_reference_manifest\": \"/root/AIC313-Project-FastGen/data/development/seed42_holdout5/holdout.txt\","
+        }
+      ]
+    },
+    {
+      "file": "provenance/historical_lineage_evidence/lineage_reaudit.json",
+      "classification": "historical source or metadata; archival",
+      "hits": [
+        {
+          "line": 21,
+          "text": "      \"checkpoint\": \"/root/AIC313-Project-FastGen/experiments/night_run/teacher_preflight/final.pt\","
+        },
+        {
+          "line": 24,
+          "text": "      \"config_train_manifest\": \"/root/AIC313-Project-FastGen/data/development/seed42_holdout5/train.txt\""
+        },
+        {
+          "line": 27,
+          "text": "      \"checkpoint\": \"/root/AIC313-Project-FastGen/experiments/night_run/fresh_teacher/latest.pt\","
+        },
+        {
+          "line": 30,
+          "text": "      \"config_train_manifest\": \"/root/AIC313-Project-FastGen/data/development/seed42_holdout5/train.txt\""
+        }
+      ]
+    },
+    {
+      "file": "provenance/historical_lineage_evidence/fresh_teacher_config.json",
+      "classification": "historical source or metadata; archival",
+      "hits": [
+        {
+          "line": 3,
+          "text": "  \"data_root\": \"/root/AIC313-Project-FastGen/experiments/night_run/development_images\","
+        },
+        {
+          "line": 4,
+          "text": "  \"split_dir\": \"/root/AIC313-Project-FastGen/data/pokemon-generation-one-22k\","
+        },
+        {
+          "line": 42,
+          "text": "  \"output_dir\": \"/root/AIC313-Project-FastGen/experiments/night_run\","
+        },
+        {
+          "line": 51,
+          "text": "  \"train_manifest\": \"/root/AIC313-Project-FastGen/data/development/seed42_holdout5/train.txt\","
+        },
+        {
+          "line": 52,
+          "text": "  \"development_reference_manifest\": \"/root/AIC313-Project-FastGen/data/development/seed42_holdout5/holdout.txt\","
+        }
+      ]
+    },
+    {
+      "file": "provenance/historical_lineage_evidence/fresh_teacher_metrics.json",
+      "classification": "historical source or metadata; archival",
+      "hits": [
+        {
+          "line": 180,
+          "text": "  \"train_manifest\": \"/root/AIC313-Project-FastGen/data/development/seed42_holdout5/train.txt\","
+        },
+        {
+          "line": 183,
+          "text": "  \"resumed_from\": \"/root/AIC313-Project-FastGen/experiments/night_run/teacher_preflight/final.pt\","
+        }
+      ]
+    },
+    {
+      "file": "provenance/historical_lineage_evidence/teacher_preflight_metrics.json",
+      "classification": "historical source or metadata; archival",
+      "hits": [
+        {
+          "line": 180,
+          "text": "  \"train_manifest\": \"/root/AIC313-Project-FastGen/data/development/seed42_holdout5/train.txt\","
+        }
+      ]
+    },
+    {
+      "file": "provenance/historical_lineage_evidence/overnight.py",
+      "classification": "historical source or metadata; archival",
+      "hits": [
+        {
+          "line": 8,
+          "text": "SOURCE=Path('/root/FastGen/AIC313-Project-FastGen/data/pokemon-generation-one-22k')"
+        },
+        {
+          "line": 103,
+          "text": "    write(OUT/'evaluation_preflight.json',{'holdout_self_fid':fid,'official_access':False,'reference_count':755,'metric_asset':'/tmp/inception-2015-12-05.pt','metric_asset_sha256':digest('/tmp/inception-2015-12-05.pt')})"
+        }
+      ]
+    },
+    {
+      "file": "reports/REPORT.md",
+      "classification": "historical source or metadata; archival",
+      "hits": [
+        {
+          "line": 20,
+          "text": "Selected model: {\"name\": \"dmd_002500\", \"step\": 2500, \"fid\": 55.72514913187206, \"reference_kind\": \"development_reference_team_documented_holdout\", \"reference_count\": 755, \"sample_count\": 3020, \"seed\": 42, \"batch_size\": 16, \"precision\": \"bf16\", \"parameter_count\": 48883107, \"nfe\": 1, \"measured_batch_backbone_calls\": 189, \"peak_vram_bytes\": 4522762752, \"training_seconds\": 3643.402763916005, \"selected_"
+        }
+      ]
+    },
+    {
+      "file": "reports/selected_model.json",
+      "classification": "historical source or metadata; archival",
+      "hits": [
+        {
+          "line": 16,
+          "text": "  \"selected_source\": \"/root/DMD/experiments/night_run/dmd_preserve_team/dmd_step_002500.ckpt\","
+        },
+        {
+          "line": 17,
+          "text": "  \"export\": \"/root/DMD/experiments/night_run/dmd_preserve_team/selected_one_nfe.ckpt\","
+        }
+      ]
+    }
+  ],
+  "archived_scripts_not_portable_entrypoints": "Restore dmd_reproduce.py to new workspace/experiments/night_run as documented"
+}

@@ -1,0 +1,39 @@
+{
+  "utc": "2026-10-06T22:49:22Z",
+  "checks": {
+    "train_holdout_disjoint": true,
+    "holdout_validation_disjoint": true,
+    "private_data_exactly_dev_union": true,
+    "private_data_has_no_official_validation": true,
+    "old_checkpoint_bytes_unchanged": true,
+    "teacher_preflight/final.pt_train_paths_hash": true,
+    "teacher_preflight/final.pt_train_manifest": true,
+    "fresh_teacher/latest.pt_train_paths_hash": true,
+    "fresh_teacher/latest.pt_train_manifest": true,
+    "preflight_fresh_no_resume": true,
+    "fresh_teacher_only_resumes_our_fresh_preflight": true,
+    "no_student_runs_started_yet": true
+  },
+  "training_paths_digest_encoding": "SHA256 newline-joined paths without terminal newline",
+  "expected_train_paths_sha256": "b4020d6dc65948c7cd2a0de048382284d0fc7a1dd19237583e4f67cc2d353f51",
+  "records": [
+    {
+      "checkpoint": "/root/AIC313-Project-FastGen/experiments/night_run/teacher_preflight/final.pt",
+      "step": 2,
+      "train_paths_sha256": "b4020d6dc65948c7cd2a0de048382284d0fc7a1dd19237583e4f67cc2d353f51",
+      "config_train_manifest": "/root/AIC313-Project-FastGen/data/development/seed42_holdout5/train.txt"
+    },
+    {
+      "checkpoint": "/root/AIC313-Project-FastGen/experiments/night_run/fresh_teacher/latest.pt",
+      "step": 70000,
+      "train_paths_sha256": "b4020d6dc65948c7cd2a0de048382284d0fc7a1dd19237583e4f67cc2d353f51",
+      "config_train_manifest": "/root/AIC313-Project-FastGen/data/development/seed42_holdout5/train.txt"
+    }
+  ],
+  "current_teacher_step": 71096,
+  "baseline_status": "not started",
+  "candidate_status": "not started",
+  "provenance_status": "PASS: entirely fresh development train lineage",
+  "historical_checkpoint_use": "initial audit parameter/NFE smoke only; no FID, selection, initialization, distillation or continuation",
+  "official_validation_use": "split-text disjointness verification only; no images, features, statistics, FID or tuning"
+}

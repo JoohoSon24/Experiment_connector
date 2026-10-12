@@ -1,0 +1,50 @@
+[
+  {
+    "step": 0,
+    "fid": 65.38627014891784,
+    "reference_split": "development",
+    "reference_count": 755,
+    "sample_count": 3020,
+    "seed": 42,
+    "batch_size": 16,
+    "precision": "bf16",
+    "parameter_count": 48883107,
+    "nfe": 1
+  },
+  {
+    "step": 500,
+    "fid": 69.29066957947686,
+    "reference_split": "development",
+    "reference_count": 755,
+    "sample_count": 3020,
+    "seed": 42,
+    "batch_size": 16,
+    "precision": "bf16",
+    "parameter_count": 48883107,
+    "nfe": 1
+  },
+  {
+    "step": 1000,
+    "fid": 77.18194914519563,
+    "reference_split": "development",
+    "reference_count": 755,
+    "sample_count": 3020,
+    "seed": 42,
+    "batch_size": 16,
+    "precision": "bf16",
+    "parameter_count": 48883107,
+    "nfe": 1
+  },
+  {
+    "step": 2500,
+    "fid": 79.00721349225392,
+    "reference_split": "development",
+    "reference_count": 755,
+    "sample_count": 3020,
+    "seed": 42,
+    "batch_size": 16,
+    "precision": "bf16",
+    "parameter_count": 48883107,
+    "nfe": 1
+  }
+]

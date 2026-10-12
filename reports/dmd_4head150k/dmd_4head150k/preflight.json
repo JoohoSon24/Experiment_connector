@@ -1,0 +1,26 @@
+{
+  "updates": [
+    {
+      "step": 1,
+      "loss": 0.8428338766098022,
+      "dmd_loss": 0.8402285277843475,
+      "endpoint_mse": 0.026053508277982473,
+      "fake_score_loss": 0.016697904095053673,
+      "grad_norm": 0.48200520873069763,
+      "peak_vram_bytes": 4120286720
+    },
+    {
+      "step": 1,
+      "loss": 0.9032115042209625,
+      "dmd_loss": 0.9032115042209625,
+      "endpoint_mse": 0.0,
+      "fake_score_loss": 0.004793495871126652,
+      "grad_norm": 0.6774129271507263,
+      "peak_vram_bytes": 4522433024
+    }
+  ],
+  "inference_backbone_calls": 1,
+  "teacher_heads": 4,
+  "generator_heads": 1,
+  "finite_output": true
+}

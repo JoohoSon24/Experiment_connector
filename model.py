@@ -74,33 +74,24 @@ class Model(nn.Module):
 
 
 class ModelOneNFE(Model):
-    """Student model evaluated with exactly one model function evaluation."""
-
+    """Fixed-CFG distilled v model; exactly one student backbone call."""
     def __init__(self, device="cpu", **kwargs):
-        raise NotImplementedError("Implement the one-NFE model constructor.")
+        from distillation.submission import submission_backbone, initialize_buffers
+        super().__init__(submission_backbone())
+        initialize_buffers(self,device,1)
 
-    def sample(
-        self,
-        shape: tuple[int, ...],
-        *,
-        device: torch.device | str = "cuda",
-        category: torch.Tensor | None = None,
-        **kwargs,
-    ) -> torch.Tensor:
-        raise NotImplementedError("Implement sample() in ModelOneNFE.")
+    def sample(self, shape: tuple[int,...], *, device="cuda", category=None, **kwargs):
+        from distillation.submission import submission_sample
+        return submission_sample(self,shape,device,category,**kwargs)
 
 
 class ModelFewNFE(Model):
-    """Student model evaluated with no more than four model evaluations."""
-
+    """Fixed-CFG distilled v model; exactly four student backbone calls."""
     def __init__(self, device="cpu", **kwargs):
-        raise NotImplementedError("Implement the few-NFE model constructor.")
-    def sample(
-        self,
-        shape: tuple[int, ...],
-        *,
-        device: torch.device | str = "cuda",
-        category: torch.Tensor | None = None,
-        **kwargs,
-    ) -> torch.Tensor:
-        raise NotImplementedError("Implement sample() in ModelFewNFE.")
+        from distillation.submission import submission_backbone, initialize_buffers
+        super().__init__(submission_backbone())
+        initialize_buffers(self,device,4)
+
+    def sample(self, shape: tuple[int,...], *, device="cuda", category=None, **kwargs):
+        from distillation.submission import submission_sample
+        return submission_sample(self,shape,device,category,**kwargs)

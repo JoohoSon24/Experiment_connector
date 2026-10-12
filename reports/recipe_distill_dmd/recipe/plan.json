@@ -1,0 +1,41 @@
+{
+  "root_teacher": "/root/Diffusion/workspace_distillation/experiments/teacher_variant_sequence/attention4/attention4_150k/final.pt",
+  "teacher_sha256": "499f268c8ece91fa3e82eca3d2613675b192092ee3a40f2f698dd079e32ea66b",
+  "teacher_official_fid": 25.49841493955,
+  "heads": 4,
+  "guidance_updates": 50000,
+  "progressive_steps": [
+    16,
+    8,
+    4,
+    2,
+    1
+  ],
+  "updates_per_stage": 25000,
+  "budget_extensions": {
+    "n1": 100000,
+    "n2": 100000
+  },
+  "DMD_queue": {
+    "A_reg01_lr2e5": [
+      0.1,
+      2e-05
+    ],
+    "B_reg00_lr2e5": [
+      0.0,
+      2e-05
+    ],
+    "C_reg03_lr2e5": [
+      0.3,
+      2e-05
+    ],
+    "D_reg01_lr1e5": [
+      0.1,
+      1e-05
+    ]
+  },
+  "DMD_steps_each": 2500,
+  "selection": "development755 only; official3020 reporting",
+  "quality_gate": "guidance development FID <= teacher32 41.73750985 + 15",
+  "retention": "completed intermediate stages EMA only; active/latest and final n1/n2 budget full optimizer/RNG; DMD exports inference-only"
+}

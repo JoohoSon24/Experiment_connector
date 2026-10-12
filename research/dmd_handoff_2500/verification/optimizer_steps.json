@@ -1,0 +1,48 @@
+{
+  "latest_step": 10000,
+  "step_counters": {
+    "optimizer": [
+      10000
+    ],
+    "fake_optimizer": [
+      40200
+    ]
+  },
+  "parameter_groups": {
+    "optimizer": [
+      {
+        "lr": 2e-05,
+        "betas": [
+          0.9,
+          0.999
+        ],
+        "eps": 1e-08,
+        "weight_decay": 0,
+        "amsgrad": false,
+        "foreach": null,
+        "maximize": false,
+        "capturable": false,
+        "differentiable": false,
+        "fused": null
+      }
+    ],
+    "fake_optimizer": [
+      {
+        "lr": 0.0002,
+        "betas": [
+          0.9,
+          0.999
+        ],
+        "eps": 1e-08,
+        "weight_decay": 0,
+        "amsgrad": false,
+        "foreach": null,
+        "maximize": false,
+        "capturable": false,
+        "differentiable": false,
+        "fused": null
+      }
+    ]
+  },
+  "evidence_kind": "new inspection of historical latest.pt"
+}

@@ -1,0 +1,40 @@
+{
+  "checked_at_utc": "2026-10-07T06:39:00.369177+00:00",
+  "evaluator": "unchanged upstream evaluate.py",
+  "base_commit": "e3f5120000cd91037017d86f23993492195101a5",
+  "precision": "wrapper bf16 backbone / FP32 schedule",
+  "seed_policy": "checkpoint seed 42 + sequential batch index",
+  "evaluation_weight_sha256": "f58cb9b6ec323ed63459aa4fb441fe750cfe39fafad6da5cb504a16f19e958f4",
+  "results": [
+    {
+      "mode": "one_nfe",
+      "fid_printed_4dp": 58.1595,
+      "handoff_fid_4dp": 58.1595,
+      "matches_handoff_at_4dp": true,
+      "checkpoint": "checkpoints/one_nfe.ckpt",
+      "checkpoint_sha256": "8173c059ca3dda5d63c2c3a9d463b100218867c5fc08b995f5c93162844f7266",
+      "batch_size": 16,
+      "generated_count": 3020,
+      "reference_count": 3020,
+      "generated_dir": "results/restoration_one/one_nfe",
+      "log": "environment/official_one_console.log",
+      "exit_code": 0
+    },
+    {
+      "mode": "few_nfe",
+      "fid_printed_4dp": 33.0517,
+      "handoff_fid_4dp": 33.0517,
+      "matches_handoff_at_4dp": true,
+      "checkpoint": "checkpoints/few_nfe.ckpt",
+      "checkpoint_sha256": "d3c6d0cccc1b81d1709ed090abd68961197ef7417a7c6ae67724835bf7bfa596",
+      "batch_size": 16,
+      "generated_count": 3020,
+      "reference_count": 3020,
+      "generated_dir": "results/restoration_few/few_nfe",
+      "log": "environment/official_few_console.log",
+      "exit_code": 0
+    }
+  ],
+  "status": "PASS",
+  "scope": "Frozen inference FID reproduction; full teacher/stage training checkpoints absent"
+}

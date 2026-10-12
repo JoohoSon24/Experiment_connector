@@ -1,0 +1,9 @@
+{
+  "phase": "completed",
+  "runs": {
+    "A_reg01_lr2e5": "https://wandb.ai/fv2z6n929c-kaist-digital-humanities-and-social-sciences-/pokemon-diffusion/runs/8afd35pb",
+    "B_reg00_lr2e5": "https://wandb.ai/fv2z6n929c-kaist-digital-humanities-and-social-sciences-/pokemon-diffusion/runs/8nmub387",
+    "C_reg03_lr2e5": "https://wandb.ai/fv2z6n929c-kaist-digital-humanities-and-social-sciences-/pokemon-diffusion/runs/rmvnnm1i",
+    "D_reg01_lr1e5": "https://wandb.ai/fv2z6n929c-kaist-digital-humanities-and-social-sciences-/pokemon-diffusion/runs/3lqtl8vf"
+  }
+}

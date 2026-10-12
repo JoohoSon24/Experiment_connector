@@ -1,0 +1,4 @@
+# Markdown uses trailing spaces for intentional hard line breaks.
+*.md whitespace=-blank-at-eol,-blank-at-eof
+# Archived patches preserve their original context lines exactly.
+*.patch whitespace=-blank-at-eol

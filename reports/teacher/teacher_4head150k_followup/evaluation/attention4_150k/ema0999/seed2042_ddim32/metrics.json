@@ -1,0 +1,26 @@
+{
+  "checkpoint": "/root/Diffusion/workspace_distillation/experiments/teacher_variant_sequence/attention4/attention4_150k/final.pt",
+  "checkpoint_step": 150000,
+  "weights": "ema:0.999",
+  "reference_split": "development",
+  "seed": 2042,
+  "batch_size": 16,
+  "precision": "bf16",
+  "steps": 32,
+  "guidance_scale": 2.0,
+  "sample_count": 3020,
+  "sampler": "ddim",
+  "clip_denoised": true,
+  "parameter_count": 48883107,
+  "fid": 42.30510029991706,
+  "submission_eligible": false,
+  "smoke": false,
+  "versions": {
+    "torch": "2.6.0+cu124",
+    "clean-fid": "0.1.35",
+    "scipy": "1.15.3",
+    "numpy": "2.2.6"
+  },
+  "nfe_per_sample": 64,
+  "reference_count": 755
+}

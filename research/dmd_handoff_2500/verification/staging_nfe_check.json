@@ -1,0 +1,60 @@
+{
+  "status": "PASS",
+  "checkpoint": "/tmp/dmd_handoff_build_ZXz9pEZX/package/checkpoints/dmd_step_002500.ckpt",
+  "sha256": "acc99889d73d905c1c31da57e1f2434b396a6640dd854a96cfdf1b9cc07d708c",
+  "parameter_count": 48883107,
+  "sampling_times": [
+    999
+  ],
+  "measured_batches": [
+    {
+      "batch": 1,
+      "backbone_forwards": 1,
+      "finite": true,
+      "shape": [
+        1,
+        3,
+        64,
+        64
+      ],
+      "min": -1.0,
+      "max": 1.0
+    },
+    {
+      "batch": 2,
+      "backbone_forwards": 1,
+      "finite": true,
+      "shape": [
+        2,
+        3,
+        64,
+        64
+      ],
+      "min": -1.0,
+      "max": 1.0
+    },
+    {
+      "batch": 16,
+      "backbone_forwards": 1,
+      "finite": true,
+      "shape": [
+        16,
+        3,
+        64,
+        64
+      ],
+      "min": -1.0,
+      "max": 1.0
+    }
+  ],
+  "device": "cuda",
+  "torch": "2.6.0+cu124",
+  "inference_cfg": false,
+  "loaded_checkpoint_count": 1,
+  "auxiliary_checkpoint_dependencies": [],
+  "opened_checkpoint_files": [
+    "/tmp/dmd_handoff_build_ZXz9pEZX/package/checkpoints/dmd_step_002500.ckpt"
+  ],
+  "module_path": "/tmp/dmd_handoff_build_ZXz9pEZX/package/source_overlay/model.py",
+  "evidence_kind": "new read-only handoff inference verification"
+}

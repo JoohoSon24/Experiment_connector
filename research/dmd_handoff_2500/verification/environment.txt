@@ -1,0 +1,35 @@
+{
+  "captured_at": "2026-10-09T06:20:33.580034+00:00",
+  "python": "3.10.21 (main, Aug 27 2026, 14:42:07) [GCC 14.3.0]",
+  "python_executable": "/root/miniconda3/envs/fastgen/bin/python",
+  "packages": {
+    "torch": "2.6.0+cu124",
+    "torchvision": "0.21.0+cu124",
+    "clean-fid": "0.1.35",
+    "scipy": "1.15.3",
+    "numpy": "2.2.6",
+    "Pillow": "12.3.0"
+  },
+  "cuda": {
+    "torch_cuda": "12.4",
+    "available": true,
+    "name": "GRID A100D-20C",
+    "total_vram_bytes": 21470511104,
+    "bf16_supported": true
+  },
+  "git_commit": "e3f5120000cd91037017d86f23993492195101a5",
+  "git_status": " M model.py\n?? .gitignore\n?? CODEX.md\n?? OVERLAY_MANIFEST.json\n?? PROJECT_SPEC.md\n?? TEAM_HANDOFF.md\n?? configs/\n?? consistency/\n?? constraints/\n?? data/development/\n?? distillation/\n?? docs/\n?? scripts/\n?? teacher/\n",
+  "build_process_environment": {
+    "OMP_NUM_THREADS": null,
+    "PYTHONUTF8": null,
+    "CUDA_VISIBLE_DEVICES": null,
+    "CONDA_DEFAULT_ENV": "base",
+    "PYTHONDONTWRITEBYTECODE": null,
+    "CUBLAS_WORKSPACE_CONFIG": null
+  },
+  "historical_launch_exports": {
+    "OMP_NUM_THREADS": "4",
+    "PYTHONUTF8": "1"
+  },
+  "historical_launch_evidence": "provenance/tmux_preflight_launch_excerpt.txt"
+}

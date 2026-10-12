@@ -1,0 +1,42 @@
+{
+  "evidence_kind": "new extraction of existing history, not new training output",
+  "captured_at": "2026-10-09T06:21:35.935549+00:00",
+  "shell_history": {
+    "original_path": "/root/.bash_history",
+    "sha256": "14ebb70746d8dcb6cf9edef865d9807d6c942f99b1f264629eef2d9b9f916444",
+    "bytes": 29847,
+    "ranges_inclusive": [
+      [
+        139,
+        175
+      ],
+      [
+        188,
+        274
+      ],
+      [
+        381,
+        388
+      ],
+      [
+        419,
+        510
+      ],
+      [
+        516,
+        814
+      ],
+      [
+        817,
+        933
+      ]
+    ],
+    "timestamp_limit": "No reliable per-command timestamps; merged shell ordering"
+  },
+  "tmux": {
+    "session": "dmd:0.0",
+    "command": "tmux capture-pane -p -J -S - -t dmd:0.0",
+    "excerpt_scope": "retained history start through exact launch command",
+    "sha256": "0620b494c616b45d9c1cc6bc098525b59fb85a7066c45de8103871a2fb3c6781"
+  }
+}

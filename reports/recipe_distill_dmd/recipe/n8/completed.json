@@ -1,0 +1,54 @@
+{
+  "stage": "n8",
+  "final": "/root/Diffusion/recipe_distill_dmd/experiments/recipe/n8/final.pt",
+  "development": {
+    "fid": 45.81403252742416,
+    "reference_split": "development",
+    "reference_count": 755,
+    "sample_count": 3020,
+    "seed": 42,
+    "batch_size": 16,
+    "precision": "bf16",
+    "nfe": 8,
+    "parameter_count": 48883107
+  },
+  "milestones": [
+    {
+      "step": 10000,
+      "fid": 45.62791852755316,
+      "reference_split": "development",
+      "reference_count": 755,
+      "sample_count": 3020,
+      "seed": 42,
+      "batch_size": 16,
+      "precision": "bf16",
+      "nfe": 8,
+      "parameter_count": 48883107
+    },
+    {
+      "step": 20000,
+      "fid": 45.60756995661819,
+      "reference_split": "development",
+      "reference_count": 755,
+      "sample_count": 3020,
+      "seed": 42,
+      "batch_size": 16,
+      "precision": "bf16",
+      "nfe": 8,
+      "parameter_count": 48883107
+    },
+    {
+      "step": 25000,
+      "fid": 45.81403252742416,
+      "reference_split": "development",
+      "reference_count": 755,
+      "sample_count": 3020,
+      "seed": 42,
+      "batch_size": 16,
+      "precision": "bf16",
+      "nfe": 8,
+      "parameter_count": 48883107
+    }
+  ],
+  "wandb": "https://wandb.ai/fv2z6n929c-kaist-digital-humanities-and-social-sciences-/pokemon-diffusion/runs/785c73c7"
+}

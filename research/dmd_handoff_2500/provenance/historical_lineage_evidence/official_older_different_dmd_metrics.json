@@ -1,0 +1,25 @@
+{
+  "id": "dmd_one_nfe",
+  "label": "1-NFE + DMD 2.5K",
+  "checkpoint": "experiments/night_run/dmd_preserve_team/selected_at_2500_one_nfe.ckpt",
+  "sha256": "5af78d5362b0b0fca3a77de0dae1509dd46d95db86fd2a9de9397fb564f172a7",
+  "fid": 38.43229103196154,
+  "reference_split": "official_validation",
+  "parameter_count": 48883107,
+  "nfe_per_sample": 1,
+  "single_image_backbone_calls": 1,
+  "generation_batches": 189,
+  "backbone_calls_all_batches": 189,
+  "every_batch_exactly_one_forward": true,
+  "inference_auxiliary_models": false,
+  "sampling_times": [
+    999
+  ],
+  "inference_cfg": false,
+  "sample_count": 3020,
+  "reference_count": 3020,
+  "seed_policy": "42 + generation batch index; reset before each model",
+  "batch_size": 16,
+  "runtime_seconds": 25.133608770003775,
+  "used_for_selection": false
+}

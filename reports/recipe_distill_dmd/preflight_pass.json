@@ -1,0 +1,31 @@
+{
+  "guidance_updates": 1,
+  "progressive_updates": 1,
+  "batch": 64,
+  "heads": 4,
+  "export_sample_exact_parity": [
+    1,
+    4
+  ],
+  "budget_resume": "full AdamW/RNG continuation 1->2 passed",
+  "DMD_updates": [
+    {
+      "step": 1,
+      "loss": 1.5817845165729523,
+      "dmd_loss": 1.5505527257919312,
+      "endpoint_mse": 0.31231771409511566,
+      "fake_score_loss": 0.0007780452724546194,
+      "grad_norm": 0.5063047409057617,
+      "peak_vram_bytes": 4213894144
+    },
+    {
+      "step": 2,
+      "loss": 1.061650201678276,
+      "dmd_loss": 1.061650201678276,
+      "endpoint_mse": 0.0,
+      "fake_score_loss": 0.0007053001318126917,
+      "grad_norm": 0.8457539677619934,
+      "peak_vram_bytes": 4625373184
+    }
+  ]
+}

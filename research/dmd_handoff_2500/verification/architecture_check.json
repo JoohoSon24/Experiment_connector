@@ -1,0 +1,2129 @@
+{
+  "status": "PASS",
+  "state_key_shape_dtype_equal_team_one": true,
+  "state_schema": {
+    "alpha_bar": [
+      [
+        1000
+      ],
+      "torch.float32"
+    ],
+    "sampling_times": [
+      [
+        1
+      ],
+      "torch.int64"
+    ],
+    "sampling_seed": [
+      [],
+      "torch.int64"
+    ],
+    "backbone.time_mlp.0.weight": [
+      [
+        384,
+        96
+      ],
+      "torch.float32"
+    ],
+    "backbone.time_mlp.0.bias": [
+      [
+        384
+      ],
+      "torch.float32"
+    ],
+    "backbone.time_mlp.2.weight": [
+      [
+        384,
+        384
+      ],
+      "torch.float32"
+    ],
+    "backbone.time_mlp.2.bias": [
+      [
+        384
+      ],
+      "torch.float32"
+    ],
+    "backbone.class_emb.weight": [
+      [
+        152,
+        384
+      ],
+      "torch.float32"
+    ],
+    "backbone.input_conv.weight": [
+      [
+        96,
+        3,
+        3,
+        3
+      ],
+      "torch.float32"
+    ],
+    "backbone.input_conv.bias": [
+      [
+        96
+      ],
+      "torch.float32"
+    ],
+    "backbone.down.0.res.norm1.weight": [
+      [
+        96
+      ],
+      "torch.float32"
+    ],
+    "backbone.down.0.res.norm1.bias": [
+      [
+        96
+      ],
+      "torch.float32"
+    ],
+    "backbone.down.0.res.conv1.weight": [
+      [
+        96,
+        96,
+        3,
+        3
+      ],
+      "torch.float32"
+    ],
+    "backbone.down.0.res.conv1.bias": [
+      [
+        96
+      ],
+      "torch.float32"
+    ],
+    "backbone.down.0.res.emb.weight": [
+      [
+        192,
+        384
+      ],
+      "torch.float32"
+    ],
+    "backbone.down.0.res.emb.bias": [
+      [
+        192
+      ],
+      "torch.float32"
+    ],
+    "backbone.down.0.res.norm2.weight": [
+      [
+        96
+      ],
+      "torch.float32"
+    ],
+    "backbone.down.0.res.norm2.bias": [
+      [
+        96
+      ],
+      "torch.float32"
+    ],
+    "backbone.down.0.res.conv2.weight": [
+      [
+        96,
+        96,
+        3,
+        3
+      ],
+      "torch.float32"
+    ],
+    "backbone.down.0.res.conv2.bias": [
+      [
+        96
+      ],
+      "torch.float32"
+    ],
+    "backbone.down.1.res.norm1.weight": [
+      [
+        96
+      ],
+      "torch.float32"
+    ],
+    "backbone.down.1.res.norm1.bias": [
+      [
+        96
+      ],
+      "torch.float32"
+    ],
+    "backbone.down.1.res.conv1.weight": [
+      [
+        96,
+        96,
+        3,
+        3
+      ],
+      "torch.float32"
+    ],
+    "backbone.down.1.res.conv1.bias": [
+      [
+        96
+      ],
+      "torch.float32"
+    ],
+    "backbone.down.1.res.emb.weight": [
+      [
+        192,
+        384
+      ],
+      "torch.float32"
+    ],
+    "backbone.down.1.res.emb.bias": [
+      [
+        192
+      ],
+      "torch.float32"
+    ],
+    "backbone.down.1.res.norm2.weight": [
+      [
+        96
+      ],
+      "torch.float32"
+    ],
+    "backbone.down.1.res.norm2.bias": [
+      [
+        96
+      ],
+      "torch.float32"
+    ],
+    "backbone.down.1.res.conv2.weight": [
+      [
+        96,
+        96,
+        3,
+        3
+      ],
+      "torch.float32"
+    ],
+    "backbone.down.1.res.conv2.bias": [
+      [
+        96
+      ],
+      "torch.float32"
+    ],
+    "backbone.down.2.op.weight": [
+      [
+        96,
+        96,
+        3,
+        3
+      ],
+      "torch.float32"
+    ],
+    "backbone.down.2.op.bias": [
+      [
+        96
+      ],
+      "torch.float32"
+    ],
+    "backbone.down.3.res.norm1.weight": [
+      [
+        96
+      ],
+      "torch.float32"
+    ],
+    "backbone.down.3.res.norm1.bias": [
+      [
+        96
+      ],
+      "torch.float32"
+    ],
+    "backbone.down.3.res.conv1.weight": [
+      [
+        192,
+        96,
+        3,
+        3
+      ],
+      "torch.float32"
+    ],
+    "backbone.down.3.res.conv1.bias": [
+      [
+        192
+      ],
+      "torch.float32"
+    ],
+    "backbone.down.3.res.emb.weight": [
+      [
+        384,
+        384
+      ],
+      "torch.float32"
+    ],
+    "backbone.down.3.res.emb.bias": [
+      [
+        384
+      ],
+      "torch.float32"
+    ],
+    "backbone.down.3.res.norm2.weight": [
+      [
+        192
+      ],
+      "torch.float32"
+    ],
+    "backbone.down.3.res.norm2.bias": [
+      [
+        192
+      ],
+      "torch.float32"
+    ],
+    "backbone.down.3.res.conv2.weight": [
+      [
+        192,
+        192,
+        3,
+        3
+      ],
+      "torch.float32"
+    ],
+    "backbone.down.3.res.conv2.bias": [
+      [
+        192
+      ],
+      "torch.float32"
+    ],
+    "backbone.down.3.res.skip.weight": [
+      [
+        192,
+        96,
+        1,
+        1
+      ],
+      "torch.float32"
+    ],
+    "backbone.down.3.res.skip.bias": [
+      [
+        192
+      ],
+      "torch.float32"
+    ],
+    "backbone.down.4.res.norm1.weight": [
+      [
+        192
+      ],
+      "torch.float32"
+    ],
+    "backbone.down.4.res.norm1.bias": [
+      [
+        192
+      ],
+      "torch.float32"
+    ],
+    "backbone.down.4.res.conv1.weight": [
+      [
+        192,
+        192,
+        3,
+        3
+      ],
+      "torch.float32"
+    ],
+    "backbone.down.4.res.conv1.bias": [
+      [
+        192
+      ],
+      "torch.float32"
+    ],
+    "backbone.down.4.res.emb.weight": [
+      [
+        384,
+        384
+      ],
+      "torch.float32"
+    ],
+    "backbone.down.4.res.emb.bias": [
+      [
+        384
+      ],
+      "torch.float32"
+    ],
+    "backbone.down.4.res.norm2.weight": [
+      [
+        192
+      ],
+      "torch.float32"
+    ],
+    "backbone.down.4.res.norm2.bias": [
+      [
+        192
+      ],
+      "torch.float32"
+    ],
+    "backbone.down.4.res.conv2.weight": [
+      [
+        192,
+        192,
+        3,
+        3
+      ],
+      "torch.float32"
+    ],
+    "backbone.down.4.res.conv2.bias": [
+      [
+        192
+      ],
+      "torch.float32"
+    ],
+    "backbone.down.5.op.weight": [
+      [
+        192,
+        192,
+        3,
+        3
+      ],
+      "torch.float32"
+    ],
+    "backbone.down.5.op.bias": [
+      [
+        192
+      ],
+      "torch.float32"
+    ],
+    "backbone.down.6.res.norm1.weight": [
+      [
+        192
+      ],
+      "torch.float32"
+    ],
+    "backbone.down.6.res.norm1.bias": [
+      [
+        192
+      ],
+      "torch.float32"
+    ],
+    "backbone.down.6.res.conv1.weight": [
+      [
+        288,
+        192,
+        3,
+        3
+      ],
+      "torch.float32"
+    ],
+    "backbone.down.6.res.conv1.bias": [
+      [
+        288
+      ],
+      "torch.float32"
+    ],
+    "backbone.down.6.res.emb.weight": [
+      [
+        576,
+        384
+      ],
+      "torch.float32"
+    ],
+    "backbone.down.6.res.emb.bias": [
+      [
+        576
+      ],
+      "torch.float32"
+    ],
+    "backbone.down.6.res.norm2.weight": [
+      [
+        288
+      ],
+      "torch.float32"
+    ],
+    "backbone.down.6.res.norm2.bias": [
+      [
+        288
+      ],
+      "torch.float32"
+    ],
+    "backbone.down.6.res.conv2.weight": [
+      [
+        288,
+        288,
+        3,
+        3
+      ],
+      "torch.float32"
+    ],
+    "backbone.down.6.res.conv2.bias": [
+      [
+        288
+      ],
+      "torch.float32"
+    ],
+    "backbone.down.6.res.skip.weight": [
+      [
+        288,
+        192,
+        1,
+        1
+      ],
+      "torch.float32"
+    ],
+    "backbone.down.6.res.skip.bias": [
+      [
+        288
+      ],
+      "torch.float32"
+    ],
+    "backbone.down.6.attn.norm.weight": [
+      [
+        288
+      ],
+      "torch.float32"
+    ],
+    "backbone.down.6.attn.norm.bias": [
+      [
+        288
+      ],
+      "torch.float32"
+    ],
+    "backbone.down.6.attn.qkv.weight": [
+      [
+        864,
+        288,
+        1
+      ],
+      "torch.float32"
+    ],
+    "backbone.down.6.attn.qkv.bias": [
+      [
+        864
+      ],
+      "torch.float32"
+    ],
+    "backbone.down.6.attn.proj.weight": [
+      [
+        288,
+        288,
+        1
+      ],
+      "torch.float32"
+    ],
+    "backbone.down.6.attn.proj.bias": [
+      [
+        288
+      ],
+      "torch.float32"
+    ],
+    "backbone.down.7.res.norm1.weight": [
+      [
+        288
+      ],
+      "torch.float32"
+    ],
+    "backbone.down.7.res.norm1.bias": [
+      [
+        288
+      ],
+      "torch.float32"
+    ],
+    "backbone.down.7.res.conv1.weight": [
+      [
+        288,
+        288,
+        3,
+        3
+      ],
+      "torch.float32"
+    ],
+    "backbone.down.7.res.conv1.bias": [
+      [
+        288
+      ],
+      "torch.float32"
+    ],
+    "backbone.down.7.res.emb.weight": [
+      [
+        576,
+        384
+      ],
+      "torch.float32"
+    ],
+    "backbone.down.7.res.emb.bias": [
+      [
+        576
+      ],
+      "torch.float32"
+    ],
+    "backbone.down.7.res.norm2.weight": [
+      [
+        288
+      ],
+      "torch.float32"
+    ],
+    "backbone.down.7.res.norm2.bias": [
+      [
+        288
+      ],
+      "torch.float32"
+    ],
+    "backbone.down.7.res.conv2.weight": [
+      [
+        288,
+        288,
+        3,
+        3
+      ],
+      "torch.float32"
+    ],
+    "backbone.down.7.res.conv2.bias": [
+      [
+        288
+      ],
+      "torch.float32"
+    ],
+    "backbone.down.7.attn.norm.weight": [
+      [
+        288
+      ],
+      "torch.float32"
+    ],
+    "backbone.down.7.attn.norm.bias": [
+      [
+        288
+      ],
+      "torch.float32"
+    ],
+    "backbone.down.7.attn.qkv.weight": [
+      [
+        864,
+        288,
+        1
+      ],
+      "torch.float32"
+    ],
+    "backbone.down.7.attn.qkv.bias": [
+      [
+        864
+      ],
+      "torch.float32"
+    ],
+    "backbone.down.7.attn.proj.weight": [
+      [
+        288,
+        288,
+        1
+      ],
+      "torch.float32"
+    ],
+    "backbone.down.7.attn.proj.bias": [
+      [
+        288
+      ],
+      "torch.float32"
+    ],
+    "backbone.down.8.op.weight": [
+      [
+        288,
+        288,
+        3,
+        3
+      ],
+      "torch.float32"
+    ],
+    "backbone.down.8.op.bias": [
+      [
+        288
+      ],
+      "torch.float32"
+    ],
+    "backbone.down.9.res.norm1.weight": [
+      [
+        288
+      ],
+      "torch.float32"
+    ],
+    "backbone.down.9.res.norm1.bias": [
+      [
+        288
+      ],
+      "torch.float32"
+    ],
+    "backbone.down.9.res.conv1.weight": [
+      [
+        384,
+        288,
+        3,
+        3
+      ],
+      "torch.float32"
+    ],
+    "backbone.down.9.res.conv1.bias": [
+      [
+        384
+      ],
+      "torch.float32"
+    ],
+    "backbone.down.9.res.emb.weight": [
+      [
+        768,
+        384
+      ],
+      "torch.float32"
+    ],
+    "backbone.down.9.res.emb.bias": [
+      [
+        768
+      ],
+      "torch.float32"
+    ],
+    "backbone.down.9.res.norm2.weight": [
+      [
+        384
+      ],
+      "torch.float32"
+    ],
+    "backbone.down.9.res.norm2.bias": [
+      [
+        384
+      ],
+      "torch.float32"
+    ],
+    "backbone.down.9.res.conv2.weight": [
+      [
+        384,
+        384,
+        3,
+        3
+      ],
+      "torch.float32"
+    ],
+    "backbone.down.9.res.conv2.bias": [
+      [
+        384
+      ],
+      "torch.float32"
+    ],
+    "backbone.down.9.res.skip.weight": [
+      [
+        384,
+        288,
+        1,
+        1
+      ],
+      "torch.float32"
+    ],
+    "backbone.down.9.res.skip.bias": [
+      [
+        384
+      ],
+      "torch.float32"
+    ],
+    "backbone.down.10.res.norm1.weight": [
+      [
+        384
+      ],
+      "torch.float32"
+    ],
+    "backbone.down.10.res.norm1.bias": [
+      [
+        384
+      ],
+      "torch.float32"
+    ],
+    "backbone.down.10.res.conv1.weight": [
+      [
+        384,
+        384,
+        3,
+        3
+      ],
+      "torch.float32"
+    ],
+    "backbone.down.10.res.conv1.bias": [
+      [
+        384
+      ],
+      "torch.float32"
+    ],
+    "backbone.down.10.res.emb.weight": [
+      [
+        768,
+        384
+      ],
+      "torch.float32"
+    ],
+    "backbone.down.10.res.emb.bias": [
+      [
+        768
+      ],
+      "torch.float32"
+    ],
+    "backbone.down.10.res.norm2.weight": [
+      [
+        384
+      ],
+      "torch.float32"
+    ],
+    "backbone.down.10.res.norm2.bias": [
+      [
+        384
+      ],
+      "torch.float32"
+    ],
+    "backbone.down.10.res.conv2.weight": [
+      [
+        384,
+        384,
+        3,
+        3
+      ],
+      "torch.float32"
+    ],
+    "backbone.down.10.res.conv2.bias": [
+      [
+        384
+      ],
+      "torch.float32"
+    ],
+    "backbone.middle1.res.norm1.weight": [
+      [
+        384
+      ],
+      "torch.float32"
+    ],
+    "backbone.middle1.res.norm1.bias": [
+      [
+        384
+      ],
+      "torch.float32"
+    ],
+    "backbone.middle1.res.conv1.weight": [
+      [
+        384,
+        384,
+        3,
+        3
+      ],
+      "torch.float32"
+    ],
+    "backbone.middle1.res.conv1.bias": [
+      [
+        384
+      ],
+      "torch.float32"
+    ],
+    "backbone.middle1.res.emb.weight": [
+      [
+        768,
+        384
+      ],
+      "torch.float32"
+    ],
+    "backbone.middle1.res.emb.bias": [
+      [
+        768
+      ],
+      "torch.float32"
+    ],
+    "backbone.middle1.res.norm2.weight": [
+      [
+        384
+      ],
+      "torch.float32"
+    ],
+    "backbone.middle1.res.norm2.bias": [
+      [
+        384
+      ],
+      "torch.float32"
+    ],
+    "backbone.middle1.res.conv2.weight": [
+      [
+        384,
+        384,
+        3,
+        3
+      ],
+      "torch.float32"
+    ],
+    "backbone.middle1.res.conv2.bias": [
+      [
+        384
+      ],
+      "torch.float32"
+    ],
+    "backbone.middle1.attn.norm.weight": [
+      [
+        384
+      ],
+      "torch.float32"
+    ],
+    "backbone.middle1.attn.norm.bias": [
+      [
+        384
+      ],
+      "torch.float32"
+    ],
+    "backbone.middle1.attn.qkv.weight": [
+      [
+        1152,
+        384,
+        1
+      ],
+      "torch.float32"
+    ],
+    "backbone.middle1.attn.qkv.bias": [
+      [
+        1152
+      ],
+      "torch.float32"
+    ],
+    "backbone.middle1.attn.proj.weight": [
+      [
+        384,
+        384,
+        1
+      ],
+      "torch.float32"
+    ],
+    "backbone.middle1.attn.proj.bias": [
+      [
+        384
+      ],
+      "torch.float32"
+    ],
+    "backbone.middle2.res.norm1.weight": [
+      [
+        384
+      ],
+      "torch.float32"
+    ],
+    "backbone.middle2.res.norm1.bias": [
+      [
+        384
+      ],
+      "torch.float32"
+    ],
+    "backbone.middle2.res.conv1.weight": [
+      [
+        384,
+        384,
+        3,
+        3
+      ],
+      "torch.float32"
+    ],
+    "backbone.middle2.res.conv1.bias": [
+      [
+        384
+      ],
+      "torch.float32"
+    ],
+    "backbone.middle2.res.emb.weight": [
+      [
+        768,
+        384
+      ],
+      "torch.float32"
+    ],
+    "backbone.middle2.res.emb.bias": [
+      [
+        768
+      ],
+      "torch.float32"
+    ],
+    "backbone.middle2.res.norm2.weight": [
+      [
+        384
+      ],
+      "torch.float32"
+    ],
+    "backbone.middle2.res.norm2.bias": [
+      [
+        384
+      ],
+      "torch.float32"
+    ],
+    "backbone.middle2.res.conv2.weight": [
+      [
+        384,
+        384,
+        3,
+        3
+      ],
+      "torch.float32"
+    ],
+    "backbone.middle2.res.conv2.bias": [
+      [
+        384
+      ],
+      "torch.float32"
+    ],
+    "backbone.up.0.res.norm1.weight": [
+      [
+        768
+      ],
+      "torch.float32"
+    ],
+    "backbone.up.0.res.norm1.bias": [
+      [
+        768
+      ],
+      "torch.float32"
+    ],
+    "backbone.up.0.res.conv1.weight": [
+      [
+        384,
+        768,
+        3,
+        3
+      ],
+      "torch.float32"
+    ],
+    "backbone.up.0.res.conv1.bias": [
+      [
+        384
+      ],
+      "torch.float32"
+    ],
+    "backbone.up.0.res.emb.weight": [
+      [
+        768,
+        384
+      ],
+      "torch.float32"
+    ],
+    "backbone.up.0.res.emb.bias": [
+      [
+        768
+      ],
+      "torch.float32"
+    ],
+    "backbone.up.0.res.norm2.weight": [
+      [
+        384
+      ],
+      "torch.float32"
+    ],
+    "backbone.up.0.res.norm2.bias": [
+      [
+        384
+      ],
+      "torch.float32"
+    ],
+    "backbone.up.0.res.conv2.weight": [
+      [
+        384,
+        384,
+        3,
+        3
+      ],
+      "torch.float32"
+    ],
+    "backbone.up.0.res.conv2.bias": [
+      [
+        384
+      ],
+      "torch.float32"
+    ],
+    "backbone.up.0.res.skip.weight": [
+      [
+        384,
+        768,
+        1,
+        1
+      ],
+      "torch.float32"
+    ],
+    "backbone.up.0.res.skip.bias": [
+      [
+        384
+      ],
+      "torch.float32"
+    ],
+    "backbone.up.1.res.norm1.weight": [
+      [
+        768
+      ],
+      "torch.float32"
+    ],
+    "backbone.up.1.res.norm1.bias": [
+      [
+        768
+      ],
+      "torch.float32"
+    ],
+    "backbone.up.1.res.conv1.weight": [
+      [
+        384,
+        768,
+        3,
+        3
+      ],
+      "torch.float32"
+    ],
+    "backbone.up.1.res.conv1.bias": [
+      [
+        384
+      ],
+      "torch.float32"
+    ],
+    "backbone.up.1.res.emb.weight": [
+      [
+        768,
+        384
+      ],
+      "torch.float32"
+    ],
+    "backbone.up.1.res.emb.bias": [
+      [
+        768
+      ],
+      "torch.float32"
+    ],
+    "backbone.up.1.res.norm2.weight": [
+      [
+        384
+      ],
+      "torch.float32"
+    ],
+    "backbone.up.1.res.norm2.bias": [
+      [
+        384
+      ],
+      "torch.float32"
+    ],
+    "backbone.up.1.res.conv2.weight": [
+      [
+        384,
+        384,
+        3,
+        3
+      ],
+      "torch.float32"
+    ],
+    "backbone.up.1.res.conv2.bias": [
+      [
+        384
+      ],
+      "torch.float32"
+    ],
+    "backbone.up.1.res.skip.weight": [
+      [
+        384,
+        768,
+        1,
+        1
+      ],
+      "torch.float32"
+    ],
+    "backbone.up.1.res.skip.bias": [
+      [
+        384
+      ],
+      "torch.float32"
+    ],
+    "backbone.up.2.res.norm1.weight": [
+      [
+        672
+      ],
+      "torch.float32"
+    ],
+    "backbone.up.2.res.norm1.bias": [
+      [
+        672
+      ],
+      "torch.float32"
+    ],
+    "backbone.up.2.res.conv1.weight": [
+      [
+        384,
+        672,
+        3,
+        3
+      ],
+      "torch.float32"
+    ],
+    "backbone.up.2.res.conv1.bias": [
+      [
+        384
+      ],
+      "torch.float32"
+    ],
+    "backbone.up.2.res.emb.weight": [
+      [
+        768,
+        384
+      ],
+      "torch.float32"
+    ],
+    "backbone.up.2.res.emb.bias": [
+      [
+        768
+      ],
+      "torch.float32"
+    ],
+    "backbone.up.2.res.norm2.weight": [
+      [
+        384
+      ],
+      "torch.float32"
+    ],
+    "backbone.up.2.res.norm2.bias": [
+      [
+        384
+      ],
+      "torch.float32"
+    ],
+    "backbone.up.2.res.conv2.weight": [
+      [
+        384,
+        384,
+        3,
+        3
+      ],
+      "torch.float32"
+    ],
+    "backbone.up.2.res.conv2.bias": [
+      [
+        384
+      ],
+      "torch.float32"
+    ],
+    "backbone.up.2.res.skip.weight": [
+      [
+        384,
+        672,
+        1,
+        1
+      ],
+      "torch.float32"
+    ],
+    "backbone.up.2.res.skip.bias": [
+      [
+        384
+      ],
+      "torch.float32"
+    ],
+    "backbone.up.3.op.weight": [
+      [
+        384,
+        384,
+        3,
+        3
+      ],
+      "torch.float32"
+    ],
+    "backbone.up.3.op.bias": [
+      [
+        384
+      ],
+      "torch.float32"
+    ],
+    "backbone.up.4.res.norm1.weight": [
+      [
+        672
+      ],
+      "torch.float32"
+    ],
+    "backbone.up.4.res.norm1.bias": [
+      [
+        672
+      ],
+      "torch.float32"
+    ],
+    "backbone.up.4.res.conv1.weight": [
+      [
+        288,
+        672,
+        3,
+        3
+      ],
+      "torch.float32"
+    ],
+    "backbone.up.4.res.conv1.bias": [
+      [
+        288
+      ],
+      "torch.float32"
+    ],
+    "backbone.up.4.res.emb.weight": [
+      [
+        576,
+        384
+      ],
+      "torch.float32"
+    ],
+    "backbone.up.4.res.emb.bias": [
+      [
+        576
+      ],
+      "torch.float32"
+    ],
+    "backbone.up.4.res.norm2.weight": [
+      [
+        288
+      ],
+      "torch.float32"
+    ],
+    "backbone.up.4.res.norm2.bias": [
+      [
+        288
+      ],
+      "torch.float32"
+    ],
+    "backbone.up.4.res.conv2.weight": [
+      [
+        288,
+        288,
+        3,
+        3
+      ],
+      "torch.float32"
+    ],
+    "backbone.up.4.res.conv2.bias": [
+      [
+        288
+      ],
+      "torch.float32"
+    ],
+    "backbone.up.4.res.skip.weight": [
+      [
+        288,
+        672,
+        1,
+        1
+      ],
+      "torch.float32"
+    ],
+    "backbone.up.4.res.skip.bias": [
+      [
+        288
+      ],
+      "torch.float32"
+    ],
+    "backbone.up.4.attn.norm.weight": [
+      [
+        288
+      ],
+      "torch.float32"
+    ],
+    "backbone.up.4.attn.norm.bias": [
+      [
+        288
+      ],
+      "torch.float32"
+    ],
+    "backbone.up.4.attn.qkv.weight": [
+      [
+        864,
+        288,
+        1
+      ],
+      "torch.float32"
+    ],
+    "backbone.up.4.attn.qkv.bias": [
+      [
+        864
+      ],
+      "torch.float32"
+    ],
+    "backbone.up.4.attn.proj.weight": [
+      [
+        288,
+        288,
+        1
+      ],
+      "torch.float32"
+    ],
+    "backbone.up.4.attn.proj.bias": [
+      [
+        288
+      ],
+      "torch.float32"
+    ],
+    "backbone.up.5.res.norm1.weight": [
+      [
+        576
+      ],
+      "torch.float32"
+    ],
+    "backbone.up.5.res.norm1.bias": [
+      [
+        576
+      ],
+      "torch.float32"
+    ],
+    "backbone.up.5.res.conv1.weight": [
+      [
+        288,
+        576,
+        3,
+        3
+      ],
+      "torch.float32"
+    ],
+    "backbone.up.5.res.conv1.bias": [
+      [
+        288
+      ],
+      "torch.float32"
+    ],
+    "backbone.up.5.res.emb.weight": [
+      [
+        576,
+        384
+      ],
+      "torch.float32"
+    ],
+    "backbone.up.5.res.emb.bias": [
+      [
+        576
+      ],
+      "torch.float32"
+    ],
+    "backbone.up.5.res.norm2.weight": [
+      [
+        288
+      ],
+      "torch.float32"
+    ],
+    "backbone.up.5.res.norm2.bias": [
+      [
+        288
+      ],
+      "torch.float32"
+    ],
+    "backbone.up.5.res.conv2.weight": [
+      [
+        288,
+        288,
+        3,
+        3
+      ],
+      "torch.float32"
+    ],
+    "backbone.up.5.res.conv2.bias": [
+      [
+        288
+      ],
+      "torch.float32"
+    ],
+    "backbone.up.5.res.skip.weight": [
+      [
+        288,
+        576,
+        1,
+        1
+      ],
+      "torch.float32"
+    ],
+    "backbone.up.5.res.skip.bias": [
+      [
+        288
+      ],
+      "torch.float32"
+    ],
+    "backbone.up.5.attn.norm.weight": [
+      [
+        288
+      ],
+      "torch.float32"
+    ],
+    "backbone.up.5.attn.norm.bias": [
+      [
+        288
+      ],
+      "torch.float32"
+    ],
+    "backbone.up.5.attn.qkv.weight": [
+      [
+        864,
+        288,
+        1
+      ],
+      "torch.float32"
+    ],
+    "backbone.up.5.attn.qkv.bias": [
+      [
+        864
+      ],
+      "torch.float32"
+    ],
+    "backbone.up.5.attn.proj.weight": [
+      [
+        288,
+        288,
+        1
+      ],
+      "torch.float32"
+    ],
+    "backbone.up.5.attn.proj.bias": [
+      [
+        288
+      ],
+      "torch.float32"
+    ],
+    "backbone.up.6.res.norm1.weight": [
+      [
+        480
+      ],
+      "torch.float32"
+    ],
+    "backbone.up.6.res.norm1.bias": [
+      [
+        480
+      ],
+      "torch.float32"
+    ],
+    "backbone.up.6.res.conv1.weight": [
+      [
+        288,
+        480,
+        3,
+        3
+      ],
+      "torch.float32"
+    ],
+    "backbone.up.6.res.conv1.bias": [
+      [
+        288
+      ],
+      "torch.float32"
+    ],
+    "backbone.up.6.res.emb.weight": [
+      [
+        576,
+        384
+      ],
+      "torch.float32"
+    ],
+    "backbone.up.6.res.emb.bias": [
+      [
+        576
+      ],
+      "torch.float32"
+    ],
+    "backbone.up.6.res.norm2.weight": [
+      [
+        288
+      ],
+      "torch.float32"
+    ],
+    "backbone.up.6.res.norm2.bias": [
+      [
+        288
+      ],
+      "torch.float32"
+    ],
+    "backbone.up.6.res.conv2.weight": [
+      [
+        288,
+        288,
+        3,
+        3
+      ],
+      "torch.float32"
+    ],
+    "backbone.up.6.res.conv2.bias": [
+      [
+        288
+      ],
+      "torch.float32"
+    ],
+    "backbone.up.6.res.skip.weight": [
+      [
+        288,
+        480,
+        1,
+        1
+      ],
+      "torch.float32"
+    ],
+    "backbone.up.6.res.skip.bias": [
+      [
+        288
+      ],
+      "torch.float32"
+    ],
+    "backbone.up.6.attn.norm.weight": [
+      [
+        288
+      ],
+      "torch.float32"
+    ],
+    "backbone.up.6.attn.norm.bias": [
+      [
+        288
+      ],
+      "torch.float32"
+    ],
+    "backbone.up.6.attn.qkv.weight": [
+      [
+        864,
+        288,
+        1
+      ],
+      "torch.float32"
+    ],
+    "backbone.up.6.attn.qkv.bias": [
+      [
+        864
+      ],
+      "torch.float32"
+    ],
+    "backbone.up.6.attn.proj.weight": [
+      [
+        288,
+        288,
+        1
+      ],
+      "torch.float32"
+    ],
+    "backbone.up.6.attn.proj.bias": [
+      [
+        288
+      ],
+      "torch.float32"
+    ],
+    "backbone.up.7.op.weight": [
+      [
+        288,
+        288,
+        3,
+        3
+      ],
+      "torch.float32"
+    ],
+    "backbone.up.7.op.bias": [
+      [
+        288
+      ],
+      "torch.float32"
+    ],
+    "backbone.up.8.res.norm1.weight": [
+      [
+        480
+      ],
+      "torch.float32"
+    ],
+    "backbone.up.8.res.norm1.bias": [
+      [
+        480
+      ],
+      "torch.float32"
+    ],
+    "backbone.up.8.res.conv1.weight": [
+      [
+        192,
+        480,
+        3,
+        3
+      ],
+      "torch.float32"
+    ],
+    "backbone.up.8.res.conv1.bias": [
+      [
+        192
+      ],
+      "torch.float32"
+    ],
+    "backbone.up.8.res.emb.weight": [
+      [
+        384,
+        384
+      ],
+      "torch.float32"
+    ],
+    "backbone.up.8.res.emb.bias": [
+      [
+        384
+      ],
+      "torch.float32"
+    ],
+    "backbone.up.8.res.norm2.weight": [
+      [
+        192
+      ],
+      "torch.float32"
+    ],
+    "backbone.up.8.res.norm2.bias": [
+      [
+        192
+      ],
+      "torch.float32"
+    ],
+    "backbone.up.8.res.conv2.weight": [
+      [
+        192,
+        192,
+        3,
+        3
+      ],
+      "torch.float32"
+    ],
+    "backbone.up.8.res.conv2.bias": [
+      [
+        192
+      ],
+      "torch.float32"
+    ],
+    "backbone.up.8.res.skip.weight": [
+      [
+        192,
+        480,
+        1,
+        1
+      ],
+      "torch.float32"
+    ],
+    "backbone.up.8.res.skip.bias": [
+      [
+        192
+      ],
+      "torch.float32"
+    ],
+    "backbone.up.9.res.norm1.weight": [
+      [
+        384
+      ],
+      "torch.float32"
+    ],
+    "backbone.up.9.res.norm1.bias": [
+      [
+        384
+      ],
+      "torch.float32"
+    ],
+    "backbone.up.9.res.conv1.weight": [
+      [
+        192,
+        384,
+        3,
+        3
+      ],
+      "torch.float32"
+    ],
+    "backbone.up.9.res.conv1.bias": [
+      [
+        192
+      ],
+      "torch.float32"
+    ],
+    "backbone.up.9.res.emb.weight": [
+      [
+        384,
+        384
+      ],
+      "torch.float32"
+    ],
+    "backbone.up.9.res.emb.bias": [
+      [
+        384
+      ],
+      "torch.float32"
+    ],
+    "backbone.up.9.res.norm2.weight": [
+      [
+        192
+      ],
+      "torch.float32"
+    ],
+    "backbone.up.9.res.norm2.bias": [
+      [
+        192
+      ],
+      "torch.float32"
+    ],
+    "backbone.up.9.res.conv2.weight": [
+      [
+        192,
+        192,
+        3,
+        3
+      ],
+      "torch.float32"
+    ],
+    "backbone.up.9.res.conv2.bias": [
+      [
+        192
+      ],
+      "torch.float32"
+    ],
+    "backbone.up.9.res.skip.weight": [
+      [
+        192,
+        384,
+        1,
+        1
+      ],
+      "torch.float32"
+    ],
+    "backbone.up.9.res.skip.bias": [
+      [
+        192
+      ],
+      "torch.float32"
+    ],
+    "backbone.up.10.res.norm1.weight": [
+      [
+        288
+      ],
+      "torch.float32"
+    ],
+    "backbone.up.10.res.norm1.bias": [
+      [
+        288
+      ],
+      "torch.float32"
+    ],
+    "backbone.up.10.res.conv1.weight": [
+      [
+        192,
+        288,
+        3,
+        3
+      ],
+      "torch.float32"
+    ],
+    "backbone.up.10.res.conv1.bias": [
+      [
+        192
+      ],
+      "torch.float32"
+    ],
+    "backbone.up.10.res.emb.weight": [
+      [
+        384,
+        384
+      ],
+      "torch.float32"
+    ],
+    "backbone.up.10.res.emb.bias": [
+      [
+        384
+      ],
+      "torch.float32"
+    ],
+    "backbone.up.10.res.norm2.weight": [
+      [
+        192
+      ],
+      "torch.float32"
+    ],
+    "backbone.up.10.res.norm2.bias": [
+      [
+        192
+      ],
+      "torch.float32"
+    ],
+    "backbone.up.10.res.conv2.weight": [
+      [
+        192,
+        192,
+        3,
+        3
+      ],
+      "torch.float32"
+    ],
+    "backbone.up.10.res.conv2.bias": [
+      [
+        192
+      ],
+      "torch.float32"
+    ],
+    "backbone.up.10.res.skip.weight": [
+      [
+        192,
+        288,
+        1,
+        1
+      ],
+      "torch.float32"
+    ],
+    "backbone.up.10.res.skip.bias": [
+      [
+        192
+      ],
+      "torch.float32"
+    ],
+    "backbone.up.11.op.weight": [
+      [
+        192,
+        192,
+        3,
+        3
+      ],
+      "torch.float32"
+    ],
+    "backbone.up.11.op.bias": [
+      [
+        192
+      ],
+      "torch.float32"
+    ],
+    "backbone.up.12.res.norm1.weight": [
+      [
+        288
+      ],
+      "torch.float32"
+    ],
+    "backbone.up.12.res.norm1.bias": [
+      [
+        288
+      ],
+      "torch.float32"
+    ],
+    "backbone.up.12.res.conv1.weight": [
+      [
+        96,
+        288,
+        3,
+        3
+      ],
+      "torch.float32"
+    ],
+    "backbone.up.12.res.conv1.bias": [
+      [
+        96
+      ],
+      "torch.float32"
+    ],
+    "backbone.up.12.res.emb.weight": [
+      [
+        192,
+        384
+      ],
+      "torch.float32"
+    ],
+    "backbone.up.12.res.emb.bias": [
+      [
+        192
+      ],
+      "torch.float32"
+    ],
+    "backbone.up.12.res.norm2.weight": [
+      [
+        96
+      ],
+      "torch.float32"
+    ],
+    "backbone.up.12.res.norm2.bias": [
+      [
+        96
+      ],
+      "torch.float32"
+    ],
+    "backbone.up.12.res.conv2.weight": [
+      [
+        96,
+        96,
+        3,
+        3
+      ],
+      "torch.float32"
+    ],
+    "backbone.up.12.res.conv2.bias": [
+      [
+        96
+      ],
+      "torch.float32"
+    ],
+    "backbone.up.12.res.skip.weight": [
+      [
+        96,
+        288,
+        1,
+        1
+      ],
+      "torch.float32"
+    ],
+    "backbone.up.12.res.skip.bias": [
+      [
+        96
+      ],
+      "torch.float32"
+    ],
+    "backbone.up.13.res.norm1.weight": [
+      [
+        192
+      ],
+      "torch.float32"
+    ],
+    "backbone.up.13.res.norm1.bias": [
+      [
+        192
+      ],
+      "torch.float32"
+    ],
+    "backbone.up.13.res.conv1.weight": [
+      [
+        96,
+        192,
+        3,
+        3
+      ],
+      "torch.float32"
+    ],
+    "backbone.up.13.res.conv1.bias": [
+      [
+        96
+      ],
+      "torch.float32"
+    ],
+    "backbone.up.13.res.emb.weight": [
+      [
+        192,
+        384
+      ],
+      "torch.float32"
+    ],
+    "backbone.up.13.res.emb.bias": [
+      [
+        192
+      ],
+      "torch.float32"
+    ],
+    "backbone.up.13.res.norm2.weight": [
+      [
+        96
+      ],
+      "torch.float32"
+    ],
+    "backbone.up.13.res.norm2.bias": [
+      [
+        96
+      ],
+      "torch.float32"
+    ],
+    "backbone.up.13.res.conv2.weight": [
+      [
+        96,
+        96,
+        3,
+        3
+      ],
+      "torch.float32"
+    ],
+    "backbone.up.13.res.conv2.bias": [
+      [
+        96
+      ],
+      "torch.float32"
+    ],
+    "backbone.up.13.res.skip.weight": [
+      [
+        96,
+        192,
+        1,
+        1
+      ],
+      "torch.float32"
+    ],
+    "backbone.up.13.res.skip.bias": [
+      [
+        96
+      ],
+      "torch.float32"
+    ],
+    "backbone.up.14.res.norm1.weight": [
+      [
+        192
+      ],
+      "torch.float32"
+    ],
+    "backbone.up.14.res.norm1.bias": [
+      [
+        192
+      ],
+      "torch.float32"
+    ],
+    "backbone.up.14.res.conv1.weight": [
+      [
+        96,
+        192,
+        3,
+        3
+      ],
+      "torch.float32"
+    ],
+    "backbone.up.14.res.conv1.bias": [
+      [
+        96
+      ],
+      "torch.float32"
+    ],
+    "backbone.up.14.res.emb.weight": [
+      [
+        192,
+        384
+      ],
+      "torch.float32"
+    ],
+    "backbone.up.14.res.emb.bias": [
+      [
+        192
+      ],
+      "torch.float32"
+    ],
+    "backbone.up.14.res.norm2.weight": [
+      [
+        96
+      ],
+      "torch.float32"
+    ],
+    "backbone.up.14.res.norm2.bias": [
+      [
+        96
+      ],
+      "torch.float32"
+    ],
+    "backbone.up.14.res.conv2.weight": [
+      [
+        96,
+        96,
+        3,
+        3
+      ],
+      "torch.float32"
+    ],
+    "backbone.up.14.res.conv2.bias": [
+      [
+        96
+      ],
+      "torch.float32"
+    ],
+    "backbone.up.14.res.skip.weight": [
+      [
+        96,
+        192,
+        1,
+        1
+      ],
+      "torch.float32"
+    ],
+    "backbone.up.14.res.skip.bias": [
+      [
+        96
+      ],
+      "torch.float32"
+    ],
+    "backbone.out_norm.weight": [
+      [
+        96
+      ],
+      "torch.float32"
+    ],
+    "backbone.out_norm.bias": [
+      [
+        96
+      ],
+      "torch.float32"
+    ],
+    "backbone.out_conv.weight": [
+      [
+        3,
+        96,
+        3,
+        3
+      ],
+      "torch.float32"
+    ],
+    "backbone.out_conv.bias": [
+      [
+        3
+      ],
+      "torch.float32"
+    ]
+  },
+  "selected_step": 2500,
+  "config_equal_recorded_json": true,
+  "evidence_kind": "new checkpoint inspection"
+}

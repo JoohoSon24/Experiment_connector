@@ -1,0 +1,8 @@
+{
+  "updates": 200,
+  "last_loss": 0.013876253738999367,
+  "peak_vram_bytes": 3691061760,
+  "real_parameters": 48883107,
+  "fake_parameters": 48883107,
+  "trained_only_on_generated_images": true
+}

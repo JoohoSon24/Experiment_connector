@@ -1,0 +1,3781 @@
+{
+  "source_manifest": "/root/AIC313-Project-FastGen/data/development/seed42_holdout5/holdout.txt",
+  "source_manifest_sha256": "a9b672630e28c4dea5fd922a22a1e11dc78155e4c96e88d4bca90bb3ce920a09",
+  "images": [
+    {
+      "reference": "0000.png",
+      "source": "PokemonData/Abra/Abra30.jpg",
+      "sha256": "23e50935a5f43d9ed354cedf9a1c2e50f3f9ccd70c73876d2ccf8c4b9133d1be"
+    },
+    {
+      "reference": "0001.png",
+      "source": "PokemonData/Abra/Abra54.jpg",
+      "sha256": "97336455d9622a506c070d32d0aff0658cdff0131dcddc058c0ec40d8ea23b79"
+    },
+    {
+      "reference": "0002.png",
+      "source": "PokemonData/Abra/Abra56.jpg",
+      "sha256": "64c8e46eb1eee21d77db958226da75694c6effcd548a1eacaa330f772fafceb2"
+    },
+    {
+      "reference": "0003.png",
+      "source": "PokemonData/Abra/Abra57.jpg",
+      "sha256": "182dab951af082817c4713d8c691d75bd643cd915e6aa5d4a05f0ab865cad2a7"
+    },
+    {
+      "reference": "0004.png",
+      "source": "PokemonData/Abra/Abra64.jpg",
+      "sha256": "e41bf1b55f020db1ef7b1df41c1b6ddbe7d6c3b37a777d8241b26c90dcd2db27"
+    },
+    {
+      "reference": "0005.png",
+      "source": "PokemonData/Aerodactyl/523b396d18584c35a45823b6a145eff6.jpg",
+      "sha256": "a4d07956b99b57443c0f60eab50da580111b70c72dba0b036583c78cb5f0ddc0"
+    },
+    {
+      "reference": "0006.png",
+      "source": "PokemonData/Aerodactyl/91a6d66ed71e45c4a7a5a7917ab44666.jpg",
+      "sha256": "fd26c3fcb37793de0c66184394b48a3489fe1c73967ade69fd6ec887c4364e47"
+    },
+    {
+      "reference": "0007.png",
+      "source": "PokemonData/Aerodactyl/Aerodactyl20.jpg",
+      "sha256": "84fe00b88a590f265a92324e1f20322c9c8991fa0cff95e181896bfca72497d3"
+    },
+    {
+      "reference": "0008.png",
+      "source": "PokemonData/Aerodactyl/Aerodactyl38.jpg",
+      "sha256": "7df0e214f8f004ff3e224bd381e5003701451e45b22470212936a0f57e1f490a"
+    },
+    {
+      "reference": "0009.png",
+      "source": "PokemonData/Aerodactyl/Aerodactyl43.jpg",
+      "sha256": "d3e7c307ee2c0515e48df269a370aa9d87ad821ccfe55beb35d4db87cf68137c"
+    },
+    {
+      "reference": "0010.png",
+      "source": "PokemonData/Alakazam/Alakazam14.jpg",
+      "sha256": "1005f6549bf508d4fd51d08a7777942760fa572071a9dd4cd384ab43a0556fb0"
+    },
+    {
+      "reference": "0011.png",
+      "source": "PokemonData/Alakazam/Alakazam3.jpg",
+      "sha256": "a0d17eba46eae0525c8e9121ab4b9759e766999ed92c16aadfaa064d45427e17"
+    },
+    {
+      "reference": "0012.png",
+      "source": "PokemonData/Alakazam/Alakazam54.jpg",
+      "sha256": "714ad6da977a5d051cbf2ca571539b81d802e23b03f53fec53e9924fa6dcca14"
+    },
+    {
+      "reference": "0013.png",
+      "source": "PokemonData/Alakazam/Alakazam63.jpg",
+      "sha256": "492f7e002eee9c0cf5eae50133464686cb5edf61f8988472e8437f0028f0c1a9"
+    },
+    {
+      "reference": "0014.png",
+      "source": "PokemonData/Alakazam/Alakazam88.jpg",
+      "sha256": "11a9e377d09a48dad9c4bc30ba05ffdb2d86b4e84ad06eb482e2a6a0e098ab54"
+    },
+    {
+      "reference": "0015.png",
+      "source": "PokemonData/Arbok/65d4bf22b63341a2b47e05b2a3dab79e.jpg",
+      "sha256": "a6768d87b9e158ee7ffed4599e682239b285848ef29759256db01650d26afdd2"
+    },
+    {
+      "reference": "0016.png",
+      "source": "PokemonData/Arbok/Arbok10.jpg",
+      "sha256": "4f41cc88eb6fe02b08a371038c9230e8786fbaac34d7f1be63d23565f22cbfb2"
+    },
+    {
+      "reference": "0017.png",
+      "source": "PokemonData/Arbok/Arbok30.jpg",
+      "sha256": "d3f93aef2c0042cd00bf347f3179189e2f2f0842b9bfa0053fdbd23747402215"
+    },
+    {
+      "reference": "0018.png",
+      "source": "PokemonData/Arbok/Arbok77.jpg",
+      "sha256": "341a5a69cb0b397f14f881fb027e9a347a0888209db45f75b66487cfae894c1e"
+    },
+    {
+      "reference": "0019.png",
+      "source": "PokemonData/Arbok/Arbok82.jpg",
+      "sha256": "9287ba746019f85430c31c971e8ab2e3e1062a0ea2fd38dc2852ed099c8e8021"
+    },
+    {
+      "reference": "0020.png",
+      "source": "PokemonData/Arcanine/765bc9ac572642149116d5388db79e89.jpg",
+      "sha256": "ff77364594ff1458d916f7023f92265b972de7b2ab12a2b18f603ed93fdf17ce"
+    },
+    {
+      "reference": "0021.png",
+      "source": "PokemonData/Arcanine/Arcanine1.jpg",
+      "sha256": "8dde5d2e35d0adb05651dd5d9ba61ba1a2544f8f3f603925d13fca13b1b9c3fb"
+    },
+    {
+      "reference": "0022.png",
+      "source": "PokemonData/Arcanine/Arcanine3.jpg",
+      "sha256": "b15c6eafd4f344c1a1d3ebb4c4610ad2f633754faf57a2a4422b945bb517c1ce"
+    },
+    {
+      "reference": "0023.png",
+      "source": "PokemonData/Arcanine/Arcanine50.jpg",
+      "sha256": "1c022f0248102273dba9481f3d63142e35095696cf43bf1c964bac940b615058"
+    },
+    {
+      "reference": "0024.png",
+      "source": "PokemonData/Arcanine/ea4acb14bbd94c8c8f03a853afc23a22.jpg",
+      "sha256": "4b03fdedd01ba341db6fecc1876602620a36b239cb01fae10bd631756d42983f"
+    },
+    {
+      "reference": "0025.png",
+      "source": "PokemonData/Articuno/34956b44578845148461f4a45c574150.jpg",
+      "sha256": "1af8606f643602767ff05d2ca05629d95dbe60cd97b82879b84879b38e48dd97"
+    },
+    {
+      "reference": "0026.png",
+      "source": "PokemonData/Articuno/Articuno32.jpg",
+      "sha256": "8fb718c6f999103c7741b50d60392773a941c77684601d7ae5d6068713b7280f"
+    },
+    {
+      "reference": "0027.png",
+      "source": "PokemonData/Articuno/Articuno72.jpg",
+      "sha256": "8f921b217909502c232a7b688d485399c1d54fc1a35ca799b57eb399d79f9c3b"
+    },
+    {
+      "reference": "0028.png",
+      "source": "PokemonData/Articuno/Articuno79.jpg",
+      "sha256": "f783d17f37dff8465353ec7979b9ab81246036f6e2fd87783f2b8edfc7a19f4e"
+    },
+    {
+      "reference": "0029.png",
+      "source": "PokemonData/Articuno/b3b718ae79f0421481b191ec694fc4f4.jpg",
+      "sha256": "3e5b2a58f38699476919a65824e35e634c9777a301bdb88acd5e6d77cab30117"
+    },
+    {
+      "reference": "0030.png",
+      "source": "PokemonData/Beedrill/Beedrill15.jpg",
+      "sha256": "7f55205e133165e980ad834998c21733645b0009af7e94addbf471cf3b7cd9a7"
+    },
+    {
+      "reference": "0031.png",
+      "source": "PokemonData/Beedrill/Beedrill19.jpg",
+      "sha256": "4e44eadd6599477a505d1de41fc14ab71114a8956f737b78271d8b42caa830d7"
+    },
+    {
+      "reference": "0032.png",
+      "source": "PokemonData/Beedrill/Beedrill21.jpg",
+      "sha256": "f1c094e04a0c74fbf075e36099a5208cd559c54cb24b3d347eae12d6239be301"
+    },
+    {
+      "reference": "0033.png",
+      "source": "PokemonData/Beedrill/Beedrill38.jpg",
+      "sha256": "eca8270c46f51a9c5caadec3864e940a346cf4855f7f16bb5b31b805f23f74ef"
+    },
+    {
+      "reference": "0034.png",
+      "source": "PokemonData/Beedrill/Beedrill5.jpg",
+      "sha256": "26068f46281e7dfbf4388ddf224e4405db0792c022848e3dca42b11bc46ac7c0"
+    },
+    {
+      "reference": "0035.png",
+      "source": "PokemonData/Bellsprout/Bellsprout31.jpg",
+      "sha256": "3ad3d1a9a995331d9a925eae0def706026939128185ebc8515ec235a15a75eb7"
+    },
+    {
+      "reference": "0036.png",
+      "source": "PokemonData/Bellsprout/Bellsprout35.jpg",
+      "sha256": "74813530fd61d950da5d406f4e3a59ee75adeaccffaa91fc82434df2cfe744a9"
+    },
+    {
+      "reference": "0037.png",
+      "source": "PokemonData/Bellsprout/Bellsprout42.jpg",
+      "sha256": "fbe1c9199425156b2831e63e6aa296863f10416fa93c5cd47b2526561cdd59a6"
+    },
+    {
+      "reference": "0038.png",
+      "source": "PokemonData/Bellsprout/cd9f1e2a05b5458e88bf660b421cd424.jpg",
+      "sha256": "0b838817a6f41ba9308dbbc728aeb8c27544ef83920514a0738357505739ae07"
+    },
+    {
+      "reference": "0039.png",
+      "source": "PokemonData/Bellsprout/d99296ce96f345a2996dee17e7956424.jpg",
+      "sha256": "2d383811e14ea4d96efa44450a34557c9ac39162bd51777db9ff6ef4a4c24663"
+    },
+    {
+      "reference": "0040.png",
+      "source": "PokemonData/Blastoise/Blastoise21.jpg",
+      "sha256": "0d693d40697bd7e1fb6b9e4776231fd04603575320d4bfb7d88b01f856fd292a"
+    },
+    {
+      "reference": "0041.png",
+      "source": "PokemonData/Blastoise/Blastoise51.jpg",
+      "sha256": "a1e2692107d426bdadcbf16ddbec63bb3a3e8d63e9fc1b9ec84691c776352e8f"
+    },
+    {
+      "reference": "0042.png",
+      "source": "PokemonData/Blastoise/af57f2526aa74430aa9f095d913fc09c.jpg",
+      "sha256": "32e6759d2b8e946ad49e3c3c5bc32c5a3ca97bcb9a13bf450fdf2ccff84958c9"
+    },
+    {
+      "reference": "0043.png",
+      "source": "PokemonData/Blastoise/d6b24922ff084ae9b4ea19c7ef0ce54b.jpg",
+      "sha256": "ece9bd5c856ac272a1715bcf3f629c63f247f6c924ebdbd06f788ad93a43cfaa"
+    },
+    {
+      "reference": "0044.png",
+      "source": "PokemonData/Blastoise/eb6d2a237b1e460a87baddc0c4830ac2.jpg",
+      "sha256": "655f081e2865c6a093e41c60457f8e2a2d1455b75396335a1c08e881784627a2"
+    },
+    {
+      "reference": "0045.png",
+      "source": "PokemonData/Bulbasaur/003-001Bulbasaur_RG.png",
+      "sha256": "f98396ae3c0b98c23bda3456dcdaaf3ecd1f3f8b32f057ab39c695e4d19561c2"
+    },
+    {
+      "reference": "0046.png",
+      "source": "PokemonData/Bulbasaur/008-001Bulbasaur_OS_anime_3.png",
+      "sha256": "dce3b7ae24cfcbca71c031a724437e00db081f038bd89011ad4e792b581e3cbd"
+    },
+    {
+      "reference": "0047.png",
+      "source": "PokemonData/Bulbasaur/068-001Bulbasaur_Dream.png",
+      "sha256": "0c0e62a2f353b9f5aab39c1c5edde9d17e0acce2e3984f4019cd02567a05719d"
+    },
+    {
+      "reference": "0048.png",
+      "source": "PokemonData/Bulbasaur/Bulbasaur17.jpg",
+      "sha256": "258c5e60c2875dcf4ca6642449fba7d7b06c149c2bf46904acdaf1ae55711d1d"
+    },
+    {
+      "reference": "0049.png",
+      "source": "PokemonData/Bulbasaur/Bulbasaur18.jpg",
+      "sha256": "38335074b630985240abe13f772d64fc516396a0a82e07118cf5494e80d5a79e"
+    },
+    {
+      "reference": "0050.png",
+      "source": "PokemonData/Butterfree/Butterfree11.jpg",
+      "sha256": "360ef522005ed1801ca5e2413ab10712420267d730131c838b8dcff13c73ef85"
+    },
+    {
+      "reference": "0051.png",
+      "source": "PokemonData/Butterfree/Butterfree42.jpg",
+      "sha256": "53f3174ae250f3a2871d448a52666ae9a6d7ec6460729e786c9c4d54ef5a10a8"
+    },
+    {
+      "reference": "0052.png",
+      "source": "PokemonData/Butterfree/Butterfree56.jpg",
+      "sha256": "d7a7762fc51106449ec4cd6a28a2a0a20b48b890583ab3fd6fa8209f0049fb84"
+    },
+    {
+      "reference": "0053.png",
+      "source": "PokemonData/Butterfree/c0295c83d5634e1180c527daf31532aa.jpg",
+      "sha256": "4a013d6f1773ccff82b3bb2307c2c4d5e821ba3a590d2c9df567238663c779dc"
+    },
+    {
+      "reference": "0054.png",
+      "source": "PokemonData/Butterfree/f5e111bd6a0447c6ac0584f931e05dda.jpg",
+      "sha256": "cceac4d376885a10ff88595fc64026c1b92be60a46343158cf9a5dbbedcabae8"
+    },
+    {
+      "reference": "0055.png",
+      "source": "PokemonData/Caterpie/Caterpie44.jpg",
+      "sha256": "a5566a6c94de41426c34ac94a04a7161516967221a56b9ffd360daf0867dae61"
+    },
+    {
+      "reference": "0056.png",
+      "source": "PokemonData/Caterpie/Caterpie50.jpg",
+      "sha256": "91672f35cb01f8c2955df8a4bd16f4077512bdb523f882153c16333557347f24"
+    },
+    {
+      "reference": "0057.png",
+      "source": "PokemonData/Caterpie/Caterpie63.jpg",
+      "sha256": "9030fd84505a6f846e4b8e7d017bdb602eb6761cb6f7771a737e0076b71effc7"
+    },
+    {
+      "reference": "0058.png",
+      "source": "PokemonData/Caterpie/Caterpie9.jpg",
+      "sha256": "8d8293e44231e1c23d37adcd92a0c4f443eab311246b3f2abdfb12ff81d23644"
+    },
+    {
+      "reference": "0059.png",
+      "source": "PokemonData/Caterpie/c610dde0c6644b5797e2c8298a7dea69.jpg",
+      "sha256": "fbad1df333b13796d4d84858ac1ee4019747ad1fdd68a5aafa1977865b3004d9"
+    },
+    {
+      "reference": "0060.png",
+      "source": "PokemonData/Chansey/Chansey14.jpg",
+      "sha256": "2258be6f5fbe1555b14fa9283bd4484f50d2d6e41b7bb7bbc0ccd2be1f9e5bcd"
+    },
+    {
+      "reference": "0061.png",
+      "source": "PokemonData/Chansey/Chansey37.jpg",
+      "sha256": "9e3da515b35f2fbdfde64eb3911ebeb1cb535a65715b51e85bca828aa22eba73"
+    },
+    {
+      "reference": "0062.png",
+      "source": "PokemonData/Chansey/Chansey4.jpg",
+      "sha256": "dea8da4e24e487cca21e7866b66cb2c56f626299cd991539cf9393a2f6b1cbe2"
+    },
+    {
+      "reference": "0063.png",
+      "source": "PokemonData/Chansey/Chansey50.jpg",
+      "sha256": "3ceacba75e1173d58fd07bd73f791c6bf20e9872ac515dfdd2a0d2f14e3d2f61"
+    },
+    {
+      "reference": "0064.png",
+      "source": "PokemonData/Chansey/Chansey82.jpg",
+      "sha256": "8fed3beeb2a3e681d2b5502caf80d709db2ab8c3cd79d9fa4ef16a0de1429393"
+    },
+    {
+      "reference": "0065.png",
+      "source": "PokemonData/Charizard/5c945a50b8a441a2a11a2e6e8b28464a.jpg",
+      "sha256": "2045d6e8f34c182ae885629bc94dda25e5f3e30f64b730f4afbd3b4d49e3ce71"
+    },
+    {
+      "reference": "0066.png",
+      "source": "PokemonData/Charizard/Charizard28.jpg",
+      "sha256": "eecdd0c4769633a24a75861246d1a6222ae985eb87146fb8cb3e42ef27a20af7"
+    },
+    {
+      "reference": "0067.png",
+      "source": "PokemonData/Charizard/Charizard41.jpg",
+      "sha256": "1e7ce6ed7a544aab47a0bd6e83fa89e7bb3f6089b98759a46f43efc1ad81f85b"
+    },
+    {
+      "reference": "0068.png",
+      "source": "PokemonData/Charizard/Charizard56.jpg",
+      "sha256": "b4fa1ace4a91ee8f6ae402d6adf34695d4df09ad1f4f293528254c50aac6de66"
+    },
+    {
+      "reference": "0069.png",
+      "source": "PokemonData/Charizard/fed6277326774a829feb7dd4a53217bc.jpg",
+      "sha256": "cc62405983b7fa0a850969ff62d68cabe225396fe4185a013ded4fcf061b88e6"
+    },
+    {
+      "reference": "0070.png",
+      "source": "PokemonData/Charmander/007-004Charmander_AG_anime.png",
+      "sha256": "d4bdd7e07684ebf70d3a135e301ef23e239b0a6929faea429677a97f9b8dabda"
+    },
+    {
+      "reference": "0071.png",
+      "source": "PokemonData/Charmander/3e83165adc794c52b6fed8804b3d1678.jpg",
+      "sha256": "1649af3f402d0747973ad122a6672de9e3373d431ee60d5d71a0fcc2c2c3927e"
+    },
+    {
+      "reference": "0072.png",
+      "source": "PokemonData/Charmander/Charmander7.jpg",
+      "sha256": "46304855491fb72398a9b298fa6c50be7239f69eef8aced23085b6a2b731d869"
+    },
+    {
+      "reference": "0073.png",
+      "source": "PokemonData/Charmander/Charmander74.jpg",
+      "sha256": "5cae69e4a8394b70f601d678ae8dc4be70f7442cc6cd3dfe690271f9482bf7b8"
+    },
+    {
+      "reference": "0074.png",
+      "source": "PokemonData/Charmander/Charmander91.jpg",
+      "sha256": "0ede10531cfd07cdf77365a536cccbf1345187cdb6068e757f27ea18fa166914"
+    },
+    {
+      "reference": "0075.png",
+      "source": "PokemonData/Charmeleon/Charmeleon1.jpg",
+      "sha256": "9c8364b85a7847f8082a6eea68bef51dd493d6ba99e03eccd8ef1cad51695992"
+    },
+    {
+      "reference": "0076.png",
+      "source": "PokemonData/Charmeleon/Charmeleon4.jpg",
+      "sha256": "e09a925b83ec815156310946da4b6e516a7934b278be794a91e61136110f5d6a"
+    },
+    {
+      "reference": "0077.png",
+      "source": "PokemonData/Charmeleon/be3295670d754610b0d073fd57c57713.jpg",
+      "sha256": "e758c1c68039f21c2136ea9404de5caccfeb4de7ec235cb95270b57f9b3775dd"
+    },
+    {
+      "reference": "0078.png",
+      "source": "PokemonData/Charmeleon/f036bea97a7843fda9a28ff50c4842e4.jpg",
+      "sha256": "aa17c6514e90e7c6b25b7515358bd84382080d8f2eee07d0fc6a78d7d5eb7d9d"
+    },
+    {
+      "reference": "0079.png",
+      "source": "PokemonData/Charmeleon/f194e94ba6334f6181fee1240b01dd9e.jpg",
+      "sha256": "fe5356feee71c3a23a8c949c7004c806ba75b0de5981be94e15db95a21d7e9ac"
+    },
+    {
+      "reference": "0080.png",
+      "source": "PokemonData/Clefable/4b38c343e7534ea49739e44b179565b6.jpg",
+      "sha256": "10a070e458f5d2730568f2073ea7ecb287ce9334fa1d9ea947a63e59df7ca4bf"
+    },
+    {
+      "reference": "0081.png",
+      "source": "PokemonData/Clefable/609dbf3199ce48708e8747a5f0917139.jpg",
+      "sha256": "ea08bf819201b6abf4aa3862d4da108952e94177b944b4a196f72ee93594956b"
+    },
+    {
+      "reference": "0082.png",
+      "source": "PokemonData/Clefable/871cb2a6e51846fcac744b49731ba600.jpg",
+      "sha256": "246b3e6d437a716cccf82c7ddb714ebf376fd7a09281da194a09e2fb118a9162"
+    },
+    {
+      "reference": "0083.png",
+      "source": "PokemonData/Clefable/Clefable52.jpg",
+      "sha256": "9ecb96d0e4215ec80373912d2b42d7cb830854e84d22d2a86f23e61b7e973738"
+    },
+    {
+      "reference": "0084.png",
+      "source": "PokemonData/Clefable/Clefable55.jpg",
+      "sha256": "7b770a227001a916418c3187910d340efe538d57bdc972f091f99f3b921634b3"
+    },
+    {
+      "reference": "0085.png",
+      "source": "PokemonData/Clefairy/Clefairy30.jpg",
+      "sha256": "9117cf4f8726e6457ee8cb63eb189c0900be1d73fffa579587ae63996c65f576"
+    },
+    {
+      "reference": "0086.png",
+      "source": "PokemonData/Clefairy/Clefairy40.jpg",
+      "sha256": "5f4baa92677275af6d032f4f5376adb18e4f8ca5df31f24483b4e5fb60ecf292"
+    },
+    {
+      "reference": "0087.png",
+      "source": "PokemonData/Clefairy/c89ce628437143abb0a731bac68d9a18.jpg",
+      "sha256": "538a7342b1bce4516d9945e27db95b37740cde897a303da9233d12a131a4d9fa"
+    },
+    {
+      "reference": "0088.png",
+      "source": "PokemonData/Clefairy/ed071b7f556145fe892e0d35748e3a28.jpg",
+      "sha256": "37d2589e4b4bfadd17a71bfffb660b0897da53a2927d9de8f22ff9aa98490239"
+    },
+    {
+      "reference": "0089.png",
+      "source": "PokemonData/Clefairy/fa50887e541d4b6cb02a344723942241.jpg",
+      "sha256": "fee565f8831e9bf1e76c318b902b351b4d2191563981a3de89f45ca57fc7d8f4"
+    },
+    {
+      "reference": "0090.png",
+      "source": "PokemonData/Cloyster/4431f670642a4bacbc1a18acf4017e40.jpg",
+      "sha256": "441cf35c6532e9219e7c33223dc1779680770cffdc19a5824157e9595902686f"
+    },
+    {
+      "reference": "0091.png",
+      "source": "PokemonData/Cloyster/79d3c0e536d7439893e7f37b8a9fe186.jpg",
+      "sha256": "5314ee0a50e39d3c223007e31ebd53aa78b46eb8f9e437f8456ef4f451ded31e"
+    },
+    {
+      "reference": "0092.png",
+      "source": "PokemonData/Cloyster/Cloyster59.jpg",
+      "sha256": "a633c68e0a3581f7bbc212f9491485112d314fa74b62e1649ec9b503b8727093"
+    },
+    {
+      "reference": "0093.png",
+      "source": "PokemonData/Cloyster/Cloyster7.jpg",
+      "sha256": "24876e4983d4a6cb2bcc1bc47ad812e8ea41e80432a2b3807074e1608a875ebf"
+    },
+    {
+      "reference": "0094.png",
+      "source": "PokemonData/Cloyster/Cloyster8.jpg",
+      "sha256": "4e039d606d1a7fa2e44c6420a57a9e6d7cb8cdaae31990456d150edc1aa96a09"
+    },
+    {
+      "reference": "0095.png",
+      "source": "PokemonData/Cubone/4d7ac9f24946433f8355d5325692d3f5.jpg",
+      "sha256": "c246977b42dc55d13b75b2f3de1dd028e9d6276e1c11edeb128143a927f5c580"
+    },
+    {
+      "reference": "0096.png",
+      "source": "PokemonData/Cubone/Cubone20.jpg",
+      "sha256": "755954d37801733150797e3a4a76b4d446db3632183e919a10b51c30f2bb40a6"
+    },
+    {
+      "reference": "0097.png",
+      "source": "PokemonData/Cubone/Cubone27.jpg",
+      "sha256": "97ea834253a8bfa3c6c141b01c27d8467cc17b54548f2ab03a2750124c472120"
+    },
+    {
+      "reference": "0098.png",
+      "source": "PokemonData/Cubone/b5c476ba2b8d4e25b4ddf03d82e8fb79.jpg",
+      "sha256": "4e6035b59eb7bd8e4a083f71b59c86433d64db9f57759aa936b0ad803c23e036"
+    },
+    {
+      "reference": "0099.png",
+      "source": "PokemonData/Cubone/fa9ffddbd8d84d00b732b39d8a9090a5.jpg",
+      "sha256": "96923fee9a05b07a90cdae6f763079ffe9e8e0ab60f1307345d8086cf7bdae58"
+    },
+    {
+      "reference": "0100.png",
+      "source": "PokemonData/Dewgong/9e0b8119fb264e70a5132cbf6793cf07.jpg",
+      "sha256": "6653ed9768524e885e9053bce64b947e9aa5f852ca2d50fbe4376fb23dbe6f94"
+    },
+    {
+      "reference": "0101.png",
+      "source": "PokemonData/Dewgong/Dewgong39.jpg",
+      "sha256": "888ae5f691a8187b9ca37939be7c5cf24c6f1f0ccee4168ff1bd43882121cb61"
+    },
+    {
+      "reference": "0102.png",
+      "source": "PokemonData/Dewgong/Dewgong51.jpg",
+      "sha256": "de8b5e5a804b13256ae742265d0284683f0444186bc6b7b0f5a55a510aa82bff"
+    },
+    {
+      "reference": "0103.png",
+      "source": "PokemonData/Dewgong/Dewgong59.jpg",
+      "sha256": "7edd9c54d85314425d45075be353298934e12e784d2e22b10a5f313aaa50562b"
+    },
+    {
+      "reference": "0104.png",
+      "source": "PokemonData/Dewgong/Dewgong62.jpg",
+      "sha256": "ffa4c25d8358bb915b2bae07d4bad7965a5aefedfa61a0059d527ad130901efc"
+    },
+    {
+      "reference": "0105.png",
+      "source": "PokemonData/Diglett/816b7b3f258e476e8ab7cad66d302448.jpg",
+      "sha256": "142207fc3ad93852c316881c79be4a91228dcba0a95c8acdb584965d26911a6f"
+    },
+    {
+      "reference": "0106.png",
+      "source": "PokemonData/Diglett/Diglett41.jpg",
+      "sha256": "df71b3cd260f8fa6833b58481ef0121fc79fe6ef25412fd72e2d50695bbbc125"
+    },
+    {
+      "reference": "0107.png",
+      "source": "PokemonData/Diglett/aa3a165ea5ea45fd904ad8b98de26b81.jpg",
+      "sha256": "3c64350e5e03f098e2ccac8c9779847c89f24358211bc45d6110d43ecefe887d"
+    },
+    {
+      "reference": "0108.png",
+      "source": "PokemonData/Diglett/acda840de1a543dabbadd23d7d8fa04f.jpg",
+      "sha256": "df71b3cd260f8fa6833b58481ef0121fc79fe6ef25412fd72e2d50695bbbc125"
+    },
+    {
+      "reference": "0109.png",
+      "source": "PokemonData/Diglett/fa06e76866584113814a662d88013764.jpg",
+      "sha256": "e2765facbe02c3a3450e4bba36bf4c8114ae451f6df3b53b5c3d2fceef795efa"
+    },
+    {
+      "reference": "0110.png",
+      "source": "PokemonData/Ditto/60953c3ace7940fea4e14134d01a2024.jpg",
+      "sha256": "e72214747e433ad5b184334412699f3326fddeb6a0e4ad72ef8611fc2216824e"
+    },
+    {
+      "reference": "0111.png",
+      "source": "PokemonData/Ditto/Ditto24.jpg",
+      "sha256": "eed36a2aa22afcb6cb305b20e99539deb3cab07cdb08498ea7cf6cf833ee7951"
+    },
+    {
+      "reference": "0112.png",
+      "source": "PokemonData/Ditto/Ditto40.jpg",
+      "sha256": "51e922aa4eb7d1992c8064ab72f2f7715f0323f989b81a443e80538d2eb79eef"
+    },
+    {
+      "reference": "0113.png",
+      "source": "PokemonData/Ditto/Ditto43.jpg",
+      "sha256": "5b18acc92828fff7e8a71c4ead69eb0791726fd6f96e911fe09ed0fd6f98b4c1"
+    },
+    {
+      "reference": "0114.png",
+      "source": "PokemonData/Ditto/de6ea1fb39f543ac9866cb2535ae1c4a.jpg",
+      "sha256": "a69caee7c3e94784d943d9055dd383f0f68cb963e8e3177671f6dd4a2e791e9e"
+    },
+    {
+      "reference": "0115.png",
+      "source": "PokemonData/Dodrio/3e4072f0421c419887cf124efd90bc72.jpg",
+      "sha256": "131cb4013e8d63cfa29677d5eb3345d763cd8d68609a3ae93b9f43675b9a10e0"
+    },
+    {
+      "reference": "0116.png",
+      "source": "PokemonData/Dodrio/Dodrio12.jpg",
+      "sha256": "c1fe50fc1fff289058db3b410f8b4ecb77b7d69878c8cff0b78bd327d0368efa"
+    },
+    {
+      "reference": "0117.png",
+      "source": "PokemonData/Dodrio/Dodrio49.jpg",
+      "sha256": "23fc9bb0aacd81f3b2b038d92b11200a44a38267a8c926959d3900a520ac842c"
+    },
+    {
+      "reference": "0118.png",
+      "source": "PokemonData/Dodrio/Dodrio66.jpg",
+      "sha256": "ad66995f758c7c9ad6f80bebd47b7845b96af255489a5ec1b52f64e3f01fc1ae"
+    },
+    {
+      "reference": "0119.png",
+      "source": "PokemonData/Dodrio/Dodrio9.jpg",
+      "sha256": "a47f41362d6de82bf8b8eaa8907dd69be814590fd802cf5efb0858b3d003d536"
+    },
+    {
+      "reference": "0120.png",
+      "source": "PokemonData/Doduo/3e7c1ba213e041659656d8d2c6b80284.jpg",
+      "sha256": "ad9787276ae0a2cc801be29bf2c20ca7787a7f7d8c8686ae41c8ffe769fb8e69"
+    },
+    {
+      "reference": "0121.png",
+      "source": "PokemonData/Doduo/Doduo11.jpg",
+      "sha256": "e127ac1e302d27dab47c31e3efd5bd1e720395a7a58b8038d78c0b567f5bd88c"
+    },
+    {
+      "reference": "0122.png",
+      "source": "PokemonData/Doduo/Doduo38.jpg",
+      "sha256": "f7d610b67a7544734bf5bf966749ade24ce320c8369b4ae430e399a3d122de0f"
+    },
+    {
+      "reference": "0123.png",
+      "source": "PokemonData/Doduo/Doduo53.jpg",
+      "sha256": "43c6d5d3450c90c37290ae0bd06b9a9d4b22ce1c0591f6ab4d3964a8a9325c56"
+    },
+    {
+      "reference": "0124.png",
+      "source": "PokemonData/Doduo/Doduo55.jpg",
+      "sha256": "b5755bf02f3837fb527e2736538b34a764a43da561db668a331f6d59bc02ddcd"
+    },
+    {
+      "reference": "0125.png",
+      "source": "PokemonData/Dragonair/Dragonair30.jpg",
+      "sha256": "866513c56945fdfdd49f539643d31caf05f6004ca71fb5d8c2d85288e827093f"
+    },
+    {
+      "reference": "0126.png",
+      "source": "PokemonData/Dragonair/Dragonair6.jpg",
+      "sha256": "f7f2166b197d0bae89a67312c7531a6c7ea04ec31d7220824efd25c87bcde46e"
+    },
+    {
+      "reference": "0127.png",
+      "source": "PokemonData/Dragonair/Dragonair80.jpg",
+      "sha256": "804a1a9c14f3b889747f1967d3e27ba72cba50d910558783805ea3a8cdc1e389"
+    },
+    {
+      "reference": "0128.png",
+      "source": "PokemonData/Dragonair/a9d23fbff7314ad991109cc305b6817d.jpg",
+      "sha256": "2d3c4911fd94a1ff5f9fa05c46a1612720aecc100ca528a04be02fcfe56064bf"
+    },
+    {
+      "reference": "0129.png",
+      "source": "PokemonData/Dragonair/ebaea8bb2f6349948ce448a669a3c96b.jpg",
+      "sha256": "e898383c21981e5f9c3438efa82ead1ac311fdf7f182da2e0876b38080291804"
+    },
+    {
+      "reference": "0130.png",
+      "source": "PokemonData/Dragonite/Dragonite23.jpg",
+      "sha256": "0da0cb69eae61f980f0bce0470bd0149d63950a5ee7264cd5aab365149a0aa71"
+    },
+    {
+      "reference": "0131.png",
+      "source": "PokemonData/Dragonite/Dragonite26.jpg",
+      "sha256": "d462ea333114300ae545cfd9c5f7d7a29d48f57b062f56d5bd5a646a98faa04a"
+    },
+    {
+      "reference": "0132.png",
+      "source": "PokemonData/Dragonite/Dragonite35.jpg",
+      "sha256": "a85cd2b66211b1ee12e398959279c40085a64a198b31d648567c99814f52fc73"
+    },
+    {
+      "reference": "0133.png",
+      "source": "PokemonData/Dragonite/Dragonite38.jpg",
+      "sha256": "6e62097f6dbc8caae53ff673bc1cf80f890a29927ea91353b51f6f54e577b41f"
+    },
+    {
+      "reference": "0134.png",
+      "source": "PokemonData/Dragonite/Dragonite59.jpg",
+      "sha256": "0500404391564830cb6ed9f081bff752c284cbe18e35722da1b1dc4d933e373f"
+    },
+    {
+      "reference": "0135.png",
+      "source": "PokemonData/Dratini/93a9e26fbae54ccf8dc541fc612eb08a.jpg",
+      "sha256": "4cadf98554ae87d999f828199c94e41771a735ea02f16b7d86a21f6f924dfd24"
+    },
+    {
+      "reference": "0136.png",
+      "source": "PokemonData/Dratini/Dratini26.jpg",
+      "sha256": "1a67d511142208a442e39267da8dde39fc849078ba51d16a03fc9c63855e6902"
+    },
+    {
+      "reference": "0137.png",
+      "source": "PokemonData/Dratini/Dratini59.jpg",
+      "sha256": "061a42d3c0b41fc0bffc896e496069e564ea1fc9731e164fbd27a5eb77904e2c"
+    },
+    {
+      "reference": "0138.png",
+      "source": "PokemonData/Dratini/Dratini69.jpg",
+      "sha256": "b135f07e87d0b19d9994a164c36a841f14dc482d20108e64e5f17a549353a473"
+    },
+    {
+      "reference": "0139.png",
+      "source": "PokemonData/Dratini/b808a16ce7fe4b96ac471b5c94bcc743.jpg",
+      "sha256": "fa6ac6c67a10eec91c13c55158b7393b3b43d0b3d1bca89547cfa8112657b255"
+    },
+    {
+      "reference": "0140.png",
+      "source": "PokemonData/Drowzee/90901deca2c24acdbcbc25bca4c42661.jpg",
+      "sha256": "c5c8bc1594c5d891b9072d226bd0e4bfc0ee82d0502b4977c97efd96da458c2a"
+    },
+    {
+      "reference": "0141.png",
+      "source": "PokemonData/Drowzee/Drowzee22.jpg",
+      "sha256": "cb98e66de22b4adcd58d043c6719800ed3e8544079607c220a26a84da7647c0d"
+    },
+    {
+      "reference": "0142.png",
+      "source": "PokemonData/Drowzee/Drowzee31.jpg",
+      "sha256": "8c36d0ae09ba63ab55fbc61209bfee4bf430139fba8fac9a5faccc71947849b2"
+    },
+    {
+      "reference": "0143.png",
+      "source": "PokemonData/Drowzee/Drowzee43.jpg",
+      "sha256": "55ef27e11994f9708b84e5ce61ec67244665ccb9749fe1b6c3aaa7b19220f441"
+    },
+    {
+      "reference": "0144.png",
+      "source": "PokemonData/Drowzee/Drowzee48.jpg",
+      "sha256": "bbef3e014ac2fff30f2402791d388db43f04fdac937b73f92809272ac0673355"
+    },
+    {
+      "reference": "0145.png",
+      "source": "PokemonData/Dugtrio/Dugtrio23.jpg",
+      "sha256": "b4bd2d95aaecf1b01a55408f7ddbce736224095a48789ef88cc1ddd6b3b81733"
+    },
+    {
+      "reference": "0146.png",
+      "source": "PokemonData/Dugtrio/Dugtrio4.jpg",
+      "sha256": "9549c46dd6d3e7cc47cb54bc45b4a8ceec476c2f28837758c802b16481bf53db"
+    },
+    {
+      "reference": "0147.png",
+      "source": "PokemonData/Dugtrio/Dugtrio68.jpg",
+      "sha256": "ffd25446290f2edd75916d39c68f62f2cd8daab938d8c9c44e85a9713ae255d2"
+    },
+    {
+      "reference": "0148.png",
+      "source": "PokemonData/Dugtrio/Dugtrio72.jpg",
+      "sha256": "6a49105949d9ac6a971ed660640a42fc07df92ab5eab3d56d85d5b59d9859912"
+    },
+    {
+      "reference": "0149.png",
+      "source": "PokemonData/Dugtrio/ec74846df98449469befcdbfd138f0e8.jpg",
+      "sha256": "d81991f0adcd00debffad61b864a689489fdee1e1003bedaa3f81d94678086f0"
+    },
+    {
+      "reference": "0150.png",
+      "source": "PokemonData/Eevee/2416e30276434d3dbea498a1ce81cf4d.jpg",
+      "sha256": "a0569bcb1cecf92aafd61ab2b61bd94ad651643b24371d6517b2912a5e661194"
+    },
+    {
+      "reference": "0151.png",
+      "source": "PokemonData/Eevee/Eevee30.jpg",
+      "sha256": "eb11f9c24f5134801ae990687f4248443ecd1fda23834ef8b425f5b443156ce1"
+    },
+    {
+      "reference": "0152.png",
+      "source": "PokemonData/Eevee/Eevee73.jpg",
+      "sha256": "0d87f01311c8921752ba9dbf4d337bfccd57f222a4609663d32e7abc59818999"
+    },
+    {
+      "reference": "0153.png",
+      "source": "PokemonData/Eevee/Eevee89.jpg",
+      "sha256": "0d6efa0c647f0248b50d7741be5f49df702bf57f614354f9a4f2b52f0041a720"
+    },
+    {
+      "reference": "0154.png",
+      "source": "PokemonData/Eevee/Eevee93.jpg",
+      "sha256": "47120d89df6fd17c77de4ce9bce84c65c88a0c7234b9a56c2b99f095e559175d"
+    },
+    {
+      "reference": "0155.png",
+      "source": "PokemonData/Ekans/Ekans11.jpg",
+      "sha256": "a964d542babf7a4a6500f62512376dc16154d523b9424940a5f41abb5624f0b4"
+    },
+    {
+      "reference": "0156.png",
+      "source": "PokemonData/Ekans/Ekans24.jpg",
+      "sha256": "dc5534de31e6041228d23751ae5f7c7d6eaa103892151566aa577fe258c29f7a"
+    },
+    {
+      "reference": "0157.png",
+      "source": "PokemonData/Ekans/Ekans27.jpg",
+      "sha256": "e0461620baa9abcd4c211c926ef65efb5458060d156b3ca6322990418e091753"
+    },
+    {
+      "reference": "0158.png",
+      "source": "PokemonData/Ekans/Ekans34.jpg",
+      "sha256": "638ed586aaab04ddf87b869b86c66f8456a0f1c9c93ce9c5362f9701f2244313"
+    },
+    {
+      "reference": "0159.png",
+      "source": "PokemonData/Ekans/Ekans41.jpg",
+      "sha256": "05ad467cf854b3ac14576ddc0c0655bd9cccdc4a5348751994806f676ec3bea9"
+    },
+    {
+      "reference": "0160.png",
+      "source": "PokemonData/Electabuzz/6a93938509a343fca1dac0b390bcafa4.jpg",
+      "sha256": "a5d4096d903b0f47eea52d35534f8294a550ce68e6bf62c96615a441657480b6"
+    },
+    {
+      "reference": "0161.png",
+      "source": "PokemonData/Electabuzz/82309b547cae45c58bd3f9a93904be9c.jpg",
+      "sha256": "988e9b252cec8cd3c36a435f0dec87a813a2c28bab636cbf4f1b1aa3c3a3c62a"
+    },
+    {
+      "reference": "0162.png",
+      "source": "PokemonData/Electabuzz/Electabuzz1.jpg",
+      "sha256": "4d1c19a552349151037f42c41c051d4c8d861eb9d204dc84fa1ac257804affff"
+    },
+    {
+      "reference": "0163.png",
+      "source": "PokemonData/Electabuzz/Electabuzz36.jpg",
+      "sha256": "28cd8c01dfce4729944da0f67db7c4b64e563364f076eab1925382b56c25afe1"
+    },
+    {
+      "reference": "0164.png",
+      "source": "PokemonData/Electabuzz/deb1f0591d3b4f51965368f95c17add7.jpg",
+      "sha256": "90370bf38d62c0cf5fea161461d0b3155e2e181f1c429ec10a61b90a5c67ea13"
+    },
+    {
+      "reference": "0165.png",
+      "source": "PokemonData/Electrode/71415178436743108653a0628424a8a3.jpg",
+      "sha256": "17b610b61371dc2284a4ff8bed04fbe8e338bc70422d92e7a3c041a406a50b4e"
+    },
+    {
+      "reference": "0166.png",
+      "source": "PokemonData/Electrode/8654e474b7ac4653a533a77e77930356.jpg",
+      "sha256": "e7549fc510f30f00113cd69c0bd7a1a0282faf06d86c76c5750d3167bfb92c77"
+    },
+    {
+      "reference": "0167.png",
+      "source": "PokemonData/Electrode/Electrode50.jpg",
+      "sha256": "b96f8f252448bddb32f363b45930072373d3f4cff6bbacf44e3632645703d05d"
+    },
+    {
+      "reference": "0168.png",
+      "source": "PokemonData/Electrode/Electrode67.jpg",
+      "sha256": "12a76ce9c674d5be75303d234e58c331b6e9dcada0cce716866820343c6d21c6"
+    },
+    {
+      "reference": "0169.png",
+      "source": "PokemonData/Electrode/f85d9312fdb54fa9926adfc8cb73db8d.jpg",
+      "sha256": "8c01f88eb582c09c915265801f0926e6d5f033830242eb9beb7e6bba7e2faaa9"
+    },
+    {
+      "reference": "0170.png",
+      "source": "PokemonData/Exeggcute/526b27a12dfd401d899793e2e51533b8.jpg",
+      "sha256": "90e142918aa85e649ab95b7d52016360a5fd1a06ff4b5b75c1509d6a7003bc13"
+    },
+    {
+      "reference": "0171.png",
+      "source": "PokemonData/Exeggcute/93bc46d4be02404eb8cffdd0988be07e.jpg",
+      "sha256": "a6b6a65c44ccf73d05f303a3590ddab08cdaa4ee1230e6004cfb676aa37460a0"
+    },
+    {
+      "reference": "0172.png",
+      "source": "PokemonData/Exeggcute/Exeggcute24.jpg",
+      "sha256": "9971292f63255e6ab7e6ae9eb0e1ed7d1fbfacd08a376d13945460b92520de93"
+    },
+    {
+      "reference": "0173.png",
+      "source": "PokemonData/Exeggcute/Exeggcute25.jpg",
+      "sha256": "badcfff5029ee451f0ca5eb78b8421c27ff6aaf286d85c5002936c65fa8e17d5"
+    },
+    {
+      "reference": "0174.png",
+      "source": "PokemonData/Exeggcute/Exeggcute7.jpg",
+      "sha256": "cd316c246af6e355f6547b199808338630cc6b5a966f996ee2b8467d0948f262"
+    },
+    {
+      "reference": "0175.png",
+      "source": "PokemonData/Exeggutor/5b7864adb8df4d2a9d8096a505f3a46d.jpg",
+      "sha256": "4eafbfc4fdf7a7a985f47506fc33c784bcbc34069064261197280db46eca9b55"
+    },
+    {
+      "reference": "0176.png",
+      "source": "PokemonData/Exeggutor/6df4b0c0885d47149e015ad7ed2516a1.jpg",
+      "sha256": "745610a8f17727b5db3a297dddef67c0da39ef2cb73193b59c4c9526f9189e76"
+    },
+    {
+      "reference": "0177.png",
+      "source": "PokemonData/Exeggutor/Exeggutor37.jpg",
+      "sha256": "8b55cf45f4e8831bb52c7a6437317207c5ce65a529d8a33e1cd3c399e4f13b1a"
+    },
+    {
+      "reference": "0178.png",
+      "source": "PokemonData/Exeggutor/Exeggutor43.jpg",
+      "sha256": "65c7bf1500f6e350878ee27f22c9319d852aae472bfda8320597d52c5e636167"
+    },
+    {
+      "reference": "0179.png",
+      "source": "PokemonData/Exeggutor/d780d39673dc470194f9b4c1bc7be989.jpg",
+      "sha256": "16ea312ace120e2fa0701d9e242be8c1f05691f1b1ff378c96cb4fcf096cfaaf"
+    },
+    {
+      "reference": "0180.png",
+      "source": "PokemonData/Farfetchd/7480c322008144a3a3c5798bc04f98c4.jpg",
+      "sha256": "ed3bc804695a5cc2bb15222402b559c47e27483b2657868910f32ad1ceac35c2"
+    },
+    {
+      "reference": "0181.png",
+      "source": "PokemonData/Farfetchd/Farfetchd28.jpg",
+      "sha256": "c008008ddc092120c58ce7e8a6ac43571c36496503317003466ef736d3d14614"
+    },
+    {
+      "reference": "0182.png",
+      "source": "PokemonData/Farfetchd/Farfetchd59.jpg",
+      "sha256": "9ad7faa788f8d2cda4cbb3b4317192a61316daddd506d5f3a321e49eeeda067e"
+    },
+    {
+      "reference": "0183.png",
+      "source": "PokemonData/Farfetchd/Farfetchd6.jpg",
+      "sha256": "0939cf6358d0863d7a51de2d4738bb9b441d9510dccffd35d696c17a8c7ea393"
+    },
+    {
+      "reference": "0184.png",
+      "source": "PokemonData/Farfetchd/Farfetchd9.jpg",
+      "sha256": "3eff2ab952bc5b43ed50fc02ea59aa8bb95ac4eb5663aece937f03f63a1b4035"
+    },
+    {
+      "reference": "0185.png",
+      "source": "PokemonData/Fearow/Fearow63.jpg",
+      "sha256": "5c23474da21fc5af66119954a71170968fdaa50715d19f32bd6e22c7f873b4b9"
+    },
+    {
+      "reference": "0186.png",
+      "source": "PokemonData/Fearow/Fearow65.jpg",
+      "sha256": "9143823aff32240f3ff5198a25908ae3ed54d41a98ade1b3987ee7e1e362f5d5"
+    },
+    {
+      "reference": "0187.png",
+      "source": "PokemonData/Fearow/Fearow69.jpg",
+      "sha256": "eb4cc303e9e3460c2ca3e9312627bca178f05fa168157fb225f55a9bcd4d32fc"
+    },
+    {
+      "reference": "0188.png",
+      "source": "PokemonData/Fearow/Fearow73.jpg",
+      "sha256": "9d48d2316d531e5d67fdb13c326ffec033cc4cfa41aa6acb01086536debdd958"
+    },
+    {
+      "reference": "0189.png",
+      "source": "PokemonData/Fearow/Fearow75.jpg",
+      "sha256": "30141a39a896e2dada307f0de595a0ea36cdcff141d0a45b97a9fed1891b04b2"
+    },
+    {
+      "reference": "0190.png",
+      "source": "PokemonData/Flareon/856ae4280d20447aa004fd4a39884322.jpg",
+      "sha256": "9292b8e1721f6395df5ef45c4340f53896a90a6f7169167cec70343c23845517"
+    },
+    {
+      "reference": "0191.png",
+      "source": "PokemonData/Flareon/Flareon1.jpg",
+      "sha256": "fe78151052a87d450fd52747aaad9da2a836e7c868c8d0f6b6b69e69c30c35ed"
+    },
+    {
+      "reference": "0192.png",
+      "source": "PokemonData/Flareon/Flareon67.jpg",
+      "sha256": "317dea8c7fb9d1c42a6766af5013b72d0ee10fceebf00e501a33f273f2789b1d"
+    },
+    {
+      "reference": "0193.png",
+      "source": "PokemonData/Flareon/Flareon81.jpg",
+      "sha256": "ccf20aaf535e834f96f33d005768b6bdd665222f5f66248d250996856dbe7524"
+    },
+    {
+      "reference": "0194.png",
+      "source": "PokemonData/Flareon/be225280047343d8b13ebd1c7ec62c97.jpg",
+      "sha256": "1c489b0a68739f78b9d176c6fce18dc41275171e9b7209e754fcf478765bd50b"
+    },
+    {
+      "reference": "0195.png",
+      "source": "PokemonData/Gastly/Gastly26.jpg",
+      "sha256": "b39dd74e166c4e99d563b36c9c02b7ff51fd40f226ff6d32ff7dd439b09601cb"
+    },
+    {
+      "reference": "0196.png",
+      "source": "PokemonData/Gastly/Gastly30.jpg",
+      "sha256": "2f0c06590cd8fecc0950af06e1dfcec3bf22a74ba8d57e0d6996cf2b27b5b532"
+    },
+    {
+      "reference": "0197.png",
+      "source": "PokemonData/Gastly/Gastly47.jpg",
+      "sha256": "fa8b52ad2edd213514529e839742e4ba176708e0cb80b790614670450cdc468f"
+    },
+    {
+      "reference": "0198.png",
+      "source": "PokemonData/Gastly/a454166c85794ae883bad8dd78f6d2da.jpg",
+      "sha256": "6b714ea70e15cdb6778921012de44e386727f49f883f9bb6320430dc9dfb947a"
+    },
+    {
+      "reference": "0199.png",
+      "source": "PokemonData/Gastly/f47972436bc24b30bc3205412b6df88a.jpg",
+      "sha256": "7a3f48ef38574a102ec935489fe9dbf9db5f3c48889dc6eb974e8cf759686a09"
+    },
+    {
+      "reference": "0200.png",
+      "source": "PokemonData/Gengar/49d5af83aad040b681f0d15a3f2a7e2f.jpg",
+      "sha256": "59922fcf30d9dbf06ec0258f650f1930d8bc9186030c6f9f4d99db2fd67818a3"
+    },
+    {
+      "reference": "0201.png",
+      "source": "PokemonData/Gengar/Gengar119.jpg",
+      "sha256": "3b456eeb87602b8f0b9f0939538d7338f2fb1f7baf44f4bd9445ae3caaf8ba74"
+    },
+    {
+      "reference": "0202.png",
+      "source": "PokemonData/Gengar/Gengar16.jpg",
+      "sha256": "01564cb89ac50cd01fb44f551c971ac305ec0089c470a1ff1a384cd5526ae49f"
+    },
+    {
+      "reference": "0203.png",
+      "source": "PokemonData/Gengar/Gengar72.jpg",
+      "sha256": "11b13958688d02b77633c1c0d7077eccfe8af93f56fad3f9e958bc9b7db7c651"
+    },
+    {
+      "reference": "0204.png",
+      "source": "PokemonData/Gengar/Gengar96.jpg",
+      "sha256": "5bd3f947cc4d0333970d4c79b59f52b359cc40e51cc56c65f3e2324b64496aff"
+    },
+    {
+      "reference": "0205.png",
+      "source": "PokemonData/Geodude/Geodude28.jpg",
+      "sha256": "4db92e4f53f662f4ec4d60f5c723c474f88577b8a8decccfd6276d5912483a14"
+    },
+    {
+      "reference": "0206.png",
+      "source": "PokemonData/Geodude/Geodude72.jpg",
+      "sha256": "82acefafb1813d87276fb9ceefffe33d476fdef6e2117566d78b819d916c91f9"
+    },
+    {
+      "reference": "0207.png",
+      "source": "PokemonData/Geodude/Geodude74.jpg",
+      "sha256": "67c854f6b9c25516d073c10433cbdf20b43cfd0e4eb5ac901a45dbd913eb1cdf"
+    },
+    {
+      "reference": "0208.png",
+      "source": "PokemonData/Geodude/Geodude75.jpg",
+      "sha256": "5a17a4420dcfc7bd683561b05b0bcf246ba326b10e259540fdb2e03dd4b3385e"
+    },
+    {
+      "reference": "0209.png",
+      "source": "PokemonData/Geodude/b4297cb757504530a2faea1a5a90a024.jpg",
+      "sha256": "cb532df1448f80255cedbf3a6acb617eed0c2abc23c1f91659372d444f6e9153"
+    },
+    {
+      "reference": "0210.png",
+      "source": "PokemonData/Gloom/Gloom39.jpg",
+      "sha256": "68c1f1dc738af913c9ed42ca96b2091d8d6549f1d15a2de53612bf462f3521f8"
+    },
+    {
+      "reference": "0211.png",
+      "source": "PokemonData/Gloom/Gloom52.jpg",
+      "sha256": "4698fa0dd4edd3c018be96562e51094b98043c0a8aed2ec9baba3ec579781df9"
+    },
+    {
+      "reference": "0212.png",
+      "source": "PokemonData/Gloom/Gloom6.jpg",
+      "sha256": "e2bf2391093382fa6f10dc1e4e69077462e6fa8e7d02175103850020dac00f40"
+    },
+    {
+      "reference": "0213.png",
+      "source": "PokemonData/Gloom/Gloom63.jpg",
+      "sha256": "c9a9b073192cee14404fde849c325e245de471b4c20233a91fbd56f5d72e06c0"
+    },
+    {
+      "reference": "0214.png",
+      "source": "PokemonData/Gloom/Gloom69.jpg",
+      "sha256": "f4bbfabc81e2cd7652305767193e00657a1f9e4ee690b10a00daa54331470070"
+    },
+    {
+      "reference": "0215.png",
+      "source": "PokemonData/Golbat/Golbat41.jpg",
+      "sha256": "5607cc9c6025bf1a33041a1eae79f1342b892d6ade523feaba37f4bf4a6f6ea4"
+    },
+    {
+      "reference": "0216.png",
+      "source": "PokemonData/Golbat/Golbat59.jpg",
+      "sha256": "c494a061c2a6f68324e05428e598a3a878952606c5038d4368459a47fd37c152"
+    },
+    {
+      "reference": "0217.png",
+      "source": "PokemonData/Golbat/Golbat65.jpg",
+      "sha256": "42c634768bf9c6e501f5d24e386bb0ea9feb3a8cdf865380d85b71eec7781ab1"
+    },
+    {
+      "reference": "0218.png",
+      "source": "PokemonData/Golbat/Golbat90.jpg",
+      "sha256": "fac4f2051bc5fd598a461cb424d39baa3ca822d948264fcb8ae79f5ab47c0f37"
+    },
+    {
+      "reference": "0219.png",
+      "source": "PokemonData/Golbat/dfd13fdfc60d49309f3210849edacd09.jpg",
+      "sha256": "0f089f6800288fd660a45d87f059f1cb45873c9fa4d69aaf02d5bc9768c47e62"
+    },
+    {
+      "reference": "0220.png",
+      "source": "PokemonData/Goldeen/92c08bb33b4842369342636f90354079.jpg",
+      "sha256": "c8c08af38da7e1127d62f638e80c90657b877af51405dc245b51cfe6e8e1dd44"
+    },
+    {
+      "reference": "0221.png",
+      "source": "PokemonData/Goldeen/Goldeen11.jpg",
+      "sha256": "7cc83ec41b6a1e7bafa483d64c90a9dce8e66b52efbac92311eac733f1f5c152"
+    },
+    {
+      "reference": "0222.png",
+      "source": "PokemonData/Goldeen/Goldeen20.jpg",
+      "sha256": "9e0f20a483d4809b0c07a348e4f074ab0b183a40d3574d2fa7c97b7bd39da3b3"
+    },
+    {
+      "reference": "0223.png",
+      "source": "PokemonData/Goldeen/Goldeen61.jpg",
+      "sha256": "e53915e3f36a50d8e18b17e8a55ed707123e806113a6648e563ac7f4020a796e"
+    },
+    {
+      "reference": "0224.png",
+      "source": "PokemonData/Goldeen/Goldeen71.jpg",
+      "sha256": "c19f8f8a3f316f0b6997662c6ba8505cdb26fbdd7ca3a46e79f4d46d5d790253"
+    },
+    {
+      "reference": "0225.png",
+      "source": "PokemonData/Golduck/5573e23602f9459eadadbaf41f47d7d6.jpg",
+      "sha256": "052e2ab0d0c8a7e4f2177fb1ab2449a912e850f5142fde2110d049a33a820f60"
+    },
+    {
+      "reference": "0226.png",
+      "source": "PokemonData/Golduck/563e777eb96840279880ff0ce4553aa2.jpg",
+      "sha256": "4260d78428089c697054dcaa2192a9093ec5f4ed8a691ce38a54b631e5feba11"
+    },
+    {
+      "reference": "0227.png",
+      "source": "PokemonData/Golduck/Golduck23.jpg",
+      "sha256": "914b4397c9669d1c0e8c68d959dd0af4f246da9f175bc6ff41fab5fdaae0443d"
+    },
+    {
+      "reference": "0228.png",
+      "source": "PokemonData/Golduck/Golduck24.jpg",
+      "sha256": "8fd494b7f4d0c0fc8174f337f4da73fb01e5673c495ef0a594a0c9d3ef538f78"
+    },
+    {
+      "reference": "0229.png",
+      "source": "PokemonData/Golduck/Golduck68.jpg",
+      "sha256": "c2981795b70762e46a34bb602645e7b78f6edc58703f61afa3ec679b77e96dfd"
+    },
+    {
+      "reference": "0230.png",
+      "source": "PokemonData/Golem/Golem31.jpg",
+      "sha256": "75270fcb2e35e486036218f8809dbb87e65f25aba756698461af4fba140e9509"
+    },
+    {
+      "reference": "0231.png",
+      "source": "PokemonData/Golem/Golem5.jpg",
+      "sha256": "3748de412e94a2c80f7daa57648447121a22d423ddfe044db4498371db40bb61"
+    },
+    {
+      "reference": "0232.png",
+      "source": "PokemonData/Golem/Golem64.jpg",
+      "sha256": "7ab775e7969266b1288991d37389ccd81d700df968e6c3fbd1bc1b1792945f0e"
+    },
+    {
+      "reference": "0233.png",
+      "source": "PokemonData/Golem/Golem88.jpg",
+      "sha256": "4bc859fc602bab0bb4387ab259609e4ba0fc7bec6646c3927a23672e3b046427"
+    },
+    {
+      "reference": "0234.png",
+      "source": "PokemonData/Golem/b7a6b9e9a03343a48c6a2e1330de1b2e.jpg",
+      "sha256": "1ed07ef0d628d08043dc071776ac1f68580f75d595342b1418d74f3142e34f89"
+    },
+    {
+      "reference": "0235.png",
+      "source": "PokemonData/Graveler/Graveler2.jpg",
+      "sha256": "0d31d2fd9553906a0b9c76e007bbd63f4caa5b2570163218c8d3de51d4d3d324"
+    },
+    {
+      "reference": "0236.png",
+      "source": "PokemonData/Graveler/Graveler26.jpg",
+      "sha256": "4712f22664cd6bd57794c73ffbcaacbed307fca0bd6378147842168037f1dabc"
+    },
+    {
+      "reference": "0237.png",
+      "source": "PokemonData/Graveler/Graveler29.jpg",
+      "sha256": "4765e2f341bad8164e34c2b77b3901dbf3c38de0f02dde20e15bcb20ba9d0889"
+    },
+    {
+      "reference": "0238.png",
+      "source": "PokemonData/Graveler/Graveler53.jpg",
+      "sha256": "04541933a41b066815c2e8ff195b906df580881270c84284e6a2b0ce1c8efb78"
+    },
+    {
+      "reference": "0239.png",
+      "source": "PokemonData/Graveler/Graveler62.jpg",
+      "sha256": "eb836ee1251b6dfff66cf40273de8b6e0ad2da00bab99344a52c9d68c5c27987"
+    },
+    {
+      "reference": "0240.png",
+      "source": "PokemonData/Grimer/6e8e877680bb4664966d0128f76223a9.jpg",
+      "sha256": "04f0a341295a4b2c10a8c486367b8b5966feac5cb6113a37191104fcd40d7c5a"
+    },
+    {
+      "reference": "0241.png",
+      "source": "PokemonData/Grimer/Grimer40.jpg",
+      "sha256": "c2c0ddbe49066139cf22f00d1e54a25dff2617cba38b18eb46b2f6de5c0c9c1f"
+    },
+    {
+      "reference": "0242.png",
+      "source": "PokemonData/Grimer/Grimer42.jpg",
+      "sha256": "391469f0968be87d9048feb235bf17195b8f27bb6f137da92dd9287816b4c787"
+    },
+    {
+      "reference": "0243.png",
+      "source": "PokemonData/Grimer/Grimer49.jpg",
+      "sha256": "cadd3214fe4058ea4056f87791a6fe0a972daeb3eb67b0bcd2c8871123229ec2"
+    },
+    {
+      "reference": "0244.png",
+      "source": "PokemonData/Grimer/Grimer51.jpg",
+      "sha256": "24eeb9c6b83cb3cfda1001bda16a8eca5d32ca9fd1002f8262a7c4ecde38c077"
+    },
+    {
+      "reference": "0245.png",
+      "source": "PokemonData/Growlithe/620b8d00ce654c5d9e6612e0175c66e6.jpg",
+      "sha256": "fb95d53800aa5e0a5dca7ce25ce28e04048bc4f6fb511e73cc694aa004f763b0"
+    },
+    {
+      "reference": "0246.png",
+      "source": "PokemonData/Growlithe/Growlithe2.jpg",
+      "sha256": "e31f442e071265a97f001ffa53731285f985ec1db1bd57ce17f86c8567655d61"
+    },
+    {
+      "reference": "0247.png",
+      "source": "PokemonData/Growlithe/Growlithe53.jpg",
+      "sha256": "f6034999eeb8a189c3bef0b139358c2eede7b72bc36ff666faf23119494e71dc"
+    },
+    {
+      "reference": "0248.png",
+      "source": "PokemonData/Growlithe/Growlithe68.jpg",
+      "sha256": "7d02ca161a88d85185e9c634981c786794fcb8e69d403c080599d083f206bb92"
+    },
+    {
+      "reference": "0249.png",
+      "source": "PokemonData/Growlithe/Growlithe96.jpg",
+      "sha256": "e87a1630c3761ffc2c245df86769bd15f611c9c93b1212704cfac7c99d995156"
+    },
+    {
+      "reference": "0250.png",
+      "source": "PokemonData/Gyarados/Gyarados36.jpg",
+      "sha256": "7bafa562330bdbfbd8d50e373c09b7a8ae6db465c8c8b749a04b3aeb80f3e171"
+    },
+    {
+      "reference": "0251.png",
+      "source": "PokemonData/Gyarados/Gyarados39.jpg",
+      "sha256": "47a812830de64b85c3bd6acaefeb875b7d2376a80c7986b384d28c7ace49f842"
+    },
+    {
+      "reference": "0252.png",
+      "source": "PokemonData/Gyarados/Gyarados57.jpg",
+      "sha256": "d58fc09ddbf1b1eb8cf02c68a5d974c4fcb9e410acfcfcae4ad0c590655dbc35"
+    },
+    {
+      "reference": "0253.png",
+      "source": "PokemonData/Gyarados/Gyarados95.jpg",
+      "sha256": "3b7e0d35b680b57486cf7d9628592e4e2a3bfee1020c98b8c8edfbb95434baa0"
+    },
+    {
+      "reference": "0254.png",
+      "source": "PokemonData/Gyarados/d573bfd0ae7e463093ca699a67d3e186.jpg",
+      "sha256": "a5caa29e78e6348ee55682a60ac6511c1e2aaac9f846f220698e083da46bfbf2"
+    },
+    {
+      "reference": "0255.png",
+      "source": "PokemonData/Haunter/5db1eb4eb6f74fba899dfae9b7e3b5b8.jpg",
+      "sha256": "76bbba028b6120e46f639c5ebc9710bc65079a90dacef0f7b7081e8cec677162"
+    },
+    {
+      "reference": "0256.png",
+      "source": "PokemonData/Haunter/Haunter1.jpg",
+      "sha256": "35aa164e5f70584687b8e3f3e06f9a07f26677df3fd1b7fbac19ef6b371ae0bd"
+    },
+    {
+      "reference": "0257.png",
+      "source": "PokemonData/Haunter/Haunter20.jpg",
+      "sha256": "72eec930ecbdd5a2a2c12eb6e691706c64208d170cea66f1e61ca17985b12c01"
+    },
+    {
+      "reference": "0258.png",
+      "source": "PokemonData/Haunter/Haunter30.jpg",
+      "sha256": "31d1571134e7037776010a2ab3b266c98498b32ecc71d09b202cff13175a8d45"
+    },
+    {
+      "reference": "0259.png",
+      "source": "PokemonData/Haunter/f8e16b70571f492a9a86040e16fc7e58.jpg",
+      "sha256": "0a36b5d93febf70b3f27ec0f44ca3f44fdebb17b6750a3d0f7dbb8a73f12ac93"
+    },
+    {
+      "reference": "0260.png",
+      "source": "PokemonData/Hitmonchan/51e7353fa05b4f27b8b3eb5eb4e0368f.jpg",
+      "sha256": "77ac50c95f7c76e5f27942109fbacd17fef4b594c67846c1f277ce7db2bc6124"
+    },
+    {
+      "reference": "0261.png",
+      "source": "PokemonData/Hitmonchan/734f41f7f8fc4a8e859da1e685e63ebc.jpg",
+      "sha256": "3282bed22662304baf6559dd2ec04a5a68eea9b58d6f59be2d6b54dae0fda4f0"
+    },
+    {
+      "reference": "0262.png",
+      "source": "PokemonData/Hitmonchan/Hitmonchan4.jpg",
+      "sha256": "ec57e1b3493b2a8c5549f1ad5d9a7604e17d6e4b105edfa685f4bec16ba5fcd7"
+    },
+    {
+      "reference": "0263.png",
+      "source": "PokemonData/Hitmonchan/Hitmonchan56.jpg",
+      "sha256": "7f94c786adf44754de798cc67f0b2f3bd5c9fdaf0ed84852447aeef6e72fef04"
+    },
+    {
+      "reference": "0264.png",
+      "source": "PokemonData/Hitmonchan/f671e95f26c5402ba4fa55c0b89d025f.jpg",
+      "sha256": "69636d65e3f9486ac62d216a99e825e799b31a52888e8ca2b2b675e33467c874"
+    },
+    {
+      "reference": "0265.png",
+      "source": "PokemonData/Hitmonlee/Hitmonlee25.jpg",
+      "sha256": "4797c7a72467e9c7c57beec10ad5fc79c06aa7b0831c94c133efb7467902b552"
+    },
+    {
+      "reference": "0266.png",
+      "source": "PokemonData/Hitmonlee/Hitmonlee54.jpg",
+      "sha256": "9a9df47dacccb8e64361fe3bc45a561922f7bf4e6a415ba9b186bf53c534e510"
+    },
+    {
+      "reference": "0267.png",
+      "source": "PokemonData/Hitmonlee/Hitmonlee72.jpg",
+      "sha256": "ac4d6c8543d42be4d163b8b6fccbb9e38cde877e76f8a394119fe1fc96f59749"
+    },
+    {
+      "reference": "0268.png",
+      "source": "PokemonData/Hitmonlee/d2f9bba448e442c381c3e424a18125eb.jpg",
+      "sha256": "5913a37a04bc87227cf7020c27383fd4e5d9b6e7fbb8489041a8d1a3d7606edc"
+    },
+    {
+      "reference": "0269.png",
+      "source": "PokemonData/Hitmonlee/f01df13bd5ae405cb29275bbc705f56d.jpg",
+      "sha256": "a0b6bbef7f1f81a111a2a14652abc8713c401a375918e050707fe835f456597a"
+    },
+    {
+      "reference": "0270.png",
+      "source": "PokemonData/Horsea/43d5ad56d052458e9850acdeb607124e.jpg",
+      "sha256": "b82ae875599137ea256ee9682a510d48206a107e3a6772622938f26bdafa7110"
+    },
+    {
+      "reference": "0271.png",
+      "source": "PokemonData/Horsea/Horsea25.jpg",
+      "sha256": "4f7590ee31bfb16e66826b6560122474d92bd34f9857b3fefa7644d2d1c49745"
+    },
+    {
+      "reference": "0272.png",
+      "source": "PokemonData/Horsea/Horsea32.jpg",
+      "sha256": "8cc25ba9036a7387d895d382f52770a9f9ef547f18a202ba61911c9dccdb658b"
+    },
+    {
+      "reference": "0273.png",
+      "source": "PokemonData/Horsea/Horsea64.jpg",
+      "sha256": "452c0f34bd63ac9a98dee6dd9041da84a31695b5ded1093ccd44f760b94b2831"
+    },
+    {
+      "reference": "0274.png",
+      "source": "PokemonData/Horsea/a65edbeb6a87493e8a2bcf2b9552abee.jpg",
+      "sha256": "732ef9fc6e909b06f47679e64601f12f98e03c375c5add80ec8609414f702216"
+    },
+    {
+      "reference": "0275.png",
+      "source": "PokemonData/Hypno/5c58993b7b704ed8b25869f73f631d81.jpg",
+      "sha256": "8f1e9d86ae56914b944c8aa4e5f789ce165505424c82d608c66b5ad2aa4db9f5"
+    },
+    {
+      "reference": "0276.png",
+      "source": "PokemonData/Hypno/Hypno18.jpg",
+      "sha256": "2f3cb43c73b14668c8498478e9c468e2f3a41ee074efba281a6814133b1cb9f5"
+    },
+    {
+      "reference": "0277.png",
+      "source": "PokemonData/Hypno/Hypno44.jpg",
+      "sha256": "ac55298daa3ab5ca0a886a96b199b13b302d4920ca9957536f10b655bad29b96"
+    },
+    {
+      "reference": "0278.png",
+      "source": "PokemonData/Hypno/Hypno57.jpg",
+      "sha256": "f9b544d055cd30aed27e8865a4b7d2fa4585df7b2d892f7fb9624d36267a46fc"
+    },
+    {
+      "reference": "0279.png",
+      "source": "PokemonData/Hypno/Hypno58.jpg",
+      "sha256": "aec05c5e236ee897f0daaba9e0057b1b7ca5d1c104acad41e4ead360465964cc"
+    },
+    {
+      "reference": "0280.png",
+      "source": "PokemonData/Ivysaur/82e0acce635a4db08e645ff666c94130.jpg",
+      "sha256": "9925ac879b383d5432b14eea9be2d2383628851129162646917c00270d45927a"
+    },
+    {
+      "reference": "0281.png",
+      "source": "PokemonData/Ivysaur/Ivysaur1.jpg",
+      "sha256": "1474f0776d07dd4d9544f90a79028b8c98c48ed99df2bd9c675fcaef9da2dde6"
+    },
+    {
+      "reference": "0282.png",
+      "source": "PokemonData/Ivysaur/Ivysaur32.jpg",
+      "sha256": "e45f0423ce2ea2a2a17c0cf53a54398581d79d4153137160dcd0f6d5e6d4be19"
+    },
+    {
+      "reference": "0283.png",
+      "source": "PokemonData/Ivysaur/Ivysaur39.jpg",
+      "sha256": "0140a1b8cac0d15f5eae365fdc19c6515a827e990a3f1c3e2bb3d0cb3f914952"
+    },
+    {
+      "reference": "0284.png",
+      "source": "PokemonData/Ivysaur/Ivysaur63.jpg",
+      "sha256": "e8a67894c0cfd7dccc3c4f216d689f5b8e65d576d22602caa4922fa308c2d287"
+    },
+    {
+      "reference": "0285.png",
+      "source": "PokemonData/Jigglypuff/Jigglypuff22.jpg",
+      "sha256": "b390b1fe19900411c3f9d3d52f67a25cf619d585b37964568d46391082d1ca63"
+    },
+    {
+      "reference": "0286.png",
+      "source": "PokemonData/Jigglypuff/Jigglypuff58.jpg",
+      "sha256": "db13999691f643ab285795c5cefd2df1475ca2b827fd92f0376919d89848e51e"
+    },
+    {
+      "reference": "0287.png",
+      "source": "PokemonData/Jigglypuff/Jigglypuff69.jpg",
+      "sha256": "7eaf6c2cf67de6565046e0b7e4fa82f66e177f0c422077a3ead7c71f1dca40b1"
+    },
+    {
+      "reference": "0288.png",
+      "source": "PokemonData/Jigglypuff/Jigglypuff8.jpg",
+      "sha256": "8169a95ce238a72dd3a6cf75c384c152932155f57ac1fde3510c5bf9c156075e"
+    },
+    {
+      "reference": "0289.png",
+      "source": "PokemonData/Jigglypuff/f663a8c63e394c719a8c8c8d5ee90ac7.jpg",
+      "sha256": "927bd72c9516a3072d892fdcb0accd2de4aba7fddc98edad329c91f3c3e3a56d"
+    },
+    {
+      "reference": "0290.png",
+      "source": "PokemonData/Jolteon/6acf956e971846209b3eb02407d2a3d4.jpg",
+      "sha256": "e1c5f68d42d804258313ab7d7dc50667b8b9cd8bfeb6d3dfefc40a13189fea93"
+    },
+    {
+      "reference": "0291.png",
+      "source": "PokemonData/Jolteon/Jolteon29.jpg",
+      "sha256": "802618fee99ac700512c3d57e8806d679290de564ebce264cbd232580022c4f8"
+    },
+    {
+      "reference": "0292.png",
+      "source": "PokemonData/Jolteon/Jolteon47.jpg",
+      "sha256": "c14ebddabf5746a671012f23dc07bd5b0464f4b615d6c61100e35ca0275adb55"
+    },
+    {
+      "reference": "0293.png",
+      "source": "PokemonData/Jolteon/Jolteon78.jpg",
+      "sha256": "bb3b63278a5846cf20c6be44a04db83f6e4bf90d6fef8ec150b6fe148746e733"
+    },
+    {
+      "reference": "0294.png",
+      "source": "PokemonData/Jolteon/df07dc3c854040d48bb31b46786fee3d.jpg",
+      "sha256": "db3c14e4b735b4ad016e43742ff59cd5e7b53dbd49c36be55272a567af7cb279"
+    },
+    {
+      "reference": "0295.png",
+      "source": "PokemonData/Jynx/77024cd4e1e341f98467b4b72e29681f.jpg",
+      "sha256": "b72c9494c4988d4d140dbf45f772da810b9b98f9c0992ba5ddeb953ae1036128"
+    },
+    {
+      "reference": "0296.png",
+      "source": "PokemonData/Jynx/Jynx35.jpg",
+      "sha256": "923a2b0135abee1487616cba3652c4a4670c9166b0ba1769cb3502f37c69d3cf"
+    },
+    {
+      "reference": "0297.png",
+      "source": "PokemonData/Jynx/Jynx39.jpg",
+      "sha256": "f5cc4227c735d628d66e504055fd04304ae69e8a9b1cc1b941cce0aa0d551d4e"
+    },
+    {
+      "reference": "0298.png",
+      "source": "PokemonData/Jynx/Jynx62.jpg",
+      "sha256": "47f0c6e587f749d4a018514a1c5ce29177bb8b24d327fdd4a27c23c9f8d9d8e7"
+    },
+    {
+      "reference": "0299.png",
+      "source": "PokemonData/Jynx/Jynx73.jpg",
+      "sha256": "dd17a6bf467a23af3a2b2b922f26953e3bad0125564d6e2e00661069727413d1"
+    },
+    {
+      "reference": "0300.png",
+      "source": "PokemonData/Kabuto/45275bdf817342dcb8266e58df968eb7.jpg",
+      "sha256": "b6653c5ccbc2a9c4bc7c8fa6b105d821f5b4a8b0f2e9c11f3e707960bcef708d"
+    },
+    {
+      "reference": "0301.png",
+      "source": "PokemonData/Kabuto/8b2c4bd2ac2d4278b30729d5537daf31.jpg",
+      "sha256": "ebac736dadad1b117c5122de28273b7565e1c176f07605cbe831702b3ef40cd8"
+    },
+    {
+      "reference": "0302.png",
+      "source": "PokemonData/Kabuto/Kabuto12.jpg",
+      "sha256": "0b5e7846d30d5319d67a9271bb9b663b86ced64878c67802b6001463000086ff"
+    },
+    {
+      "reference": "0303.png",
+      "source": "PokemonData/Kabuto/Kabuto34.jpg",
+      "sha256": "e10c2e8621271d3cb132c92ba682a0c81c9b7dd2a749da355ef54473d66d70ff"
+    },
+    {
+      "reference": "0304.png",
+      "source": "PokemonData/Kabuto/Kabuto41.jpg",
+      "sha256": "279886962d6f5996a98608779f1115ab0460d299e1fe402c62825bd57ec8c2d2"
+    },
+    {
+      "reference": "0305.png",
+      "source": "PokemonData/Kabutops/787577b4f8854d298bb0a47297051025.jpg",
+      "sha256": "a26b9c9a783a2393e7c277f3351e77a86437f33556d32e13100c2797bee7d10a"
+    },
+    {
+      "reference": "0306.png",
+      "source": "PokemonData/Kabutops/Kabutops27.jpg",
+      "sha256": "18abb6f82f136278938f7e36606939b8c6ad6493f3119e194b850ecb815d0c45"
+    },
+    {
+      "reference": "0307.png",
+      "source": "PokemonData/Kabutops/Kabutops4.jpg",
+      "sha256": "326746b0e91996fc2a52db31a3920def27fe8847f65bd41a4186f722f7c19bd0"
+    },
+    {
+      "reference": "0308.png",
+      "source": "PokemonData/Kabutops/Kabutops55.jpg",
+      "sha256": "bc2fdeaaf254e45303f2df6e449c41b214bd266e73275f25ac92ae54748815e1"
+    },
+    {
+      "reference": "0309.png",
+      "source": "PokemonData/Kabutops/Kabutops61.jpg",
+      "sha256": "c8560d9c922f46d87aa728306907d8a6ea6b7d8bdfd21af20ec5012902020ffa"
+    },
+    {
+      "reference": "0310.png",
+      "source": "PokemonData/Kadabra/Kadabra16.jpg",
+      "sha256": "53c1f0c5cae5cdcc15b33422814751cd24fbfd4ab0abe44b96155e5e334056d9"
+    },
+    {
+      "reference": "0311.png",
+      "source": "PokemonData/Kadabra/Kadabra35.jpg",
+      "sha256": "f7be289eecaa16fc02a2e481db57c4f28530d7a0d8147f132e33ae01e7f65824"
+    },
+    {
+      "reference": "0312.png",
+      "source": "PokemonData/Kadabra/Kadabra36.jpg",
+      "sha256": "af869fe3cc361e0f2add9925a6d7c5e6b516830c1ce13020388226a0e9e51277"
+    },
+    {
+      "reference": "0313.png",
+      "source": "PokemonData/Kadabra/d361d37676da4f8192d6182f6328a31e.jpg",
+      "sha256": "81e8b083f937289bd7deec1694a097ba30f197ed5f4b117216e4c67f1743cadb"
+    },
+    {
+      "reference": "0314.png",
+      "source": "PokemonData/Kadabra/deaab18406cd47939188016442384216.jpg",
+      "sha256": "4e30c110fe231d8035492c05d2a82f9e1e206644d2d643ff0eb9a723061a0ea2"
+    },
+    {
+      "reference": "0315.png",
+      "source": "PokemonData/Kakuna/309d8ea151294337a67076e0e759c0ea.jpg",
+      "sha256": "632373e97c59c5e648e58f41f43828d16ba32bf0858a27f87d927c5191515b02"
+    },
+    {
+      "reference": "0316.png",
+      "source": "PokemonData/Kakuna/Kakuna21.jpg",
+      "sha256": "a6da0e5cc01beebb765c669dd4da98f5d2398242adbc2928087c94c5f8cffd10"
+    },
+    {
+      "reference": "0317.png",
+      "source": "PokemonData/Kakuna/Kakuna23.jpg",
+      "sha256": "fa37f420245350a096ae7a08bf6659a5fa6a67231a2319258b25abec3d05dfcd"
+    },
+    {
+      "reference": "0318.png",
+      "source": "PokemonData/Kakuna/Kakuna27.jpg",
+      "sha256": "1ba9fe129ff2a052ff496b98d9ee673f276bb2201497a537368023e93e8c04b5"
+    },
+    {
+      "reference": "0319.png",
+      "source": "PokemonData/Kakuna/cadc360483174450acc7334fd475b3a7.jpg",
+      "sha256": "bafd960b0040f9759829c2be34b4661bed68123ed2be9954ea25f04f193fa5e8"
+    },
+    {
+      "reference": "0320.png",
+      "source": "PokemonData/Kangaskhan/905527f5dd374fbe8086a51c85d31587.jpg",
+      "sha256": "8957155bfccb10e9471242bcf6a5336f940f213326c55cf045a8fcf3e80e99ad"
+    },
+    {
+      "reference": "0321.png",
+      "source": "PokemonData/Kangaskhan/Kangaskhan40.jpg",
+      "sha256": "1ab6540624eaa43bac2c42695f4ff250661fb1784cdb8447853852cf34365069"
+    },
+    {
+      "reference": "0322.png",
+      "source": "PokemonData/Kangaskhan/Kangaskhan43.jpg",
+      "sha256": "dfc8f8ebfcba1fff0ddeb3f4a04a0b4d00a9a4101de4a42d12ac0b0abb601503"
+    },
+    {
+      "reference": "0323.png",
+      "source": "PokemonData/Kangaskhan/Kangaskhan49.jpg",
+      "sha256": "29d69dbe8af83837861406fa06db92dc93b1d3a300b70c29a3fb6e33ea353aed"
+    },
+    {
+      "reference": "0324.png",
+      "source": "PokemonData/Kangaskhan/fb16b5fa83da4aa2b2a1aaf43d9d53c1.jpg",
+      "sha256": "2321b7943d45d7af0ee17d7639e987918dfb3fa9c637f2a4cd29ac9202f91b7e"
+    },
+    {
+      "reference": "0325.png",
+      "source": "PokemonData/Kingler/658fd8bb8e3d4a4bb31b4444f76e370b.jpg",
+      "sha256": "0e3c475f5952a81f100840987cf09ae2d2cce8a3cb894bda155f3a6eff1b7de0"
+    },
+    {
+      "reference": "0326.png",
+      "source": "PokemonData/Kingler/69199fa1eed24119a70929bb79383cd2.jpg",
+      "sha256": "e36c291a76050bf7cb07557a0dec67275f3c5c8af4c5aedf4464bf384dadb723"
+    },
+    {
+      "reference": "0327.png",
+      "source": "PokemonData/Kingler/Kingler59.jpg",
+      "sha256": "215c7d0ce0fc88f1b0418cbbbff1fce092a6d078616d0cfcad0d3af5797d9f88"
+    },
+    {
+      "reference": "0328.png",
+      "source": "PokemonData/Kingler/afce2805530145b092d0cf99a9f2f6cc.jpg",
+      "sha256": "f6860fefd90101bc707cc2512906cf15d0145e39d92e76573256b1f8e0ec5790"
+    },
+    {
+      "reference": "0329.png",
+      "source": "PokemonData/Kingler/c0c04b2c26d849eea31025b75124b923.jpg",
+      "sha256": "517170ed674dbda6f140853402c9440cfdd2b87271f5f4d9544bf7191a578bda"
+    },
+    {
+      "reference": "0330.png",
+      "source": "PokemonData/Koffing/Koffing25.jpg",
+      "sha256": "d06b2537ee15552036721f7e93a89ee6e1564dcda3cd463e24695952458201d8"
+    },
+    {
+      "reference": "0331.png",
+      "source": "PokemonData/Koffing/Koffing43.jpg",
+      "sha256": "02135c3d9f4cd84251eacf40c06119debfab899144d89865b4ed12961bb0144d"
+    },
+    {
+      "reference": "0332.png",
+      "source": "PokemonData/Koffing/Koffing57.jpg",
+      "sha256": "6078aafe4923dbf5fbc5697883367bd458a750f3be043e699b8ca43f7003bd5a"
+    },
+    {
+      "reference": "0333.png",
+      "source": "PokemonData/Koffing/Koffing58.jpg",
+      "sha256": "a0af5f77f692e91d709719fd2f308d3a88a7e8018b63cb78e4ccbca42c20b682"
+    },
+    {
+      "reference": "0334.png",
+      "source": "PokemonData/Koffing/f8cbc1242ecd4641917874663259c789.jpg",
+      "sha256": "c03aa24e16e899046a648e253038a1b455c93d3565c12215f3bd8153cc5609e3"
+    },
+    {
+      "reference": "0335.png",
+      "source": "PokemonData/Krabby/5d08343a2e1f48a0b06df1785c8b6c5e.jpg",
+      "sha256": "a8e841fb8b2fd26817e97bedc2730d026c028e339a0aed6a437a3bbdafeae44b"
+    },
+    {
+      "reference": "0336.png",
+      "source": "PokemonData/Krabby/Krabby28.jpg",
+      "sha256": "501eb1bda08de1fa7759e39534f28728eb97aff558660e528ff61a3c2acd12ee"
+    },
+    {
+      "reference": "0337.png",
+      "source": "PokemonData/Krabby/Krabby5.jpg",
+      "sha256": "a0e5635a622fb30a017161d12aee111c84b26c36ed19ec1dc185ff7cd3d3349e"
+    },
+    {
+      "reference": "0338.png",
+      "source": "PokemonData/Krabby/Krabby70.jpg",
+      "sha256": "f51a4f9902b088e4830a3fa8ade5effb22225ee2a861e9993567f296615a4bc8"
+    },
+    {
+      "reference": "0339.png",
+      "source": "PokemonData/Krabby/b13137dc57bf41688198949b4c4a4e11.jpg",
+      "sha256": "02f39ed94d281fe9c197bd200ec675b5e0479abf943f1e510f2940826f959970"
+    },
+    {
+      "reference": "0340.png",
+      "source": "PokemonData/Lapras/9778397e21924680ab55b9090dc39b9a.jpg",
+      "sha256": "3bb0b0de4605e3a6437c2dbf3b66e427255006605c01d77b051885af556665ae"
+    },
+    {
+      "reference": "0341.png",
+      "source": "PokemonData/Lapras/Lapras27.jpg",
+      "sha256": "9444ad94f88ff6878af6376448f0b92cd0a3f9d09b3e33e3fb90f4ebecd41943"
+    },
+    {
+      "reference": "0342.png",
+      "source": "PokemonData/Lapras/Lapras45.jpg",
+      "sha256": "8314ab23eec10f0044ae23c660f65dd57e06b6c845aa0ed805317ed51faeaaec"
+    },
+    {
+      "reference": "0343.png",
+      "source": "PokemonData/Lapras/Lapras56.jpg",
+      "sha256": "413f18bc0d820d475e8e9ce35462cf8139da42a3b01026b7d8e2322686fa0504"
+    },
+    {
+      "reference": "0344.png",
+      "source": "PokemonData/Lapras/a9434648b04d4bc39b08d3a546323995.jpg",
+      "sha256": "6187b57c1a34dd32000f09b6eac8ca0c6bf28c12686e253ba9425eaddd80ad45"
+    },
+    {
+      "reference": "0345.png",
+      "source": "PokemonData/Lickitung/Lickitung50.jpg",
+      "sha256": "299adfaa5fb2b2b54a6d52b175c8f534392c818a7f2be56f6f3c3e41d589d12a"
+    },
+    {
+      "reference": "0346.png",
+      "source": "PokemonData/Lickitung/Lickitung81.jpg",
+      "sha256": "6161e631cb22fcb161b724d90a77cd875d24d53f840861958ecbfb77c758fa96"
+    },
+    {
+      "reference": "0347.png",
+      "source": "PokemonData/Lickitung/Lickitung86.jpg",
+      "sha256": "0fa15e0e6c36c6e9ba3701e0234a36793a3693354a6741b6a6885cb2b105c325"
+    },
+    {
+      "reference": "0348.png",
+      "source": "PokemonData/Lickitung/b50139e7c49a4308a5fbfd0d091a9eff.jpg",
+      "sha256": "03153de4f340b4a10ed4be687afa4a0e356a336f54bfad94690285c49fb2d9d0"
+    },
+    {
+      "reference": "0349.png",
+      "source": "PokemonData/Lickitung/c9a779553a7141c19cd8de53ae425f84.jpg",
+      "sha256": "c5946f65a83a56a3c309c4833e514f7b23df98ff6830c6d47523ec2716b72ad7"
+    },
+    {
+      "reference": "0350.png",
+      "source": "PokemonData/Machamp/41adce385c0e46f88bd2e6a9c8a4cf01.jpg",
+      "sha256": "c4085c6e901ce6719915ce815e649bd79d63d22941fd2afdfa3031d21bac30b5"
+    },
+    {
+      "reference": "0351.png",
+      "source": "PokemonData/Machamp/4d59cf582ff1436bbd8556348bf6a362.jpg",
+      "sha256": "31408f0c5913c6fc4dc22b758bab58acde9de4a05acb514c8da8744f9216663c"
+    },
+    {
+      "reference": "0352.png",
+      "source": "PokemonData/Machamp/7eb9dccc65f242878619762204180dfc.jpg",
+      "sha256": "442ff5e81660aa0d8a75badb76d995dd27013e9c27388cd1d83fec09a6b5f9f5"
+    },
+    {
+      "reference": "0353.png",
+      "source": "PokemonData/Machamp/Machamp45.jpg",
+      "sha256": "e7414265ef2c8bc0b4052501fbe5abc04fe10ebf945fc1ef314cbd4a5e591a63"
+    },
+    {
+      "reference": "0354.png",
+      "source": "PokemonData/Machamp/caff6d13eec743e4b13585ca5ca018f2.jpg",
+      "sha256": "0d8492a129dec07e07733832d4a348430c9b302ac6cb37628a976fe93fca4526"
+    },
+    {
+      "reference": "0355.png",
+      "source": "PokemonData/Machoke/Machoke13.jpg",
+      "sha256": "65253484f3c5a6655c230f97b3662ef5b80d0005f8336b41f18692299eadea13"
+    },
+    {
+      "reference": "0356.png",
+      "source": "PokemonData/Machoke/Machoke20.jpg",
+      "sha256": "ebd1eddbdfd31b88647fab73aa4c8ce0f75bcd17e495913eabaddf910bccf98b"
+    },
+    {
+      "reference": "0357.png",
+      "source": "PokemonData/Machoke/Machoke4.jpg",
+      "sha256": "1265b620164e267cf652a0e9d905940e0d303b43cea762b9271714bf95013810"
+    },
+    {
+      "reference": "0358.png",
+      "source": "PokemonData/Machoke/Machoke50.jpg",
+      "sha256": "19bef761533482a8e2aa123b90b319d335673cf2d33b616ee731fe93de36059d"
+    },
+    {
+      "reference": "0359.png",
+      "source": "PokemonData/Machoke/c48c6daf3f524463b87c00a5ce1a27d5.jpg",
+      "sha256": "d02aca34f40c8a3adf923405665e67092a7bb5d9224202d397399200b2b9721f"
+    },
+    {
+      "reference": "0360.png",
+      "source": "PokemonData/Machop/5d75efd54afc4445a49d80eb2fca16c3.jpg",
+      "sha256": "eda5ca8d0665ee70f9839d2a4ccebf4cb6b19cd5a4fb6e35d66c0338fc2d7120"
+    },
+    {
+      "reference": "0361.png",
+      "source": "PokemonData/Machop/Machop37.jpg",
+      "sha256": "9548752331870aec858d11f42ed5e9f6abd0f76e1d352e10d4127861a936ac8d"
+    },
+    {
+      "reference": "0362.png",
+      "source": "PokemonData/Machop/Machop54.jpg",
+      "sha256": "92975e736c353a917bdd30158baca919d92b08704fe69e0267605b62aef8bfa3"
+    },
+    {
+      "reference": "0363.png",
+      "source": "PokemonData/Machop/Machop66.jpg",
+      "sha256": "10b3ae072be8aa65fd3b316bfb470a0a88c8fae0f3df1ca68e48c5378301925c"
+    },
+    {
+      "reference": "0364.png",
+      "source": "PokemonData/Machop/Machop70.jpg",
+      "sha256": "33b2ec0978e58861d7e903bf9900c9c2ac618f98ca8d2dbdd1f82838a7137621"
+    },
+    {
+      "reference": "0365.png",
+      "source": "PokemonData/Magikarp/Magikarp11.jpg",
+      "sha256": "94264d7f921cd70f341b28716fe147055abbb9feb7477070b940bbd26acd4dea"
+    },
+    {
+      "reference": "0366.png",
+      "source": "PokemonData/Magikarp/Magikarp25.jpg",
+      "sha256": "ea4e31ae618188d7e26b1a298273ba2dc7b93898ee12868bd1dd37334610522c"
+    },
+    {
+      "reference": "0367.png",
+      "source": "PokemonData/Magikarp/Magikarp5.jpg",
+      "sha256": "e1b916a9d165612901c6210e7a96a40f941275e2bbb6341ee3db6146bf550831"
+    },
+    {
+      "reference": "0368.png",
+      "source": "PokemonData/Magikarp/a84eda20ec34463bb2d280562e732cff.jpg",
+      "sha256": "58f17bdb90b4e726401112805c18bd27c013337fbe64379a9c38e20f44e494cf"
+    },
+    {
+      "reference": "0369.png",
+      "source": "PokemonData/Magikarp/d59c86e725cd484b9b2f3454391c69e1.jpg",
+      "sha256": "5443a0d823eb92e383f01425c7da4cda9773bd81d0a1f2de54d435d8ea0cfc56"
+    },
+    {
+      "reference": "0370.png",
+      "source": "PokemonData/Magmar/9088ce6a5e664c5fade5caf9f153a388.jpg",
+      "sha256": "fb7992d8ca5276946ca7d7f710a22fc0830804f557b85f6de5c9aba1251c8e18"
+    },
+    {
+      "reference": "0371.png",
+      "source": "PokemonData/Magmar/Magmar21.jpg",
+      "sha256": "80109703f3b7b3a03a2a4402dc20c46d021b5ab4ac21618cc17db724c038063a"
+    },
+    {
+      "reference": "0372.png",
+      "source": "PokemonData/Magmar/Magmar28.jpg",
+      "sha256": "afaf631499b0a78d3584f02053030b825d6a479b32c48caac4baa51dfa7a7b44"
+    },
+    {
+      "reference": "0373.png",
+      "source": "PokemonData/Magmar/Magmar34.jpg",
+      "sha256": "f7b6bfde6c0689f1421087bb3b4d034f2a201aaf14dfcb46c95e760ec64cf6bb"
+    },
+    {
+      "reference": "0374.png",
+      "source": "PokemonData/Magmar/ff7d96200ace402aba84d4a88566ed7b.jpg",
+      "sha256": "715405b28692f59ad2d74f2f883ca4061e1a6b965d0c3249454531e36ccb2630"
+    },
+    {
+      "reference": "0375.png",
+      "source": "PokemonData/Magnemite/Magnemite15.jpg",
+      "sha256": "e44dba2e2808738d30e7dd53423cddd6c9febda0c9026042ee36616a1110563e"
+    },
+    {
+      "reference": "0376.png",
+      "source": "PokemonData/Magnemite/Magnemite16.jpg",
+      "sha256": "714c6c157cf3e94cd951b2635b03f0a53a38df736ca48105fee1a0eed04bcc62"
+    },
+    {
+      "reference": "0377.png",
+      "source": "PokemonData/Magnemite/Magnemite36.jpg",
+      "sha256": "4cf8e666ee6e21f3b022eed81e4bed4f13116fca7fac49838c4ee2f565826d68"
+    },
+    {
+      "reference": "0378.png",
+      "source": "PokemonData/Magnemite/Magnemite45.jpg",
+      "sha256": "e542963309d2ea270d96a60c86b720f82f5c06efebc5d62bf942b3289584f2f9"
+    },
+    {
+      "reference": "0379.png",
+      "source": "PokemonData/Magnemite/Magnemite68.jpg",
+      "sha256": "08994df41a9dde42bffddb57f21df4e2f021b382540efdf45f73477694655022"
+    },
+    {
+      "reference": "0380.png",
+      "source": "PokemonData/Magneton/Magneton2.jpg",
+      "sha256": "b7f61c813f190970f6a368bb6e5d348ef05f98b639d755cde4fdb07b03605ae0"
+    },
+    {
+      "reference": "0381.png",
+      "source": "PokemonData/Magneton/Magneton50.jpg",
+      "sha256": "e9e8141811855528416c41bead64c378b49fb2245bbab338e4d0b455eb43d032"
+    },
+    {
+      "reference": "0382.png",
+      "source": "PokemonData/Magneton/Magneton58.jpg",
+      "sha256": "ff584779ebb13bbe874204da55314ab49b16cd8e93777a3114df20b03efab01f"
+    },
+    {
+      "reference": "0383.png",
+      "source": "PokemonData/Magneton/Magneton63.jpg",
+      "sha256": "2eaecfb221d8cfecdd168584e44ed73b7af7260052736bb226f1d9b9f75031f2"
+    },
+    {
+      "reference": "0384.png",
+      "source": "PokemonData/Magneton/f5e3fa71bcec48e98c29f758c1664ded.jpg",
+      "sha256": "86c1a784ab0f4cf850c0402742d7928452c08c4119dd2f2ba97ffa9cb5c25a47"
+    },
+    {
+      "reference": "0385.png",
+      "source": "PokemonData/Mankey/939e0f97eed24a37877cc23da0a32a8a.jpg",
+      "sha256": "fc613c21e8bf54b837ed80a749504d7520d9aa07fd88c2f2d6e0a23f53a5fe7f"
+    },
+    {
+      "reference": "0386.png",
+      "source": "PokemonData/Mankey/Mankey102.jpg",
+      "sha256": "9ccfd3c94f55ddd9a559df5a7e63cd97b42fd7cf2f0970e3970252f49b905a9a"
+    },
+    {
+      "reference": "0387.png",
+      "source": "PokemonData/Mankey/Mankey36.jpg",
+      "sha256": "5c801e9668f8020c54ed5bdf4c1030873a65a39ffd47c60b72102f21b838b7eb"
+    },
+    {
+      "reference": "0388.png",
+      "source": "PokemonData/Mankey/Mankey93.jpg",
+      "sha256": "288215a6f04e38f6f7b5bd28e6f3d5ede82b8dc1dd8bd0ad9b73bd332db4dcad"
+    },
+    {
+      "reference": "0389.png",
+      "source": "PokemonData/Mankey/e772c2e7d5eb44b998a9b5e22c369f31.jpg",
+      "sha256": "fbebe4e7cdb8f1f97e5984a3dc993248eefba74aeba353999fcac6b998fc4e4a"
+    },
+    {
+      "reference": "0390.png",
+      "source": "PokemonData/Marowak/Marowak24.jpg",
+      "sha256": "866127a6411e1d053f1cafc6f2f68e21ff7b163ef0c17b0657404a5eb6c99898"
+    },
+    {
+      "reference": "0391.png",
+      "source": "PokemonData/Marowak/Marowak45.jpg",
+      "sha256": "54e398b5064436b137855f4464f2be38b8d588273d38df4bc63f93b5f0a5f442"
+    },
+    {
+      "reference": "0392.png",
+      "source": "PokemonData/Marowak/Marowak54.jpg",
+      "sha256": "1dc4c0016a713b949c7473722d898f287ae7bbfa97e19c35bee55e0c14d866b1"
+    },
+    {
+      "reference": "0393.png",
+      "source": "PokemonData/Marowak/Marowak9.jpg",
+      "sha256": "a94aedcd2c5a6900237e9b497f30e0e68375faf29e75e2abb6c3b07ad927e9fd"
+    },
+    {
+      "reference": "0394.png",
+      "source": "PokemonData/Marowak/d67e95f5473f4931a2b5a890035b365a.jpg",
+      "sha256": "5545bd5b2236b9c69a801ac03b47c4c965b7bc9a0a825296e324806be0b69428"
+    },
+    {
+      "reference": "0395.png",
+      "source": "PokemonData/Meowth/Meowth19.jpg",
+      "sha256": "b215ab2e8afafedda6b6cd6507da551aaddc374caa6ee9086113fdd7115f238a"
+    },
+    {
+      "reference": "0396.png",
+      "source": "PokemonData/Meowth/Meowth2.jpg",
+      "sha256": "a200deb97686f5750dd9fd46705d430d1ccbc92dd1db02b319d4c7c76204dd65"
+    },
+    {
+      "reference": "0397.png",
+      "source": "PokemonData/Meowth/Meowth26.jpg",
+      "sha256": "cf4fd6243c9b1fd4a40deccfc590fed6622e4bd4fde62700aad4efa89d20e80c"
+    },
+    {
+      "reference": "0398.png",
+      "source": "PokemonData/Meowth/Meowth31.jpg",
+      "sha256": "f1ea159f7c73a098b6cc6385b8bafad6980b387f53081a31b77ee69959b9183e"
+    },
+    {
+      "reference": "0399.png",
+      "source": "PokemonData/Meowth/Meowth60.jpg",
+      "sha256": "5b20d3e758fa80a7de4a610a7d0e840ca9f08f172667d3374c2606498de0e23b"
+    },
+    {
+      "reference": "0400.png",
+      "source": "PokemonData/Metapod/85559f41836144b3ad1b0a1c6eb8a470.jpg",
+      "sha256": "38ebe35b921246b93b957fb5a433c6ca3ad38753576d586f72b672cc8994f4a5"
+    },
+    {
+      "reference": "0401.png",
+      "source": "PokemonData/Metapod/Metapod21.jpg",
+      "sha256": "4c7186dff4c99df90af5e2edca0121f43b02b977635395445adcd00c1f672dcf"
+    },
+    {
+      "reference": "0402.png",
+      "source": "PokemonData/Metapod/Metapod34.jpg",
+      "sha256": "18bdbba0c167441dbe355e3b53e21159afe73314039bfdcd7a667329310d4fbd"
+    },
+    {
+      "reference": "0403.png",
+      "source": "PokemonData/Metapod/Metapod50.jpg",
+      "sha256": "9173cded789ead2c0b649a818ff9f395f867b4f6251421d538e48c624eaabb98"
+    },
+    {
+      "reference": "0404.png",
+      "source": "PokemonData/Metapod/Metapod79.jpg",
+      "sha256": "79af049c160687b04698dbf465b90e8ed41b6980e11b85e3d751c2b1ed66f825"
+    },
+    {
+      "reference": "0405.png",
+      "source": "PokemonData/Mew/Mew26.jpg",
+      "sha256": "90decd2a54a8090a436f1a77ccf851469bb2fae62ddab5122929d27dc81de938"
+    },
+    {
+      "reference": "0406.png",
+      "source": "PokemonData/Mew/Mew4.jpg",
+      "sha256": "a1c8452673767a3f147d0d734c9ac8bc3dc73f7e7531cdddc64b5b3970b1e8d3"
+    },
+    {
+      "reference": "0407.png",
+      "source": "PokemonData/Mew/Mew8.jpg",
+      "sha256": "a52c4eb16ab8c6aff22e265dd394f234d7cce31da0f9ab90c3ec976e5e3c58b2"
+    },
+    {
+      "reference": "0408.png",
+      "source": "PokemonData/Mew/b3cb4066d5ca49caaaa9376f2459f70c.jpg",
+      "sha256": "bf639c9086639a83c2ca7c93507ca6b406980e4cfbb59a3d4652ca12d0f397db"
+    },
+    {
+      "reference": "0409.png",
+      "source": "PokemonData/Mew/dc4a1c93f6fa4c9885420fe862096c2e.jpg",
+      "sha256": "bceff731848ab7b29964f8fa8725fc31db6169b19f19066ae9f944b5b317d972"
+    },
+    {
+      "reference": "0410.png",
+      "source": "PokemonData/Mewtwo/00000050.png",
+      "sha256": "68a81dbbb0b85908cacf7561008e46bf34faeb4d4ca9876c1f9b3ca0affbdd74"
+    },
+    {
+      "reference": "0411.png",
+      "source": "PokemonData/Mewtwo/Mewtwo16.jpg",
+      "sha256": "150940bf6e3226498d146ac03ec6ae13b2023ab8e9fe1f368539671a3e1acc6e"
+    },
+    {
+      "reference": "0412.png",
+      "source": "PokemonData/Mewtwo/Mewtwo32.jpg",
+      "sha256": "6ecbb7aa0313ea6d04d359081505f9b781873681a7f5a8bb41fd56774cb1fc17"
+    },
+    {
+      "reference": "0413.png",
+      "source": "PokemonData/Mewtwo/Mewtwo39.jpg",
+      "sha256": "61c046892fe0ea883df6d2a87b373aa47e559009c30f3d7a2884d874ebc262df"
+    },
+    {
+      "reference": "0414.png",
+      "source": "PokemonData/Mewtwo/Mewtwo73.jpg",
+      "sha256": "93500a9e85d89d0f6a653456e0a7644d0b3a26e58cd82a2ff0a67694a9a5baf1"
+    },
+    {
+      "reference": "0415.png",
+      "source": "PokemonData/Moltres/50440510fdd94b3dbfadd3144ab01b17.jpg",
+      "sha256": "e1754d9fd3713080929839cd10014077b9bcaae0f254c8a5ae9b330420c793a9"
+    },
+    {
+      "reference": "0416.png",
+      "source": "PokemonData/Moltres/Moltres34.jpg",
+      "sha256": "6bd3f1e4313c12e49d14218f24fb59a85bcfe583854a7784e8e71a9535107fa1"
+    },
+    {
+      "reference": "0417.png",
+      "source": "PokemonData/Moltres/Moltres50.jpg",
+      "sha256": "bcee1106baf3b674697020009ff3927bc167be244bdd7a63b21b53b879c1d9e2"
+    },
+    {
+      "reference": "0418.png",
+      "source": "PokemonData/Moltres/Moltres56.jpg",
+      "sha256": "87ce1b643079800067a00b7e55b250f7161fc4426fba04d85be87623836862e1"
+    },
+    {
+      "reference": "0419.png",
+      "source": "PokemonData/Moltres/Moltres59.jpg",
+      "sha256": "f61b4d51c623301fe02e0a417d7a682aaccc6bc83c2f086151f4cde93e7e8a8e"
+    },
+    {
+      "reference": "0420.png",
+      "source": "PokemonData/MrMime/MrMime30.jpg",
+      "sha256": "29d0ff92313f728d20e763e1bd9ac8a64de8398fbbdf4c1c84ff3168db1f4c2c"
+    },
+    {
+      "reference": "0421.png",
+      "source": "PokemonData/MrMime/MrMime35.jpg",
+      "sha256": "aac75ac4b8b1b768daf8908840290ceb3566350775a38e2444ff77eaee5bffb4"
+    },
+    {
+      "reference": "0422.png",
+      "source": "PokemonData/MrMime/MrMime41.jpg",
+      "sha256": "de4d1756a2b9518a721ab1aaef88a5a6da59f1c62b86ac86c157f5f54de5efed"
+    },
+    {
+      "reference": "0423.png",
+      "source": "PokemonData/MrMime/MrMime65.jpg",
+      "sha256": "d458a1769b247c6a55ac04c3dba970c3328984a0718d2de5dd6a1573028fcad9"
+    },
+    {
+      "reference": "0424.png",
+      "source": "PokemonData/MrMime/c700284117c2464f9aa8231ba47165b9.jpg",
+      "sha256": "c007a39ebcd7da117760500c245754523cfce331de102cd8aade8bfef4cc7644"
+    },
+    {
+      "reference": "0425.png",
+      "source": "PokemonData/Muk/89ff8305a1da4de98f92ad0f1f3d5179.jpg",
+      "sha256": "ab60bcf249398508e1ba91e846b43cdde083125374e311587c676fa6e7810110"
+    },
+    {
+      "reference": "0426.png",
+      "source": "PokemonData/Muk/Muk24.jpg",
+      "sha256": "1bd0ee46a58ce2c850f208bc96301a1b76f20b2cd49dbfafd21a46b8981f6eac"
+    },
+    {
+      "reference": "0427.png",
+      "source": "PokemonData/Muk/Muk52.jpg",
+      "sha256": "a655028ebc3bb7b5f2a635bf9913eda84e961915d7a94be75d706f7b39390650"
+    },
+    {
+      "reference": "0428.png",
+      "source": "PokemonData/Muk/Muk62.jpg",
+      "sha256": "c7a5fc929537276b47e9a644e63ab7bafe9be77e47ce28e69aebee3499c98660"
+    },
+    {
+      "reference": "0429.png",
+      "source": "PokemonData/Muk/d99a419aea0f414a86f5b28d29cf4c6f.jpg",
+      "sha256": "d09792ea89d0fc0de0f300635772cd6697aa337e620828109a5c665bb1807829"
+    },
+    {
+      "reference": "0430.png",
+      "source": "PokemonData/Nidoking/Nidoking14.jpg",
+      "sha256": "6538b82cf574aba84fa026236bd2ac70bc299fbf44855490e405161763a65dcb"
+    },
+    {
+      "reference": "0431.png",
+      "source": "PokemonData/Nidoking/Nidoking26.jpg",
+      "sha256": "9117fa3899b8c328bbedc522a0fbcf83d9404bd16ff2b6fae21f691abf377d6a"
+    },
+    {
+      "reference": "0432.png",
+      "source": "PokemonData/Nidoking/Nidoking48.jpg",
+      "sha256": "7b3a2372c13f2049171e0bfd5b26a84d3d633e06ad28b82eb9b0c98a7209ed45"
+    },
+    {
+      "reference": "0433.png",
+      "source": "PokemonData/Nidoking/Nidoking57.jpg",
+      "sha256": "58b5d548378c75db1350d4128d43a515ee41e47d59a90b3f641fe00285138a30"
+    },
+    {
+      "reference": "0434.png",
+      "source": "PokemonData/Nidoking/Nidoking91.jpg",
+      "sha256": "ad42059fe6f189863deab9870708179d01c050520b2569ef6f789b684e87bf22"
+    },
+    {
+      "reference": "0435.png",
+      "source": "PokemonData/Nidoqueen/Nidoqueen19.jpg",
+      "sha256": "b44b690728295402463775e9d1fd3328142fa1eb5300139e9737a38f5e0fe38e"
+    },
+    {
+      "reference": "0436.png",
+      "source": "PokemonData/Nidoqueen/Nidoqueen20.jpg",
+      "sha256": "91029c2f62af21895217a77578ae0a5976d3e493970d32039b2e2a2ff89578c5"
+    },
+    {
+      "reference": "0437.png",
+      "source": "PokemonData/Nidoqueen/Nidoqueen65.jpg",
+      "sha256": "f9848960ece9f54ce8088c78c0a1c23f1fa513f639bb55ee2aec19b43ae5487d"
+    },
+    {
+      "reference": "0438.png",
+      "source": "PokemonData/Nidoqueen/Nidoqueen75.jpg",
+      "sha256": "37d0a7f6887c0bbc3ec6ae08c53e0550eae424a0938d0988013fb1bf8e1b781a"
+    },
+    {
+      "reference": "0439.png",
+      "source": "PokemonData/Nidoqueen/effb984213a04c909137d3751f1e1ac9.jpg",
+      "sha256": "fc990a8dff77e16706e8cc627763dda8aec7490452caafeeaceaac5507c33515"
+    },
+    {
+      "reference": "0440.png",
+      "source": "PokemonData/Nidoran-f/Nidoran-f34.jpg",
+      "sha256": "29cd6a437486db19346aaf53e53c9522c1bc9ea2ff23bacb2cc0fc3b7d5f4d1a"
+    },
+    {
+      "reference": "0441.png",
+      "source": "PokemonData/Nidoran-f/Nidoran-f43.jpg",
+      "sha256": "10224d674da6e253b2e55bbab5b5986b5b3a8ff40374aaf5d68cc4d12b28ad32"
+    },
+    {
+      "reference": "0442.png",
+      "source": "PokemonData/Nidoran-f/Nidoran-f57.jpg",
+      "sha256": "a710922e11f8e2c58c1f4390b8efc30673137c47c25db25b44781e7e1eedb521"
+    },
+    {
+      "reference": "0443.png",
+      "source": "PokemonData/Nidoran-f/Nidoran-f58.jpg",
+      "sha256": "dcfd0166fd81c4726b74e2cb7b743251874583003d4775ec3af18ee4737c291d"
+    },
+    {
+      "reference": "0444.png",
+      "source": "PokemonData/Nidoran-f/Nidoran-f66.jpg",
+      "sha256": "b0d716d565aa78d08b2484b2ae8b8741de0b15b688467d26b705f8af23e896d4"
+    },
+    {
+      "reference": "0445.png",
+      "source": "PokemonData/Nidoran-m/Nidoran-m3.jpg",
+      "sha256": "1838a853417c5c943383510bbe0482069ebbceb3a351a9ebe1fa314431423e24"
+    },
+    {
+      "reference": "0446.png",
+      "source": "PokemonData/Nidoran-m/Nidoran-m34.jpg",
+      "sha256": "90dd2e3e4c1103e34fc519555e904d9f01eb7c6b7ecaa2d245898897c03f0990"
+    },
+    {
+      "reference": "0447.png",
+      "source": "PokemonData/Nidoran-m/Nidoran-m36.jpg",
+      "sha256": "6d01c8fbd15943168ca98eb012a341bdc7c849c3ae2d780814168b331f38f0a8"
+    },
+    {
+      "reference": "0448.png",
+      "source": "PokemonData/Nidoran-m/Nidoran-m49.jpg",
+      "sha256": "eed97ea852a3a4332fbdb0e1fe1844295ac7ffbef6af73308be78f61bfa4833d"
+    },
+    {
+      "reference": "0449.png",
+      "source": "PokemonData/Nidoran-m/Nidoran-m70.jpg",
+      "sha256": "779b437709a4fc3cf25e451179f19c936772cfcd91cb9e5719a5e083b84e8964"
+    },
+    {
+      "reference": "0450.png",
+      "source": "PokemonData/Nidorina/8eeccef43dbf46c8b6e21cff314f5292.jpg",
+      "sha256": "f0d1440a365769fd8b45e10a3ed17a046f1683751787c9253f8193b6d3c45738"
+    },
+    {
+      "reference": "0451.png",
+      "source": "PokemonData/Nidorina/98cb518f661841428b5b507e881f6d45.jpg",
+      "sha256": "dd3fed1be70f10ad11e9b1f395439cc5640032cc8ae32f3dc5f3328a4bf78a03"
+    },
+    {
+      "reference": "0452.png",
+      "source": "PokemonData/Nidorina/Nidorina25.jpg",
+      "sha256": "44a24b4e5c331714b72d4ca054353f896f625af135f2f959e778075a4638e4d5"
+    },
+    {
+      "reference": "0453.png",
+      "source": "PokemonData/Nidorina/Nidorina34.jpg",
+      "sha256": "64b59a3fcc0aee5266e52d479c5a3376d7714499941a814d301f8dd9b74eb5a2"
+    },
+    {
+      "reference": "0454.png",
+      "source": "PokemonData/Nidorina/Nidorina62.jpg",
+      "sha256": "13500869f4a53abfba4da53ef45fd1133d5a27b1f1174cd9edaeb6d2afd047e2"
+    },
+    {
+      "reference": "0455.png",
+      "source": "PokemonData/Nidorino/6186511c96344de0a5c54350b0aa3376.jpg",
+      "sha256": "9c4fe727eea022b38db8db33828002c8b00fc6ad9e75f150dc8bd0abcc4f0e21"
+    },
+    {
+      "reference": "0456.png",
+      "source": "PokemonData/Nidorino/Nidorino69.jpg",
+      "sha256": "e0e8372f5d56af25f791193295467f00fca13fb11fbe074f4e8a4bbd2deea5c0"
+    },
+    {
+      "reference": "0457.png",
+      "source": "PokemonData/Nidorino/Nidorino76.jpg",
+      "sha256": "2673682b43e29377974ca8816116e4d5af7842515e88eded9519893feb9bec15"
+    },
+    {
+      "reference": "0458.png",
+      "source": "PokemonData/Nidorino/ae486ca00ef043eb847caee061bb1eb1.jpg",
+      "sha256": "185c60719b9c9be8599455807a846877d4d36c7ca0f08d9b63653966faaba784"
+    },
+    {
+      "reference": "0459.png",
+      "source": "PokemonData/Nidorino/bcd923d3654f4ed0b7680f235141adc7.jpg",
+      "sha256": "dff8777bec722d119373f5713b87d9ced58843fbb1b7ffe5502219dae7622e5e"
+    },
+    {
+      "reference": "0460.png",
+      "source": "PokemonData/Ninetales/945f324273d4498f9672ee40f1a7a419.jpg",
+      "sha256": "18479ecf6c2b40fef25d2962308c7e76f8bb7e08d39d7a72988439eefb2bed41"
+    },
+    {
+      "reference": "0461.png",
+      "source": "PokemonData/Ninetales/Ninetales42.jpg",
+      "sha256": "5f8d9bf2944b10369c9424b4bd6034452399a8a2bb108b6957c9fb30d32fe0dd"
+    },
+    {
+      "reference": "0462.png",
+      "source": "PokemonData/Ninetales/Ninetales66.jpg",
+      "sha256": "70fa1e73ea6c419fd39c91d4d1de6e01e15cd94c8bb38ff139d5bfab90330605"
+    },
+    {
+      "reference": "0463.png",
+      "source": "PokemonData/Ninetales/Ninetales9.jpg",
+      "sha256": "24ae147c26de63c0f2a50943f1b4ac29ea78423121d4df182c48c3beea5d5ea2"
+    },
+    {
+      "reference": "0464.png",
+      "source": "PokemonData/Ninetales/a094193bd80f4ebabc741711a5de4333.jpg",
+      "sha256": "79cb0d12560a325d739bb4349d51f2bb11e49d6639163c02a0bedd1444b76028"
+    },
+    {
+      "reference": "0465.png",
+      "source": "PokemonData/Oddish/4ddaefbc8a824c2bbf862c1291753ad1.jpg",
+      "sha256": "572cc3b4ee799d380ad7d478d5542448b3494bd8249f6c8cb1de8cfc79a35967"
+    },
+    {
+      "reference": "0466.png",
+      "source": "PokemonData/Oddish/Oddish19.jpg",
+      "sha256": "e4df7f90d0e526ce12a7cf0f828ca455608da29cd3df4613d808d9171de9d733"
+    },
+    {
+      "reference": "0467.png",
+      "source": "PokemonData/Oddish/Oddish37.jpg",
+      "sha256": "e216c79a40e5b21846fb72517d5a7a32de4ebc033a27fa3ea6b9c0e35f04f3cf"
+    },
+    {
+      "reference": "0468.png",
+      "source": "PokemonData/Oddish/Oddish54.jpg",
+      "sha256": "ac7ba687887b589e5afda069a2eaaeaed7a45f87777e8fb5a30350053371d5e0"
+    },
+    {
+      "reference": "0469.png",
+      "source": "PokemonData/Oddish/Oddish7.jpg",
+      "sha256": "4846383fe51f639f01556b4ae792d8eea8de1df57d61300a9c9c818467837e80"
+    },
+    {
+      "reference": "0470.png",
+      "source": "PokemonData/Omanyte/969eb5bf3f5d49b58f20f1a20d5efc3d.jpg",
+      "sha256": "62388926fa5bbf7611b144268a672a260368db65e26876de52870722893f12be"
+    },
+    {
+      "reference": "0471.png",
+      "source": "PokemonData/Omanyte/Omanyte14.jpg",
+      "sha256": "421267ac84bcf49e3a55b432399e966a08a85cc2111deb2151ddf1860ec91a4b"
+    },
+    {
+      "reference": "0472.png",
+      "source": "PokemonData/Omanyte/Omanyte19.jpg",
+      "sha256": "1cdf714beef538a2ecd440c871641ef36ae7da201a623e6c2612921454ab7b2e"
+    },
+    {
+      "reference": "0473.png",
+      "source": "PokemonData/Omanyte/Omanyte22.jpg",
+      "sha256": "1ea39313604d14aa9aaefdab27f37e21869311baefa23907deca98a902355850"
+    },
+    {
+      "reference": "0474.png",
+      "source": "PokemonData/Omanyte/Omanyte35.jpg",
+      "sha256": "e9c3cb801a0dcd4d4bb2d91054b0565928f0fdeb2d0e0f3b1fd33736a9bbba74"
+    },
+    {
+      "reference": "0475.png",
+      "source": "PokemonData/Omastar/Omastar23.jpg",
+      "sha256": "55fd151e029b08a5e0750f04e1fbf9c9b08e67f270c674299326728627ffbad7"
+    },
+    {
+      "reference": "0476.png",
+      "source": "PokemonData/Omastar/Omastar54.jpg",
+      "sha256": "342d010cb326b1c0b33e041323f179d41dafcb332801766fbafa072cf6e9b438"
+    },
+    {
+      "reference": "0477.png",
+      "source": "PokemonData/Omastar/Omastar58.jpg",
+      "sha256": "a6cbbbda31c5eefee428ac1cc9e17045ab741ef7e63656bc0de43671e14feba1"
+    },
+    {
+      "reference": "0478.png",
+      "source": "PokemonData/Omastar/c166125febb14e40abfc3687323c5fd1.jpg",
+      "sha256": "fd0151e6c4fd6f644407cd90e576cf539cb19d908530d80d44a793fc78f13b75"
+    },
+    {
+      "reference": "0479.png",
+      "source": "PokemonData/Omastar/ee610c2c958647a3954a5f5bc17d0fc7.jpg",
+      "sha256": "930a2e816cc8955f05d1ddd9db19c8005a22153bb032d5b6afc5825eb13d8730"
+    },
+    {
+      "reference": "0480.png",
+      "source": "PokemonData/Onix/6e84ed32d64c45308a33f215fccc2c75.jpg",
+      "sha256": "2b299f2e1cf5b09f8dcd55d2099c8e1f5e1c544799f4603f533cdd579f2b2965"
+    },
+    {
+      "reference": "0481.png",
+      "source": "PokemonData/Onix/Onix49.jpg",
+      "sha256": "0ebb3d5ef74834c9ded2aef882b160eddb2038a63cccb52046293baa847247d3"
+    },
+    {
+      "reference": "0482.png",
+      "source": "PokemonData/Onix/Onix6.jpg",
+      "sha256": "d16cfce2e2734d1b9af63048220c347498805c8fc9b03d21d751cddfdd087a68"
+    },
+    {
+      "reference": "0483.png",
+      "source": "PokemonData/Onix/d63686d577a44420b567364cea3c7a21.jpg",
+      "sha256": "0e615c6cc9219e5717682b040b214fc4ed8e18d5e4499d47b6bd218fc7ac2ecf"
+    },
+    {
+      "reference": "0484.png",
+      "source": "PokemonData/Onix/ffe6e1d280604532984c1868f8b069a9.jpg",
+      "sha256": "d490d2b9c2aaeb7355e5930ae99a9d9b00321a3c01ed7c75307eb509346c1965"
+    },
+    {
+      "reference": "0485.png",
+      "source": "PokemonData/Paras/5fa556b592bf42d7abcf84aabc8b7b57.jpg",
+      "sha256": "8156cc56bd603813ed28312b1417ea78fa88fcdc1a1116874cc0ead8ab37a81b"
+    },
+    {
+      "reference": "0486.png",
+      "source": "PokemonData/Paras/Paras2.jpg",
+      "sha256": "429bf3e19a32e5018e97c3155e11a0deb13d21b848044c94a4fc380ab0a9f250"
+    },
+    {
+      "reference": "0487.png",
+      "source": "PokemonData/Paras/Paras63.jpg",
+      "sha256": "fab7bec39d48a2dbd187b9f20701fb7945559ae5aa028337db3a117291b45357"
+    },
+    {
+      "reference": "0488.png",
+      "source": "PokemonData/Paras/Paras79.jpg",
+      "sha256": "6af08c1be547cd1b4af007eeb63d7e7e73aaf4370e133c7be1b4aa2cc24c1e99"
+    },
+    {
+      "reference": "0489.png",
+      "source": "PokemonData/Paras/b4296233a320402a985e3599750efda1.jpg",
+      "sha256": "ca0faf2b69f28fa2f62244b87bd5fd41f905b10f2fcb9508248cbcb8c2274ac7"
+    },
+    {
+      "reference": "0490.png",
+      "source": "PokemonData/Parasect/6b4f6e029f204732b1a0e2214e1fc2b6.jpg",
+      "sha256": "6690fb0ff261977b8581d1223793e7823d9be2c4f160c433b8210a2695e596f3"
+    },
+    {
+      "reference": "0491.png",
+      "source": "PokemonData/Parasect/6b8041292b09432a97e5be0c9ee70889.jpg",
+      "sha256": "5516c1f0839aeaab43e6fa6964f0fbec67ce5e3069de5ac0d436bbc3b67c6487"
+    },
+    {
+      "reference": "0492.png",
+      "source": "PokemonData/Parasect/86b84dc7641940e589568265218e5157.jpg",
+      "sha256": "40ec088c04c6ecea4bff31af9ef034c6a925a4e4e5a6a4ba22c46e615f9dc0f1"
+    },
+    {
+      "reference": "0493.png",
+      "source": "PokemonData/Parasect/Parasect45.jpg",
+      "sha256": "6690fb0ff261977b8581d1223793e7823d9be2c4f160c433b8210a2695e596f3"
+    },
+    {
+      "reference": "0494.png",
+      "source": "PokemonData/Parasect/f6e77c2d6bd648edb732c17aadd871fd.jpg",
+      "sha256": "8dbf5f22cbf7309208a794601f0f08e7e37ba5076dc2bb3ad3c2d85596d92e1a"
+    },
+    {
+      "reference": "0495.png",
+      "source": "PokemonData/Persian/Persian1.jpg",
+      "sha256": "7c006cc10ce1d5aade0dc9ec7832cb9ae46aa73e9e4c98bd11379a9475a7e318"
+    },
+    {
+      "reference": "0496.png",
+      "source": "PokemonData/Persian/Persian25.jpg",
+      "sha256": "06be0ca25046e73b4549950b709e6658343af543252246dc63cb5ad4af02829a"
+    },
+    {
+      "reference": "0497.png",
+      "source": "PokemonData/Persian/Persian46.jpg",
+      "sha256": "731ceec2514e14a66f846891e6f7d6b4cba1ac9b9538e0afd3ad010d855831c1"
+    },
+    {
+      "reference": "0498.png",
+      "source": "PokemonData/Persian/Persian53.jpg",
+      "sha256": "ecbd5f99efc074a29bc0f2559b878dd8a8f11a58789bc792d06d6d395aa5446d"
+    },
+    {
+      "reference": "0499.png",
+      "source": "PokemonData/Persian/Persian67.jpg",
+      "sha256": "d54ad0979686012d2341b0e2533f8e635632c7c9c58a5118594bb2b13b11f48d"
+    },
+    {
+      "reference": "0500.png",
+      "source": "PokemonData/Pidgeot/5d394a66a23040f68550a73eb004c27f.jpg",
+      "sha256": "5f0a3f8f41a437c6d4d35dcec6be778f529b033c7a2f4d5227329d820b62c443"
+    },
+    {
+      "reference": "0501.png",
+      "source": "PokemonData/Pidgeot/8c93519878e844dabab9965825588c7f.jpg",
+      "sha256": "ca865751a5b137ce873eace1ebf3a3d2988766d9b8a359d4259cef0039c86cae"
+    },
+    {
+      "reference": "0502.png",
+      "source": "PokemonData/Pidgeot/Pidgeot34.jpg",
+      "sha256": "8b1352b4cf917316f8bc4434e4188506d479372ab40f7b365604cb04a0027507"
+    },
+    {
+      "reference": "0503.png",
+      "source": "PokemonData/Pidgeot/Pidgeot4.jpg",
+      "sha256": "b5f5ba52237cced2a8fad9d2d11e1c0f7971f2526049608734efcb4f1ddc210a"
+    },
+    {
+      "reference": "0504.png",
+      "source": "PokemonData/Pidgeot/Pidgeot83.jpg",
+      "sha256": "982cd4bdd38abfe611e406486c760fcdea6f9ffb6a8d1961384b441c4f919989"
+    },
+    {
+      "reference": "0505.png",
+      "source": "PokemonData/Pidgeotto/Pidgeotto24.jpg",
+      "sha256": "74e974b40b507ab4e976490a450c1d85c79cb3d32b64503141d221f0682cf423"
+    },
+    {
+      "reference": "0506.png",
+      "source": "PokemonData/Pidgeotto/Pidgeotto39.jpg",
+      "sha256": "9e6f6c30ce2bdf72ec2a52f385baddc1d293022cb7864ba00fb142fa3a57be11"
+    },
+    {
+      "reference": "0507.png",
+      "source": "PokemonData/Pidgeotto/Pidgeotto56.jpg",
+      "sha256": "a3ae76e474236efe02bbe9c09edcf3cfb88511c60afb0a8d2cbd641db263987c"
+    },
+    {
+      "reference": "0508.png",
+      "source": "PokemonData/Pidgeotto/e897ad7dec6f4367a270a738d2b571e9.jpg",
+      "sha256": "8afdd3e602cd72aa57aff1a18829b1eb4265e3fc0e51dbc9e7e4433d01b58954"
+    },
+    {
+      "reference": "0509.png",
+      "source": "PokemonData/Pidgeotto/ff15362f7fc24c61b3bd321f665eb6c8.jpg",
+      "sha256": "8231ca4d0d6dda5f17ad19f4c0b7d583982407b56534b42bcd1abb30c3be232a"
+    },
+    {
+      "reference": "0510.png",
+      "source": "PokemonData/Pidgey/5e2e13a4376c48a5a4b3144573418312.jpg",
+      "sha256": "22189f577862bfff1069533b8d55664a60480e00026cd2c1f6c4972252a9b606"
+    },
+    {
+      "reference": "0511.png",
+      "source": "PokemonData/Pidgey/Pidgey18.jpg",
+      "sha256": "40831359d2e46cd9ffda4189b959cb485a565aa6cc09a90e09d070c45650511b"
+    },
+    {
+      "reference": "0512.png",
+      "source": "PokemonData/Pidgey/Pidgey34.jpg",
+      "sha256": "bf4cb4ac76efff8f202a35a39e2839eb017abc1870e9b1975f11ceb0c5f622f1"
+    },
+    {
+      "reference": "0513.png",
+      "source": "PokemonData/Pidgey/Pidgey39.jpg",
+      "sha256": "eaae34aafe390a8992fbd6f192b65970a73af8247295a9769c3b051f6d76b9cf"
+    },
+    {
+      "reference": "0514.png",
+      "source": "PokemonData/Pidgey/Pidgey82.jpg",
+      "sha256": "1266f0d4170d5cf6f33981f71b34d1fd813408c6ddefc810b190b1761cf6506e"
+    },
+    {
+      "reference": "0515.png",
+      "source": "PokemonData/Pikachu/003-025Pikachu_Channel_5.png",
+      "sha256": "cdefc2ff1fb17f45cc734cf7ec6648f1d18a0ae46052d62f01f5bddc43e378b9"
+    },
+    {
+      "reference": "0516.png",
+      "source": "PokemonData/Pikachu/Pikachu103.jpg",
+      "sha256": "d405aa76224cc52fd7fd2cdbb562ef3aff597dfe8a9eb437190f4366487fdd14"
+    },
+    {
+      "reference": "0517.png",
+      "source": "PokemonData/Pikachu/Pikachu45.jpg",
+      "sha256": "a7ffa108d508d919daed9c9f6c9c9dd9d7d2858e78d2acea9fee8a9495a42f23"
+    },
+    {
+      "reference": "0518.png",
+      "source": "PokemonData/Pikachu/Pikachu66.jpg",
+      "sha256": "5dfc829e124445c442efc95bb357263e1c7a0c8d280de1ffc58ccf49daaf0d8a"
+    },
+    {
+      "reference": "0519.png",
+      "source": "PokemonData/Pikachu/Pikachu84.jpg",
+      "sha256": "8f00486d915b24c0ebff1ee484a0a19d11e4a38bbb321f303355468607e48959"
+    },
+    {
+      "reference": "0520.png",
+      "source": "PokemonData/Pinsir/50d606fe71a64cd7b47fbebc14f145b9.jpg",
+      "sha256": "d899705d9837f95bc0190b6a9de1947af5c3d2443165cacba58ed51d9933f4bf"
+    },
+    {
+      "reference": "0521.png",
+      "source": "PokemonData/Pinsir/Pinsir13.jpg",
+      "sha256": "fc8fb8cc4d65042ebbc59a816ff8576f16f673a758a164ad398601af17fe4046"
+    },
+    {
+      "reference": "0522.png",
+      "source": "PokemonData/Pinsir/Pinsir19.jpg",
+      "sha256": "9c427748627c21dc0d1985449aa4c2303dcebb07ca89e9603c336ae6affd0103"
+    },
+    {
+      "reference": "0523.png",
+      "source": "PokemonData/Pinsir/Pinsir3.jpg",
+      "sha256": "71936fd322915128b702961f49b4b158b44dcda6bceb32c7917b8ecb2552b8e4"
+    },
+    {
+      "reference": "0524.png",
+      "source": "PokemonData/Pinsir/d74b4c23a6f54c1783c1da4c01a8b8bf.jpg",
+      "sha256": "8c318c484a004a855d736e799283764a506e06a1924f796f6e0eea5295c4f4bb"
+    },
+    {
+      "reference": "0525.png",
+      "source": "PokemonData/Poliwag/Poliwag1.jpg",
+      "sha256": "f43f5d1018931ac8096315fdc50ca8ed04c77d7e84c06dc95395ab43e0e062ad"
+    },
+    {
+      "reference": "0526.png",
+      "source": "PokemonData/Poliwag/Poliwag19.jpg",
+      "sha256": "6922f0f82edce095996d93133d83b2209983b2d66e09c6484d8d7608b6f05650"
+    },
+    {
+      "reference": "0527.png",
+      "source": "PokemonData/Poliwag/Poliwag56.jpg",
+      "sha256": "4bde651056edd5364548c25b96985817c4d0859b95a10c537954708f99ab715a"
+    },
+    {
+      "reference": "0528.png",
+      "source": "PokemonData/Poliwag/Poliwag80.jpg",
+      "sha256": "7e689548b2308985b7669321479938c1f53f254862108d507c59424091a46b18"
+    },
+    {
+      "reference": "0529.png",
+      "source": "PokemonData/Poliwag/Poliwag82.jpg",
+      "sha256": "dff4d5ba945edbbc857c3aa65d4594f167851bb959e4d9b9aaa127e67134238c"
+    },
+    {
+      "reference": "0530.png",
+      "source": "PokemonData/Poliwhirl/4fc278a1f6214bc9a6fdfca6d542b0c8.jpg",
+      "sha256": "efdacadeb81afd5a0960879e85e0b8d88cf56b56ea83ac52284cce2410f18ebb"
+    },
+    {
+      "reference": "0531.png",
+      "source": "PokemonData/Poliwhirl/9e85339466a9472ca77821b7353485e7.jpg",
+      "sha256": "f791f13b474159ca86079d8c87073452e44bc708bb251bb1b7d8de9fcc177fbb"
+    },
+    {
+      "reference": "0532.png",
+      "source": "PokemonData/Poliwhirl/Poliwhirl6.jpg",
+      "sha256": "aa7743fbfa0570e8b8f301993c0503e7d8a7b79c9678e73ef37006475a25d8a5"
+    },
+    {
+      "reference": "0533.png",
+      "source": "PokemonData/Poliwhirl/baffb1c0f9474817b854726338e3d54d.jpg",
+      "sha256": "5e7b55f2a1e71dced85cfc6022f346e0a36dd9770306b436599bd8900fee9c69"
+    },
+    {
+      "reference": "0534.png",
+      "source": "PokemonData/Poliwhirl/d843aea788dd48f586ffdf8736dd3c4c.jpg",
+      "sha256": "723f46295ae745a45ce185d0f3dae4ddbc91472d4c96fcf4d96f56ef4c60912c"
+    },
+    {
+      "reference": "0535.png",
+      "source": "PokemonData/Poliwrath/Poliwrath22.jpg",
+      "sha256": "1374c1d2a6214f0ca0a84551468dbb2894871bdfabeb86c0770deacec1de0f11"
+    },
+    {
+      "reference": "0536.png",
+      "source": "PokemonData/Poliwrath/Poliwrath24.jpg",
+      "sha256": "5ae62246a94b4d3ed52f627ca76a819aabacb54db4f0e7374d451238326eee81"
+    },
+    {
+      "reference": "0537.png",
+      "source": "PokemonData/Poliwrath/Poliwrath37.jpg",
+      "sha256": "ab3665a6259e084568e13562d91d84662ff35c56bb11249547ab645894408e1c"
+    },
+    {
+      "reference": "0538.png",
+      "source": "PokemonData/Poliwrath/Poliwrath48.jpg",
+      "sha256": "e871a55846d3a4cc981bf862f0e2f20e686e58a9363c14d2b5dd6d7349df537b"
+    },
+    {
+      "reference": "0539.png",
+      "source": "PokemonData/Poliwrath/Poliwrath54.jpg",
+      "sha256": "6f8b496e009241e223e1f257620d04f9509d36725243d1974bb3d1a05d06e0dd"
+    },
+    {
+      "reference": "0540.png",
+      "source": "PokemonData/Ponyta/894adfbb050b4ae28914e18327fee4a4.jpg",
+      "sha256": "3596e6621f91fc3acadb376b6a4527a795eb3c620800b237c2f70e706c01b6b4"
+    },
+    {
+      "reference": "0541.png",
+      "source": "PokemonData/Ponyta/Ponyta108.jpg",
+      "sha256": "165eb05ddb0f1aa155c0350d6c8df02329f4e6b8c6c252df73ecfe0c9a4a8ab4"
+    },
+    {
+      "reference": "0542.png",
+      "source": "PokemonData/Ponyta/Ponyta33.jpg",
+      "sha256": "bbc02b4a6e3fc2c4aa5ebe31ca7af6f2dc5f8ee4edbae9f0578950210b41768c"
+    },
+    {
+      "reference": "0543.png",
+      "source": "PokemonData/Ponyta/Ponyta75.jpg",
+      "sha256": "a0c07e6a759f5da786dc62c21316614234739d90152fc65a3fd4b2fba71cfeaf"
+    },
+    {
+      "reference": "0544.png",
+      "source": "PokemonData/Ponyta/Ponyta82.jpg",
+      "sha256": "3188ff9189cedf3b90e4404d80ff6ba04ce0ae40b46623f280ee89e6937fed19"
+    },
+    {
+      "reference": "0545.png",
+      "source": "PokemonData/Porygon/635b3d7b627c4c6aa6ec2f84ccaf9827.jpg",
+      "sha256": "2bc626f313833ad3838bbd2f615bc3a90935864fd988c13d9f9214f790bd4c99"
+    },
+    {
+      "reference": "0546.png",
+      "source": "PokemonData/Porygon/Porygon10.jpg",
+      "sha256": "5b2b7133573719317d0d1ef6406204fc6394271eac602bb15bfb50b3c19f4088"
+    },
+    {
+      "reference": "0547.png",
+      "source": "PokemonData/Porygon/Porygon48.jpg",
+      "sha256": "b244f9dd0dd79072f35f61979b998c5159cea8be5e0764c7cbdcb20b04fb3212"
+    },
+    {
+      "reference": "0548.png",
+      "source": "PokemonData/Porygon/Porygon49.jpg",
+      "sha256": "8ee2af2cd1f84b944ec8f41067340e8c4cf405f9d0aa29347d0385d0e047d62e"
+    },
+    {
+      "reference": "0549.png",
+      "source": "PokemonData/Porygon/Porygon54.jpg",
+      "sha256": "871ebcd6b79f848667faf243fbdfd2a204fe474c5a1bf917765a549791e7f652"
+    },
+    {
+      "reference": "0550.png",
+      "source": "PokemonData/Primeape/Primeape18.jpg",
+      "sha256": "88cd733063f0d3088fee32f439ecca79d00901add0d373558093c3c128db4e84"
+    },
+    {
+      "reference": "0551.png",
+      "source": "PokemonData/Primeape/Primeape51.jpg",
+      "sha256": "e74de940365fa50d41b2720adf81e611df91d1db442d23bba64b9ff38af9cf6a"
+    },
+    {
+      "reference": "0552.png",
+      "source": "PokemonData/Primeape/Primeape70.jpg",
+      "sha256": "9efa1f0dd0744a6ed7681a303d764f51faecc672f8c5304988f32be708729aed"
+    },
+    {
+      "reference": "0553.png",
+      "source": "PokemonData/Primeape/Primeape87.jpg",
+      "sha256": "220eb4533184e5ef1f5c736e54d8a75e3e4f7dfaa503398d75c4fa376b442024"
+    },
+    {
+      "reference": "0554.png",
+      "source": "PokemonData/Primeape/b36740ac7e084d1f86510e3dc510b254.jpg",
+      "sha256": "e893b9376616f50e419419dbb2345b954b8083f37322b6849e29b58f72a55282"
+    },
+    {
+      "reference": "0555.png",
+      "source": "PokemonData/Psyduck/Psyduck27.jpg",
+      "sha256": "0f8aa17da2850e0260da4acdd83f2919e7af6aa53e55e28266a9dd966d9fe484"
+    },
+    {
+      "reference": "0556.png",
+      "source": "PokemonData/Psyduck/Psyduck29.jpg",
+      "sha256": "3167a85629c4ef8cb2978f667584e12652b2741e564cfdc95f23913abe46123c"
+    },
+    {
+      "reference": "0557.png",
+      "source": "PokemonData/Psyduck/Psyduck36.jpg",
+      "sha256": "9aed83fd4b568b389015c36ec82ce5675100372ff05091496f31f7fa90e564c2"
+    },
+    {
+      "reference": "0558.png",
+      "source": "PokemonData/Psyduck/Psyduck44.jpg",
+      "sha256": "fae2610b70c40a9c46e16066082e896c54d64c903c248632485e3eccaaf89d08"
+    },
+    {
+      "reference": "0559.png",
+      "source": "PokemonData/Psyduck/Psyduck69.jpg",
+      "sha256": "3a4538ffce151a93bd4a0f1414ea05f0af7f612fc0c4263c5c553fbb2d6ceec1"
+    },
+    {
+      "reference": "0560.png",
+      "source": "PokemonData/Raichu/78f8502de8384cd2b1b081974999254a.jpg",
+      "sha256": "6922f6194a7d7c165b237087b4f8e634914952b5a2a1f5aa2044f84122abeded"
+    },
+    {
+      "reference": "0561.png",
+      "source": "PokemonData/Raichu/Raichu24.jpg",
+      "sha256": "ad1f9f991c44670b8d1894529b64ea88ea9fe1e7b923f1c764a46b8acc07843a"
+    },
+    {
+      "reference": "0562.png",
+      "source": "PokemonData/Raichu/Raichu25.jpg",
+      "sha256": "0902826c7fc6be3ab941395cb1dd2fa4ed3a3e618d016086c5e9cae9afec4a33"
+    },
+    {
+      "reference": "0563.png",
+      "source": "PokemonData/Raichu/Raichu33.jpg",
+      "sha256": "bf888b297421fbf939372292edd00be90d64e27ad6dfd09a112bcd7a7d02c5be"
+    },
+    {
+      "reference": "0564.png",
+      "source": "PokemonData/Raichu/ac8a6870af964d009d939d2dec846eea.jpg",
+      "sha256": "0a7d9cad952ca053435196b1d2a2bc898705d78c8bdae580bd751d82c7c22ed7"
+    },
+    {
+      "reference": "0565.png",
+      "source": "PokemonData/Rapidash/6c87dd3f88334810979168eb094aaa18.jpg",
+      "sha256": "078437ae66216b3d435bee1e02b557afca343205aac9d002ad6af9c413a60a4f"
+    },
+    {
+      "reference": "0566.png",
+      "source": "PokemonData/Rapidash/Rapidash11.jpg",
+      "sha256": "0160c02cfb64ea308f258cc216c423c2bc29ea9224118731492ea3728fffa990"
+    },
+    {
+      "reference": "0567.png",
+      "source": "PokemonData/Rapidash/Rapidash31.jpg",
+      "sha256": "c8b74f4093d573fef18d220510f0f3531abac7288cfebce1bf6f7e4e63e5ef97"
+    },
+    {
+      "reference": "0568.png",
+      "source": "PokemonData/Rapidash/Rapidash7.jpg",
+      "sha256": "cea9306d37e4c2e2d1183119eb25e455c385df82c8f837fbfe0a432341967512"
+    },
+    {
+      "reference": "0569.png",
+      "source": "PokemonData/Rapidash/Rapidash87.jpg",
+      "sha256": "6fc040a408def1ae825e9f43fda06d7f5028d3dab8b09adcc5a5c5378171449e"
+    },
+    {
+      "reference": "0570.png",
+      "source": "PokemonData/Raticate/7534bf99165243169d8c0457cf151339.jpg",
+      "sha256": "62ed409a706dcf28b1a677d78b6ab93aa1d4cd540b3e3311a2ea9f86e5eef7a8"
+    },
+    {
+      "reference": "0571.png",
+      "source": "PokemonData/Raticate/Raticate23.jpg",
+      "sha256": "212926b69f77647988065c10177b4113a06b3c071e9d2373cb0a450bb9d29809"
+    },
+    {
+      "reference": "0572.png",
+      "source": "PokemonData/Raticate/Raticate50.jpg",
+      "sha256": "d0b2cdb3ff0080c75066ae008d760fc7a7fd9fc24e84f8442ebcff345105f5ab"
+    },
+    {
+      "reference": "0573.png",
+      "source": "PokemonData/Raticate/Raticate51.jpg",
+      "sha256": "24eb9353e0fe7e68b57e3e29650a295565eca30eb0c9ed9c1ca1ca4dc1bd78e5"
+    },
+    {
+      "reference": "0574.png",
+      "source": "PokemonData/Raticate/d5af85fb52cb4759bac4bf1e031f313d.jpg",
+      "sha256": "7577622e14fe98b9cd52b3d32d416630cf65d37b69bc605ae509ca7d01e6f535"
+    },
+    {
+      "reference": "0575.png",
+      "source": "PokemonData/Rattata/96a4315be79c4dd5bba63b17bceb24a1.jpg",
+      "sha256": "b37d487d9558a8109b923b00e821e5288ad5119956341c43206335ea1ac9384d"
+    },
+    {
+      "reference": "0576.png",
+      "source": "PokemonData/Rattata/Rattata22.jpg",
+      "sha256": "b611cbe8568ab00b7abb71b716253d16c60a8d309d5b50eb0064c6a6e40ec4bb"
+    },
+    {
+      "reference": "0577.png",
+      "source": "PokemonData/Rattata/Rattata6.jpg",
+      "sha256": "81f56392b17741f611b735955c0168789a4f27b71163038a8f5295e755522d33"
+    },
+    {
+      "reference": "0578.png",
+      "source": "PokemonData/Rattata/afc217be18544c5dabc2b682a5dc61f4.jpg",
+      "sha256": "28fa09723746eaf2b4ef33b1f1f0e356f6a1af0feec6e48673f464cfbfbede05"
+    },
+    {
+      "reference": "0579.png",
+      "source": "PokemonData/Rattata/d79a4f7d1ccf425ca9ee1fbad743757f.jpg",
+      "sha256": "3801204450696824d07278e720c603f8f7fd79dab9e9ced3a3c6448e6d5e1257"
+    },
+    {
+      "reference": "0580.png",
+      "source": "PokemonData/Rhydon/Rhydon32.jpg",
+      "sha256": "348dec1034b5d853c4d84abce9d1a40baf1b3f29b39a4bf850dd054cf1598411"
+    },
+    {
+      "reference": "0581.png",
+      "source": "PokemonData/Rhydon/Rhydon36.jpg",
+      "sha256": "75fb385babde00e6c12d0f5895787bf4a34786ec643d57a87e1a6bbf2d8d85ae"
+    },
+    {
+      "reference": "0582.png",
+      "source": "PokemonData/Rhydon/Rhydon53.jpg",
+      "sha256": "44841a44ecb5ef26bbca3d58179a42b0563aeeff098b8da6aa181010fd7d775e"
+    },
+    {
+      "reference": "0583.png",
+      "source": "PokemonData/Rhydon/Rhydon6.jpg",
+      "sha256": "b11c704fdd9b385ed3bd1811d519b616e11dceb0bbbd8eb5e09fdde8b2f6d3af"
+    },
+    {
+      "reference": "0584.png",
+      "source": "PokemonData/Rhydon/a07e3279dad944b2a2b7dde9c3ac7b86.jpg",
+      "sha256": "c9fc138351aa571ed82c20fb71fe319dcc4fa0855eed8c270316066ff387a878"
+    },
+    {
+      "reference": "0585.png",
+      "source": "PokemonData/Rhyhorn/Rhyhorn2.jpg",
+      "sha256": "86be1a31c87f1cc2d498609e13bae3cacc3cba4446890cedacb5fabfd4881a98"
+    },
+    {
+      "reference": "0586.png",
+      "source": "PokemonData/Rhyhorn/Rhyhorn4.jpg",
+      "sha256": "1bad3cb33e64808cec166747edd46b9804e88e04f2d33c364e5954e0b88f0f11"
+    },
+    {
+      "reference": "0587.png",
+      "source": "PokemonData/Rhyhorn/Rhyhorn47.jpg",
+      "sha256": "600db22d449add639a204651855b776d244533a31fe0fc78a0525564dd80c098"
+    },
+    {
+      "reference": "0588.png",
+      "source": "PokemonData/Rhyhorn/Rhyhorn8.jpg",
+      "sha256": "6235789d9085c6736ef114df96a0e4d89f21629737e22fb0ca07b1afaa47fd30"
+    },
+    {
+      "reference": "0589.png",
+      "source": "PokemonData/Rhyhorn/c7cb7326b09f43ecb301faf2c52b6f6a.jpg",
+      "sha256": "9388091b34eb4c615b5820e53988fcd826a33f14f7fd5a51fd003a68e48b6650"
+    },
+    {
+      "reference": "0590.png",
+      "source": "PokemonData/Sandshrew/Sandshrew18.jpg",
+      "sha256": "68f792979a94324764df50c68ee8758c447094f3b301cd74bed22dd4838fbd0a"
+    },
+    {
+      "reference": "0591.png",
+      "source": "PokemonData/Sandshrew/Sandshrew40.jpg",
+      "sha256": "e97feb99a48c91865f461aa67a2556d89b25e41f306e47f96a2fdf46b92fe031"
+    },
+    {
+      "reference": "0592.png",
+      "source": "PokemonData/Sandshrew/Sandshrew44.jpg",
+      "sha256": "9c06e513f82753073ed70ad0f81ad1a9afed25a2527bd8b9e003b7d7228d6376"
+    },
+    {
+      "reference": "0593.png",
+      "source": "PokemonData/Sandshrew/Sandshrew61.jpg",
+      "sha256": "7798df7e0f42ff9ecf2cdb1eabd974cd6e61a60c1cfc45a1df60c93c728837f6"
+    },
+    {
+      "reference": "0594.png",
+      "source": "PokemonData/Sandshrew/ba3dbf997b75414c904a8fe8d1f2507c.jpg",
+      "sha256": "284d343fd8883dc755ebe57dfc5f0ef44ec369d121e4248787585c93d4b47c6b"
+    },
+    {
+      "reference": "0595.png",
+      "source": "PokemonData/Sandslash/5763e3a7c0bc420a9a274b96e92d5ec5.jpg",
+      "sha256": "de476947aaa909d5dda665a25b42ab9979753eaa0a1e363825dce40bea97d1ac"
+    },
+    {
+      "reference": "0596.png",
+      "source": "PokemonData/Sandslash/8573304fd6dc4810b1cdf19451339074.jpg",
+      "sha256": "d3b84038f99b14ed5a0a62af63f33ad0f781c57d5e7dfbd1402f51c9672408ec"
+    },
+    {
+      "reference": "0597.png",
+      "source": "PokemonData/Sandslash/Sandslash11.jpg",
+      "sha256": "f8cbe27d823f1c71eeed4f894cd2e4a7be4e7339fcbdc32142734be326bdac81"
+    },
+    {
+      "reference": "0598.png",
+      "source": "PokemonData/Sandslash/Sandslash85.jpg",
+      "sha256": "902e3666a685470fb39f15c9d841e3abfdf0429c6e9af837be7cc1f44641fbeb"
+    },
+    {
+      "reference": "0599.png",
+      "source": "PokemonData/Sandslash/e9f8f615c5bb43bb97da740b800d2899.jpg",
+      "sha256": "dfd5e25cc4b3639538858b5846e7c13959fd28b221cfe6ad6eb635487a0494e5"
+    },
+    {
+      "reference": "0600.png",
+      "source": "PokemonData/Scyther/Scyther2.jpg",
+      "sha256": "3d85119d493e00d72aecc7a0ab636ac48156d5282cb2911847e68cdbb29313ca"
+    },
+    {
+      "reference": "0601.png",
+      "source": "PokemonData/Scyther/Scyther25.jpg",
+      "sha256": "2d69fbcc83e464db83d7236bc2b03839df773d571e78fdbc7e2a639335042991"
+    },
+    {
+      "reference": "0602.png",
+      "source": "PokemonData/Scyther/Scyther36.jpg",
+      "sha256": "e50bfc7d9627205a59fac0944f6b53ce2942207c32fc87b6960824676d513d8b"
+    },
+    {
+      "reference": "0603.png",
+      "source": "PokemonData/Scyther/Scyther74.jpg",
+      "sha256": "b47f7f66193cbbe4b21057fb82b10a5ea609d51cf42480b6f383efff85fa30a0"
+    },
+    {
+      "reference": "0604.png",
+      "source": "PokemonData/Scyther/bc269476a2a541e4874a2bb2b73f35c2.jpg",
+      "sha256": "db6f0b22626dbdaa3a929192eb56ba0cec05e9d2f9601fd3b197b1633fc89d1a"
+    },
+    {
+      "reference": "0605.png",
+      "source": "PokemonData/Seadra/70ddf375cbf04d808cb7b2955cb3bd18.jpg",
+      "sha256": "e14f6ea02269a052d1964dcf1ae2616fc93b6037ba099263af544f5f070cfcd7"
+    },
+    {
+      "reference": "0606.png",
+      "source": "PokemonData/Seadra/Seadra13.jpg",
+      "sha256": "13f0cd29375338a88f7f01adeceddb88f3bdd3d5d40f68d2dc2059ca55bb48eb"
+    },
+    {
+      "reference": "0607.png",
+      "source": "PokemonData/Seadra/Seadra23.jpg",
+      "sha256": "5b87cc07d6ad628d7b97582f19af950bc81555e6fd671beffc6f5c00ee535820"
+    },
+    {
+      "reference": "0608.png",
+      "source": "PokemonData/Seadra/Seadra24.jpg",
+      "sha256": "7fd2126891c11012d3f7a505f6b4e97aa3ea278f804e90637bc22866ae8635b1"
+    },
+    {
+      "reference": "0609.png",
+      "source": "PokemonData/Seadra/Seadra29.jpg",
+      "sha256": "4ded217be0cb9ad7b2f1fc4bf5a542870e7417d7cc651d0fcdd250491e373090"
+    },
+    {
+      "reference": "0610.png",
+      "source": "PokemonData/Seaking/95ad3f589c8044e2bd1c617c5b6283d2.jpg",
+      "sha256": "142ec52dbdca233fbd9750fca7afe3fd44bf058ec4b9939c89e26cff292d457a"
+    },
+    {
+      "reference": "0611.png",
+      "source": "PokemonData/Seaking/Seaking14.jpg",
+      "sha256": "0b39ff38bd21b7eebd7afbd0bc316be7dfe36e438f1eef42727eb37e41831166"
+    },
+    {
+      "reference": "0612.png",
+      "source": "PokemonData/Seaking/Seaking22.jpg",
+      "sha256": "571bfabe697a0de465c32ed5dedfd705b130b465cf70f4badd6d3682078c6ee5"
+    },
+    {
+      "reference": "0613.png",
+      "source": "PokemonData/Seaking/Seaking73.jpg",
+      "sha256": "52d8bed539d2d1ddfecaa593b7946b7ec4f6b5f100d154edf61aa5449e4a39f7"
+    },
+    {
+      "reference": "0614.png",
+      "source": "PokemonData/Seaking/Seaking8.jpg",
+      "sha256": "4914a83707017e54de80d36e58afb6e5064eb2b47e1e9abd828d8caf2450a48d"
+    },
+    {
+      "reference": "0615.png",
+      "source": "PokemonData/Seel/6656f2fa35df481b9853f1d8c2e7a4b1.jpg",
+      "sha256": "bf66231684640686975eccf528efb680d5abdb1aad2be1572e083cd4a86fe0ec"
+    },
+    {
+      "reference": "0616.png",
+      "source": "PokemonData/Seel/Seel13.jpg",
+      "sha256": "9d1931801800fe89f83afd83e0fd82110b66f81ce9eb3835fbd5af47ba090672"
+    },
+    {
+      "reference": "0617.png",
+      "source": "PokemonData/Seel/Seel32.jpg",
+      "sha256": "aa0304d82bb49e8cc6f684b41d9c51d3e3910b868b8886970ba5e94cdcbf5981"
+    },
+    {
+      "reference": "0618.png",
+      "source": "PokemonData/Seel/Seel54.jpg",
+      "sha256": "3daf93311c124221dcd049f5a1031048292ea67071f1f7c719e51f9ca7306a60"
+    },
+    {
+      "reference": "0619.png",
+      "source": "PokemonData/Seel/a4a9cb36486c4ec38ce55a29a829d071.jpg",
+      "sha256": "149da7461d3200e00c3e8f27040fa3f9e1f21caec3be71bd49dae60a43ae20b6"
+    },
+    {
+      "reference": "0620.png",
+      "source": "PokemonData/Shellder/77af998480d949b4a8f1dd3075e076e4.jpg",
+      "sha256": "c1a554089ceca25cd878c79176aee4bff76e09c375c8cc13ea6b6943f9d12bba"
+    },
+    {
+      "reference": "0621.png",
+      "source": "PokemonData/Shellder/84fe4ba3e5df417d918c1c4dca3df0dd.jpg",
+      "sha256": "09955c9d2439dd64e4c3a4ba17a7093ca3a7d01ef0aaf9555db248f1dde9ff3d"
+    },
+    {
+      "reference": "0622.png",
+      "source": "PokemonData/Shellder/Shellder2.jpg",
+      "sha256": "d5b13e84daa812f10f4b51e0efd4daa0f3a0c403bceed07472a40fa3ed8d6b7d"
+    },
+    {
+      "reference": "0623.png",
+      "source": "PokemonData/Shellder/cbd6f3b8a65a4e5fbde6f4144a7bc887.jpg",
+      "sha256": "7f411e591f8deb31d28c3ac0753cf7c386dd358f982f48bca38f7e8d48da3879"
+    },
+    {
+      "reference": "0624.png",
+      "source": "PokemonData/Shellder/e08f4501aafe43af8605a0fe80da7556.jpg",
+      "sha256": "ed602c3f6da766f4438fd5a13fc4c2fb0302959a53f28b7433e2334705762279"
+    },
+    {
+      "reference": "0625.png",
+      "source": "PokemonData/Slowbro/447187bd354d419587a0e87b8ba5c438.jpg",
+      "sha256": "a9a530ae4555471a7031119c7fc72b37d2e29f00e2376382acbf3dde256da1a0"
+    },
+    {
+      "reference": "0626.png",
+      "source": "PokemonData/Slowbro/Screen Shot 2019-08-12 at 8.35.00 PM.png",
+      "sha256": "cf3e602016673d6c1ce883ae49d14db93c2218bda08a75fbe3041ed3a1b93ecf"
+    },
+    {
+      "reference": "0627.png",
+      "source": "PokemonData/Slowbro/Screen Shot 2019-08-12 at 8.35.37 PM.png",
+      "sha256": "507b853635a9d0804f493067d8c82dc448549074d0d9a843c941580aff58339d"
+    },
+    {
+      "reference": "0628.png",
+      "source": "PokemonData/Slowbro/Slowbro14.jpg",
+      "sha256": "2ea4342b46b4392206e5499026d805fdfac10b3fab73d980214e38207b67bb79"
+    },
+    {
+      "reference": "0629.png",
+      "source": "PokemonData/Slowbro/Slowbro6.jpg",
+      "sha256": "11e5752196cc3e4b7e1b0721f54dced7b9abe472f07919288fa43c863a777e24"
+    },
+    {
+      "reference": "0630.png",
+      "source": "PokemonData/Slowpoke/Slowpoke26.jpg",
+      "sha256": "4ca680ead139b2672a6882a1b664494a0aa28747ffd1949d78e234427af370c1"
+    },
+    {
+      "reference": "0631.png",
+      "source": "PokemonData/Slowpoke/Slowpoke38.jpg",
+      "sha256": "9f0783ad9b68540804fa0f19ce29da788839627bb349ff3feb0fc787d03f0611"
+    },
+    {
+      "reference": "0632.png",
+      "source": "PokemonData/Slowpoke/Slowpoke39.jpg",
+      "sha256": "1c494da1f8ee7fc204d0d3355b48c6378def6e42eb0fea4771542fe097fb9365"
+    },
+    {
+      "reference": "0633.png",
+      "source": "PokemonData/Slowpoke/b39049a8b09a44d9912ee9c1f3fb879d.jpg",
+      "sha256": "bd4cfabe14916d2c611a023e75f0ebdf1e51450d4556db55608bfca9658667a5"
+    },
+    {
+      "reference": "0634.png",
+      "source": "PokemonData/Slowpoke/cf2a5c3aeb4d4bfeacec2c9647835749.jpg",
+      "sha256": "b248e941e1caf6d49373c8533c68f224db183f393412cc5c5a6f60d0e5210d7b"
+    },
+    {
+      "reference": "0635.png",
+      "source": "PokemonData/Snorlax/48cf63e732af4ecba2e39d600d395d67.jpg",
+      "sha256": "08ef5ead6c87634f3e94f6a9ba3187ff26daeb0d676117531d18b4c7bdf1bf90"
+    },
+    {
+      "reference": "0636.png",
+      "source": "PokemonData/Snorlax/9e5e2b51c5a9475995192bafa8d66b33.jpg",
+      "sha256": "58f74505fdfb96cf18fccc3402c9985cec82a1cf7fac73738ae95d81c12ed9c5"
+    },
+    {
+      "reference": "0637.png",
+      "source": "PokemonData/Snorlax/Snorlax39.jpg",
+      "sha256": "fdcd51c0ea22b55f4bb063dbee0710faa5d07b54389f061948eafd6487e05012"
+    },
+    {
+      "reference": "0638.png",
+      "source": "PokemonData/Snorlax/Snorlax43.jpg",
+      "sha256": "456761fbf4ce5e4ee97287c0c3800e70c8a1e01328ff4beafca0581229d194e2"
+    },
+    {
+      "reference": "0639.png",
+      "source": "PokemonData/Snorlax/Snorlax81.jpg",
+      "sha256": "86b58df27c6cb4a3313fa92ea86b6b428f0bc01f9441b5674a4bdb00cc458f98"
+    },
+    {
+      "reference": "0640.png",
+      "source": "PokemonData/Spearow/2a6471635a3c4fc19f6c95f33847e72b.jpg",
+      "sha256": "76e0c6e0d2242be438762007c166d30f17692bc3966ee23371ca0b32b8692056"
+    },
+    {
+      "reference": "0641.png",
+      "source": "PokemonData/Spearow/Spearow11.jpg",
+      "sha256": "59d834a2ffa25c2f1dbe42d07cd39f996a99b7cc30f939ac00dfa6b2fd7557c0"
+    },
+    {
+      "reference": "0642.png",
+      "source": "PokemonData/Spearow/Spearow13.jpg",
+      "sha256": "ea4b21f7d141a4ff12eb1d17b16548d61a59dda37185a3249ca9c587522158b3"
+    },
+    {
+      "reference": "0643.png",
+      "source": "PokemonData/Spearow/Spearow39.jpg",
+      "sha256": "bc7dce62080af99b077d7190ad5eb8120feb6539dd2506d9f74624a91eaf70ee"
+    },
+    {
+      "reference": "0644.png",
+      "source": "PokemonData/Spearow/Spearow44.jpg",
+      "sha256": "52f170865d4786b1beaa3b81a4a8db85362fbeb9c6a1d38df1241f40fde49667"
+    },
+    {
+      "reference": "0645.png",
+      "source": "PokemonData/Squirtle/00000033.jpg",
+      "sha256": "52a711ed332d6aee04a7ec91e6cba55b6b1b67017c53512b93876248e2cf9c3b"
+    },
+    {
+      "reference": "0646.png",
+      "source": "PokemonData/Squirtle/00000043.png",
+      "sha256": "1e61af6d261a9884771ddb746ca4ab84980af2a42f4f05822ec92e802c679b4e"
+    },
+    {
+      "reference": "0647.png",
+      "source": "PokemonData/Squirtle/00000053.jpg",
+      "sha256": "eb5da7586ee33aab8bcb885d641ddaadf1c53b4479bb36984f8247056b88bd30"
+    },
+    {
+      "reference": "0648.png",
+      "source": "PokemonData/Squirtle/003-007Squirtle_RB.png",
+      "sha256": "933a2691daee076782db4ec77fadb3ca6f406137a1d3dccd3efde9a502b84bcd"
+    },
+    {
+      "reference": "0649.png",
+      "source": "PokemonData/Squirtle/Squirtle25.jpg",
+      "sha256": "fedf841454b6d91489b671ab02c27d2439d815ba8ed007e72855b261b79dd385"
+    },
+    {
+      "reference": "0650.png",
+      "source": "PokemonData/Starmie/Starmie44.jpg",
+      "sha256": "68d1298ce665d06bb6aae4315b4ee513e7340233441fd858db9d549cef7f64c2"
+    },
+    {
+      "reference": "0651.png",
+      "source": "PokemonData/Starmie/Starmie51.jpg",
+      "sha256": "2bfb808f41445a1f8a076e4b2b090bce437df54be37b0172d6aa5ad2f107a1a4"
+    },
+    {
+      "reference": "0652.png",
+      "source": "PokemonData/Starmie/Starmie54.jpg",
+      "sha256": "59a8b87a5bc336237c972b5c8dfd3874893866d3a0b136d431f74730d71af78b"
+    },
+    {
+      "reference": "0653.png",
+      "source": "PokemonData/Starmie/b3f499b04e2647aeb2a15adb4efede17.jpg",
+      "sha256": "f558c0dff89a42f8325c540f2cc22ff303016278a415c471b7f6b2ca1fa76cb4"
+    },
+    {
+      "reference": "0654.png",
+      "source": "PokemonData/Starmie/e556e96682794edea951e0c7d74b999f.jpg",
+      "sha256": "ece3baf66ecea7266092c7f5faaf79b116046ca6c80e48e8a107bbcc676afcae"
+    },
+    {
+      "reference": "0655.png",
+      "source": "PokemonData/Staryu/601c1135621c47759e5b529dbe9dac14.jpg",
+      "sha256": "9a4b0c87dcee4852451bc459d48a11a70e520a8201105ba8f9e815f54033fc7e"
+    },
+    {
+      "reference": "0656.png",
+      "source": "PokemonData/Staryu/Staryu22.jpg",
+      "sha256": "d74d41391e828b530b422d073386fdaa45968a0f6b6e968e5e1aba3190d09a7b"
+    },
+    {
+      "reference": "0657.png",
+      "source": "PokemonData/Staryu/aca03a44bc9e4ed9b7df5595883ad67a.jpg",
+      "sha256": "4b21f4ffc61b4e070f666ca88c7cdbae6424b6d46881d536e60f472787bf2a46"
+    },
+    {
+      "reference": "0658.png",
+      "source": "PokemonData/Staryu/b49938537d234173a728057578afbc75.jpg",
+      "sha256": "87a9b4fc505a897752be792fcf8dfb3e45f84e7fb38ce335ba5fdc5f4a9c0857"
+    },
+    {
+      "reference": "0659.png",
+      "source": "PokemonData/Staryu/cb81a38407a241dbb4ae91568cb7dbf8.jpg",
+      "sha256": "1b6f6646337366d39df96deb883e22242e55ce2f52a34dc701b86e9dc6b6a887"
+    },
+    {
+      "reference": "0660.png",
+      "source": "PokemonData/Tangela/66a02fe16e32472fbf4883308ff30dc5.jpg",
+      "sha256": "27fe9ba22df211ae819ff891d589b362296987f445db90521fcba42f5f7ddeb1"
+    },
+    {
+      "reference": "0661.png",
+      "source": "PokemonData/Tangela/6c422562f7d14c588d6578fe02b5ee85.jpg",
+      "sha256": "db11b7cb0d17dc5e6300751b85d80bcccc1c4285f8b804e087c924140bd11ad3"
+    },
+    {
+      "reference": "0662.png",
+      "source": "PokemonData/Tangela/Tangela22.jpg",
+      "sha256": "89bdbb81c6dfb66d9692e3e325b7aff11a444ac6a118ffe6fa9312e37dd2a863"
+    },
+    {
+      "reference": "0663.png",
+      "source": "PokemonData/Tangela/Tangela74.jpg",
+      "sha256": "6a00f229c788a50b63d7070066a908cc12be1f15f2edee98b3ec5e61d69f834a"
+    },
+    {
+      "reference": "0664.png",
+      "source": "PokemonData/Tangela/Tangela76.jpg",
+      "sha256": "b7e20aabad952d2febbce868130bf38db0c4b0274511d91ded60617f039bc9a2"
+    },
+    {
+      "reference": "0665.png",
+      "source": "PokemonData/Tauros/Tauros17.jpg",
+      "sha256": "d9051e230b375a8145700b8aba734f6ba1c2bb2fc22ea6de9754c12008c2965c"
+    },
+    {
+      "reference": "0666.png",
+      "source": "PokemonData/Tauros/Tauros25.jpg",
+      "sha256": "99888e7bf8e383ed5c3b29dce0a3ccbef8c96e538236008f9e12e024b8548971"
+    },
+    {
+      "reference": "0667.png",
+      "source": "PokemonData/Tauros/Tauros47.jpg",
+      "sha256": "de53d2c1caca57971959196a971794f49254ba06701f8ede6e9c983006f62191"
+    },
+    {
+      "reference": "0668.png",
+      "source": "PokemonData/Tauros/af8e3ad4b79b4c6eae71ef9ca53d8a6c.jpg",
+      "sha256": "0f06e31418b9946573ae460e3d5d5291316c3fe926b482ad20e013d19222537f"
+    },
+    {
+      "reference": "0669.png",
+      "source": "PokemonData/Tauros/e0025c87a27d4d059e4411777aaf27b3.jpg",
+      "sha256": "88b369ce790cd9d91ed5c7e8a46a67fb24dc2569df60cac46529afacc6ba2d42"
+    },
+    {
+      "reference": "0670.png",
+      "source": "PokemonData/Tentacool/5c750f9fe5ea4921bc8ef8e87112343e.jpg",
+      "sha256": "f77d378092ed0388e306f13a4fd2b3792893dc17411e0f451272eb3b3728d44a"
+    },
+    {
+      "reference": "0671.png",
+      "source": "PokemonData/Tentacool/6c80e9e64a774109bb252464bfee3d67.jpg",
+      "sha256": "8f1e0bbd41a2b45a1796fbbafe350056dd463ef499710f260bc4e2498b6deec0"
+    },
+    {
+      "reference": "0672.png",
+      "source": "PokemonData/Tentacool/Tentacool44.jpg",
+      "sha256": "3a4b15769e8215ad4f6183671d32c663a5f65966ad88e543bead6eb230e411db"
+    },
+    {
+      "reference": "0673.png",
+      "source": "PokemonData/Tentacool/Tentacool77.jpg",
+      "sha256": "7b808e62998a3d01d0474507158546e0e29993ff77094e41bc89791f4cb3f8dd"
+    },
+    {
+      "reference": "0674.png",
+      "source": "PokemonData/Tentacool/Tentacool9.jpg",
+      "sha256": "cc912e2307c00b3a4aef001f15a57a179add78343e4d957b0d5b01f7ac6bed14"
+    },
+    {
+      "reference": "0675.png",
+      "source": "PokemonData/Tentacruel/4abab4fef5434182bcc59af827ada7f9.jpg",
+      "sha256": "9e23f1dd79f1604d921fa5cf1a6d5993839c47e8db2ecc36f861b52576e820b4"
+    },
+    {
+      "reference": "0676.png",
+      "source": "PokemonData/Tentacruel/81cfbfae8b564c8992748bb08fa90319.jpg",
+      "sha256": "03a25b25dd6084c2e8614fe1433ed77294980916fabcf377fe0a09882f0c193b"
+    },
+    {
+      "reference": "0677.png",
+      "source": "PokemonData/Tentacruel/Tentacruel31.jpg",
+      "sha256": "6e475be7672fcfdc0da6fb0c9a5c76eefaa9d67318811a76789d78bc3ca55072"
+    },
+    {
+      "reference": "0678.png",
+      "source": "PokemonData/Tentacruel/Tentacruel6.jpg",
+      "sha256": "e5d8d3808721584e99ee70cc3eae647fa1c2d14eb8c2878e13d7ddacc31f424d"
+    },
+    {
+      "reference": "0679.png",
+      "source": "PokemonData/Tentacruel/cb6b0cabde3d438897b816aea17a56b8.jpg",
+      "sha256": "87febe31f414062b8f4eaa26da16a0a12664ae1a37fb8948decbee410165acbc"
+    },
+    {
+      "reference": "0680.png",
+      "source": "PokemonData/Vaporeon/Vaporeon104.jpg",
+      "sha256": "fb3640521d80fc2297657abe39b4beab34395272e8be3b2a71cf26c40b782ad5"
+    },
+    {
+      "reference": "0681.png",
+      "source": "PokemonData/Vaporeon/Vaporeon16.jpg",
+      "sha256": "9e5dfc829d9af3dab33e2b87b79e9925f6be2a22f42bc2d0d8e216fda68946d7"
+    },
+    {
+      "reference": "0682.png",
+      "source": "PokemonData/Vaporeon/Vaporeon32.jpg",
+      "sha256": "695dfe5fbf7780a5e3fa8468d0761b27e5984dbf8a5974e52f7a78a9c78d5ab1"
+    },
+    {
+      "reference": "0683.png",
+      "source": "PokemonData/Vaporeon/Vaporeon44.jpg",
+      "sha256": "0f8dcb6a0f4dd411350dde81cc2d3e7d892362a0052e606c9ea0d147a0457961"
+    },
+    {
+      "reference": "0684.png",
+      "source": "PokemonData/Vaporeon/Vaporeon57.jpg",
+      "sha256": "d0a645c8e4c2aa48518ea3fa6c0a5134500543e1a517347778ba4f0b596a4a37"
+    },
+    {
+      "reference": "0685.png",
+      "source": "PokemonData/Venomoth/2f0c95d6c17041288fd7161248f75d22.jpg",
+      "sha256": "75fba7c2b07e61701fe8af67e9bf09517ecfa71de455fd0a4ce48fab8aa301a8"
+    },
+    {
+      "reference": "0686.png",
+      "source": "PokemonData/Venomoth/387d030c2fc9491191c5c0bb8e632215.jpg",
+      "sha256": "936ca81b4edf85738460b92bda823c93d108e47f5743a1680dee207e29068511"
+    },
+    {
+      "reference": "0687.png",
+      "source": "PokemonData/Venomoth/957043b7d112486abcb7b867ef290928.jpg",
+      "sha256": "0f1c911499fa28319b2219101355a6996364aedbca70fbcdb3f6c766a4f488ec"
+    },
+    {
+      "reference": "0688.png",
+      "source": "PokemonData/Venomoth/Venomoth23.jpg",
+      "sha256": "62cad028078416fa8ea639b9d151a8bc064274b39247567e36352a5b140f0e6b"
+    },
+    {
+      "reference": "0689.png",
+      "source": "PokemonData/Venomoth/fc120ad10f584a9bbc9110f255ff7542.jpg",
+      "sha256": "3a2f4934a48118efaa8af2f50ea371b7eeb19db4d2c9931a0348651453e941d2"
+    },
+    {
+      "reference": "0690.png",
+      "source": "PokemonData/Venonat/Venonat12.jpg",
+      "sha256": "34ec9840374895b3afc3a2ee034f02ba9f1406c38d89e9afa91f1dd4d38bfcd9"
+    },
+    {
+      "reference": "0691.png",
+      "source": "PokemonData/Venonat/Venonat39.jpg",
+      "sha256": "a6f0eb1621bbdac5f9211f39992d4d201cb08ec8572ee2addb62044b42d09429"
+    },
+    {
+      "reference": "0692.png",
+      "source": "PokemonData/Venonat/Venonat49.jpg",
+      "sha256": "98ecec8702cd65ec9b8079a0529161f8f3116d892c8958c741bae3b2c4145c3b"
+    },
+    {
+      "reference": "0693.png",
+      "source": "PokemonData/Venonat/Venonat85.jpg",
+      "sha256": "d07e99a50dcb4102a046ffb7cf085aa75d6039d0ec1e056d9c3d6050750e5151"
+    },
+    {
+      "reference": "0694.png",
+      "source": "PokemonData/Venonat/d7e246017c7d4e7d9d4fd6951c2f31b6.jpg",
+      "sha256": "e72fb2fe2f57b5069aee5231b85ce2803ee9b37a1336f689472356160400f04e"
+    },
+    {
+      "reference": "0695.png",
+      "source": "PokemonData/Venusaur/481aa0d3d9274bdeaa243c8428e12a3a.jpg",
+      "sha256": "7442c389e9618c7b34b881362a5ca98d8c971a659c90b9f7cd0b36bbdae26fbf"
+    },
+    {
+      "reference": "0696.png",
+      "source": "PokemonData/Venusaur/Venusaur19.jpg",
+      "sha256": "4ee6b494cdc6f683f0513aafe0cacb7f1919c0b6b9a40ef6c0f6a4b3ce36a8a2"
+    },
+    {
+      "reference": "0697.png",
+      "source": "PokemonData/Venusaur/Venusaur30.jpg",
+      "sha256": "cf29453da4cede66bc851b16c6d097426ccf409161bf2b56155b841b70783e01"
+    },
+    {
+      "reference": "0698.png",
+      "source": "PokemonData/Venusaur/Venusaur5.jpg",
+      "sha256": "9fbac7a59538a6e669a10698e020aa761f23daf335d66527c4905cd0355a3da2"
+    },
+    {
+      "reference": "0699.png",
+      "source": "PokemonData/Venusaur/bf07f75c99234eecaf99073220bb59d5.jpg",
+      "sha256": "78bb44b99fbd12fa0f499a883ec9df8b3b28c4d9fe7a96b12a4b4c69f556c24f"
+    },
+    {
+      "reference": "0700.png",
+      "source": "PokemonData/Victreebel/Victreebel36.jpg",
+      "sha256": "3e7cbd4b8cbacdb25afc101dc0a2f7bab229d15acd22679650cab92493d9b42d"
+    },
+    {
+      "reference": "0701.png",
+      "source": "PokemonData/Victreebel/Victreebel43.jpg",
+      "sha256": "af6d94499c807a33dd203a1ebbbce1040c364c451f58e0ba7dac854fb2de5ff5"
+    },
+    {
+      "reference": "0702.png",
+      "source": "PokemonData/Victreebel/Victreebel92.jpg",
+      "sha256": "4afc5817341b67cfc04391d81148025715ec19f3225bf1870275396d9633fc73"
+    },
+    {
+      "reference": "0703.png",
+      "source": "PokemonData/Victreebel/d6c8aaff47b24b58b60f0e39c504c3f4.jpg",
+      "sha256": "e056a672787cf10a66ce7fddba38c2cda94ffcaf294ca3a92014a16490ed8f49"
+    },
+    {
+      "reference": "0704.png",
+      "source": "PokemonData/Victreebel/e085743e570b48d0ba0fe0b822816a1e.jpg",
+      "sha256": "1375eeb665b1383cff6b3fcc97b51c0daf278d8d00e7a3706f5fd15ed0faeacc"
+    },
+    {
+      "reference": "0705.png",
+      "source": "PokemonData/Vileplume/Vileplume14.jpg",
+      "sha256": "eca5829875121d4982be6153fdc6a3e81a825cfc7bf613373d0ff3b8717fc397"
+    },
+    {
+      "reference": "0706.png",
+      "source": "PokemonData/Vileplume/Vileplume42.jpg",
+      "sha256": "f091ca5f3186a71ec3752d6b2819bcac9429a7c5c97e05d62e83125015f46e68"
+    },
+    {
+      "reference": "0707.png",
+      "source": "PokemonData/Vileplume/Vileplume45.jpg",
+      "sha256": "4b161e7dd643fd13e98a3f6a73fe7af421751cff39013c27e5d01f92342646c7"
+    },
+    {
+      "reference": "0708.png",
+      "source": "PokemonData/Vileplume/Vileplume53.jpg",
+      "sha256": "6818b18fc01ef1125053f21eaf1357e14e1dbb218fbfd02b8836091f66f8f2d4"
+    },
+    {
+      "reference": "0709.png",
+      "source": "PokemonData/Vileplume/Vileplume63.jpg",
+      "sha256": "60ef4e8563488b7c66caecb05802e5b6d47906cc7b91651e6a1d902c041ae46d"
+    },
+    {
+      "reference": "0710.png",
+      "source": "PokemonData/Voltorb/Voltorb9.jpg",
+      "sha256": "abdfc90c5e6668e6089ec39366d3465ad76ba821fabc9fe89d4dd7013d6e24ff"
+    },
+    {
+      "reference": "0711.png",
+      "source": "PokemonData/Voltorb/Voltorb97.jpg",
+      "sha256": "3d6e1652ee455f350cc442cf7519b1131440b167e3607891f3f9c2ac8d3f1b36"
+    },
+    {
+      "reference": "0712.png",
+      "source": "PokemonData/Voltorb/Voltorb99.jpg",
+      "sha256": "eb383c738468115bbfb15c138e9c97423b93ca815b7e453e673f06f8a41c347a"
+    },
+    {
+      "reference": "0713.png",
+      "source": "PokemonData/Voltorb/ba5bed101468419fb8e4f74ed186864a.jpg",
+      "sha256": "22357330c7119ebda72432507a7e91e7a821a9bcbac1226383d391409f6a20d9"
+    },
+    {
+      "reference": "0714.png",
+      "source": "PokemonData/Voltorb/d947c73f34b14d42b4f77317fe237c5e.jpg",
+      "sha256": "86c9807d71da596519af555679fe28779c12a6d9af09c41e50bf1938b0102e4b"
+    },
+    {
+      "reference": "0715.png",
+      "source": "PokemonData/Vulpix/8161b45676fa4d16b327f22e2a8a9254.jpg",
+      "sha256": "8c664fc39b1717e6739c5c801fe7e7ca0a2f00a8ed9268ef3c60e7528f9beca0"
+    },
+    {
+      "reference": "0716.png",
+      "source": "PokemonData/Vulpix/Vulpix22.jpg",
+      "sha256": "8d6c4a63c6acf4cbcbe96656ee900694a9a97a4352801e991528e3633e7acf68"
+    },
+    {
+      "reference": "0717.png",
+      "source": "PokemonData/Vulpix/Vulpix8.jpg",
+      "sha256": "d903f5d0b0ebddaf72f3ad730fc507b7761b56de8e0113d9a0d5e2d8e7b848a6"
+    },
+    {
+      "reference": "0718.png",
+      "source": "PokemonData/Vulpix/df75d13fc6d34122958ed9563e842cf6.jpg",
+      "sha256": "e6b8bdf6602c0e20dbec7b367961d56328a553658e7073e12fc7e901efa3a17a"
+    },
+    {
+      "reference": "0719.png",
+      "source": "PokemonData/Vulpix/e3e146032c8141e6b5cde3063762fa88.jpg",
+      "sha256": "9f3f59cc1875543fba56ec58fb59fd1bde42b85bbaef975a73cd103fc8dfff0a"
+    },
+    {
+      "reference": "0720.png",
+      "source": "PokemonData/Wartortle/54c5b848d6a5412da32ca0431180428a.jpg",
+      "sha256": "a69d4eea3d8e0ccc621d07e26dff8a18eb574858ed2b62931509ce601563bf48"
+    },
+    {
+      "reference": "0721.png",
+      "source": "PokemonData/Wartortle/Wartortle15.jpg",
+      "sha256": "36e7f73185ef650e4215b65fd47f532b13473fdf258737bd42195b57ccbe8d60"
+    },
+    {
+      "reference": "0722.png",
+      "source": "PokemonData/Wartortle/Wartortle3.jpg",
+      "sha256": "0077d6edd068cb0bc1ab02b84b831f892c5886d4d66256ab8f54e56b80bf282e"
+    },
+    {
+      "reference": "0723.png",
+      "source": "PokemonData/Wartortle/Wartortle43.jpg",
+      "sha256": "d2eb09666267ff3e5fef2f985e5e32e371e5c2c2bb61796d8258f898171dc719"
+    },
+    {
+      "reference": "0724.png",
+      "source": "PokemonData/Wartortle/Wartortle68.jpg",
+      "sha256": "611099007633ec6ea7b5072449138b2f658281e8839c9a28568e4f4e0f9cb662"
+    },
+    {
+      "reference": "0725.png",
+      "source": "PokemonData/Weedle/3f0c6f1af3484776851ee27f412c6641.jpg",
+      "sha256": "621f973fb19549967e9d411befc10273031f88227492116aded40ae72a4f9e72"
+    },
+    {
+      "reference": "0726.png",
+      "source": "PokemonData/Weedle/Weedle12.jpg",
+      "sha256": "5da2a2d96f3d23ad23b73caef410e75c6b70812514bed80ff1c765c34b0bdc98"
+    },
+    {
+      "reference": "0727.png",
+      "source": "PokemonData/Weedle/Weedle21.jpg",
+      "sha256": "a7065c6f9f0b513796a2e532e450e3fb98d1dd5f20154721d917bcf7ba76b263"
+    },
+    {
+      "reference": "0728.png",
+      "source": "PokemonData/Weedle/Weedle35.jpg",
+      "sha256": "354e295d1687f0628d29692e2748d6ba9f1df8f1ffbe388b1ef4102685a840d2"
+    },
+    {
+      "reference": "0729.png",
+      "source": "PokemonData/Weedle/a5045faffcce4e2a8ca0050c31490cef.jpg",
+      "sha256": "0964d73163b392b15df57288e039098be8b6386729bd097dea100f1ce400a900"
+    },
+    {
+      "reference": "0730.png",
+      "source": "PokemonData/Weepinbell/Weepinbell22.jpg",
+      "sha256": "ee12d7e99fe3b378bf093f5f0b14e9f624eeb97b77764b21a643cae849b0121e"
+    },
+    {
+      "reference": "0731.png",
+      "source": "PokemonData/Weepinbell/Weepinbell40.jpg",
+      "sha256": "c084093daca570513c8ed0a0add675fbabec399ba36865a284e9690c162dfaf6"
+    },
+    {
+      "reference": "0732.png",
+      "source": "PokemonData/Weepinbell/Weepinbell5.jpg",
+      "sha256": "628177f2d5720d9fe5fa55f4bc6e9617ef1f22c665409c1e0a6ae94ab0dca8ba"
+    },
+    {
+      "reference": "0733.png",
+      "source": "PokemonData/Weepinbell/Weepinbell76.jpg",
+      "sha256": "484a49ece40f9cd1fc5fd0cf80badfaad7137a66584e3936c6dbd963046b664a"
+    },
+    {
+      "reference": "0734.png",
+      "source": "PokemonData/Weepinbell/e76307f23bb44953b79ff23b46f7ea53.jpg",
+      "sha256": "b5f999e05ea02d0ef7aca6f304f0cbfdf37b598d2f5ee9c1dca199bb37018462"
+    },
+    {
+      "reference": "0735.png",
+      "source": "PokemonData/Weezing/4e4f4139b76e4a1c805df7442bbef2b0.jpg",
+      "sha256": "1180661fef707e37a28a2e22dae0714c85c2a40315632faa73b5e1c346b8ae62"
+    },
+    {
+      "reference": "0736.png",
+      "source": "PokemonData/Weezing/7d7babf2d3634afba867512e2b56d6ba.jpg",
+      "sha256": "d8a501f153fa6049bed3ab4ac8617df31e3a9a99c6bc9bf051fab56c5a1cce23"
+    },
+    {
+      "reference": "0737.png",
+      "source": "PokemonData/Weezing/9b03e8ef630a4d86966895afed6b23e7.jpg",
+      "sha256": "962e723dd21dd1d2f41f992f5a20f0ceabd9902d47ef521996fda360d6bb0ca2"
+    },
+    {
+      "reference": "0738.png",
+      "source": "PokemonData/Weezing/Weezing29.jpg",
+      "sha256": "3761b898698c1aada36a8ef777f1be21b66f0a4f5291c2749f9c25c41639b5a4"
+    },
+    {
+      "reference": "0739.png",
+      "source": "PokemonData/Weezing/Weezing31.jpg",
+      "sha256": "569eb5044489d91cec628c407dddfd8ebbba7c16be9e28e4eebbbb6b8a50e1bb"
+    },
+    {
+      "reference": "0740.png",
+      "source": "PokemonData/Wigglytuff/6b85e9f56e1e470689aff956c0f6e476.jpg",
+      "sha256": "6dcac68deaa04a9a4ebd6421c1d75b82a29ecaa1a4c06b8fd86481e71562dbff"
+    },
+    {
+      "reference": "0741.png",
+      "source": "PokemonData/Wigglytuff/971f921b9d7a4e39b19d90fa9407da8e.jpg",
+      "sha256": "637ccd1a56f46d767c33d0dd5939887c5445037bd66eb021fd7ff4a88db8151f"
+    },
+    {
+      "reference": "0742.png",
+      "source": "PokemonData/Wigglytuff/Wigglytuff6.jpg",
+      "sha256": "db433f7dfec6458d0d9f04ea33b994450a888f52249d1f2c6dbff26a87fdf2bc"
+    },
+    {
+      "reference": "0743.png",
+      "source": "PokemonData/Wigglytuff/Wigglytuff94.jpg",
+      "sha256": "98cae22828954402365f6426d9e44841cce59aab12e475968563e5f1ea5a34e4"
+    },
+    {
+      "reference": "0744.png",
+      "source": "PokemonData/Wigglytuff/c7b5cf3ccb9c494bbeb0d09404905ee7.jpg",
+      "sha256": "93f35cca3eb0a184200b437ac48832b73533a692a0495dd76672ef66535fa6ad"
+    },
+    {
+      "reference": "0745.png",
+      "source": "PokemonData/Zapdos/Zapdos18.jpg",
+      "sha256": "a9bc91573ba4b8a1bf98b12d3fbd9bc0a23d2e4766e5dec205f1ae3e65db6007"
+    },
+    {
+      "reference": "0746.png",
+      "source": "PokemonData/Zapdos/Zapdos29.jpg",
+      "sha256": "dac65193033cdc287e776d041442c1d5f66f0a08f17448efa7c6f1977bef5629"
+    },
+    {
+      "reference": "0747.png",
+      "source": "PokemonData/Zapdos/Zapdos38.jpg",
+      "sha256": "eef2f671593da0ad17f043bc31a3ecb847f3a38cec9112955d417897d3a2e4e6"
+    },
+    {
+      "reference": "0748.png",
+      "source": "PokemonData/Zapdos/Zapdos42.jpg",
+      "sha256": "1b83372329add17aa27b65a62af4256285a0eddccda4c71f34436c4f20cdf4a1"
+    },
+    {
+      "reference": "0749.png",
+      "source": "PokemonData/Zapdos/Zapdos72.jpg",
+      "sha256": "496175bfae2c53aafcde4ab12274c60a324543f2c083a1d7c32424e2eb0f963d"
+    },
+    {
+      "reference": "0750.png",
+      "source": "PokemonData/Zubat/74815b536fe04558b55c7149e7c1b042.jpg",
+      "sha256": "7d7e5290b0e39a33494605709c7abb4a21d2b1e266fa8b0107ceb7cbb9c2a30c"
+    },
+    {
+      "reference": "0751.png",
+      "source": "PokemonData/Zubat/Zubat1.jpg",
+      "sha256": "0b74aad737b375f6d0cfce7e4a4d0fb1481b70d1d30839bb64db7edd3ce5e854"
+    },
+    {
+      "reference": "0752.png",
+      "source": "PokemonData/Zubat/Zubat21.jpg",
+      "sha256": "4752e475d8e9c9c34a27ec4f16782f9ca0c446ecb81688741658ca5f5b982db4"
+    },
+    {
+      "reference": "0753.png",
+      "source": "PokemonData/Zubat/a610f2ab77e94b07aad53534149c678d.jpg",
+      "sha256": "98268c338a322af20143fbc3295f3487f63e4cc5c7ec1154e3798b487bcd6093"
+    },
+    {
+      "reference": "0754.png",
+      "source": "PokemonData/Zubat/fccfe4de71a543349378b09d91d3f745.jpg",
+      "sha256": "c07763745cafd614d956e32bd1abc6ca3db88a9592941489ad52fda926be34ba"
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "source_root": "/root/DMD",
+  "git_commit": "e3f5120000cd91037017d86f23993492195101a5",
+  "retraining_required_files": {
+    "checkpoints/one_nfe.ckpt": {
+      "bytes": 195649098,
+      "sha256": "8173c059ca3dda5d63c2c3a9d463b100218867c5fc08b995f5c93162844f7266"
+    },
+    "checkpoints/few_nfe.ckpt": {
+      "bytes": 195646254,
+      "sha256": "d3c6d0cccc1b81d1709ed090abd68961197ef7417a7c6ae67724835bf7bfa596"
+    },
+    "experiments/night_run/fresh_teacher/final.pt": {
+      "bytes": 978259214,
+      "sha256": "b5c09c58954352f71291a2c4421c5f542ac6abb392acda4074c1f118ab9c3a27"
+    },
+    "evaluate.py": {
+      "bytes": 5578,
+      "sha256": "f201320f3505ad478096313eedf657388a0c6aca4af456095509e13807228adb"
+    },
+    "dataset.py": {
+      "bytes": 5923,
+      "sha256": "47aea2b4ae6833198cbfa0801e0cc63fd5425dbe72bb77aec7f19a97ad90d063"
+    },
+    "download_dataset.py": {
+      "bytes": 3553,
+      "sha256": "e8e882dec2a83dcf5bdbfc1eb592df50948966a66d2a147ea87332652a8190a0"
+    },
+    "src/utils.py": {
+      "bytes": 1027,
+      "sha256": "f5a02c07d8ad190969468b5ef947f0037a6943deb98e7903cd193361f742988f"
+    },
+    "data/pokemon-generation-one-22k/train_split.txt": {
+      "bytes": 703371,
+      "sha256": "c4068bdec8c5994fa14887d3335e762dd6a4da1bc6394a6df7fae96d293138c0"
+    },
+    "data/pokemon-generation-one-22k/val_split.txt": {
+      "bytes": 153787,
+      "sha256": "6dfba46a82c1bb329287d6da0f87be1b3b71d26c217150bf681f37cce4264df0"
+    },
+    "data/pokemon-generation-one-22k/category_to_id.json": {
+      "bytes": 2656,
+      "sha256": "7c27ec2a15fa4f70b5729319d596d3a80bc528cdeeb02f36b88877a6545b77e8"
+    },
+    "data/development/seed42_holdout5/train.txt": {
+      "bytes": 671861,
+      "sha256": "99e2aef7b68f4792ce1440c1196dd948310fdd7fc6479068595c96a30558b24e"
+    },
+    "data/development/seed42_holdout5/holdout.txt": {
+      "bytes": 31510,
+      "sha256": "a9b672630e28c4dea5fd922a22a1e11dc78155e4c96e88d4bca90bb3ce920a09"
+    },
+    "experiments/night_run/dmd_reproduce.py": {
+      "bytes": 15509,
+      "sha256": "27f44ddccb02cbd9ebca69bfbe94863908efebc8b2ac6348968edb4246248769"
+    },
+    "experiments/night_run/reference_manifest.json": {
+      "bytes": 141955,
+      "sha256": "a833ea989bab29e1751805f23d8b855c03add77ceb5d99f8eaf4250cb7b16e65"
+    },
+    "experiments/night_run/audit_results.json": {
+      "bytes": 1230,
+      "sha256": "1e7442a02be3ac081f4c0f461d55362518744a766c7d73ce9ea8548a3750bc0d"
+    }
+  },
+  "source_checkpoint_copy_sha256": "acc99889d73d905c1c31da57e1f2434b396a6640dd854a96cfdf1b9cc07d708c",
+  "source_script_copy_sha256": "27f44ddccb02cbd9ebca69bfbe94863908efebc8b2ac6348968edb4246248769"
+}
