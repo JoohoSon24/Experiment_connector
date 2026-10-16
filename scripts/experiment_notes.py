@@ -9,6 +9,7 @@ import socket
 import subprocess
 import sys
 from run import ROOT, now, write_json
+from fid_report import normalize_metrics
 
 LIMIT = 1048576
 
@@ -73,7 +74,11 @@ def update_results():
         if meta['status'] != 'done' or re.search(r'^\| ' + re.escape(meta['id']) + r' \|', text, re.M):
             continue
         metrics = json.loads(meta_path.with_name('metrics.json').read_text())
-        summary = '; '.join(metric_summary(metrics)) or '핵심 수치 미확인'
+        prefix = metrics.get('reference_split', '')
+        summary = '; '.join(metric_summary(metrics, prefix + '.' if prefix else '')) or '핵심 수치 미확인'
+        settings = [f'{key}={metrics[key]}' for key in ('sampler', 'weights', 'guidance_scale', 'seed', 'reference_count') if key in metrics]
+        if settings:
+            summary += '; ' + '; '.join(settings)
         conclusion = meta.get('conclusion') or ('소급 기록; 원본 측정값 보존, 인과 결론 미확인' if meta.get('backfilled')
                                              else '실행 완료; 가설의 성립 여부는 리뷰 필요')
         text += '| ' + ' | '.join(map(cell, [meta['id'], meta.get('parent_id'), meta.get('hypothesis'), summary, conclusion])) + ' |\n'
@@ -201,7 +206,7 @@ def backfill():
             meta = dict.fromkeys(FIELDS)
             # A completed evaluation does not imply its parent training completed.
             training = (path.parent / 'final.pt').exists()
-            evaluation = any('fid' in k.lower() for k in metrics)
+            evaluation = isinstance(metrics.get('fid'), (int, float)) and not isinstance(metrics.get('fid'), bool)
             meta.update(id=ident, backfilled=True, source_path=relative,
                         record_type='evaluation' if evaluation else 'training_snapshot',
                         status='done' if evaluation or training else None,
@@ -221,7 +226,7 @@ def backfill():
                 metrics = {'development': metrics, 'official': json.loads(official.read_text())}
                 meta['official_source_path'] = str(official.relative_to(ROOT))
                 write_json(directory / 'meta.json', meta)
-            write_json(directory / 'metrics.json', metrics)
+            write_json(directory / 'metrics.json', normalize_metrics(metrics))
             created.append(ident)
     print(json.dumps({'backfilled': created, 'count': len(created)}))
 

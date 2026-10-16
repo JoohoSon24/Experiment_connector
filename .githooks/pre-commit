@@ -1,0 +1,3 @@
+#!/bin/sh
+# Validate staged blobs, preserving grandfathered, unchanged tracked assets.
+exec python3 scripts/check_staged_artifacts.py

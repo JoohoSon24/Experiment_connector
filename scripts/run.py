@@ -12,6 +12,7 @@ import socket
 import subprocess
 import sys
 import traceback
+from fid_report import normalize_metrics
 from datetime import datetime, timezone
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -111,18 +112,18 @@ def run(args):
         signal.signal(sig, interrupted)
     write_json(run_dir / 'meta.json', meta)
     try:
-        probe = subprocess.run(['nvidia-smi', '--query-gpu=index,name,uuid', '--format=csv,noheader'],
-                               capture_output=True, text=True, timeout=10)
-        meta['gpu'] = probe.stdout.strip() if probe.returncode == 0 else None
-    except (OSError, subprocess.TimeoutExpired):
-        pass
-    try:
+        try:
+            probe = subprocess.run(['nvidia-smi', '--query-gpu=index,name,uuid', '--format=csv,noheader'],
+                                   capture_output=True, text=True, timeout=10)
+            meta['gpu'] = probe.stdout.strip() if probe.returncode == 0 else None
+        except (OSError, subprocess.TimeoutExpired):
+            pass
         for source, contents in spec.get('snapshots', {}).items():
             destination = run_dir / 'ckpt' / 'configs' / source
             if not destination.resolve().is_relative_to((run_dir / 'ckpt').resolve()):
                 raise ValueError('Snapshot path escapes run')
             destination.parent.mkdir(parents=True, exist_ok=True)
-            destination.write_text(contents)
+            destination.write_text(contents.replace('{run_dir}', str(run_dir)).replace('{id}', ident))
         environment = dict(os.environ, EXP_RUN_DIR=str(run_dir),
                            EXP_METRICS_PATH=str(run_dir / 'logs' / 'final_metrics.json'),
                            EXP_SEED=str(spec.get('seed', 42)))
@@ -134,14 +135,15 @@ def run(args):
             code = child.wait()
         meta['exit_code'] = code
         if code:
-            raise RuntimeError(f'Command exited {code}; see runs/{ident}/logs/console.log')
+            tail = (run_dir / 'logs' / 'console.log').read_text(errors='replace').splitlines()[-5:]
+            raise RuntimeError(f'Command exited {code}: ' + ' | '.join(tail)[-1500:])
         source = Path(spec.get('metrics_source', str(run_dir / 'logs' / 'final_metrics.json')).format_map(mapping))
         if not source.is_absolute():
             source = ROOT / source
         metrics = json.loads(source.read_text())
         if not isinstance(metrics, dict) or not metrics:
             raise ValueError('Final metrics must be a nonempty JSON object')
-        write_json(run_dir / 'metrics.json', metrics)
+        write_json(run_dir / 'metrics.json', normalize_metrics(metrics))
         meta['status'] = 'done'
     except BaseException as exc:
         if child and child.poll() is None:
@@ -152,7 +154,7 @@ def run(args):
                 os.killpg(child.pid, signal.SIGKILL)
                 child.wait()
         meta.update(status='failed', error_summary=f'{type(exc).__name__}: {exc}'[:2000])
-        write_json(run_dir / 'metrics.json', {'error_summary': meta['error_summary']})
+        write_json(run_dir / 'metrics.json', {'official_fid': None, 'valid_fid': None, 'error_summary': meta['error_summary']})
         (run_dir / 'logs' / 'error.txt').write_text(traceback.format_exc())
         raise
     finally:

@@ -36,4 +36,6 @@
 - 반영 완료 시 status: done, resolution: exp-XXX 또는 설명.
 - /start의 프로세스 사망 판정은 failed 후보로만 보고하며 자동으로 원본 meta를 변경하지 않는다.
 
-사용법과 metrics 연결은 docs/EXPERIMENT.md를 참조한다.
+새 metrics.json에는 official_fid와 valid_fid를 명시하며 미측정은 null로 둔다.
+FID 프로토콜 및 사용법은 docs/EXPERIMENT.md와 configs/fid_protocol_v1.json을 참조한다.
+로컬 clone에서는 `git config core.hooksPath .githooks`로 커밋 크기 검사와 origin push 차단을 활성화한다.
