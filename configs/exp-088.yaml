@@ -1,0 +1,15 @@
+{
+  "parent_id": null,
+  "hypothesis": "기존 U-Net에서 CPU optimizer 1 step과 실험 메타데이터 자동 기록이 정상 동작한다",
+  "seed": 42,
+  "command": [
+    "{python}",
+    "-m",
+    "scripts.experiment_smoke"
+  ],
+  "record_type": "infrastructure_smoke",
+  "data": "synthetic",
+  "decision": "인프라 검증만 허용; 연구 FID/GPU 예산 검증 아님",
+  "id": "exp-088",
+  "snapshots": {}
+}
