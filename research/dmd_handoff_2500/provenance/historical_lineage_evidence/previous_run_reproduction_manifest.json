@@ -1,0 +1,56 @@
+{
+  "created_at_utc": "2026-10-07T07:22:36Z",
+  "source_sha256": {
+    "experiments/night_run/dmd_preserve_team.py": "32cd2510ef82e2512ce57fd1370d52f6e27d4df6974e5c0249fc6f80f8a355d5",
+    "model.py": "7f78c718bdbee8a00c783ed5d8be98f144edff405544b0ed0120050d256899e2",
+    "teacher/model.py": "6180f84fceccabf9164dda8a71cf5db29794ac700cf0e6b3e064131364adb9de",
+    "teacher/config.py": "7cb5df078b38aeb8a6fdb78c232167fa5c2dee982a1718deb1926c93f576cf31",
+    "teacher/utils.py": "4854bf81955d0b76c6022f7cba21b0425bd12da171878d6eab6fa2c6fb3948fc",
+    "teacher/cfg.py": "74ef535faba677a09f6fce384a4f02d7c3ad3ae4cb85362d4edfc7354c019f30",
+    "teacher/diffusion.py": "022413888e08ca0c5a1c954f8eee38455cccf237c78c3250c2f5367ec32fead4",
+    "distillation/core.py": "45c4cff601e442f01a42b7af5b19fd52474901c720c9cc76e60957d55441357b",
+    "distillation/submission.py": "112e835982873923c34fecd0dbb37ef58941c9cc3de6905021225e795c153498",
+    "consistency/submission.py": "47e0aa7b76118b691cbe8b6547bb9a83507190e68ee7b2d41487edcccb819fd2",
+    "evaluate.py": "f201320f3505ad478096313eedf657388a0c6aca4af456095509e13807228adb",
+    "dataset.py": "47aea2b4ae6833198cbfa0801e0cc63fd5425dbe72bb77aec7f19a97ad90d063",
+    "download_dataset.py": "e8e882dec2a83dcf5bdbfc1eb592df50948966a66d2a147ea87332652a8190a0",
+    "src/utils.py": "f5a02c07d8ad190969468b5ef947f0037a6943deb98e7903cd193361f742988f",
+    "experiments/night_run/dmd_preserve_team/config.json": "c5e418711f104f28b8b936e495606b4ef5ce4991fb2345527c856287c44d3ce9",
+    "experiments/night_run/dmd_preserve_team/input_checkpoint_hashes.json": "6085e2ef7aec757dd9ba5c5a9dfe12e749e0a45026633129474ce42bd41b6634",
+    "experiments/night_run/dmd_preserve_team/fake_score_warmup.json": "1ba353b5f9c5fb6f376be6eb86e69d77d54fef49d3c10f90fe64638241dbf048"
+  },
+  "real_score_checkpoint": "experiments/night_run/fresh_teacher/final.pt",
+  "real_score_checkpoint_sha256": "b5c09c58954352f71291a2c4421c5f542ac6abb392acda4074c1f118ab9c3a27",
+  "original_input_checkpoint_hashes": {
+    "one_nfe": "8173c059ca3dda5d63c2c3a9d463b100218867c5fc08b995f5c93162844f7266",
+    "few_nfe": "d3c6d0cccc1b81d1709ed090abd68961197ef7417a7c6ae67724835bf7bfa596"
+  },
+  "versions": {
+    "torch": "2.6.0+cu124",
+    "torchvision": "0.21.0+cu124",
+    "clean-fid": "0.1.35",
+    "numpy": "2.2.6",
+    "scipy": "1.15.3",
+    "Pillow": "12.3.0"
+  },
+  "independent_training_reproduction_status": "not yet executed",
+  "selection_snapshot": {
+    "name": "dmd_002500",
+    "step": 2500,
+    "fid": 55.557974634094535,
+    "reference_kind": "development_reference_team_documented_holdout",
+    "reference_count": 755,
+    "sample_count": 3020,
+    "seed": 42,
+    "batch_size": 16,
+    "precision": "bf16",
+    "parameter_count": 48883107,
+    "nfe": 1,
+    "measured_batch_backbone_calls": 189,
+    "peak_vram_bytes": 4522762752,
+    "training_seconds": 3503.1378878519754,
+    "selected_source": "experiments/night_run/dmd_preserve_team/dmd_step_002500.ckpt",
+    "export": "experiments/night_run/dmd_preserve_team/selected_at_2500_one_nfe.ckpt",
+    "user_scope": "stop at2500; no5K/10K extension"
+  }
+}

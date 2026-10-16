@@ -1,0 +1,17 @@
+{
+  "stage": "n4",
+  "step": 25000,
+  "nfe": 4,
+  "fid": 36.03177398063798,
+  "development_fid": 48.66472995141737,
+  "reference_split": "official",
+  "reference_count": 3020,
+  "sample_count": 3020,
+  "seed": 42,
+  "batch_size": 16,
+  "precision": "bf16",
+  "weights": "EMA",
+  "source_generated": "/root/Diffusion/recipe_distill_dmd/experiments/recipe/n4/eval_025000/generated",
+  "checkpoint": "/root/Diffusion/recipe_distill_dmd/experiments/recipe/n4/final.pt",
+  "note": "Reporting only; no checkpoint selected on official FID"
+}

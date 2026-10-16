@@ -1,0 +1,7 @@
+{
+  "phase": "completed",
+  "runs": {
+    "endpoint01": "https://wandb.ai/fv2z6n929c-kaist-digital-humanities-and-social-sciences-/pokemon-diffusion/runs/5201ed7f",
+    "endpoint00": "https://wandb.ai/fv2z6n929c-kaist-digital-humanities-and-social-sciences-/pokemon-diffusion/runs/ab9851c8"
+  }
+}

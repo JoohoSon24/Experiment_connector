@@ -1,0 +1,13 @@
+{
+  "status": "PASS",
+  "evidence_kind": "new audit of historical measured training records; no retraining",
+  "warmup_peak_allocated_bytes": 3691061760,
+  "main_peak_allocated_bytes": 4522762752,
+  "asserted_limit_bytes": 20000000000,
+  "training_log_rows": 10000,
+  "steps_contiguous_1_to_10000": true,
+  "all_log_numeric_values_finite": true,
+  "console_bytes": 181976,
+  "console_newline_count": 534,
+  "elapsed_seconds_includes_warmup_and_prior_evaluations": true
+}

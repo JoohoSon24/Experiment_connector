@@ -1,0 +1,18 @@
+{
+  "protected_upstream_files_byte_identical": [
+    "dataset.py",
+    "download_dataset.py",
+    "evaluate.py",
+    "src/__init__.py",
+    "src/utils.py",
+    "requirements.txt",
+    "data/pokemon-generation-one-22k/category_to_id.json",
+    "data/pokemon-generation-one-22k/train_split.txt",
+    "data/pokemon-generation-one-22k/val_split.txt"
+  ],
+  "base_Model_AST_identical": true,
+  "copied_file_hashes_verified": 719,
+  "python_compileall": "passed",
+  "weights_data_venv_service_state": "excluded",
+  "snapshot_branch": "research/teacher-distillation-dmd-20261012"
+}

@@ -1,0 +1,73 @@
+{
+  "results": {
+    "guidance": {
+      "stage": "guidance",
+      "step": 50000,
+      "nfe": 32,
+      "fid": 24.464470011970434,
+      "development_fid": 42.613874268640814,
+      "reference_split": "official",
+      "reference_count": 3020,
+      "sample_count": 3020,
+      "seed": 42,
+      "batch_size": 16,
+      "precision": "bf16",
+      "weights": "EMA",
+      "source_generated": "/root/Diffusion/recipe_distill_dmd/experiments/recipe/guidance/eval_050000/generated",
+      "checkpoint": "/root/Diffusion/recipe_distill_dmd/experiments/recipe/guidance/final.pt",
+      "note": "Reporting only; no checkpoint selected on official FID"
+    },
+    "n16": {
+      "stage": "n16",
+      "step": 25000,
+      "nfe": 16,
+      "fid": 26.894868885254596,
+      "development_fid": 44.25381514767918,
+      "reference_split": "official",
+      "reference_count": 3020,
+      "sample_count": 3020,
+      "seed": 42,
+      "batch_size": 16,
+      "precision": "bf16",
+      "weights": "EMA",
+      "source_generated": "/root/Diffusion/recipe_distill_dmd/experiments/recipe/n16/eval_025000/generated",
+      "checkpoint": "/root/Diffusion/recipe_distill_dmd/experiments/recipe/n16/final.pt",
+      "note": "Reporting only; no checkpoint selected on official FID"
+    },
+    "n8": {
+      "stage": "n8",
+      "step": 25000,
+      "nfe": 8,
+      "fid": 29.84722948443971,
+      "development_fid": 45.81403252742416,
+      "reference_split": "official",
+      "reference_count": 3020,
+      "sample_count": 3020,
+      "seed": 42,
+      "batch_size": 16,
+      "precision": "bf16",
+      "weights": "EMA",
+      "source_generated": "/root/Diffusion/recipe_distill_dmd/experiments/recipe/n8/eval_025000/generated",
+      "checkpoint": "/root/Diffusion/recipe_distill_dmd/experiments/recipe/n8/final.pt",
+      "note": "Reporting only; no checkpoint selected on official FID"
+    },
+    "n4": {
+      "stage": "n4",
+      "step": 25000,
+      "nfe": 4,
+      "fid": 36.03177398063798,
+      "development_fid": 48.66472995141737,
+      "reference_split": "official",
+      "reference_count": 3020,
+      "sample_count": 3020,
+      "seed": 42,
+      "batch_size": 16,
+      "precision": "bf16",
+      "weights": "EMA",
+      "source_generated": "/root/Diffusion/recipe_distill_dmd/experiments/recipe/n4/eval_025000/generated",
+      "checkpoint": "/root/Diffusion/recipe_distill_dmd/experiments/recipe/n4/final.pt",
+      "note": "Reporting only; no checkpoint selected on official FID"
+    }
+  },
+  "wandb": "https://wandb.ai/fv2z6n929c-kaist-digital-humanities-and-social-sciences-/pokemon-diffusion/runs/07hhndrr"
+}

@@ -1,0 +1,26 @@
+{
+  "status": "PASS",
+  "reviewed_documents": [
+    "README.md",
+    "METHOD.md",
+    "PROVENANCE.md",
+    "INPUTS.md",
+    "reproduction/RETRAIN_GUIDE.md"
+  ],
+  "reviewed_claims": [
+    "selected checkpoint is current acc998 hash and EMA step2500",
+    "G starts from team 1-NFE",
+    "team 4-NFE is endpoint only",
+    "fresh independent lineage supplies real and fake init",
+    "fake updated on current G",
+    "inference only one generator checkpoint and no CFG",
+    "development selection with team-ancestry caveat",
+    "official scores evidence-qualified and separate",
+    "4-NFE latent rationale retrospective",
+    "archived config is output snapshot; source script exact",
+    "lightweight excludes three input weights and latest",
+    "historical report discrepancies annotated without modifying it"
+  ],
+  "historical_documents_exempt_from_rewriting": "See provenance/historical_caveats.md",
+  "authored_relative_links_checked": true
+}

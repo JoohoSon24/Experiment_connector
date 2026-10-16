@@ -1,0 +1,30 @@
+{
+  "checks": {
+    "dev_train_subset_original_train": true,
+    "dev_holdout_subset_original_train": true,
+    "dev_train_holdout_disjoint": true,
+    "dev_holdout_validation_disjoint": true,
+    "original_train_validation_disjoint": true,
+    "dev_union_equals_original_train": true,
+    "no_duplicate_original_train": true,
+    "no_duplicate_dev_train": true,
+    "no_duplicate_holdout": true
+  },
+  "counts": {
+    "original_train": 17079,
+    "development_train": 16324,
+    "development_holdout": 755,
+    "official_validation": 3020
+  },
+  "protected_sha256": {
+    "evaluate.py": "f201320f3505ad478096313eedf657388a0c6aca4af456095509e13807228adb",
+    "dataset.py": "47aea2b4ae6833198cbfa0801e0cc63fd5425dbe72bb77aec7f19a97ad90d063",
+    "download_dataset.py": "e8e882dec2a83dcf5bdbfc1eb592df50948966a66d2a147ea87332652a8190a0",
+    "src/utils.py": "f5a02c07d8ad190969468b5ef947f0037a6943deb98e7903cd193361f742988f"
+  },
+  "checkpoint_sha256": {
+    "one_nfe": "8173c059ca3dda5d63c2c3a9d463b100218867c5fc08b995f5c93162844f7266",
+    "few_nfe": "d3c6d0cccc1b81d1709ed090abd68961197ef7417a7c6ae67724835bf7bfa596"
+  },
+  "note": "Recreated locally in /root/DMD; split-text audit only. No images or model weights modified."
+}

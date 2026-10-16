@@ -1,0 +1,17 @@
+{
+  "stage": "n8",
+  "step": 25000,
+  "nfe": 8,
+  "fid": 29.84722948443971,
+  "development_fid": 45.81403252742416,
+  "reference_split": "official",
+  "reference_count": 3020,
+  "sample_count": 3020,
+  "seed": 42,
+  "batch_size": 16,
+  "precision": "bf16",
+  "weights": "EMA",
+  "source_generated": "/root/Diffusion/recipe_distill_dmd/experiments/recipe/n8/eval_025000/generated",
+  "checkpoint": "/root/Diffusion/recipe_distill_dmd/experiments/recipe/n8/final.pt",
+  "note": "Reporting only; no checkpoint selected on official FID"
+}

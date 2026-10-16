@@ -1,0 +1,23 @@
+{
+  "status": "PASS",
+  "sampling_times": [
+    999,
+    741,
+    483,
+    226
+  ],
+  "batches": [
+    {
+      "batch": 1,
+      "backbone_forwards": 4,
+      "finite": true
+    },
+    {
+      "batch": 2,
+      "backbone_forwards": 4,
+      "finite": true
+    }
+  ],
+  "input_sha256": "d3c6d0cccc1b81d1709ed090abd68961197ef7417a7c6ae67724835bf7bfa596",
+  "evidence_kind": "new GPU measurement of external endpoint input"
+}

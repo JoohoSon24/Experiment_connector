@@ -1,0 +1,64 @@
+{
+  "evidence_kind": "Tool execution-view differences, not changes to source artifacts",
+  "unsandboxed_comparison": {
+    "status": "FAIL",
+    "source_root": "/root/DMD",
+    "captured_at": "2026-10-09T06:22:47.996908+00:00",
+    "entries_before": 36356,
+    "entries_after": 36353,
+    "regular_files_compared": 36145,
+    "bytes_hashed": 5092174578,
+    "added": [],
+    "removed": [
+      ".agents",
+      ".aws",
+      ".codex"
+    ],
+    "changed": [],
+    "errors": [],
+    "git_status_before": " M model.py\n?? .gitignore\n?? CODEX.md\n?? OVERLAY_MANIFEST.json\n?? PROJECT_SPEC.md\n?? TEAM_HANDOFF.md\n?? configs/\n?? consistency/\n?? constraints/\n?? data/development/\n?? distillation/\n?? docs/\n?? scripts/\n?? teacher/\n",
+    "git_status_after": " M model.py\n?? .gitignore\n?? CODEX.md\n?? OVERLAY_MANIFEST.json\n?? PROJECT_SPEC.md\n?? TEAM_HANDOFF.md\n?? configs/\n?? consistency/\n?? constraints/\n?? data/development/\n?? distillation/\n?? docs/\n?? scripts/\n?? teacher/\n",
+    "git_commit": "e3f5120000cd91037017d86f23993492195101a5",
+    "comparison_fields": [
+      "type",
+      "mode",
+      "mtime_ns",
+      "bytes",
+      "sha256",
+      "symlink target"
+    ],
+    "atime_excluded": true
+  },
+  "sandboxed_comparison": {
+    "status": "FAIL",
+    "source_root": "/root/DMD",
+    "captured_at": "2026-10-09T06:23:30.227829+00:00",
+    "comparison_view": "Both snapshots taken inside the same filesystem sandbox",
+    "entries_before": 36356,
+    "entries_after": 36356,
+    "regular_files_compared": 36145,
+    "bytes_hashed": 5092174578,
+    "added": [],
+    "removed": [],
+    "changed": [
+      ".agents",
+      ".aws",
+      ".codex"
+    ],
+    "errors": [],
+    "git_status_before": " M model.py\n?? .gitignore\n?? CODEX.md\n?? OVERLAY_MANIFEST.json\n?? PROJECT_SPEC.md\n?? TEAM_HANDOFF.md\n?? configs/\n?? consistency/\n?? constraints/\n?? data/development/\n?? distillation/\n?? docs/\n?? scripts/\n?? teacher/\n",
+    "git_status_after": " M model.py\n?? .gitignore\n?? CODEX.md\n?? OVERLAY_MANIFEST.json\n?? PROJECT_SPEC.md\n?? TEAM_HANDOFF.md\n?? configs/\n?? consistency/\n?? constraints/\n?? data/development/\n?? distillation/\n?? docs/\n?? scripts/\n?? teacher/\n",
+    "git_commit": "e3f5120000cd91037017d86f23993492195101a5",
+    "comparison_fields": [
+      "type",
+      "mode",
+      "mtime_ns",
+      "bytes",
+      "sha256",
+      "symlink target"
+    ],
+    "atime_excluded": true,
+    "preliminary_view_difference": "Unsandboxed scan omits three sandbox-only empty virtual directories .agents, .aws, .codex; regular files already matched. Same-view full comparison used for the final conclusion."
+  },
+  "explanation": "Filesystem sandbox supplies empty read-only .agents/.aws/.codex placeholders; they are absent from host view and have regenerated mtimes in sandbox view. Both comparisons independently match every regular file. No file content is omitted."
+}

@@ -1,0 +1,57 @@
+{
+  "step": 2,
+  "stage": "n4",
+  "nfe": 4,
+  "parameter_count": 48883107,
+  "last_loss": 0.012426300905644894,
+  "peak_vram_bytes": 2264362496,
+  "elapsed_seconds": 1.0206670459592715,
+  "teacher_checkpoint": "/root/Diffusion/recipe_distill_dmd/experiments/recipe/n8/final.pt",
+  "prediction_type": "v",
+  "lr": 0.0002,
+  "learning_rate_schedule": "constant",
+  "training_images": 16324,
+  "train_paths_sha256": "b4020d6dc65948c7cd2a0de048382284d0fc7a1dd19237583e4f67cc2d353f51",
+  "settings": {
+    "method": "fixed_cfg_then_progressive",
+    "guidance_scale": 2.0,
+    "initial_steps": 32,
+    "guidance_updates": 50000,
+    "progressive_updates": 10000,
+    "student_steps": [
+      16,
+      8,
+      4,
+      2,
+      1
+    ],
+    "batch_size": 8,
+    "num_workers": 0,
+    "learning_rate": 0.0002,
+    "ema_decay": 0.999,
+    "grad_clip": 1.0,
+    "seed": 42,
+    "prediction_type": "v",
+    "loss_weighting": "truncated_snr",
+    "amp_dtype": "bf16",
+    "log_interval": 20,
+    "save_interval": 500,
+    "sample_interval": 1000,
+    "guidance_gate_max_fid_increase": 15.0,
+    "teacher_candidates": [
+      "experiments/teacher_b64_fliponly_constant_100k",
+      "experiments/teacher_b64_noaug_constant_100k"
+    ],
+    "output_dir": "experiments/n4_followup",
+    "learning_rate_schedule": "constant",
+    "warmup_steps": 0,
+    "evaluation_steps": [
+      2500,
+      5000,
+      10000
+    ],
+    "initial_student_checkpoint": "/root/Diffusion/recipe_distill_dmd/experiments/recipe/n4/final.pt",
+    "milestone_steps": [],
+    "target_ratio": 2
+  }
+}

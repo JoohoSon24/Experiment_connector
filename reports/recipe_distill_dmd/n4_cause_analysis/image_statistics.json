@@ -1,0 +1,12 @@
+{
+  "legacy": {
+    "mean_adjacent_pixel_difference": 0.0453844852745533,
+    "fraction_near0_or1": 0.07320998572882176,
+    "within_class_pixel_variance": 0.09253793954849243
+  },
+  "new": {
+    "mean_adjacent_pixel_difference": 0.04216029495000839,
+    "fraction_near0_or1": 0.046714395350441494,
+    "within_class_pixel_variance": 0.08375255018472672
+  }
+}

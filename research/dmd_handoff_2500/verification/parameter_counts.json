@@ -1,0 +1,12 @@
+{
+  "evidence_kind": "new loads of input and selected models",
+  "counts": {
+    "one_nfe": 48883107,
+    "few_nfe": 48883107,
+    "real_score": 48883107,
+    "fake_score_initialization": 48883107,
+    "selected_2500": 48883107
+  },
+  "fake_count_basis": "deepcopy of real with identical parameter topology",
+  "official_limit": 100000000
+}
