@@ -1,0 +1,20 @@
+{
+  "id": "exp-036",
+  "parent_id": null,
+  "hypothesis": null,
+  "config_path": null,
+  "git_commit": null,
+  "git_dirty": null,
+  "seed": 42,
+  "gpu": null,
+  "host": null,
+  "command": null,
+  "started_at": null,
+  "finished_at": null,
+  "status": "done",
+  "backfilled": true,
+  "source_path": "experiments/teacher_4head150k_followup/official_report/control_lr2e4_160000/metrics.json",
+  "record_type": "evaluation",
+  "error_summary": null,
+  "evidence": "FID measurement exists"
+}

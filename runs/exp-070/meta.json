@@ -1,0 +1,20 @@
+{
+  "id": "exp-070",
+  "parent_id": null,
+  "hypothesis": null,
+  "config_path": "configs/exp-070.yaml",
+  "git_commit": "e3f5120000cd91037017d86f23993492195101a5",
+  "git_dirty": null,
+  "seed": 42,
+  "gpu": null,
+  "host": null,
+  "command": null,
+  "started_at": null,
+  "finished_at": null,
+  "status": "done",
+  "backfilled": true,
+  "source_path": "experiments/teacher_variant_sequence/attention4/attention4_100k/metrics.json",
+  "record_type": "evaluation",
+  "error_summary": null,
+  "evidence": "FID measurement exists"
+}

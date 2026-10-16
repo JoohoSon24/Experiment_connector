@@ -1,0 +1,20 @@
+{
+  "id": "exp-045",
+  "parent_id": null,
+  "hypothesis": null,
+  "config_path": null,
+  "git_commit": null,
+  "git_dirty": null,
+  "seed": 42,
+  "gpu": null,
+  "host": null,
+  "command": null,
+  "started_at": null,
+  "finished_at": null,
+  "status": "done",
+  "backfilled": true,
+  "source_path": "experiments/teacher_budget_noaug_fresh_200k/evaluation/official_step_200000/ddim32_cfg2/metrics.json",
+  "record_type": "evaluation",
+  "error_summary": null,
+  "evidence": "FID measurement exists"
+}
