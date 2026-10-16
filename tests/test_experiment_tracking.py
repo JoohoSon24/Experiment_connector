@@ -125,6 +125,17 @@ class WorkflowTests(unittest.TestCase):
         with self.assertRaisesRegex(RuntimeError, 'immutable'):
             notes.stage_notes()
 
+    def test_commit_guard_rejects_weights_and_large_blobs(self):
+        guard = str(SOURCE / 'scripts/check_staged_artifacts.py')
+        (self.root / 'model.pt').write_bytes(b'weight')
+        self.command('git', 'add', 'model.pt')
+        self.assertNotEqual(self.command(sys.executable, guard, ok=False).returncode, 0)
+        # Clear only this disposable test's index by committing through git without hooks.
+        self.command('git', 'commit', '-m', 'test fixture weight')
+        (self.root / 'large.bin').write_bytes(b'x' * 1048577)
+        self.command('git', 'add', 'large.bin')
+        self.assertNotEqual(self.command(sys.executable, guard, ok=False).returncode, 0)
+
     def test_explicit_fid_mapping_preserves_unknowns(self):
         spec = importlib.util.spec_from_file_location('fid_test', self.root / 'scripts/fid_report.py')
         module = importlib.util.module_from_spec(spec)

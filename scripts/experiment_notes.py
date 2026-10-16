@@ -55,7 +55,7 @@ def cell(value):
 def metric_summary(metrics, prefix=''):
     result = []
     for key, value in metrics.items():
-        name = f'{prefix}{key}'
+        name = key if key in ('official_fid', 'valid_fid') else f'{prefix}{key}'
         if isinstance(value, dict):
             result.extend(metric_summary(value, name + '.'))
         elif isinstance(value, (int, float)) and not isinstance(value, bool):
@@ -165,7 +165,7 @@ def report(updated):
     for _, meta in records():
         status = meta.get('status')
         counts[status] = counts.get(status, 0) + 1
-        detail = alive(meta) if status == 'running' else meta.get('error_summary', '')
+        detail = alive(meta) if status == 'running' else (meta.get('error_summary') or '')
         if status == 'done' and not re.search(r'^\| ' + re.escape(meta['id']) + r' \|', results, re.M):
             detail = 'RESULTS 미반영'
         print(f"- {meta['id']} {status}: {detail}")
