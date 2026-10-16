@@ -16,3 +16,6 @@
 - JSON 문법 YAML만 자동 생성/파싱한다. 임의의 일반 YAML 문법은 지원하지 않는다.
 - 번호 할당은 동일 서버 git lock으로 직렬화된다. 여러 서버에서 동시 할당하는 것은 지원하지 않는다.
 - 재현에는 외부 원본 이미지와 체크포인트가 별도로 필요하다. git에는 작은 manifest/metrics만 저장한다.
+- 미확인: 고정 FID v1의 .npz reference stats는 아직 생성되지 않았다. 기존 코드는 PNG 디렉터리에서 즉석 계산한다.
+  새 캐시 래퍼의 실데이터 점수 동등성은 GPU 복구 후 기존 compute_fid와 비교해야 한다.
+- valid_fid 명칭은 기존 development(755장 train holdout) 기준으로 매핑했다. official은 3,020장 validation이다.

@@ -1,0 +1,37 @@
+{
+  "id": "teacher-ddim32-cfg2-seed42-clean-v1",
+  "implementation": "clean-fid",
+  "implementation_version": "0.1.35",
+  "mode": "clean",
+  "feature_extractor": "inception_v3",
+  "sample_count": 3020,
+  "samples_per_class": 20,
+  "num_classes": 151,
+  "image_size": 64,
+  "batch_size": 16,
+  "num_workers": 4,
+  "sampler": "ddim",
+  "steps": 32,
+  "guidance_scale": 2.0,
+  "nfe_per_sample": 64,
+  "seed": 42,
+  "seed_policy": "base seed + sequential generation batch index",
+  "precision": "bf16",
+  "clip_denoised": true,
+  "reference": {
+    "official": {
+      "reference_count": 3020,
+      "manifest_path": "data/pokemon-generation-one-22k/val_split.txt",
+      "manifest_sha256": "6dfba46a82c1bb329287d6da0f87be1b3b71d26c217150bf681f37cce4264df0",
+      "reference_dir": "results/reference",
+      "stats_path": "results/reference_stats/official_3020_clean_inception_v3_v1.npz"
+    },
+    "valid": {
+      "reference_count": 755,
+      "manifest_path": "data/development/seed42_holdout5/holdout.txt",
+      "reference_dir": "data/development/seed42_holdout5/reference",
+      "stats_path": "results/reference_stats/valid_755_seed42_clean_inception_v3_v1.npz",
+      "manifest_sha256": "a9b672630e28c4dea5fd922a22a1e11dc78155e4c96e88d4bca90bb3ce920a09"
+    }
+  }
+}

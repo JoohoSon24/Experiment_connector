@@ -14,7 +14,7 @@
   "status": "done",
   "backfilled": true,
   "source_path": "experiments/teacher_4head150k_followup/lr_comparison/finetune_lr1e4/finetune_lr1e4_155k/metrics.json",
-  "record_type": "evaluation",
+  "record_type": "training_snapshot",
   "error_summary": null,
-  "evidence": "FID measurement exists"
+  "evidence": "final.pt exists"
 }

@@ -14,7 +14,7 @@
   "status": "done",
   "backfilled": true,
   "source_path": "experiments/teacher_budget_noaug_fresh_200k/teacher_b64_noaug_fresh_150k/metrics.json",
-  "record_type": "evaluation",
+  "record_type": "training_snapshot",
   "error_summary": null,
-  "evidence": "FID measurement exists"
+  "evidence": "final.pt exists"
 }

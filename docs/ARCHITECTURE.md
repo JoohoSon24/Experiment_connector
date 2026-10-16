@@ -19,3 +19,6 @@
 
 상세 모델 설명은 기존 model_architecture.md와 대표 config, 실제 source snapshot을 함께 확인한다.
 research/ 아래는 festgen의 기존 별도 실험 스냅샷이며 현재 teacher 코드와 혼합하지 않는다.
+- scripts/fid_report.py와 configs/fid_protocol_v1.json: 생성 조건을 검사하고 같은 PNG에 대해
+  official_fid/valid_fid를 분리 기록한다. reference stats는 git 밖 고정 경로에 캐시하며
+  manifest/이미지 fingerprint 불일치 시 재사용을 거절한다. 기존 보호 evaluator는 변경하지 않는다.

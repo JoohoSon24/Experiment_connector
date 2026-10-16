@@ -1,0 +1,24 @@
+{
+  "id": "exp-088",
+  "parent_id": null,
+  "hypothesis": "기존 U-Net에서 CPU optimizer 1 step과 실험 메타데이터 자동 기록이 정상 동작한다",
+  "config_path": "configs/exp-088.yaml",
+  "git_commit": "e4126da91899ee3db1b6ab095fe7f459b2b924dc",
+  "git_dirty": false,
+  "seed": 42,
+  "gpu": null,
+  "host": "cs30708a-52",
+  "command": [
+    "/root/Diffusion/workspace_distillation/.venv/bin/python",
+    "-m",
+    "scripts.experiment_smoke"
+  ],
+  "started_at": "2026-10-16T13:16:22.619014+00:00",
+  "finished_at": "2026-10-16T13:16:27.314676+00:00",
+  "status": "done",
+  "pid": 2,
+  "process_start": "1562424",
+  "config_sha256": "e226770f7777c29538b71020370a100b2bbb608a7e19cef61f22a47564426494",
+  "child_pid": 19,
+  "exit_code": 0
+}

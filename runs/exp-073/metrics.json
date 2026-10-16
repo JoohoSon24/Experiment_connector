@@ -53,5 +53,7 @@
     "batch_size": 32,
     "parameters": 48883107,
     "measurement": "official validation FID from the exact saved 3020 generated samples used in the paired development evaluation; report-only, not used for checkpoint selection"
-  }
+  },
+  "official_fid": 26.026345976448,
+  "valid_fid": 42.92467967451216
 }

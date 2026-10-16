@@ -183,5 +183,7 @@
   "last_loss": 0.9980449080467224,
   "elapsed_seconds": 2.23,
   "images_seen": 64,
-  "updated_at_utc": "2026-10-08T12:35:08.487684+00:00"
+  "updated_at_utc": "2026-10-08T12:35:08.487684+00:00",
+  "official_fid": null,
+  "valid_fid": null
 }
