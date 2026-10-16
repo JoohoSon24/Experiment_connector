@@ -8,8 +8,10 @@
 - 모든 metrics.json에 official_fid/valid_fid. 미측정은 null. valid는 development holdout 755장.
 - unit/integration 검증 9개 통과. 코드 compile 통과. sync/start --local 통과.
 - GPU: nvidia-smi 드라이버 통신 오류. 실제 FID/stats 캐시 생성은 수행하지 않음.
-- 실제 sync는 SSH Permission denied(publickey)로 pull 단계에서 중단. 실제 push 미완료.
-- 남은 작업: FestGen deploy key를 Allow write access로 등록 → SSH 확인 → sync 및 start 실제 실행.
+- SSH 인증과 festgen/main pull --rebase는 성공. 실제 push는 deploy key 쓰기 권한 거절로 미완료.
+- SSH identity가 JoohoSon24/Experiment_connector로 표시됨. FestGen에 해당 공개키를 Allow write access로 등록해야 함.
+- 최초 rebase의 .gitignore 충돌은 기존 제외 규칙을 보존해 해결. 원래 실험 git_commit 조회를 위해 원본 커밋 ancestry를 보존하고 이후 --rebase=merges 사용.
+- 남은 작업: deploy key를 FestGen 저장소에 Allow write access로 등록 → sync push → start 실제 실행.
 - origin URL은 유지, push hook은 festgen/main만 허용.
 
 ## 파일 목록
