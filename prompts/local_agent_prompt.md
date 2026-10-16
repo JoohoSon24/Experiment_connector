@@ -5,7 +5,8 @@
 너의 역할은 **리뷰어**야. 실험을 돌리거나 프로젝트 코드를 고치지 않아.
 
 ## 입력 정보 (내가 채울 부분)
-- 프로젝트 git 레포 URL: `<REPO_URL>`
+- 프로젝트 git 레포 SSH 주소: `<REPO_SSH_URL>` (서버 에이전트가 push하는 레포와 같은 주소)
+- 브랜치: `main`
 - 서버 SSH 별칭: `lab` (~/.ssh/config에 등록되어 있음)
 - 서버 프로젝트 경로: `<SERVER_PATH>`
 
@@ -14,6 +15,8 @@
 lab-review/
 ├── CLAUDE.md
 ├── .claude/settings.json
+├── .claude/commands/start.md
+├── .last_start            # 마지막 /start 시점의 sync/ 커밋 해시
 ├── sync/                  # 프로젝트 레포 clone. 읽기 전용 (reviews/ 제외)
 ├── arch/
 │   ├── overview.mmd       # 데이터 → 전처리 → 모델 → loss → 평가
@@ -77,10 +80,9 @@ resolution:
 - 나는 리뷰어. 실험 실행, 프로젝트 코드 수정, 서버 접속 금지
 - sync/는 읽기만 한다. 쓰기는 reviews/와 이 워크스페이스 폴더에만
 
-## 세션 시작 시
-- scripts/sync.sh 실행 → 새 실험 확인
-- build_report.py 실행 → results_table.md 갱신
-- 서버가 처리한 reviews(status: done) 요약 보고
+## /start 명령
+- 내가 /start를 입력하면 .claude/commands/start.md 절차를 수행
+- 그 외에는 세션 시작 시 자동으로 sync하지 않음
 
 ## 검토 체크리스트
 - config와 docs/EXPERIMENT.md의 일치 여부
@@ -96,7 +98,24 @@ resolution:
 - 코드와 docs/ARCHITECTURE.md가 다르면 코드를 기준으로 그리고 차이를 reviews/에 기록
 ```
 
-## 6. 초기 작업
+## 6. /start 커스텀 명령
+`.claude/commands/start.md`를 만들어. 수행 순서:
+1. **새 실험 확인:** `scripts/sync.sh` 실행 → 지난 /start 이후 새로 생긴 exp-ID와 상태가 바뀐 실험 목록 확인 (마지막 확인 시점은 `.last_start`에 커밋 해시로 저장)
+2. **업데이트:**
+   - `build_report.py` 실행 → registry.csv, results_table.md, figures 갱신
+   - 새 실험마다 `experiments/exp-XXX/setup.md` 초안 작성 (부모 대비 config diff 포함)
+   - `sync/src`나 `docs/ARCHITECTURE.md`가 바뀌었으면 (`git diff <last>..HEAD`로 확인) arch/ 다이어그램 갱신
+3. **정리 및 검토:**
+   - 새 완료 실험의 `notes.md` 작성 (결과 해석, parent 대비 변화, 이상 징후)
+   - 검토 체크리스트 적용 → 문제가 있으면 reviews/에 초안 작성 (push는 하지 않음)
+   - 서버가 처리한 reviews(status: done) 확인
+4. 마지막에 "새 실험 / 갱신한 파일 / 주요 발견 / 서버가 처리한 리뷰 / push 대기 리뷰" 5개 항목으로 보고하고, push 대기 리뷰는 내 승인 후 push_review.sh 실행
+
+## 7. Git 연결
+- `ssh -T git@github.com`으로 GitHub 인증이 되는지 확인하고, 안 되면 SSH 키 생성과 등록 방법을 안내해 (등록은 내가 직접 함)
+- 인증되면 `<REPO_SSH_URL>`을 `sync/`로 clone
+
+## 8. 초기 작업
 구축이 끝나면 한 번 전체 흐름을 돌려줘.
 1. sync.sh로 레포 받기
 2. sync/src를 읽고 arch/ 다이어그램 3종 작성 (shape은 코드에서 추론 가능한 범위만, 추정치는 표시)
@@ -107,4 +126,5 @@ resolution:
 
 ## 완료 기준
 - 위 6단계가 오류 없이 끝남
+- 마지막으로 /start를 한 번 실행해 보고 형식이 정상인지 확인
 - 생성한 파일 목록, 발견한 주요 문제 3개 이내 요약, 내가 채워야 할 설정값 보고
