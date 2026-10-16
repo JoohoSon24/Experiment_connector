@@ -6,13 +6,14 @@
 - CPU 1 optimizer step: exp-088, loss=1.0427451133728027, parameters=45,427, git_dirty=false, done.
 - 원본 메타데이터 87건 소급 기록 + CPU smoke 1건 = 88건. 원본 파일은 이동/삭제하지 않음.
 - 모든 metrics.json에 official_fid/valid_fid. 미측정은 null. valid는 development holdout 755장.
-- unit/integration 검증 9개 통과. 코드 compile 통과. sync/start --local 통과.
+- unit/integration 검증 9개 통과. 코드 compile 통과. sync/start 로컬 검증 및 실제 원격 실행 모두 통과.
 - GPU: nvidia-smi 드라이버 통신 오류. 실제 FID/stats 캐시 생성은 수행하지 않음.
-- SSH 인증과 festgen/main pull --rebase는 성공. 실제 push는 deploy key 쓰기 권한 거절로 미완료.
-- SSH identity가 JoohoSon24/Experiment_connector로 표시됨. FestGen에 해당 공개키를 Allow write access로 등록해야 함.
+- 사용자 정정에 따라 업로드 대상은 JoohoSon24/Experiment_connector, main이다. 로컬 원격 이름 festgen은 호환을 위해 유지한다.
+- SSH deploy key 인증, pull --rebase, sync push, start 현황 보고가 실제 원격에서 모두 성공했다.
 - 최초 rebase의 .gitignore 충돌은 기존 제외 규칙을 보존해 해결. 원래 실험 git_commit 조회를 위해 원본 커밋 ancestry를 보존하고 이후 --rebase=merges 사용.
-- 남은 작업: deploy key를 FestGen 저장소에 Allow write access로 등록 → sync push → start 실제 실행.
-- origin URL은 유지, push hook은 festgen/main만 허용.
+- 구축 완료. 사용자 추가 인증 작업 없음. GPU 드라이버 문제와 reference stats 실측 검증은 별도 미확인 항목이다.
+- origin URL은 유지하고 push하지 않았다. push hook은 Experiment_connector를 가리키는 festgen/main만 허용한다.
+- Experiment_connector 기존 이력과 prompts 파일을 보존하여 merge했다. 기존 FastGen README와 Connector 템플릿 README는 docs/ 사본으로 보존했다.
 
 ## 파일 목록
 
@@ -236,3 +237,10 @@
 - `scripts/fid_report.py`
 - `scripts/run.py`
 - `tests/test_experiment_tracking.py`
+
+## 원격 전환으로 추가된 파일
+
+- `README.md`: 서버 연동 위치와 Codex 절차 안내.
+- `docs/FASTGEN_PROJECT_README.md`: 기존 프로젝트 README 보존본.
+- `docs/CONNECTOR_TEMPLATE_README.md`: 원격 템플릿 README 보존본.
+- `prompts/server_agent_prompt.md`, `prompts/local_agent_prompt.md`: 기존 원격 파일 그대로 유지.
