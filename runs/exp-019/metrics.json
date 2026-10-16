@@ -1,0 +1,57 @@
+{
+  "development": {
+    "checkpoint": "/root/Diffusion/workspace_distillation/experiments/teacher_4head150k_followup/lr_comparison/control_lr2e4/control_lr2e4_155k/final.pt",
+    "checkpoint_step": 155000,
+    "weights": "ema",
+    "reference_split": "development",
+    "seed": 42,
+    "batch_size": 16,
+    "precision": "bf16",
+    "steps": 32,
+    "guidance_scale": 2.0,
+    "sample_count": 3020,
+    "sampler": "ddim",
+    "clip_denoised": true,
+    "parameter_count": 48883107,
+    "fid": 41.74981873769855,
+    "submission_eligible": false,
+    "smoke": false,
+    "versions": {
+      "torch": "2.6.0+cu124",
+      "clean-fid": "0.1.35",
+      "scipy": "1.15.3",
+      "numpy": "2.2.6"
+    },
+    "nfe_per_sample": 64,
+    "reference_count": 755
+  },
+  "official": {
+    "checkpoint": "/root/Diffusion/workspace_distillation/experiments/teacher_4head150k_followup/lr_comparison/control_lr2e4/control_lr2e4_155k/final.pt",
+    "checkpoint_step": 155000,
+    "weights": "ema",
+    "seed": 42,
+    "precision": "bf16",
+    "steps": 32,
+    "guidance_scale": 2.0,
+    "sampler": "ddim",
+    "clip_denoised": true,
+    "parameter_count": 48883107,
+    "submission_eligible": false,
+    "smoke": false,
+    "versions": {
+      "torch": "2.6.0+cu124",
+      "clean-fid": "0.1.35",
+      "scipy": "1.15.3",
+      "numpy": "2.2.6"
+    },
+    "nfe_per_sample": 64,
+    "fid": 25.895919973368223,
+    "reference_split": "official",
+    "reference_count": 3020,
+    "sample_count": 3020,
+    "nfe": 64,
+    "batch_size": 32,
+    "parameters": 48883107,
+    "measurement": "official validation FID from the exact saved 3020 generated samples used in the paired development evaluation; report-only, not used for checkpoint selection"
+  }
+}
