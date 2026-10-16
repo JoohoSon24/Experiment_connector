@@ -1,510 +1,121 @@
-> **Teacher → CFG transfer → progressive distillation → DMD 연구 스냅샷**
->
-> 현재 코드 구조, Official FID 결과, 재현 환경과 예약 실험은 [GIT_SNAPSHOT.md](GIT_SNAPSHOT.md)에 정리했습니다.
-> 실행 중인 결과는 `reports/`에 저장 시점의 스냅샷으로 보존합니다.
+# Experiment Connector
 
-# FastGen: Fast Image Generation Challenge
+## 현재 서버 연동
 
-**Mid Evaluation Submission Due:** October 31 (Saturday) 23:59 KST  
-**Final Submission Due:** November 7 (Saturday) 23:59 KST  
-**Where to Submit:** KLMS
+이 저장소는 현재 FastGen diffusion 실험 기록도 함께 보관합니다. 서버 에이전트는 Codex 기준으로 구성했습니다.
 
-## Overview
+- 서버 경로: `/root/Diffusion/workspace_distillation`
+- 원격: `git@github.com:JoohoSon24/Experiment_connector.git`, 브랜치 `main`
+- 서버의 로컬 원격 이름은 기존 호환을 위해 `festgen`입니다. `origin`에는 push하지 않습니다.
+- 규칙: [AGENTS.md](AGENTS.md), [실험/FID 프로토콜](docs/EXPERIMENT.md), [구조](docs/ARCHITECTURE.md), [결과](docs/RESULTS.md), [한계](docs/LIMITATIONS.md)
+- 기존 기록 87건과 CPU 1 step 검증 exp-088을 수록했습니다. GPU FID 재측정은 수행하지 않았습니다.
+- 로컬 리뷰어는 이 저장소를 clone/pull하여 `reviews/`로 리뷰를 전달합니다.
+- clone 후 `git config core.hooksPath .githooks`를 실행하면 커밋 크기 검사와 push 대상 제한이 활성화됩니다.
 
-<img width="784" alt="Representative Pokemon dataset samples" src="assets/representative_samples.png" />
+명시적으로 요청할 때만 아래 절차를 수행합니다. 세션 시작 시 자동 pull/리뷰 조회는 하지 않습니다.
 
-In this challenge, you will train two image generative models for the
-first-generation Pokemon dataset: one optimized for exactly one model function
-evaluation and one optimized for no more than four evaluations. The provided
-code contains the dataset interface, model base class, checkpoint loading
-utility, and FID evaluation pipeline. Students implement both NFE-specific
-models and their `sample()` methods inside `model.py`.
-
-**Dataset:** [Pokemon Generation One - 22k](https://www.kaggle.com/datasets/bhawks/pokemon-generation-one-22k)
-
-**Dataset size:** 20,099 images from 151 Pokemon categories
-
-**Evaluation:** FID scores from two independent model checkpoints:
-
-- `ModelOneNFE`: exactly one model function evaluation
-- `ModelFewNFE`: at most four model function evaluations
-
-Each category is evaluated with exactly 20 generated images.
-
-
-## Environment Setup
-
-```shell
-conda create -n pokemon-generation python=3.10 -y
-conda activate pokemon-generation
-pip install torch==2.6.0 torchvision==0.21.0 torchaudio==2.6.0 --index-url https://download.pytorch.org/whl/cu124
-pip install -r requirements.txt
+```bash
+python3 scripts/experiment_notes.py sync
+python3 scripts/experiment_notes.py start
 ```
 
-The supplied `requirements.txt` contains the packages needed by the dataset,
-model, and evaluation code. Use the PyTorch installation appropriate for your
-machine if a CUDA-specific build is required.
+Codex에서는 `start 절차 실행`, `sync-notes 절차 실행`으로 요청할 수 있습니다.
+CLI 내장 slash 명령 등록을 가정하지 않습니다. 원본 템플릿은 [보존본](docs/CONNECTOR_TEMPLATE_README.md),
+FastGen 프로젝트 설명은 [별도 보존본](docs/FASTGEN_PROJECT_README.md)을 참조하세요.
 
-## Project Structure
+아래는 다른 프로젝트에 적용할 수 있는 원래 워크플로 안내입니다.
 
-```text
-AIC313-Project-FastGen/
-├── model.py                         # NFE-specific model classes (students SHOULD modify subclasses)
-├── dataset.py                       # Pokemon dataset and DataLoader API (provided, DO NOT modify)
-├── download_dataset.py              # Kaggle dataset download utility (provided, DO NOT modify)
-├── evaluate.py                      # Sample generation and FID evaluation (provided, DO NOT modify)
-├── src/
-│   ├── __init__.py
-│   └── utils.py                     # Parameter counting utilities (provided, DO NOT modify)
-└── data/
-    └── pokemon-generation-one-22k/
-        ├── train_split.txt           # Fixed training split (provided, DO NOT modify)
-        ├── val_split.txt             # Fixed validation split (provided, DO NOT modify)
-        └── category_to_id.json       # Fixed category-to-ID mapping (provided, DO NOT modify)
+연구실 서버에서 실험을 돌리는 Claude 에이전트와, 로컬에서 실험을 검토하는 Claude 에이전트를 **git으로 연결**하는 워크플로 템플릿입니다.
+
+## 목적
+
+서버(SSH + tmux)에서 에이전트가 실험을 설계·실행하는 동안, 실험 세팅·아키텍처·결과·한계점은 로컬에서 따로 정리하고 검토하고 싶을 때 씁니다.
+
+- **서버 에이전트**는 실험을 돌리고, 재현과 검토에 필요한 최소 정보(config, 메타데이터, 지표, 상태 문서)만 git에 push합니다.
+- **로컬 에이전트**는 리뷰어 역할만 합니다. 기록을 pull해서 아키텍처를 시각화하고, 결과 표를 만들고, 문제를 찾아 `reviews/`로 피드백을 돌려보냅니다.
+- 두 에이전트는 세션을 공유하지 않고 **문서로만 소통**합니다. 별도 서버나 REST API 없이 git 히스토리가 그대로 실험 기록이 됩니다.
+
+## 구조
+
+```
+ 서버 (tmux + Claude)                         로컬 (Claude, 리뷰어)
+ ─────────────────────                        ─────────────────────
+ 실험 실행 → runs/exp-XXX/meta.json,          sync.sh → git pull
+            metrics.json                       build_report.py → 결과 표·그림
+ /sync-notes → docs/ 갱신 → commit/push  ──▶   arch/*.mmd 아키텍처 다이어그램
+                                               체크리스트로 검토
+ /start → reviews/ 확인·반영           ◀──   push_review.sh → reviews/ push
 ```
 
-## Dataset and DataLoader
+| 경로 | 쓰는 쪽 | 내용 |
+|---|---|---|
+| `src/`, `configs/`, `docs/`, `runs/*/meta.json·metrics.json·figures/` | 서버 | 코드, 실험별 config, 상태 문서, 실험 결과 요약 |
+| `reviews/` | 로컬 (서버는 `status`·`resolution`만 수정) | 리뷰 피드백 |
 
-Many source images are RGBA or palette images with transparency. At download
-time, `download_dataset.py` composites every transparent image onto a white
-background once, in place, and drops the alpha channel (a
-`.transparency_composited_on_white` marker file records that this step already
-ran). Training images, the FID reference set, and your generated samples
-therefore all share the same opaque white-background convention.
+쓰는 경로를 나눠두었기 때문에 같은 브랜치를 써도 충돌이 거의 생기지 않습니다. 체크포인트, 로그, 데이터는 git에 올리지 않습니다.
 
-The split manifests use the original paths from the Kaggle archive:
+## 파일
 
-```text
-PokemonData/Abra/000-063Abra_RB.png
-PokemonData/Abra/Abra1.jpg
-PokemonData/Pikachu/Pikachu1.jpg
-```
+- [`prompts/server_agent_prompt.md`](prompts/server_agent_prompt.md): 서버 프로젝트 레포에 실험 기록 체계를 구축하는 프롬프트 (`.gitignore`, `meta.json`을 남기는 실행 래퍼, `docs/` 4종, `CLAUDE.md` 규칙, `/start`·`/sync-notes` 명령, Git 연결)
+- [`prompts/local_agent_prompt.md`](prompts/local_agent_prompt.md): 로컬 리뷰 워크스페이스 `lab-review/`를 구축하는 프롬프트 (`sync.sh`, `push_review.sh`, `build_report.py`, `registry.csv`, Mermaid 아키텍처 다이어그램, 권한 제한, `/start` 명령)
 
-The split contains:
+## 사용 방법
 
-```text
-Train:      17,079 images
-Validation:  3,020 images
-Categories:    151
-```
+### 0단계: 실험 기록용 GitHub 레포 준비 (직접)
 
-The dataset is downloaded automatically when `PokemonData/` is not present. You can also download it explicitly:
+이 레포(Experiment_connector)는 프롬프트 보관용이고, 실험 기록은 **프로젝트 레포**에 쌓입니다. 프롬프트에는 레포 주소가 들어 있지 않으니 아래를 직접 준비하세요.
 
-```shell
-python download_dataset.py
-```
+1. GitHub에서 프로젝트용 private 레포를 만듭니다. (이미 있으면 생략)
+2. 서버의 프로젝트 폴더가 아직 git 레포가 아니라면:
+   ```bash
+   cd <SERVER_PATH>
+   git init -b main
+   git remote add origin git@github.com:<USER>/<PROJECT_REPO>.git
+   ```
+   이미 git 레포라면 `git remote -v`로 주소만 확인합니다.
+3. 두 프롬프트의 `<REPO_SSH_URL>`을 이 주소로 바꿉니다.
 
-The downloader uses `kagglehub` and stores the data under:
+SSH 키 생성과 원격 연결 설정은 서버·로컬 에이전트가 각각 안내하고, **GitHub에 공개키를 등록하는 것만 직접** 하면 됩니다.
 
-```text
-./data/pokemon-generation-one-22k/PokemonData/
-```
+- 서버: 레포 Settings → Deploy keys → Add deploy key (Allow write access 체크)
+- 로컬: 이미 GitHub SSH 키가 있으면 그대로 사용, 없으면 계정 Settings → SSH and GPG keys에 등록
 
-If Kaggle requests authentication, configure a Kaggle API token before running the command. Public datasets may be downloaded without authentication unless Kaggle requires user consent.
+### 1단계: 서버 세팅
 
-Create the data interface as follows:
+1. 서버의 프로젝트 레포에서 Claude를 실행합니다. (실험이 돌고 있는 tmux 창과는 다른 창을 권장)
+2. `prompts/server_agent_prompt.md`의 `<REPO_SSH_URL>`을 채우고 그대로 붙여넣습니다.
+3. 에이전트가 레포 구조와 실행 중인 프로세스를 확인한 뒤 **변경 계획을 보여줍니다.** 검토하고 승인하세요.
+4. push 권한이 없으면 에이전트가 deploy key 공개키를 보여줍니다. GitHub 레포의 Settings → Deploy keys에 쓰기 권한으로 등록하세요.
+5. 테스트 실험과 `/sync-notes`가 push까지 성공하면 완료입니다.
 
-```python
-from dataset import PokemonDataModule
+### 2단계: 로컬 세팅
 
-module = PokemonDataModule(
-    data_root="./data/pokemon-generation-one-22k",
-    split_dir="./data/pokemon-generation-one-22k",
-    batch_size=32,
-    return_category=True,
-)
+1. 로컬에 빈 폴더 `lab-review/`를 만들고 그 안에서 Claude를 실행합니다.
+2. `prompts/local_agent_prompt.md`의 아래 값을 채웁니다.
+   - `<REPO_SSH_URL>`: 0단계의 프로젝트 레포 주소
+   - `<SERVER_PATH>`: 서버의 프로젝트 경로
+   - `lab`: `~/.ssh/config`에 등록한 서버 별칭 (다르면 수정)
+3. 프롬프트를 붙여넣고 실행합니다.
+4. 에이전트가 첫 리뷰 목록을 보여주면, 검토 후 승인해서 push합니다.
 
-train_loader = module.train_dataloader()
-val_loader = module.val_dataloader()
-```
+### 3단계: 일상 루프
 
-Images are converted to RGB, resized to `64 x 64`, converted to tensors, and normalized to `[-1, 1]`.
+두 에이전트 모두 `/start` 명령으로 확인·갱신·정리를 한 번에 수행합니다. 세션을 열기만 해서는 아무것도 자동으로 실행되지 않습니다.
 
-The category mapping is stored in `category_to_id.json` and reused on later
-runs so that the same category always receives the same integer ID.
+| 명령 | 어디서 | 하는 일 |
+|---|---|---|
+| `/start` | 서버 | pull → 실험 상태 점검(running/done/failed, 죽은 프로세스 감지) → 미반영 완료 실험 docs 갱신·push → open 리뷰 요약 → 다음 실험 제안 |
+| `/sync-notes` | 서버 | 실험 하나가 끝났을 때 docs 갱신 후 commit/push |
+| `/start` | 로컬 | sync → 새 실험 확인 → 보고서·registry·setup.md·arch 다이어그램 갱신 → notes 작성·체크리스트 검토 → 리뷰 초안 작성 → 승인 시 push |
 
-## What to Implement
+권장 루프: 서버에서 실험 종료 → `/sync-notes` → 로컬에서 `/start` → 리뷰 push → 서버에서 `/start`로 리뷰 확인·반영.
 
-### 1. Model
+## 실시간 모니터링
 
-Students implement two independent model classes in `model.py`:
+이 구조는 기록과 검토용입니다. 학습 중 loss를 실시간으로 보려면 별도 API를 만들지 말고 W&B를 쓰거나, TensorBoard를 SSH 포트포워딩(`ssh -L 6006:localhost:6006 lab`)으로 보는 것을 권장합니다.
 
-- `ModelOneNFE`: model and `sample()` implementation for exactly one model
-  function evaluation
-- `ModelFewNFE`: model and `sample()` implementation for no more than four
-  model function evaluations
+## 주의사항
 
-Each class may use a different architecture, objective, parameterization, and
-sampling procedure. The `sample()` method belongs inside the corresponding
-model class; no separate `sampling.py` module is required.
-
-```python
-class ModelOneNFE(Model):
-    def sample(self, shape, *, device="cuda", category=None, **kwargs):
-        ...
-
-
-class ModelFewNFE(Model):
-    def sample(self, shape, *, device="cuda", category=None, **kwargs):
-        ...
-```
-
-`Model.load_checkpoint()` selects the model class from `evaluate_mode`:
-
-```python
-model = Model.load_checkpoint(
-    checkpoint_path,
-    evaluate_mode="one_nfe",
-    device="cuda",
-)
-```
-
-The selected model's `sample()` method is called directly during image
-generation. Each model must return a tensor shaped like `shape`, normalized
-consistently with the training data.
-
-### 2. NFE budget
-
-`ModelOneNFE.sample()` must use **exactly one** network evaluation and
-`ModelFewNFE.sample()` **at most four**.
-
-**Any execution of any part of the trained model backbone counts as one NFE.**
-For example:
-
-- a classifier-free-guidance pair (conditional plus unconditional forward pass)
-  costs 2 NFEs per step, so a guided sampler fits at most two steps in the
-  few-NFE budget
-- a partial forward through a subset of the backbone blocks costs 1 NFE
-- an extra head, decoder, or auxiliary network trained with the model costs
-  1 NFE per execution
-
-Operations that do not execute a trained network are free: noise sampling,
-interpolation between tensors, noise schedules, and arithmetic on
-intermediate results.
-
-### 3. Parameter limit
-
-Parameter counting is centralized in `src/utils.py`:
-
-```python
-from src.utils import count_parameters, parameter_summary
-```
-
-All learned models used during training or sampling, including teacher models,
-must **individually have no more than 100,000,000 parameters**.
-
-The 100M limit is applied **separately to each model**. Parameter counts of
-different models, such as a teacher and a student, are **not summed together**.
-However, for each model, the parameter count refers to the **entire model
-framework, including all learnable components**, not only the main backbone.
-
-For example:
-
-- Teacher ≤ 100M / Student ≤ 100M → **Allowed**
-- Teacher > 100M / Student ≤ 100M → **Not Allowed**
-- Teacher ≤ 100M / Student > 100M → **Not Allowed**
-
-For submitted models, the evaluation script loads the selected model and counts
-all registered parameters before generating samples. `ModelOneNFE` and
-`ModelFewNFE` are checked independently. Models above the limit are rejected:
-
-```text
-WARNING: model has more than 100,000,000 parameters. Evaluation stopped.
-```
-
-The parameter count includes frozen parameters and excludes buffers. All
-registered modules that are part of a model, including auxiliary components
-such as EMA copies, encoders, discriminators, or additional heads, are included
-in that model's parameter count.
-
-- ⚠️ Each learned model used during training or sampling must individually have no more than 100M parameters.
-- ⚠️ The 100M limit applies to the entire model framework, not only the main backbone.
-- ⚠️ Parameter counts of separate models, such as a teacher and a student, are not added together.
-- ⚠️ A submitted model that exceeds the limit is not evaluated and scores zero for that NFE mode; the other mode is scored independently.
-
-## Training
-
-Training is part of the student implementation. Students must train both
-NFE-specific models and save two compatible checkpoints:
-
-1. `./checkpoints/one_nfe.ckpt` for `evaluate_mode=one_nfe`
-2. `./checkpoints/few_nfe.ckpt` for `evaluate_mode=few_nfe`
-
-`Model.load_checkpoint()` selects the architecture from `evaluate_mode`, loads
-the corresponding checkpoint, moves it to the requested device, and switches
-it to evaluation mode.
-
-The checkpoint can contain either a raw state dictionary or a dictionary with
-the model state under the `state_dict` key:
-
-```python
-torch.save(
-    {"state_dict": model_one_nfe.state_dict()},
-    "checkpoints/one_nfe.ckpt",
-)
-torch.save(
-    {"state_dict": model_few_nfe.state_dict()},
-    "checkpoints/few_nfe.ckpt",
-)
-```
-
-## Important Rules
-
-**PLEASE READ THE FOLLOWING CAREFULLY!** Any violation of the rules or failure
-to properly cite existing code, models, or papers used in the project in your
-write-up will result in a zero score.
-
-### What You CANNOT Do
-
-- ❌ **Do NOT use pre-trained image-generation models:** All learned models, including teacher model, used during training or sampling must be trained from scratch using only the provided training split.
-- ❌ **Do NOT modify the base `Model` class:** Its checkpoint-loading and
-  parameter-counting utilities are fixed for consistent evaluation.
-- ❌ **Do NOT modify the provided dataset interface or evaluation script:**
-  These files are provided to ensure consistent evaluation across submissions.
-- ❌ **Do NOT modify the provided train/val split files:**
-  `data/pokemon-generation-one-22k/train_split.txt` and
-  `data/pokemon-generation-one-22k/val_split.txt` are fixed for consistent
-  data splitting.
-- ❌ **Do NOT train on the validation split:** Only the images listed in
-  `train_split.txt` may be used for training, distillation, or hyper-parameter
-  selection. The validation split is the FID reference set.
-- ❌ **Do NOT exceed 20 GB of peak training VRAM:** Each model must train
-  within a single 20 GB GPU, matching the NVIDIA A100 vGPU provided through
-  KCLOUD for this course. Measure peak memory
-  (`torch.cuda.max_memory_allocated()`) and keep it below the limit.
-- ❌ **Do NOT install additional libraries separately:** Your code will run in
-  the TA environment with the provided dependencies only. If a specific
-  library is essential, request it through the course communication channel.
-
-### What You CAN Do
-
-- ✅ **Modify `model.py`:** Implement `ModelOneNFE`, `ModelFewNFE`, their
-  model architectures, objectives, and `sample()` methods.
-- ✅ **Add your own Training Script:** Add training logic, optimizers, learning-rate schedulers, model-specific arguments, and checkpoint-saving code.
-- ✅ **Create new files:** Add any additional implementation files required by
-your models or training procedure. Include every such file in the submission.
-- ✅ **Use open-source implementations:** As long as they are clearly mentioned
-and properly cited in your write-up.
-
-## Evaluation
-
-The performance of the two submitted model implementations will be evaluated
-quantitatively using FID scores:
-
-- `evaluate_mode=one_nfe`: evaluates `ModelOneNFE` with exactly one model
-  function evaluation
-- `evaluate_mode=few_nfe`: evaluates `ModelFewNFE` with no more than four
-  model function evaluations
-
-### Evaluation Procedure
-
-The evaluation script selects the model and checkpoint from the two command
-line arguments:
-
-```shell
-python evaluate.py \
-    --model_checkpoint ./checkpoints/one_nfe.ckpt \
-    --evaluate_mode one_nfe \
-    --reference_dir ./results/reference \
-    --output_dir ./results/evaluation
-```
-
-For the few-NFE model:
-
-```shell
-python evaluate.py \
-    --model_checkpoint ./checkpoints/few_nfe.ckpt \
-    --evaluate_mode few_nfe \
-    --reference_dir ./results/reference \
-    --output_dir ./results/evaluation
-```
-
-The evaluation script:
-
-1. Instantiates `ModelOneNFE` or `ModelFewNFE` through
-   `Model.load_checkpoint()`.
-2. Counts all model parameters and stops if the total exceeds 100M.
-3. Creates a balanced evaluation set with 20 samples for each of the 151
-categories, producing 3,020 images for the selected model.
-4. Calls the selected model's `sample()` method.
-5. Computes FID against the complete validation reference set.
-
-Output directories are selected by `evaluate_mode`:
-
-```text
-results/evaluation/
-├── one_nfe/
-│   ├── 0000_00.png
-│   └── ...
-└── few_nfe/
-    ├── 0000_00.png
-    └── ...
-```
-
-The reference set is created from `val_split.txt` and contains 3,020 images.
-FID is calculated over the complete generated and reference directories.
-
-- **TA reference scores:** 1-NFE: **39.15** · Few-NFE: **30.90**
-
-## Submissions
-
-### Mid-Term Evaluation (Optional)
-
-The purpose of the mid-term evaluation is to give all students a reference point for how other teams are progressing. **Participation is optional.** At each NFE setting, the **top-1 team** whose score also outperforms the TAs’ FID score receives **bonus credit (+0.5)** toward the final grade. The TAs’ FID scores will be updated after the mid-term evaluation submission date.
-
-
-
-**What to Submit:**
-
-1. **Self-contained source code**
-  - Include the complete code needed to train and evaluate both models.
-  - The submitted code must run end-to-end in the TA evaluation environment.
-2. **Model checkpoints**
-  - Save `./checkpoints/one_nfe.ckpt`.
-  - Save `./checkpoints/few_nfe.ckpt`.
-
-**Submission Structure:**
-
-```text
-team_{team-id:0>2}/            # e.g. team_02
-├── model.py                   # ModelOneNFE, ModelFewNFE, and Model
-├── dataset.py                 # Provided dataset/DataLoader interface
-├── download_dataset.py        # Provided dataset downloader
-├── evaluate.py                # Provided evaluation entry point
-├── src/
-│   ├── __init__.py
-│   └── utils.py               # Provided parameter-counting utilities
-├── requirements.txt
-├── checkpoints/
-│   ├── one_nfe.ckpt      # REQUIRED
-│   └── few_nfe.ckpt      # REQUIRED
-└── <all additional files>     # Include every file you implemented
-```
-
-The `data/` directory and dataset files do not need to be submitted. TAs will
-provide the dataset and fixed split files in the evaluation environment.
-Include every additional file required to construct either model, train it, or
-run evaluation.
-
-**Evaluation:**
-
-- TAs will evaluate both checkpoints with their corresponding
-`evaluate_mode`.
-- Each mode will generate 20 images for each of the 151 categories.
-- Submissions that fail to load either checkpoint or run evaluation will be
-marked as failed.
-
-### Final Submission
-
-**What to Submit:**
-
-1. **Self-contained source code (Same as Mid-Term)**
-2. **Model checkpoints (Same as Mid-Term)**
-3. **Training implementation (Same as Mid-Term)**
-4. **Write-up**
-
-- Maximum **two A4 pages**, excluding references
-- Must include **all** of the following:
-  - **Technical details:** One-paragraph description of your few-step  
-  generation implementation
-  - **Training details:** Training logs, such as loss curves, and total  
-  training time
-  - **Qualitative evidence:** Approximately 8 sample images from early  
-  training phases
-  - **Citations:** All external code and papers used must be properly cited
-- ⚠️ Missing any of these items will result in a **10% penalty for each**
-- ⚠️ If the write-up exceeds two pages, any content beyond the second page  
-will be ignored, which may lead to missing required items
-
-**Submission Structure:**
-
-```text
-team_{team-id:0>2}/            # e.g. team_02
-├── model.py                   # ModelOneNFE, ModelFewNFE, and Model
-├── train.py                   # Student training script
-├── dataset.py                 # Provided dataset/DataLoader interface
-├── download_dataset.py        # Provided dataset downloader
-├── evaluate.py                # Provided evaluation entry point
-├── src/
-│   ├── __init__.py
-│   └── utils.py               # Provided parameter-counting utilities
-├── requirements.txt
-├── checkpoints/
-│   ├── one_nfe.ckpt      # REQUIRED
-│   └── few_nfe.ckpt      # REQUIRED
-├── writeup.pdf                # Final submission write-up
-└── <all additional files>     # Include every file you implemented
-```
-
-The `data/` directory and dataset files do not need to be submitted. TAs will
-provide them in the evaluation environment. Include every additional file
-required by the submitted implementation.
-
-**Final Evaluation:**
-
-- TAs will run `evaluate.py` once for each `evaluate_mode`.
-- Results will be computed using the fixed validation split and official FID
-procedure.
-- Submissions that fail to load a checkpoint or run evaluation will be marked as failed.
-
-## Self-Evaluation Checklist
-
-Before submitting, verify:
-
-- ✅ **Code runs end-to-end:** Train both models → Generate samples → Evaluate
-both checkpoints without errors
-- ✅ **Checkpoint compatibility:** `Model.load_checkpoint()` successfully loads
-both `one_nfe.ckpt` and `few_nfe.ckpt`
-- ✅ **NFE budgets tested:** `ModelOneNFE` uses exactly one model function
-  evaluation and `ModelFewNFE` uses no more than four
-- ✅ **All required files included:** Source code, both checkpoints, and the
-final write-up are included
-- ✅ **Citations ready:** All external code, papers, models, and datasets are
-properly cited in the write-up
-
-## Grading
-
-- **Total:** up to **20 points** from the FastGen project — **10 points for
-one-NFE** and **10 points for few-NFE**
-- **Quantitative evaluation:** FID scores for the one-NFE and few-NFE models,
-officially computed by the TAs. For each NFE setting, points are assigned
-relative to the best score achieved in the class
-- **Write-up:** Clear technical explanation and proper citations; each missing
-required item costs a 10% penalty
-- **Bonus points (mid-term evaluation):** top-1 team per NFE setting that beats
-the TA baseline receives **+0.5**
-- **Bonus points (final evaluation):** per NFE setting, **1st: +1.0** and
-**2nd / 3rd: +0.5 each**
-- ⚠️ Teams that receive final-evaluation bonus points **must present their work
-in class on November 16 (Monday)**; without the presentation the bonus points
-are not awarded
-
-## Important
-
-- ⚠️ There is no late day. Submit on time.
-- ⚠️ Late submission: Zero score
-- ⚠️ Missing any required item in the final submission (samples, code/model,
-write-up): Zero score
-- ⚠️ Missing items in the write-up: 10% penalty for each
-- ⚠️ Citation is mandatory: Any violation of the rules or failure to properly
-cite existing code, models, or papers used in the project will result in a
-zero score
-
-## Recommended Reading
-
-- [Variational Autoencoders](https://arxiv.org/abs/1312.6114) — Kingma and Welling, ICLR 2014
-- [NICE: Non-linear Independent Components Estimation](https://arxiv.org/abs/1410.8516) — Dinh et al., 2015
-- [Generative Adversarial Nets](https://arxiv.org/abs/1406.2661) — Goodfellow et al., NeurIPS 2014
-- [Denoising Diffusion Probabilistic Models](https://arxiv.org/abs/2006.11239) — Ho et al., NeurIPS 2020
-- [Flow Matching for Generative Modeling](https://arxiv.org/abs/2210.02747) — Lipman et al., ICLR 2023
-- [Consistency Models](https://arxiv.org/abs/2303.01469) — Song et al., ICML 2023
-- [Flow Straight and Fast: Learning to Generate and Transfer Data with Rectified Flow](https://arxiv.org/abs/2209.03003) — Liu et al., ICLR 2023
-- [Progressive Distillation for Fast Sampling of Diffusion Models](https://arxiv.org/abs/2202.00512) — Salimans and Ho, ICLR 2022
-- [Learning to Discretize Denoising Diffusion ODEs](https://arxiv.org/abs/2405.15506) — Tong et al., ICLR 2025
-- [BézierFlow: Learning Bézier Stochastic Interpolant Schedulers for Few-Step Generation](https://arxiv.org/abs/2512.13255) — Min et al., ICLR 2026
-- [One-step Diffusion with Distribution Matching Distillation](https://arxiv.org/abs/2311.18828) — Yin et al., CVPR 2024
-
-## Dataset Citation
-
-- [Pokemon Generation One - 22k](https://www.kaggle.com/datasets/bhawks/pokemon-generation-one-22k)
-
+- 서버 프롬프트는 실행 중인 실험의 파일을 옮기지 않도록 되어 있지만, 승인 전에 계획을 직접 확인하세요.
+- 공용 서버라면 개인 토큰 대신 레포 전용 deploy key를 쓰세요.
+- 로컬 에이전트의 권한 제한(`.claude/settings.json`)이 실제로 적용됐는지 한 번 확인하세요.
