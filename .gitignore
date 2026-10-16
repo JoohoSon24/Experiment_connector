@@ -32,3 +32,19 @@
 .env
 .env.*
 .netrc
+
+# Experiment notes: allow metadata, scalar metrics and small figures only.
+runs/*/ckpt/
+runs/*/logs/
+/runs/*/*
+!/runs/*/meta.json
+!/runs/*/metrics.json
+!/runs/*/figures/
+/runs/*/figures/*
+!/runs/*/figures/*.png
+wandb/
+data/
+# Existing tracked split manifests remain tracked; no raw data is newly added.
+/results/
+/environment/*_smoke.png
+/environment/evaluation_weight.sha256
