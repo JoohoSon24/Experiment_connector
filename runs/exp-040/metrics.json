@@ -22,5 +22,7 @@
     "numpy": "2.2.6"
   },
   "nfe_per_sample": 64,
-  "reference_count": 3020
+  "reference_count": 3020,
+  "official_fid": 26.259438708310483,
+  "valid_fid": null
 }

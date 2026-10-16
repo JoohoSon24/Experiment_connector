@@ -188,5 +188,7 @@
   "updated_at_utc": "2026-10-10T12:16:03.168528+00:00",
   "sample_nfe": 50,
   "sample_guidance_scale": 1.0,
-  "sample_sampler": "ddpm"
+  "sample_sampler": "ddpm",
+  "official_fid": null,
+  "valid_fid": null
 }

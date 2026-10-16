@@ -14,7 +14,7 @@
   "status": "done",
   "backfilled": true,
   "source_path": "experiments/teacher_variant_sequence/attention4/attention4_100k/metrics.json",
-  "record_type": "evaluation",
+  "record_type": "training_snapshot",
   "error_summary": null,
-  "evidence": "FID measurement exists"
+  "evidence": "final.pt exists"
 }

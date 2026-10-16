@@ -1,0 +1,10 @@
+{
+  "loss": 1.0427451133728027,
+  "steps": 1,
+  "device": "cpu",
+  "parameter_count": 45427,
+  "data": "synthetic; infrastructure smoke only",
+  "peak_vram_bytes": null,
+  "official_fid": null,
+  "valid_fid": null
+}
