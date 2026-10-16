@@ -1,0 +1,278 @@
+{
+  "attention4": {
+    "100000": {
+      "ddim32_cfg2": {
+        "checkpoint": "/root/Diffusion/workspace_distillation/experiments/teacher_variant_sequence/attention4/attention4_100k/final.pt",
+        "checkpoint_step": 100000,
+        "weights": "ema",
+        "reference_split": "development",
+        "seed": 42,
+        "batch_size": 16,
+        "precision": "bf16",
+        "steps": 32,
+        "guidance_scale": 2.0,
+        "sample_count": 3020,
+        "sampler": "ddim",
+        "clip_denoised": true,
+        "parameter_count": 48883107,
+        "fid": 42.92467967451216,
+        "submission_eligible": false,
+        "smoke": false,
+        "versions": {
+          "torch": "2.6.0+cu124",
+          "clean-fid": "0.1.35",
+          "scipy": "1.15.3",
+          "numpy": "2.2.6"
+        },
+        "nfe_per_sample": 64,
+        "reference_count": 755
+      },
+      "ddim50_cfg2": {
+        "checkpoint": "/root/Diffusion/workspace_distillation/experiments/teacher_variant_sequence/attention4/attention4_100k/final.pt",
+        "checkpoint_step": 100000,
+        "weights": "ema",
+        "reference_split": "development",
+        "seed": 42,
+        "batch_size": 16,
+        "precision": "bf16",
+        "steps": 50,
+        "guidance_scale": 2.0,
+        "sample_count": 3020,
+        "sampler": "ddim",
+        "clip_denoised": true,
+        "parameter_count": 48883107,
+        "fid": 42.36305041990539,
+        "submission_eligible": false,
+        "smoke": false,
+        "versions": {
+          "torch": "2.6.0+cu124",
+          "clean-fid": "0.1.35",
+          "scipy": "1.15.3",
+          "numpy": "2.2.6"
+        },
+        "nfe_per_sample": 100,
+        "reference_count": 755
+      }
+    },
+    "150000": {
+      "ddim32_cfg2": {
+        "checkpoint": "/root/Diffusion/workspace_distillation/experiments/teacher_variant_sequence/attention4/attention4_150k/final.pt",
+        "checkpoint_step": 150000,
+        "weights": "ema",
+        "reference_split": "development",
+        "seed": 42,
+        "batch_size": 16,
+        "precision": "bf16",
+        "steps": 32,
+        "guidance_scale": 2.0,
+        "sample_count": 3020,
+        "sampler": "ddim",
+        "clip_denoised": true,
+        "parameter_count": 48883107,
+        "fid": 41.73750985166231,
+        "submission_eligible": false,
+        "smoke": false,
+        "versions": {
+          "torch": "2.6.0+cu124",
+          "clean-fid": "0.1.35",
+          "scipy": "1.15.3",
+          "numpy": "2.2.6"
+        },
+        "nfe_per_sample": 64,
+        "reference_count": 755
+      },
+      "ddim50_cfg2": {
+        "checkpoint": "/root/Diffusion/workspace_distillation/experiments/teacher_variant_sequence/attention4/attention4_150k/final.pt",
+        "checkpoint_step": 150000,
+        "weights": "ema",
+        "reference_split": "development",
+        "seed": 42,
+        "batch_size": 16,
+        "precision": "bf16",
+        "steps": 50,
+        "guidance_scale": 2.0,
+        "sample_count": 3020,
+        "sampler": "ddim",
+        "clip_denoised": true,
+        "parameter_count": 48883107,
+        "fid": 41.37549320859654,
+        "submission_eligible": false,
+        "smoke": false,
+        "versions": {
+          "torch": "2.6.0+cu124",
+          "clean-fid": "0.1.35",
+          "scipy": "1.15.3",
+          "numpy": "2.2.6"
+        },
+        "nfe_per_sample": 100,
+        "reference_count": 755
+      }
+    },
+    "200000": {
+      "ddim32_cfg2": {
+        "checkpoint": "/root/Diffusion/workspace_distillation/experiments/teacher_variant_sequence/attention4/attention4_200k/final.pt",
+        "checkpoint_step": 200000,
+        "weights": "ema",
+        "reference_split": "development",
+        "seed": 42,
+        "batch_size": 16,
+        "precision": "bf16",
+        "steps": 32,
+        "guidance_scale": 2.0,
+        "sample_count": 3020,
+        "sampler": "ddim",
+        "clip_denoised": true,
+        "parameter_count": 48883107,
+        "fid": 41.9359435362245,
+        "submission_eligible": false,
+        "smoke": false,
+        "versions": {
+          "torch": "2.6.0+cu124",
+          "clean-fid": "0.1.35",
+          "scipy": "1.15.3",
+          "numpy": "2.2.6"
+        },
+        "nfe_per_sample": 64,
+        "reference_count": 755
+      },
+      "ddim50_cfg2": {
+        "checkpoint": "/root/Diffusion/workspace_distillation/experiments/teacher_variant_sequence/attention4/attention4_200k/final.pt",
+        "checkpoint_step": 200000,
+        "weights": "ema",
+        "reference_split": "development",
+        "seed": 42,
+        "batch_size": 16,
+        "precision": "bf16",
+        "steps": 50,
+        "guidance_scale": 2.0,
+        "sample_count": 3020,
+        "sampler": "ddim",
+        "clip_denoised": true,
+        "parameter_count": 48883107,
+        "fid": 41.60070277226015,
+        "submission_eligible": false,
+        "smoke": false,
+        "versions": {
+          "torch": "2.6.0+cu124",
+          "clean-fid": "0.1.35",
+          "scipy": "1.15.3",
+          "numpy": "2.2.6"
+        },
+        "nfe_per_sample": 100,
+        "reference_count": 755
+      }
+    }
+  },
+  "dropout005": {
+    "210000": {
+      "ddim32_cfg2": {
+        "checkpoint": "/root/Diffusion/workspace_distillation/experiments/teacher_variant_sequence/dropout005/dropout005_210k/final.pt",
+        "checkpoint_step": 210000,
+        "weights": "ema",
+        "reference_split": "development",
+        "seed": 42,
+        "batch_size": 16,
+        "precision": "bf16",
+        "steps": 32,
+        "guidance_scale": 2.0,
+        "sample_count": 3020,
+        "sampler": "ddim",
+        "clip_denoised": true,
+        "parameter_count": 48883107,
+        "fid": 42.50246324397085,
+        "submission_eligible": false,
+        "smoke": false,
+        "versions": {
+          "torch": "2.6.0+cu124",
+          "clean-fid": "0.1.35",
+          "scipy": "1.15.3",
+          "numpy": "2.2.6"
+        },
+        "nfe_per_sample": 64,
+        "reference_count": 755
+      },
+      "ddim50_cfg2": {
+        "checkpoint": "/root/Diffusion/workspace_distillation/experiments/teacher_variant_sequence/dropout005/dropout005_210k/final.pt",
+        "checkpoint_step": 210000,
+        "weights": "ema",
+        "reference_split": "development",
+        "seed": 42,
+        "batch_size": 16,
+        "precision": "bf16",
+        "steps": 50,
+        "guidance_scale": 2.0,
+        "sample_count": 3020,
+        "sampler": "ddim",
+        "clip_denoised": true,
+        "parameter_count": 48883107,
+        "fid": 42.2002132241733,
+        "submission_eligible": false,
+        "smoke": false,
+        "versions": {
+          "torch": "2.6.0+cu124",
+          "clean-fid": "0.1.35",
+          "scipy": "1.15.3",
+          "numpy": "2.2.6"
+        },
+        "nfe_per_sample": 100,
+        "reference_count": 755
+      }
+    }
+  },
+  "attention32": {
+    "100000": {
+      "ddim32_cfg2": {
+        "checkpoint": "/root/Diffusion/workspace_distillation/experiments/teacher_variant_sequence/attention32/attention32_100k/final.pt",
+        "checkpoint_step": 100000,
+        "weights": "ema",
+        "reference_split": "development",
+        "seed": 42,
+        "batch_size": 16,
+        "precision": "bf16",
+        "steps": 32,
+        "guidance_scale": 2.0,
+        "sample_count": 3020,
+        "sampler": "ddim",
+        "clip_denoised": true,
+        "parameter_count": 49626147,
+        "fid": 46.62329436164231,
+        "submission_eligible": false,
+        "smoke": false,
+        "versions": {
+          "torch": "2.6.0+cu124",
+          "clean-fid": "0.1.35",
+          "scipy": "1.15.3",
+          "numpy": "2.2.6"
+        },
+        "nfe_per_sample": 64,
+        "reference_count": 755
+      },
+      "ddim50_cfg2": {
+        "checkpoint": "/root/Diffusion/workspace_distillation/experiments/teacher_variant_sequence/attention32/attention32_100k/final.pt",
+        "checkpoint_step": 100000,
+        "weights": "ema",
+        "reference_split": "development",
+        "seed": 42,
+        "batch_size": 16,
+        "precision": "bf16",
+        "steps": 50,
+        "guidance_scale": 2.0,
+        "sample_count": 3020,
+        "sampler": "ddim",
+        "clip_denoised": true,
+        "parameter_count": 49626147,
+        "fid": 44.11633514160178,
+        "submission_eligible": false,
+        "smoke": false,
+        "versions": {
+          "torch": "2.6.0+cu124",
+          "clean-fid": "0.1.35",
+          "scipy": "1.15.3",
+          "numpy": "2.2.6"
+        },
+        "nfe_per_sample": 100,
+        "reference_count": 755
+      }
+    }
+  }
+}

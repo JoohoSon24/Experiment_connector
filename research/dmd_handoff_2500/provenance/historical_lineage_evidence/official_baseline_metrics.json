@@ -1,0 +1,25 @@
+{
+  "id": "team_one_nfe",
+  "label": "Team original 1-NFE",
+  "checkpoint": "checkpoints/one_nfe.ckpt",
+  "sha256": "8173c059ca3dda5d63c2c3a9d463b100218867c5fc08b995f5c93162844f7266",
+  "fid": 58.15948330602913,
+  "reference_split": "official_validation",
+  "parameter_count": 48883107,
+  "nfe_per_sample": 1,
+  "single_image_backbone_calls": 1,
+  "generation_batches": 189,
+  "backbone_calls_all_batches": 189,
+  "every_batch_exactly_one_forward": true,
+  "inference_auxiliary_models": false,
+  "sampling_times": [
+    999
+  ],
+  "inference_cfg": false,
+  "sample_count": 3020,
+  "reference_count": 3020,
+  "seed_policy": "42 + generation batch index; reset before each model",
+  "batch_size": 16,
+  "runtime_seconds": 26.861736274004215,
+  "used_for_selection": false
+}

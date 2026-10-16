@@ -1,3 +1,8 @@
+> **Teacher → CFG transfer → progressive distillation → DMD 연구 스냅샷**
+>
+> 현재 코드 구조, Official FID 결과, 재현 환경과 예약 실험은 [GIT_SNAPSHOT.md](GIT_SNAPSHOT.md)에 정리했습니다.
+> 실행 중인 결과는 `reports/`에 저장 시점의 스냅샷으로 보존합니다.
+
 # FastGen: Fast Image Generation Challenge
 
 **Mid Evaluation Submission Due:** October 31 (Saturday) 23:59 KST  

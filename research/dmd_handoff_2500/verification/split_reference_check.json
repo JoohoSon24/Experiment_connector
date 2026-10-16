@@ -1,0 +1,34 @@
+{
+  "preflight": {
+    "dev_train_subset_original_train": true,
+    "dev_holdout_subset_original_train": true,
+    "dev_train_holdout_disjoint": true,
+    "dev_holdout_validation_disjoint": true,
+    "original_train_validation_disjoint": true,
+    "dev_union_equals_original_train": true,
+    "no_duplicate_original_train": true,
+    "no_duplicate_dev_train": true,
+    "no_duplicate_holdout": true
+  },
+  "counts": [
+    17079,
+    16324,
+    755,
+    3020
+  ],
+  "byte_reconstruction": {
+    "status": "PASS",
+    "reference_count": 755,
+    "exact_hash_matches": 755,
+    "check_only": true,
+    "output": "/root/DMD/experiments/night_run/reference_development",
+    "bytes": 4997454,
+    "evidence_kind": "new reference byte reconstruction check"
+  },
+  "checks_are_path_based_not_image_content_deduplication": true,
+  "team_ancestor_holdout_exclusion_independently_proven": false,
+  "seed42_split_reconstruction_order_exact": {
+    "train.txt": true,
+    "holdout.txt": true
+  }
+}

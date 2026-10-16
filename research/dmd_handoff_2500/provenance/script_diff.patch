@@ -1,0 +1,22 @@
+--- dmd_preserve_team.py
++++ dmd_reproduce.py
+@@ -59,7 +59,7 @@
+  from teacher.cfg import apply_cfg
+  real_state=torch.load(OUT/'fresh_teacher/final.pt',map_location='cpu',weights_only=True)
+  real_cfg=Config(**real_state['config'])
+- train_paths=Path(real_cfg.train_manifest).read_text().splitlines()
++ train_paths=(ROOT/'data/development/seed42_holdout5/train.txt').read_text().splitlines()
+  assert real_state['train_paths_sha256']==hashlib.sha256('\n'.join(train_paths).encode()).hexdigest()
+  real=make_model(real_cfg,151).cuda().eval().requires_grad_(False);real.load_state_dict(real_state['ema']);del real_state
+  fake=copy.deepcopy(real).train().requires_grad_(True)
+@@ -119,10 +119,7 @@
+   if step in [2500,5000,10000]:
+    saved_path=RUN/f'dmd_step_{step:06d}.ckpt';torch.save({'state_dict':ema.state_dict(),'config':config,'step':step,'input_checkpoint_hashes':old_hashes,'parameter_count':ema.count_parameters(),'nfe':1},saved_path)
+    status=f'preserved team candidate training-reference evaluation {step}';report();row=evaluate(f'dmd_{step:06d}',ema,step,peak,elapsed);best=min([best,row],key=lambda r:r['fid']);report()
+-   if step==2500 and row['fid']>=baseline['fid']:break
+-   if step==5000 and row['fid']>=previous:break
+    previous=row['fid']
+-  if time.monotonic()-started>6*3600:raise TimeoutError('Bounded six-hour endpoint experiment deadline')
+  selected=ROOT/'checkpoints/one_nfe.ckpt' if best['step']==0 else RUN/f'dmd_step_{best["step"]:06d}.ckpt'
+  export=RUN/'selected_one_nfe.ckpt';assert not export.exists();shutil.copyfile(selected,export)
+  model=load(ModelOneNFE,export);calls=[0]

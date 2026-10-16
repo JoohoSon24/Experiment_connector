@@ -1,0 +1,78 @@
+{
+  "stage": "guidance",
+  "final": "/root/Diffusion/recipe_distill_dmd/experiments/recipe/guidance/final.pt",
+  "development": {
+    "fid": 42.613874268640814,
+    "reference_split": "development",
+    "reference_count": 755,
+    "sample_count": 3020,
+    "seed": 42,
+    "batch_size": 16,
+    "precision": "bf16",
+    "nfe": 32,
+    "parameter_count": 48883107
+  },
+  "milestones": [
+    {
+      "step": 10000,
+      "fid": 43.00810118507849,
+      "reference_split": "development",
+      "reference_count": 755,
+      "sample_count": 3020,
+      "seed": 42,
+      "batch_size": 16,
+      "precision": "bf16",
+      "nfe": 32,
+      "parameter_count": 48883107
+    },
+    {
+      "step": 20000,
+      "fid": 42.97360922279364,
+      "reference_split": "development",
+      "reference_count": 755,
+      "sample_count": 3020,
+      "seed": 42,
+      "batch_size": 16,
+      "precision": "bf16",
+      "nfe": 32,
+      "parameter_count": 48883107
+    },
+    {
+      "step": 30000,
+      "fid": 42.631703748538825,
+      "reference_split": "development",
+      "reference_count": 755,
+      "sample_count": 3020,
+      "seed": 42,
+      "batch_size": 16,
+      "precision": "bf16",
+      "nfe": 32,
+      "parameter_count": 48883107
+    },
+    {
+      "step": 40000,
+      "fid": 42.73399922851337,
+      "reference_split": "development",
+      "reference_count": 755,
+      "sample_count": 3020,
+      "seed": 42,
+      "batch_size": 16,
+      "precision": "bf16",
+      "nfe": 32,
+      "parameter_count": 48883107
+    },
+    {
+      "step": 50000,
+      "fid": 42.613874268640814,
+      "reference_split": "development",
+      "reference_count": 755,
+      "sample_count": 3020,
+      "seed": 42,
+      "batch_size": 16,
+      "precision": "bf16",
+      "nfe": 32,
+      "parameter_count": 48883107
+    }
+  ],
+  "wandb": "https://wandb.ai/fv2z6n929c-kaist-digital-humanities-and-social-sciences-/pokemon-diffusion/runs/ecd72ae9"
+}

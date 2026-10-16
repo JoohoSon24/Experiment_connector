@@ -1,0 +1,40 @@
+{
+  "status": "PASS",
+  "workspace": "/root/DMD",
+  "read_only_audit_mode": true,
+  "verified_required_files": 15,
+  "verified_overlay_files": 103,
+  "split_checks": {
+    "dev_train_subset_original_train": true,
+    "dev_holdout_subset_original_train": true,
+    "dev_train_holdout_disjoint": true,
+    "dev_holdout_validation_disjoint": true,
+    "original_train_validation_disjoint": true,
+    "dev_union_equals_original_train": true,
+    "no_duplicate_original_train": true,
+    "no_duplicate_dev_train": true,
+    "no_duplicate_holdout": true
+  },
+  "split_counts": [
+    17079,
+    16324,
+    755,
+    3020
+  ],
+  "reference_png_hash_matches": 755,
+  "parameter_counts": {
+    "one_nfe": 48883107,
+    "few_nfe": 48883107,
+    "real_score": 48883107
+  },
+  "train_paths_sha256": "b4020d6dc65948c7cd2a0de048382284d0fc7a1dd19237583e4f67cc2d353f51",
+  "cuda": {
+    "torch_cuda": "12.4",
+    "available": true,
+    "name": "GRID A100D-20C",
+    "total_vram_bytes": 21470511104,
+    "bf16_supported": true
+  },
+  "training_peak_measured_by_this_check": false,
+  "evidence_kind": "new read-only handoff preflight"
+}

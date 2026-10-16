@@ -1,0 +1,11 @@
+{
+  "fid": 43.00810118507849,
+  "reference_split": "development",
+  "reference_count": 755,
+  "sample_count": 3020,
+  "seed": 42,
+  "batch_size": 16,
+  "precision": "bf16",
+  "nfe": 32,
+  "parameter_count": 48883107
+}

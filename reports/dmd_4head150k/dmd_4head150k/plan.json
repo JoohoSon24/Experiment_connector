@@ -1,0 +1,46 @@
+{
+  "method": "DMD-inspired VP adaptation from supplied handoff; synthetic-only training",
+  "real_score": {
+    "checkpoint": "/root/Diffusion/workspace_distillation/experiments/teacher_variant_sequence/attention4/attention4_150k/final.pt",
+    "sha256": "499f268c8ece91fa3e82eca3d2613675b192092ee3a40f2f698dd079e32ea66b",
+    "heads": 4,
+    "ema": 0.9999,
+    "step": 150000,
+    "cfg": 2
+  },
+  "generator_initialization": {
+    "checkpoint": "/root/Diffusion/workspace_distillation/checkpoints/one_nfe.ckpt",
+    "sha256": "8173c059ca3dda5d63c2c3a9d463b100218867c5fc08b995f5c93162844f7266",
+    "heads": 1
+  },
+  "endpoint": {
+    "checkpoint": "/root/Diffusion/workspace_distillation/checkpoints/few_nfe.ckpt",
+    "sha256": "d3c6d0cccc1b81d1709ed090abd68961197ef7417a7c6ae67724835bf7bfa596",
+    "note": "Legacy4-NFE endpoint, not a child of new4-head teacher"
+  },
+  "arms": {
+    "endpoint01": 0.1,
+    "endpoint00": 0.0
+  },
+  "generator_updates": 2500,
+  "fake_warmup_updates": 200,
+  "batch_size": 64,
+  "microbatch_size": 16,
+  "G_lr": 2e-05,
+  "fake_lr": 0.0002,
+  "G_ema": 0.999,
+  "seed": 42,
+  "noise_t_range": [
+    50,
+    950
+  ],
+  "inference_exports": [
+    500,
+    1000,
+    2500
+  ],
+  "optimizer_resume": "not implemented; original archived trainer also has no resume CLI",
+  "selection": "development reference755; official reference3020 reporting only",
+  "invalid_archive_export": "Truncated21MB checkpoint; not used. Originalone_nfe follows handoff retraining guide",
+  "lineage": "Newteacher holdout exclusion verified; full legacyG/endpoint ancestry not independently verified"
+}

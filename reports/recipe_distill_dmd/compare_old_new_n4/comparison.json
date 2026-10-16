@@ -1,0 +1,43 @@
+{
+  "legacy": {
+    "fid": 33.05174274756206,
+    "checkpoint": "/root/Diffusion/workspace_distillation/checkpoints/few_nfe.ckpt",
+    "sha256": "d3c6d0cccc1b81d1709ed090abd68961197ef7417a7c6ae67724835bf7bfa596",
+    "nfe": 4,
+    "seed": 42,
+    "batch_size": 16,
+    "sample_count": 3020,
+    "reference_count": 3020,
+    "weights": "EMA",
+    "precision": "bf16"
+  },
+  "new": {
+    "stage": "n4",
+    "step": 25000,
+    "nfe": 4,
+    "fid": 36.03177398063798,
+    "development_fid": 48.66472995141737,
+    "reference_split": "official",
+    "reference_count": 3020,
+    "sample_count": 3020,
+    "seed": 42,
+    "batch_size": 16,
+    "precision": "bf16",
+    "weights": "EMA",
+    "source_generated": "/root/Diffusion/recipe_distill_dmd/experiments/recipe/n4/eval_025000/generated",
+    "checkpoint": "/root/Diffusion/recipe_distill_dmd/experiments/recipe/n4/final.pt",
+    "note": "Reporting only; no checkpoint selected on official FID"
+  },
+  "official_delta_new_minus_legacy": 2.9800312330759198,
+  "historical_legacy_fid": 33.0517,
+  "legacy_reproduction_delta": 4.27475620625728e-05,
+  "pairing": "same category and sample index0, seed42+batch index, batch16",
+  "head_counts": {
+    "legacy": 1,
+    "new": 4
+  },
+  "teacher_budgets": {
+    "legacy": 100000,
+    "new": 150000
+  }
+}

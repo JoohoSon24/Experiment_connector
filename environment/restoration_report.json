@@ -1,0 +1,107 @@
+{
+  "checked_at_utc": "2026-10-07T06:17:26.083160+00:00",
+  "python": "3.10.21 (main, Sep  1 2026, 14:16:49) [Clang 22.1.3 ]",
+  "python_executable": "/root/Diffusion/workspace_distillation/.venv/bin/python",
+  "source": {
+    "base_commit": "e3f5120000cd91037017d86f23993492195101a5",
+    "protected_files_unchanged": [
+      "dataset.py",
+      "download_dataset.py",
+      "evaluate.py",
+      "src/utils.py",
+      "requirements.txt",
+      "data/pokemon-generation-one-22k/train_split.txt",
+      "data/pokemon-generation-one-22k/val_split.txt",
+      "data/pokemon-generation-one-22k/category_to_id.json"
+    ],
+    "base_Model_unchanged": true,
+    "overlay_files_verified": 89
+  },
+  "packages": {
+    "torch": "2.6.0+cu124",
+    "torchvision": "0.21.0+cu124",
+    "torchaudio": "2.6.0+cu124",
+    "kagglehub": "1.0.2",
+    "Pillow": "12.3.0",
+    "clean-fid": "0.1.35",
+    "numpy": "2.2.6",
+    "scipy": "1.15.3"
+  },
+  "data": {
+    "official_train_count": 17079,
+    "official_validation_count": 3020,
+    "optimizer_train_count": 16324,
+    "holdout_count": 755,
+    "holdout_per_class": 5,
+    "image_verification": "PASS",
+    "image_manifest_aggregate_sha256": "b09b6380c564a584306da0c244a5fff4b16a5d6abf6ebdd9e03cb6c7e320c800",
+    "train_holdout_validation_disjoint": true
+  },
+  "references": {
+    "official": 3020,
+    "development": 755,
+    "method": "unchanged evaluate.prepare_reference_set and protected dataset transform"
+  },
+  "gpu": {
+    "name": "GRID A100D-20C",
+    "cuda_runtime": "12.4",
+    "memory_bytes": 21470511104
+  },
+  "inference_models": [
+    {
+      "mode": "one_nfe",
+      "measured_nfe": 1,
+      "parameters": 48883107,
+      "shape_range_finite": "PASS",
+      "explicit_seed_repeat": "PASS",
+      "checkpoint_sha256": "8173c059ca3dda5d63c2c3a9d463b100218867c5fc08b995f5c93162844f7266",
+      "provenance": {
+        "source_checkpoint": "experiments/low_nfe_budget_100k/n1/final.pt",
+        "nfe": 1,
+        "parameter_count": 48883107,
+        "fixed_guidance_scale": 2
+      },
+      "inference_peak_allocated_bytes": 340352000
+    },
+    {
+      "mode": "few_nfe",
+      "measured_nfe": 4,
+      "parameters": 48883107,
+      "shape_range_finite": "PASS",
+      "explicit_seed_repeat": "PASS",
+      "checkpoint_sha256": "d3c6d0cccc1b81d1709ed090abd68961197ef7417a7c6ae67724835bf7bfa596",
+      "provenance": {
+        "source_checkpoint": "experiments/fixed_cfg2_progressive/n4/final.pt",
+        "nfe": 4,
+        "parameter_count": 48883107,
+        "fixed_guidance_scale": 2
+      },
+      "inference_peak_allocated_bytes": 342604288
+    }
+  ],
+  "distillation_math": {
+    "merged_endpoint_max_error": 1.7763568394002505e-15,
+    "v_and_loss_identities": "PASS",
+    "full_pipeline_smoke": "NOT RUN: full teacher checkpoint absent"
+  },
+  "disposable_teacher_update": {
+    "batch_size": 64,
+    "updates": 1,
+    "parameters": 48883107,
+    "loss": 0.9980449080467224,
+    "gradient_norm": 1.8338428735733032,
+    "finite_loss_gradient": "PASS",
+    "ema_update": "PASS",
+    "conditional_unconditional_shape_cfg0": "PASS",
+    "peak_allocated_bytes": 9156377600,
+    "production_weights_changed": false,
+    "scope": "random-init smoke, not quality or exact resume proof"
+  },
+  "unavailable_training_artifacts": [
+    "experiments/teacher_b64_noaug_constant_100k/final.pt",
+    "experiments/fixed_cfg2_progressive/{n4,n2,n1}/final.pt",
+    "experiments/low_nfe_budget_100k/n1/final.pt",
+    "experiments/low_nfe_budget_100k/n2/step_075000.pt or final.pt"
+  ],
+  "status": "PASS: restored inference, data, protected code and disposable GPU training update"
+}

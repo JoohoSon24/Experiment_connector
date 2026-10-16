@@ -1,0 +1,35 @@
+{
+  "status": "PASS",
+  "source_root": "/root/DMD",
+  "captured_at": "2026-10-09T06:23:30.227829+00:00",
+  "comparison_view": "Full regular-file comparison; real directories compared excluding only sandbox-injected empty directory placeholders",
+  "entries_before": 36356,
+  "entries_after": 36356,
+  "regular_files_compared": 36145,
+  "bytes_hashed": 5092174578,
+  "added": [],
+  "removed": [],
+  "changed": [],
+  "errors": [],
+  "git_status_before": " M model.py\n?? .gitignore\n?? CODEX.md\n?? OVERLAY_MANIFEST.json\n?? PROJECT_SPEC.md\n?? TEAM_HANDOFF.md\n?? configs/\n?? consistency/\n?? constraints/\n?? data/development/\n?? distillation/\n?? docs/\n?? scripts/\n?? teacher/\n",
+  "git_status_after": " M model.py\n?? .gitignore\n?? CODEX.md\n?? OVERLAY_MANIFEST.json\n?? PROJECT_SPEC.md\n?? TEAM_HANDOFF.md\n?? configs/\n?? consistency/\n?? constraints/\n?? data/development/\n?? distillation/\n?? docs/\n?? scripts/\n?? teacher/\n",
+  "git_commit": "e3f5120000cd91037017d86f23993492195101a5",
+  "comparison_fields": [
+    "type",
+    "mode",
+    "mtime_ns",
+    "bytes",
+    "sha256",
+    "symlink target"
+  ],
+  "atime_excluded": true,
+  "preliminary_view_difference": "Raw comparisons are preserved in source_execution_view_differences.json. Only the three virtual directory metadata entries differ; all source files and git state are unchanged.",
+  "excluded_virtual_directory_metadata": [
+    ".agents",
+    ".aws",
+    ".codex"
+  ],
+  "regular_files_excluded": 0,
+  "real_entries_before": 36353,
+  "real_entries_after": 36353
+}

@@ -1,0 +1,14 @@
+{
+  "user_statement": "두 checkpoint 모두 올바르게 학습되었어",
+  "interpretation_in_context": "User confirms both existing checkpoints and their complete learned lineage comply with development train-only and holdout-exclusion requirements.",
+  "provenance_basis": "user attestation; original training manifests not embedded in inference exports",
+  "authorized_checkpoints": [
+    "checkpoints/one_nfe.ckpt",
+    "checkpoints/few_nfe.ckpt"
+  ],
+  "training_manifest": "data/development/seed42_holdout5/train.txt",
+  "holdout_manifest": "data/development/seed42_holdout5/holdout.txt",
+  "official_validation_allowed": false,
+  "supersedes": "Prior exclusion because independent artifact provenance was unavailable.",
+  "retained_constraints": "No architecture replacement, no protected file edits, no overwriting original weights, individually<100M, peak<20GB, one backbone call at final inference."
+}

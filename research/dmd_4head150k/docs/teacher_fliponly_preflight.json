@@ -1,0 +1,35 @@
+{
+  "config_changes": {
+    "experiment_name": [
+      "teacher_b64_constant_100k",
+      "teacher_b64_fliponly_constant_100k"
+    ],
+    "augmentation_degrees": [
+      5.0,
+      0.0
+    ],
+    "augmentation_translate": [
+      0.02,
+      0.0
+    ],
+    "augmentation_scale_delta": [
+      0.02,
+      0.0
+    ]
+  },
+  "train_count": 16324,
+  "batch_shape": [
+    64,
+    3,
+    64,
+    64
+  ],
+  "range": [
+    -1.0,
+    1.0
+  ],
+  "lr_policy": "constant",
+  "batch_size": 64,
+  "updates": 100000,
+  "test": "PASS"
+}

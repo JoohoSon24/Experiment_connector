@@ -1,0 +1,24 @@
+{
+  "order": [
+    "n4_lr2e4",
+    "n4_lr5e5",
+    "n4_direct32_lr5e5"
+  ],
+  "start_after": "existing recipe + DMD4 completed",
+  "steps_each": 10000,
+  "LR_comparison": [
+    "n4_lr2e4",
+    "n4_lr5e5"
+  ],
+  "target_comparison": [
+    "n4_lr5e5",
+    "n4_direct32_lr5e5"
+  ],
+  "baseline": "same n4 EMA25K, fresh AdamW",
+  "quality_selection": "development755, official3020 reporting",
+  "eval_steps": [
+    2500,
+    5000,
+    10000
+  ]
+}

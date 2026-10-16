@@ -1,0 +1,23 @@
+{
+  "method": "vp_consistency_l2",
+  "guidance_scale": 2.0,
+  "num_train_steps": 100000,
+  "batch_size": 64,
+  "microbatch_size": 16,
+  "num_workers": 4,
+  "learning_rate": 0.0002,
+  "learning_rate_schedule": "constant",
+  "warmup_steps": 0,
+  "target_ema_decay": 0.999,
+  "sampling_ema_decay": 0.999,
+  "grad_clip": 1.0,
+  "sigma_data": 0.5,
+  "num_scales": 128,
+  "clip_teacher": true,
+  "amp_dtype": "bf16",
+  "seed": 42,
+  "save_interval": 500,
+  "log_interval": 20,
+  "sample_interval": 1000,
+  "milestone_steps": [25000, 50000, 75000]
+}
