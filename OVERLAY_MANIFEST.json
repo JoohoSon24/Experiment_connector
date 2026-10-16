@@ -1,0 +1,361 @@
+{
+  "upstream_commit": "e3f5120000cd91037017d86f23993492195101a5",
+  "files": {
+    ".gitignore": {
+      "sha256": "304a29f5452da2fb2dd95359f364b4934bd4043f6402080a2d0d80e1cad9442e",
+      "bytes": 195
+    },
+    "CODEX.md": {
+      "sha256": "d79ff2468748557885995b5ec6c9b4c3e91383c743275157cb0054abaef9073b",
+      "bytes": 15255
+    },
+    "PROJECT_SPEC.md": {
+      "sha256": "8ffda390fc55d062c9a2e2d00e60a3a565051e5cd12cc525684a4346fedcb27b",
+      "bytes": 12142
+    },
+    "configs/distillation/fixed_cfg2_progressive.json": {
+      "sha256": "88ebb482e45771bc971d4da10464d3122c0d478e5994b176d3998ea18433d65b",
+      "bytes": 789
+    },
+    "configs/distillation/low_nfe_budget_100k.json": {
+      "sha256": "43438567cabeaebf2e762b3bea1e86bf6ff4a074ce94bd20f124dad08da82c40",
+      "bytes": 846
+    },
+    "configs/teacher/debug.json": {
+      "sha256": "f8fa271cdf583301367a718f9697c36427be805324301ffb82080723581a7c4e",
+      "bytes": 886
+    },
+    "configs/teacher/debug_fresh_five.json": {
+      "sha256": "4891f8d56af12b246e52d955ea636044d94efb5246c0bc7bcaabfa4c0c692f92",
+      "bytes": 897
+    },
+    "configs/teacher/debug_resume.json": {
+      "sha256": "57c33c5e178e759330b8cb94b28c4f7eaeed19177546481a6af6799601d9e7de",
+      "bytes": 893
+    },
+    "configs/teacher/initial.json": {
+      "sha256": "962798bdb25672c7adc6c387c58dc9b24644cbe62415e76f69a96fb588e673e6",
+      "bytes": 925
+    },
+    "configs/teacher/initial_probe.json": {
+      "sha256": "dd5edb299a17616dcdc969ba9efbf459b674adf7fc7093185851ede7cb9b7b78",
+      "bytes": 918
+    },
+    "configs/teacher/teacher_b128_100k.json": {
+      "sha256": "57e291d0898886fe6ca0bc42a998773802d9d0de9200dd51271a929b403beb93",
+      "bytes": 1496
+    },
+    "configs/teacher/teacher_b64_100k.json": {
+      "sha256": "8a2d7e96effd8c235bbdc5290113f1e9fa7e2f98b61449ffcbfbb13ff6db792e",
+      "bytes": 1484
+    },
+    "configs/teacher/teacher_b64_constant_100k.json": {
+      "sha256": "85c3a78d032ec94c7d6da7b5e33adb019f265b42d8e24b22e06736a4ea71e3c6",
+      "bytes": 1495
+    },
+    "configs/teacher/teacher_b64_fliponly_constant_100k.json": {
+      "sha256": "8ae21975a13ba7427a73ffc42e33e81b954d9d6230a5dd8b209e7af2a1cc60bf",
+      "bytes": 1502
+    },
+    "configs/teacher/teacher_b64_noaug_constant_100k.json": {
+      "sha256": "c5f960f142a7df88b7830d69f2968884d9e5ad776cdcb0b8a57af6ef2f9577ce",
+      "bytes": 1499
+    },
+    "configs/teacher/teacher_ddpm_cfg_v1.json": {
+      "sha256": "46715255adfdb53e471f9824f010f1111282608aa43437a1a22b739626ab5cf0",
+      "bytes": 924
+    },
+    "configs/teacher/teacher_ddpm_cfg_v1_probe.json": {
+      "sha256": "87eb3144b7d9c7bd29896d1dba8b0d44dce2421cf5183d99d66335cd5e88715b",
+      "bytes": 919
+    },
+    "configs/teacher/teacher_lr2e4_linear_aug_50k.json": {
+      "sha256": "3de1cff71241d960ef8823047f23c20e97f935ea86a86ffe7b6743fad00044fa",
+      "bytes": 1109
+    },
+    "configs/teacher/teacher_lr5e5_aug_50k.json": {
+      "sha256": "a9cd6a6a554a2c147186e87c30c0b89989d02280765fac4b92aee564ea17758f",
+      "bytes": 1063
+    },
+    "configs/teacher/teacher_lr5e5_aug_probe.json": {
+      "sha256": "98ce4d5de200beb72f2addf56ae72c0a9b73a2ae02ffd7ead3bd273e8dacbcb7",
+      "bytes": 1054
+    },
+    "configs/teacher/teacher_memorization64_constant.json": {
+      "sha256": "74f8bbe8f711364101a958ae00339fa8f731c14e64da2e20660b301191483bae",
+      "bytes": 1484
+    },
+    "constraints/evaluation.txt": {
+      "sha256": "ac76ddbce734dca5e70abb89090255c880e15ecf6ae24ca422625f15257130e9",
+      "bytes": 113
+    },
+    "data/development/seed42_holdout5/holdout.txt": {
+      "sha256": "a9b672630e28c4dea5fd922a22a1e11dc78155e4c96e88d4bca90bb3ce920a09",
+      "bytes": 31510
+    },
+    "data/development/seed42_holdout5/metadata.json": {
+      "sha256": "78f5c8bba3f23fa4adc81afc278069b546cec9044a7df9a5dbbf1769d5ea4b4b",
+      "bytes": 349
+    },
+    "data/development/seed42_holdout5/train.txt": {
+      "sha256": "99e2aef7b68f4792ce1440c1196dd948310fdd7fc6479068595c96a30558b24e",
+      "bytes": 671861
+    },
+    "distillation/__init__.py": {
+      "sha256": "05b480c34971f4411ba7e0292a184d2ac4ef89a595cc7b3008f4d7ee0e9936fc",
+      "bytes": 78
+    },
+    "distillation/core.py": {
+      "sha256": "45c4cff601e442f01a42b7af5b19fd52474901c720c9cc76e60957d55441357b",
+      "bytes": 2646
+    },
+    "distillation/evaluate.py": {
+      "sha256": "76ccdb7d8f486d969872d9a50ab6935e4737615ddf3fb21e0e57930386a72a70",
+      "bytes": 4591
+    },
+    "distillation/export.py": {
+      "sha256": "58d5b04bc1427ce690009049de4dea48ef8d1d242d7c142b9466353fa2cbfb68",
+      "bytes": 2014
+    },
+    "distillation/pipeline.py": {
+      "sha256": "bbc2ed349d97263d29439e325e846cddd2e5e11bfb22351c2eb8414bcb26c3d7",
+      "bytes": 6860
+    },
+    "distillation/smoke.py": {
+      "sha256": "54255dba5e4d84b4123eabf70202bc569ae7836bffa16e7256f893a9a8b09ba0",
+      "bytes": 4291
+    },
+    "distillation/submission.py": {
+      "sha256": "06284d614a1d91847204920692196ee7aee55843e3b970dd1316f78c6fa6dcb8",
+      "bytes": 1811
+    },
+    "distillation/train.py": {
+      "sha256": "cfcc9f5b926a0ddce5b1760a9c31eeca80bede987d065ed1bc676c8b0169d8d1",
+      "bytes": 12048
+    },
+    "docs/distillation_baseline.md": {
+      "sha256": "e4b6b98322bf2e4673719ea343b683ebd52bded00b8ba0f2712cd82ebf7b5069",
+      "bytes": 10286
+    },
+    "docs/distillation_results_review.md": {
+      "sha256": "3086f195a86c9e8528b40a57cf12be8fb39f441f56a24dbecb9a44b7a5699ccb",
+      "bytes": 8350
+    },
+    "docs/experiment_cleanup.md": {
+      "sha256": "98a0f926751846c8722fb973ed5aac4eff85bc97ebb71427438027fb389cd1f7",
+      "bytes": 4947
+    },
+    "docs/low_nfe_budget_experiment.md": {
+      "sha256": "30d21d93e3bbdf724dabfe3087f9ccecbc0ce1fd576de748b4a5a4deec95e4ca",
+      "bytes": 5666
+    },
+    "docs/model_architecture.md": {
+      "sha256": "6cedc83f0d8c93d75fada0038ba0007793abe371b3b742f8c20e8963b0a55e3f",
+      "bytes": 10937
+    },
+    "docs/repository_analysis.md": {
+      "sha256": "f65b3625497115a781cacb578e453f19f8e199cfdeb88ae7c5ca9d40428a632f",
+      "bytes": 9020
+    },
+    "docs/sampling_defaults_and_ddim_cfg.md": {
+      "sha256": "c990c19dfcdec093bae82f5acb9f8ba95d341006b93744afb5b30c851dd5bfaf",
+      "bytes": 2981
+    },
+    "docs/sampling_steps_seeds_analysis.md": {
+      "sha256": "a0f8c422f7ad062915756fbcc237966f020efeda504e451ee9f95ec3a9a0ab39",
+      "bytes": 4915
+    },
+    "docs/teacher_b64_100k.md": {
+      "sha256": "bd9aae3f33c46dbd42e8d1552dfe5402ba2ccca5d3112ebff105d28dd6c5e4da",
+      "bytes": 6386
+    },
+    "docs/teacher_b64_results_and_next.md": {
+      "sha256": "9c141447da78665092d27bc6f55125c4bf1645a3a46f3c3fc215d05c8f56f901",
+      "bytes": 6522
+    },
+    "docs/teacher_baseline.md": {
+      "sha256": "e2625536323532778199de4c1e0f9d8c46b3a4ed29cf98ff7a37921a7c1e0c31",
+      "bytes": 10621
+    },
+    "docs/teacher_constant_results_and_fliponly.md": {
+      "sha256": "3cb1a66c2cc0afb4671ae9ff4f82df20ca00c053b78c6faf5b35825fff40647a",
+      "bytes": 7648
+    },
+    "docs/teacher_diagnosis.md": {
+      "sha256": "b6b136518daa3f80b863ac4cdded94ac896f335e1e773a393878bcace3477052",
+      "bytes": 5569
+    },
+    "docs/teacher_fliponly_preflight.json": {
+      "sha256": "3461585d5953850135462ab84dc69e932199d63c53d4133633b869b49d72e091",
+      "bytes": 521
+    },
+    "docs/teacher_lr2e4_linear_aug_run.md": {
+      "sha256": "e12909404958c2976cb70f6715e69fc3919441692aefabc0c515675aaf20a90f",
+      "bytes": 2980
+    },
+    "docs/teacher_lr5e5_aug_run.md": {
+      "sha256": "692e346ff883bc715375f85a966fde5436727b5f3fe1aa565b2090657a8cf8f9",
+      "bytes": 3374
+    },
+    "docs/teacher_remaining_experiments.md": {
+      "sha256": "77d4aeec3db03e84fae5bb34aae03340432a77f3b65ce007b97fbe9332f529df",
+      "bytes": 5020
+    },
+    "docs/teacher_review_50k.md": {
+      "sha256": "d0f7bda1cd274152c8f97361933610c3516b7c9b40f260ccfa4586d3999ad9de",
+      "bytes": 12246
+    },
+    "docs/teacher_training_run.md": {
+      "sha256": "c38350b28cf8a1400aec6d9a9e7dc090ebfc35f091bb168e092a3abe14f52401",
+      "bytes": 5013
+    },
+    "model.py": {
+      "sha256": "6b2d05af11d7338b56fddefc558d1655e5d8827fec08a6c7e4b1e1a90cf869f7",
+      "bytes": 3242
+    },
+    "scripts/audit_teacher.py": {
+      "sha256": "81794f20b575c6e61c2e8b7f0bf202984c747e9c63dbc29c2519f029d394a5c1",
+      "bytes": 8545
+    },
+    "scripts/benchmark_teacher.py": {
+      "sha256": "3ebfd7c2e5010cc0e99d9fec80bf4c9c70404e8d2f6403aa32ba9482045fbdf2",
+      "bytes": 3714
+    },
+    "scripts/compare_teacher_steps_seeds.py": {
+      "sha256": "cb514daae05f96ee71813b1cbcb9c1f8876c1cdcb553e9e130e8acdb6b1f160d",
+      "bytes": 2385
+    },
+    "scripts/create_handoff.py": {
+      "sha256": "b973b941cfd4abe575c51fdf1e4bafdf5042d157aa9b61a0274fa5de7ec1a32d",
+      "bytes": 3671
+    },
+    "scripts/diagnose_teacher.py": {
+      "sha256": "4f75b45fc44c14136d06060733386784bf3cba4e6fe2bc00834d25ccd8f90673",
+      "bytes": 3283
+    },
+    "scripts/make_student_class_grids.py": {
+      "sha256": "afafa9a0fc3f252c92f45527df010142da46e21c11a325561091e79490af188c",
+      "bytes": 3570
+    },
+    "scripts/report_teacher_official.py": {
+      "sha256": "be8a6c40b0a01a6c541fcb9f12a061a9abb18bdf24d67b5f800bc5d52f0b4c81",
+      "bytes": 2842
+    },
+    "scripts/review_ddim_cfg.sh": {
+      "sha256": "c41bacc5233b17348f9526e4885b157df45722ed23f0433f215a805966819271",
+      "bytes": 395
+    },
+    "scripts/review_teacher_run.py": {
+      "sha256": "df8986e5034ef85ade20d6293c750649e31deefacedbffa14eb5c4d9a4a84b59",
+      "bytes": 2868
+    },
+    "scripts/run_fixed_guidance_distillation.sh": {
+      "sha256": "642dfb2d457cd4c682390ee04bc768cb5437c847602013ca39dfc6bce9c7ba4c",
+      "bytes": 670
+    },
+    "scripts/run_low_nfe_budget.py": {
+      "sha256": "8ee102272e32a951b595be159412c87076da5494b6f7bfcc62385468d9eb84b2",
+      "bytes": 7016
+    },
+    "scripts/run_low_nfe_budget.sh": {
+      "sha256": "fae62768ff5881bed10e38850a62bb4e3228465c0049b440d3a34817c01d8545",
+      "bytes": 380
+    },
+    "scripts/run_teacher_next_experiments.sh": {
+      "sha256": "d4d3b3c683c74d979783cbbeb893a2e9ff5fe36b67e7516c73668fb95fb72b40",
+      "bytes": 464
+    },
+    "scripts/run_teacher_to_students.sh": {
+      "sha256": "74d449cf6a2b0c003faa6fe988a4ccd608d27db84b1f0f78df7a935b66926765",
+      "bytes": 693
+    },
+    "scripts/supplement_ddim_diagnostics.py": {
+      "sha256": "a84cd44e7744daa65f986fe254638610dc0be3bc0c140345b0f919ebecc38dd5",
+      "bytes": 2531
+    },
+    "scripts/train_teacher_b128.sh": {
+      "sha256": "cb6fb155c159a0a8f41a00bb718f8d9723d75fec1516fa43c54b272a07a7dbdd",
+      "bytes": 1104
+    },
+    "scripts/train_teacher_b64.sh": {
+      "sha256": "c34d60e150c333506eaf68a4530b4ac3f0432f023280e1eed927438dd36abef3",
+      "bytes": 1102
+    },
+    "scripts/train_teacher_b64_constant.sh": {
+      "sha256": "c1a0e1f7f2c02fb1b9f02354ca42f2cbe299ab622d504841e7a2e7d3dadee3ce",
+      "bytes": 1120
+    },
+    "scripts/train_teacher_b64_fliponly_constant.sh": {
+      "sha256": "74ec4f69606433b6ef31821abb275d5c35227eb86d20efa36dcc8b7a0936e341",
+      "bytes": 1138
+    },
+    "scripts/train_teacher_b64_noaug_constant.sh": {
+      "sha256": "e0040de77808e194d35961eefa4be4f3604d6c9e7f2bd20399d9ce37e0e6c582",
+      "bytes": 1132
+    },
+    "scripts/train_teacher_lr2e4_linear_aug.sh": {
+      "sha256": "eaa8c5f1d88fa33f18d6f9dd9daf9ad0ad07027b1cfdd9a49323fd61658ea96a",
+      "bytes": 797
+    },
+    "scripts/train_teacher_lr5e5_aug.sh": {
+      "sha256": "4d171b1ccfbeea0f4fa4095aee551bff5196a818aa86cc7558d656561457dcd4",
+      "bytes": 783
+    },
+    "scripts/train_teacher_memorization64.sh": {
+      "sha256": "b468b9743b49966a5a369e2ce737ab3a215987e0f98f715d7b54f52d93062fbc",
+      "bytes": 1152
+    },
+    "scripts/train_teacher_v1.sh": {
+      "sha256": "79f886a3f58d40a39114c0bc03c3809cfbffed4591a0a9883117da4b53bbdff3",
+      "bytes": 784
+    },
+    "teacher/__init__.py": {
+      "sha256": "b5a93aff89ca44a04577ba300e7b1e3ec405f18678045b892d2d8e512d687227",
+      "bytes": 52
+    },
+    "teacher/cfg.py": {
+      "sha256": "74ef535faba677a09f6fce384a4f02d7c3ad3ae4cb85362d4edfc7354c019f30",
+      "bytes": 509
+    },
+    "teacher/config.py": {
+      "sha256": "7cb5df078b38aeb8a6fdb78c232167fa5c2dee982a1718deb1926c93f576cf31",
+      "bytes": 3907
+    },
+    "teacher/data.py": {
+      "sha256": "39140525868a7aa6e4cc48ea4e253dd4f68c545d41a317650ca36bc582e07ea1",
+      "bytes": 3009
+    },
+    "teacher/diffusion.py": {
+      "sha256": "022413888e08ca0c5a1c954f8eee38455cccf237c78c3250c2f5367ec32fead4",
+      "bytes": 3941
+    },
+    "teacher/evaluate.py": {
+      "sha256": "5ae76f9d3910500336450fe41ab10d2759370714a74863a4bcb4b4c0d45b80c7",
+      "bytes": 8679
+    },
+    "teacher/model.py": {
+      "sha256": "6180f84fceccabf9164dda8a71cf5db29794ac700cf0e6b3e064131364adb9de",
+      "bytes": 7323
+    },
+    "teacher/sample.py": {
+      "sha256": "43f2e25af503a2fb5bffa52269db68422357328805f5ad2a3d782e0e51f8735f",
+      "bytes": 2594
+    },
+    "teacher/smoke.py": {
+      "sha256": "c2ac1858d3ad7460e8fb8c805139c27e2ba7873ea779369c856d0636c9cdf281",
+      "bytes": 5668
+    },
+    "teacher/splits.py": {
+      "sha256": "f8c2b7a77545e784b71dbffa4d29ed45fd4f948dcff92ab46946784e73e3f5a1",
+      "bytes": 2393
+    },
+    "teacher/train.py": {
+      "sha256": "9c76cd0946689d03b93c4abb9570e964c6b86fc16a96293ea5d01b11a98b23d8",
+      "bytes": 16107
+    },
+    "teacher/utils.py": {
+      "sha256": "4854bf81955d0b76c6022f7cba21b0425bd12da171878d6eab6fa2c6fb3948fc",
+      "bytes": 2526
+    }
+  }
+}

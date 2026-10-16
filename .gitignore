@@ -1,0 +1,8 @@
+/data/pokemon-generation-one-22k/PokemonData/
+/data/pokemon-generation-one-22k/.transparency_composited_on_white
+/experiments/
+/results/reference/
+/checkpoints/
+/handoff/
+/.venv/
+**/__pycache__/
