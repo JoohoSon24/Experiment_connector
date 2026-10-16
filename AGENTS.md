@@ -42,3 +42,6 @@ FID 프로토콜 및 사용법은 docs/EXPERIMENT.md와 configs/fid_protocol_v1.
 
 실험 meta의 git_commit이 rebase 후에도 pull로 조회되도록 원래 실험 커밋을 main의 merge ancestry로 보존한다.
 동기화 스크립트는 `git pull --rebase=merges festgen main`을 사용한다. 수동 pull도 같은 옵션을 사용한다.
+
+업로드 대상은 `JoohoSon24/Experiment_connector`, 브랜치는 main이다.
+로컬 원격 이름 `festgen`은 호환을 위해 유지하되 Experiment_connector를 가리킨다. FestGen 저장소에는 push하지 않는다.

@@ -5,7 +5,7 @@ if [ "$1" != festgen ]; then
     exit 1
 fi
 case "$2" in
-    git@github.com:JoohoSon24/FestGen.git|git@github-FestGen:JoohoSon24/FestGen.git) ;;
+    git@github.com:JoohoSon24/Experiment_connector.git|git@github-Experiment_connector:JoohoSon24/Experiment_connector.git) ;;
     *) echo 'Push denied: unexpected repository URL.' >&2; exit 1 ;;
 esac
 while read local_ref local_oid remote_ref remote_oid; do

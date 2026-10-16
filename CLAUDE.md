@@ -17,3 +17,6 @@
 
 ## 리뷰 처리
 - 반영 계획 먼저 제시. 반영 완료 시 status: done, resolution: exp-XXX 또는 설명.
+
+업로드 대상은 `JoohoSon24/Experiment_connector`, 브랜치는 main이다.
+로컬 원격 이름 `festgen`은 호환을 위해 유지하되 Experiment_connector를 가리킨다. FestGen 저장소에는 push하지 않는다.

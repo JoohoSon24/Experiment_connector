@@ -157,8 +157,8 @@ class WorkflowTests(unittest.TestCase):
     def test_hook_denies_origin_and_wrong_target(self):
         hook = str(SOURCE / '.githooks/pre-push')
         self.assertNotEqual(self.command(hook, 'origin', 'any', ok=False).returncode, 0)
-        self.assertEqual(self.command(hook, 'festgen', 'git@github-FestGen:JoohoSon24/FestGen.git').returncode, 0)
-        result = subprocess.run([hook, 'festgen', 'git@github-FestGen:JoohoSon24/FestGen.git'],
+        self.assertEqual(self.command(hook, 'festgen', 'git@github-Experiment_connector:JoohoSon24/Experiment_connector.git').returncode, 0)
+        result = subprocess.run([hook, 'festgen', 'git@github-Experiment_connector:JoohoSon24/Experiment_connector.git'],
                                  input='refs/heads/main abc refs/heads/other def\n', text=True, capture_output=True)
         self.assertNotEqual(result.returncode, 0)
 

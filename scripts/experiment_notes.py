@@ -29,8 +29,8 @@ def preflight():
     if git('branch', '--show-current') != 'main':
         raise RuntimeError('Switch to main before syncing')
     url = git('remote', 'get-url', '--push', 'festgen')
-    if url not in ('git@github.com:JoohoSon24/FestGen.git',
-                   'git@github-FestGen:JoohoSon24/FestGen.git'):
+    if url not in ('git@github.com:JoohoSon24/Experiment_connector.git',
+                   'git@github-Experiment_connector:JoohoSon24/Experiment_connector.git'):
         raise RuntimeError(f'Unexpected festgen push URL: {url}')
     if git('diff', '--cached', '--name-only'):
         raise RuntimeError('Index must be empty before sync')
