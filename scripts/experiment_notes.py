@@ -41,7 +41,12 @@ def preflight():
 
 def pull():
     preflight()
-    git('pull', '--rebase=merges', 'festgen', 'main', capture=False)
+    git('fetch', 'festgen', 'main', capture=False)
+    # A new destination can have an independent root merged into our history.
+    # If it is already an ancestor, avoid replaying unrelated historical commits.
+    included = subprocess.run(['git', 'merge-base', '--is-ancestor', 'FETCH_HEAD', 'HEAD'], cwd=ROOT).returncode == 0
+    options = ['--ff-only'] if included else []
+    git('pull', '--rebase=merges', *options, 'festgen', 'main', capture=False)
 
 
 def records():
