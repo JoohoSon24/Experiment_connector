@@ -41,7 +41,7 @@ def preflight():
 
 def pull():
     preflight()
-    git('pull', '--rebase', 'festgen', 'main', capture=False)
+    git('pull', '--rebase=merges', 'festgen', 'main', capture=False)
 
 
 def records():

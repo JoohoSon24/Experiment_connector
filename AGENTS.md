@@ -39,3 +39,6 @@
 새 metrics.json에는 official_fid와 valid_fid를 명시하며 미측정은 null로 둔다.
 FID 프로토콜 및 사용법은 docs/EXPERIMENT.md와 configs/fid_protocol_v1.json을 참조한다.
 로컬 clone에서는 `git config core.hooksPath .githooks`로 커밋 크기 검사와 origin push 차단을 활성화한다.
+
+실험 meta의 git_commit이 rebase 후에도 pull로 조회되도록 원래 실험 커밋을 main의 merge ancestry로 보존한다.
+동기화 스크립트는 `git pull --rebase=merges festgen main`을 사용한다. 수동 pull도 같은 옵션을 사용한다.
